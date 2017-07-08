@@ -5,11 +5,11 @@ import * as ku from '../lib/ke-utils';
 
 
 
-export const currentComponentId = (state = 'not-set', { type, payload }) => {
+export const currentComponentId = (state = { id: 0 }, { type, payload }) => {
   switch (type) {
     case 'app/currentComponentId':
       ku.log('reducers.updateComponentId.payload', payload, 'orange');
-      return payload.value;
+      return payload.id;
     default:
       return state;
   }

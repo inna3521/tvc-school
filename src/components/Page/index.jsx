@@ -5,29 +5,18 @@ import { Component } from 'react';
 import { Grid, Row } from 'react-bootstrap';
 import * as actionCreators from '../../store/actions';
 import * as selectors from '../../store/selectors';
-import MenuItem from './MenuItem'
+import MenuItems from './MenuItems'
 import Lesson01 from './Lesson01'
 import Footer from './Footer'
 import './style.css'
 import * as ku from '../../lib/ke-utils'
 
-const Page = ({ currentComponentId, updateCurrentComponentId }) => {
-
-  const handleMenuItemClick = (val) => {
-    ku.log('handleMenuItemClick: val', val, 'green')
-    let newVal;
-    val
-      ? newVal = val
-      : newVal = 0
-    updateCurrentComponentId(val)
-  }
-
-
+const Page = ({ currentComponentId }) => {
   let currentComp
   ku.log('currentComponentId', currentComponentId, 'green')
   switch (currentComponentId) {
     case 0:
-      currentComp = '0'
+      currentComp = <MenuItems />
       break;
     case 1:
       currentComp = <Lesson01 />
@@ -46,11 +35,7 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
         <h2 className='section-sub-title header-text'>Learn Build Grow Succeed</h2>
         <blockquote>The magic of Tri-Valley Coders School is the individual and in-person contact will skilled software developers.</blockquote>
       </header>
-      <MenuItem
-        id={1}
-        itemText='Lesson 1'
-        handleMenuItemClick={handleMenuItemClick}
-      />
+
       {currentComp}
       <Footer />
     </div>
@@ -59,12 +44,10 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
 }
 
 const mapStateToProps = (state) => {
-  let tmp = selectors.getCurrentComponentId(state);
-  console.log('tmp', tmp);
   const o = {
-    currentComponentId: tmp,
+    currentComponentId: selectors.getCurrentComponentId(state)
   }
-   return o;
+  return o
 }
-// export default Page;
-export default connect(mapStateToProps, actionCreators)(Page);
+
+export default connect(mapStateToProps, actionCreators)(Page)

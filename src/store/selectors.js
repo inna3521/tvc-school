@@ -1,7 +1,10 @@
-// import * as ku from '../lib/ke-utils';
+import * as ku from './../lib/ke-utils'
 
 export const getCurrentComponentId = (state) => {
-  return state.ui.currentComponentId;
+  ku.log('selectors.getCurrentComponentId: state', state, 'orange' )
+  ku.log('selectors.getCurrentComponentId: id', state.ui.currentComponentId.id, 'orange' )
+  return state.ui.currentComponentId.id;
+
 }
 
 // redux selectors
