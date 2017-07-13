@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 // import { merge, prepend, dissoc, without } from 'ramda';
-import { merge, prepend, dissoc } from 'ramda';
+import { merge } from 'ramda';
 import * as ku from '../lib/ke-utils';
 
 
@@ -9,7 +9,7 @@ export const currentComponentId = (state = { id: 0 }, { type, payload }) => {
   switch (type) {
     case 'app/currentComponentId':
       ku.log('reducers.updateComponentId.payload', payload, 'orange');
-      return payload.id;
+      return payload;
     default:
       return state;
   }

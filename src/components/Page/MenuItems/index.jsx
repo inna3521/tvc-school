@@ -8,20 +8,16 @@ import menuItems from './menu-items'
 import MenuItem from './MenuItem'
 import * as ku from '../../../lib/ke-utils'
 
-const MenuItems = ({ updateCurrentComponentId }) => {
-  ku.log('MenuItems', 'a', 'blue' )
-  ku.log('menuItems', menuItems, 'blue')
-  const handleMenuItemClick = (val) => {
-    // ku.log('handleMenuItemClick: val', val, 'green')
-    updateCurrentComponentId(val)
-  }
+const MenuItems = (props) => {
+  // ku.log('menuItems', menuItems, 'blue')
+
 
   const items = menuItems.map((item) => (
     <MenuItem
       key={item.id}
       id={item.id}
       itemText={item.itemText}
-      handleMenuItemClick={handleMenuItemClick}
+      handleMenuItemClick={props.handleMenuItemClick}
     />
   ))
   ku.log('items', items, 'blue')
