@@ -9,17 +9,18 @@ import MenuItems from './MenuItems'
 import Lesson01 from './Lesson01'
 import Footer from './Footer'
 import './style.css'
-import * as ku from '../../lib/ke-utils'
+// import * as ku from '../../lib/ke-utils'
 
 const Page = ({ currentComponentId, updateCurrentComponentId }) => {
   const handleMenuItemClick = (val) => {
-    val === undefined ? val = 0 : val = val
-    ku.log('handleMenuItemClick: typeof val', typeof val, 'green')
-    updateCurrentComponentId(val)
+    let newVal;
+    val === undefined ? newVal = 0 : newVal = val
+    // ku.log('handleMenuItemClick: typeof val', typeof val, 'green')
+    updateCurrentComponentId(newVal)
   }
 
   let currentComp
-  ku.log('Page.currentComponentId', currentComponentId, 'green')
+  // ku.log('Page.currentComponentId', currentComponentId, 'green')
   switch (currentComponentId) {
     case 0:
       currentComp = <MenuItems
@@ -47,6 +48,7 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
       </header>
       {currentComp}
       <Footer />
+      <Lesson01 />
     </div>
   )
 }

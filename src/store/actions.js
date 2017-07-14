@@ -1,5 +1,5 @@
-// simport api from '../api';
-import * as ku from '../lib/ke-utils'
+// import api from '../api';
+// import * as ku from '../lib/ke-utils'
 
 /*
     payload must always be an object. If you are passing in a string you must put it in an object: e.g., payload: { value }. If the parameter(s) pass in are already an object then do: e.g., payload: objectName.
@@ -7,7 +7,7 @@ import * as ku from '../lib/ke-utils'
  */
 
 export const updateCurrentComponentId = ( id ) => {
-  ku.log('actions.updateCurrentComponentId: id', id, 'green');
+  // ku.log('actions.updateCurrentComponentId: id', id, 'green');
   return {
   // value will be true / false
   type: 'app/currentComponentId',

@@ -4,8 +4,10 @@ import { Provider } from 'react-redux';
 import configureStore from './store';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
+// import './prism.css';
 import './index.css';
 import Page from './components/Page';
+
 
 // import './foundation.css';
 

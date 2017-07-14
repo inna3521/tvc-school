@@ -6,7 +6,7 @@ import * as selectors from '../../../store/selectors'
 import './style.css'
 import menuItems from './menu-items'
 import MenuItem from './MenuItem'
-import * as ku from '../../../lib/ke-utils'
+// import * as ku from '../../../lib/ke-utils'
 
 const MenuItems = (props) => {
   // ku.log('menuItems', menuItems, 'blue')
@@ -20,7 +20,7 @@ const MenuItems = (props) => {
       handleMenuItemClick={props.handleMenuItemClick}
     />
   ))
-  ku.log('items', items, 'blue')
+  // ku.log('items', items, 'blue')
   return (
     <div>
       {items}
