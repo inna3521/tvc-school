@@ -7,7 +7,7 @@ const MenuItem = (props) => {
     <li
       onClick={() => props.handleMenuItemClick(props.id)}
     >
-      {props.itemText} and {props.id}
+      <span className='menu-item-text'>{props.itemText}</span>
     </li>
   )
 }

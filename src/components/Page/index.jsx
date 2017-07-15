@@ -7,6 +7,9 @@ import * as actionCreators from '../../store/actions';
 import * as selectors from '../../store/selectors';
 import MenuItems from './MenuItems'
 import Lesson01 from './Lesson01'
+import Lesson02 from './Lesson02'
+import Lesson03 from './Lesson03'
+import Lesson04 from './Lesson04'
 import Footer from './Footer'
 import './style.css'
 // import * as ku from '../../lib/ke-utils'
@@ -33,8 +36,20 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
                     />
       break;
     case 2:
-      currentComp = '2'
-      break;
+      currentComp = <Lesson02
+        handleMenuItemClick={handleMenuItemClick}
+                    />
+        break;
+    case 3:
+      currentComp = <Lesson03
+        handleMenuItemClick={handleMenuItemClick}
+                    />
+        break;
+    case 4:
+      currentComp = <Lesson04
+        handleMenuItemClick={handleMenuItemClick}
+                    />
+        break;
     default:
       currentComp = 'default'
       console.log('error: we got to default case')
@@ -44,11 +59,9 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
       <header>
         <h1 className='green-text site-title'>Tri-Valley Coders</h1>
         <h2 className='section-sub-title header-text'>Learn Build Grow Succeed</h2>
-        <blockquote>The magic of Tri-Valley Coders School is the individual and in-person contact will skilled software developers.</blockquote>
       </header>
       {currentComp}
       <Footer />
-      <Lesson01 />
     </div>
   )
 }

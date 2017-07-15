@@ -3,7 +3,8 @@ import React from 'react';
 import './style.css';
 
 const Footer = () => (
-  <footer id='footer' className='gradient-black-background'>
+  <footer id='footer' className='page-footer gradient-black-background'>
+    <hr/>
     <div className='section-container container-fluid footer-container'>
       <div className="fa-btns">
         <a href="https://github.com/trivalleycoders-org">

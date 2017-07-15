@@ -1,8 +1,11 @@
 /* SiteTitle */
 
-.menu-item-text {
-  font-size: 1.3em;
+.site-title {
+  /*font-size: 2.6em;*/
+  text-align: center;
+  /*margin: 20px 0 10px 0;*/
 }
+
 
 /*
     Media Queries
@@ -14,10 +17,14 @@
 
 /* TABLET */
 @media (min-width : 481px) and (max-width : 1024px) {
-
+  .site-title {
+    /*font-size: 4.3em;*/
+  }
 }
 
 /* DESKTOP & LAPTOP */
 @media (min-width : 1025px) {
-
+  .site-title {
+    /*font-size: 7.0em;*/
+  }
 }

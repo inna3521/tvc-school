@@ -12,17 +12,18 @@ const MenuItems = (props) => {
   // ku.log('menuItems', menuItems, 'blue')
 
 
-  const items = menuItems.map((item) => (
-    <MenuItem
-      key={item.id}
-      id={item.id}
-      itemText={item.itemText}
-      handleMenuItemClick={props.handleMenuItemClick}
-    />
-  ))
+    const items = menuItems.map((item) => (
+      <MenuItem
+        key={item.id}
+        id={item.id}
+        itemText={item.itemText}
+        handleMenuItemClick={props.handleMenuItemClick}
+      />
+    ))
   // ku.log('items', items, 'blue')
   return (
     <div>
+      <h2>Contents</h2>
       {items}
     </div>
   )
