@@ -14,7 +14,11 @@ const menuItems = [
   {
     id: 4,
     itemText: '04. CSS - What is it?'
-  }
+  },
+  {
+    id: 5,
+    itemText: '05. CSS Challenge 1'
+  },
 
 ]
 

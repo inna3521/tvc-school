@@ -6,10 +6,12 @@ import { connect } from 'react-redux';
 import * as actionCreators from '../../store/actions';
 import * as selectors from '../../store/selectors';
 import MenuItems from './MenuItems'
-import Lesson01 from './Lesson01'
-import Lesson02 from './Lesson02'
-import Lesson03 from './Lesson03'
-import Lesson04 from './Lesson04'
+import L01HTMLElements from './L01HTMLElements'
+import L02EssentialHTMLElements from './L02EssentialHTMLElements'
+import L03HTMLChallenge01 from './L03HTMLChallenge01'
+import L04WhatIsCSS from './L04WhatIsCSS'
+import L05CSSChallenge01 from './L05CSSChallenge01'
+// import P01NewProject from './P01NewProject'
 import Footer from './Footer'
 import './style.css'
 // import * as ku from '../../lib/ke-utils'
@@ -31,22 +33,27 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
                     />
       break;
     case 1:
-      currentComp = <Lesson01
+      currentComp = <L01HTMLElements
         handleMenuItemClick={handleMenuItemClick}
                     />
       break;
     case 2:
-      currentComp = <Lesson02
+      currentComp = <L02EssentialHTMLElements
         handleMenuItemClick={handleMenuItemClick}
                     />
         break;
     case 3:
-      currentComp = <Lesson03
+      currentComp = <L03HTMLChallenge01
         handleMenuItemClick={handleMenuItemClick}
                     />
         break;
     case 4:
-      currentComp = <Lesson04
+      currentComp = <L04WhatIsCSS
+        handleMenuItemClick={handleMenuItemClick}
+                    />
+        break;
+    case 5:
+      currentComp = <L05CSSChallenge01
         handleMenuItemClick={handleMenuItemClick}
                     />
         break;

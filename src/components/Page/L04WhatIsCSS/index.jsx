@@ -28,13 +28,11 @@ const Lesson04 = (props) => {
         <p className='lesson-sub-title'>What is CSS?</p>
       </header>
 
-      <p>CSS stands for <span className="large-cap">C</span>ascading
-        <span className="large-cap">S</span>tyle <span className="large-cap">S</span>heets.
-        We will get to what that means later.
+      <p>CSS stands for <span className="large-cap">C</span>ascading<span className="large-cap"> S</span>tyle <span className="large-cap">S</span>heets.
+        We will get to the meaning of the name in a later lession.
       </p>
       <p>
-        While HTM defines the structure and content of your webpage, CSS
-        determines the appearance and layout.
+        While HTM defines the structure and content of your webpage, CSS determines the appearance and layout.
         <ul>
           <li>Appearance is called 'style' and includes things such as font color,
           bold or non-bold and backgroun image or color.</li>

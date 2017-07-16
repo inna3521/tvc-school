@@ -115,3 +115,7 @@ td {
 .lesson-sub-title {
   font-size: 1.72em /* 24px */
 }
+
+em {
+  font-weight: bold;
+}
