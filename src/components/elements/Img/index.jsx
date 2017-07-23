@@ -15,6 +15,7 @@ const Img = (props) => {
       'img-size-inline': props.size === 'inline',
       'img-inline': props.size === 'inline',
       'img-size-medium': props.size === 'medium',
+      'img-size-large': props.size === 'large',
     }
   )
   const image = <Image

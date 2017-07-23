@@ -19,6 +19,10 @@
   max-width: 70%;
 }
 
+.img-size-large {
+  max-width: 100%;
+}
+
 .img-size-inline {
   max-width: 50px;
 }

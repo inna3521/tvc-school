@@ -7,7 +7,7 @@ import Code from './../../elements/Code'
 import Callout from './../../elements/Callout'
 // import { lesson } from './data';
 // import { space } from '../../../lib/utils'
-
+import Header from '../../elements/Header'
 
 const Lesson04 = (props) => {
   return (
@@ -19,11 +19,12 @@ const Lesson04 = (props) => {
         Back
       </Button>
       <hr/>
-      <header>
-        <p className='lesson-title'>Title</p>
-        <p className='lesson-sub-title'>Sub-Title</p>
-      </header>
+      <Header
+        title='Variables'
+        subTitle='What are they and how do you use them?'
+      />
 
+      
       <Code
         code={[
           '<div id="about">',

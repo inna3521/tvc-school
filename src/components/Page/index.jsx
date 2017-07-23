@@ -14,6 +14,10 @@ import L05CSSChallenge01 from './L05CSSChallenge01'
 // import P01NewProject from './P01NewProject'
 import Footer from './Footer'
 import './style.css'
+import L06JSWhatIsIt from './L06JSWhatIsIt'
+import L07JSVariables from './L07JSVariables'
+import L08JSArrays from './L08JSArrays'
+import L09MozillaThimble from './L09MozillaThimble'
 // import * as ku from '../../lib/ke-utils'
 
 const Page = ({ currentComponentId, updateCurrentComponentId }) => {
@@ -63,6 +67,9 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
   }
   return (
     <div className='page-wrapper'>
+
+      {/* <L06JSWhatIsIt /> */}
+      <L09MozillaThimble />
       <header>
         <h1 className='green-text site-title'>Tri-Valley Coders</h1>
         <h2 className='section-sub-title header-text'>Learn Build Grow Succeed</h2>
