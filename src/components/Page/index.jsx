@@ -61,6 +61,26 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
         handleMenuItemClick={handleMenuItemClick}
                     />
         break;
+    case 6:
+      currentComp = <L06JSWhatIsIt
+        handleMenuItemClick={handleMenuItemClick}
+                    />
+        break;
+    case 7:
+      currentComp = <L07JSVariables
+        handleMenuItemClick={handleMenuItemClick}
+                    />
+        break;
+    case 8:
+      currentComp = <L08JSArrays
+        handleMenuItemClick={handleMenuItemClick}
+                    />
+        break;
+    case 9:
+      currentComp = <L09MozillaThimble
+        handleMenuItemClick={handleMenuItemClick}
+                    />
+        break;
     default:
       currentComp = 'default'
       console.log('error: we got to default case')
@@ -69,7 +89,7 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
     <div className='page-wrapper'>
 
       {/* <L06JSWhatIsIt /> */}
-      <L09MozillaThimble />
+
       <header>
         <h1 className='green-text site-title'>Tri-Valley Coders</h1>
         <h2 className='section-sub-title header-text'>Learn Build Grow Succeed</h2>

@@ -19,6 +19,22 @@ const menuItems = [
     id: 5,
     itemText: '05. CSS Challenge 1'
   },
+  {
+    id: 6,
+    itemText: '06. JavaScript, What is it?'
+  },
+  {
+    id: 7,
+    itemText: '07. Variables'
+  },
+  {
+    id: 8,
+    itemText: '08. Arrays'
+  },
+  {
+    id: 9,
+    itemText: '09. Mozilla Thimble'
+  },
 
 ]
 
