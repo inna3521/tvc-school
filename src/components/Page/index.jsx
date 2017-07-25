@@ -18,6 +18,7 @@ import L06JSWhatIsIt from './L06JSWhatIsIt'
 import L07JSVariables from './L07JSVariables'
 import L08JSArrays from './L08JSArrays'
 import L09MozillaThimble from './L09MozillaThimble'
+import E01HTML from './E01HTML'
 // import * as ku from '../../lib/ke-utils'
 
 const Page = ({ currentComponentId, updateCurrentComponentId }) => {
@@ -30,6 +31,7 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
 
   let currentComp
   // ku.log('Page.currentComponentId', currentComponentId, 'green')
+  currentComponentId = 10
   switch (currentComponentId) {
     case 0:
       currentComp = <MenuItems
@@ -81,6 +83,11 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
         handleMenuItemClick={handleMenuItemClick}
                     />
         break;
+    case 10:
+      currentComp = <E01HTML
+        handleMenuItemClick={handleMenuItemClick}
+                    />
+        break;
     default:
       currentComp = 'default'
       console.log('error: we got to default case')
@@ -88,7 +95,7 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
   return (
     <div className='page-wrapper'>
 
-      {/* <L06JSWhatIsIt /> */}
+      {/* <E01HTML /> */}
 
       <header>
         <h1 className='green-text site-title'>Tri-Valley Coders</h1>
