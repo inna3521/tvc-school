@@ -2,9 +2,7 @@
 import React from 'react'
 import './style.css'
 import { Button } from 'react-bootstrap'
-import Img from './../../elements/Img'
-import Code from './../../elements/Code'
-import Callout from './../../elements/Callout'
+import Pre from './../../elements/Pre'
 import Header from '../../elements/Header'
 
 const L06JSWhatIsIt = (props) => {
@@ -33,7 +31,7 @@ const L06JSWhatIsIt = (props) => {
       <p>JavaScript is a programming language that can be used to create any type of software application. However, it is especially well suited to creating dynamic and interactive content on websites. According to <a href="https://w3techs.com/technologies/details/cp-javascript/all/all">W<sup>3</sup>Techs</a>, JavaScript is used on 94% of all websites</p>
 
       <p>JavaScript looks like this</p>
-      <Code
+      <Pre
         code={[
           "let names = ['Jack', 'Jane', 'Alice'] ",
           "for (let i=0; i<3; i++) {",

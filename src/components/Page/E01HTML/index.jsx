@@ -1,16 +1,7 @@
 // Lesson01
 import React from 'react'
 import { Button } from 'react-bootstrap'
-import Img from './../../elements/Img'
 import './style.css'
-import Code from './../../elements/Code'
-import Callout from './../../elements/Callout'
-// import { lesson } from './data';
-// import { space } from '../../../lib/utils'
-import iHTMLTagAnatomy from './img/html-tag-anatomy.png'
-import iHTMLTagAttributes from './img/html-tag-attributes.png'
-import iSearchResults from './img/search-results.png'
-
 
 const Lesson01 = (props) => {
   // console.log('html', lesson.html);

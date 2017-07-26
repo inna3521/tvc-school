@@ -2,8 +2,7 @@
 import React from 'react'
 import './style.css'
 import { Button } from 'react-bootstrap'
-import Code from './../../elements/Code'
-import Callout from './../../elements/Callout'
+import Pre from './../../elements/Pre'
 import Header from '../../elements/Header'
 
 const Lesson04 = (props) => {
@@ -27,7 +26,7 @@ const Lesson04 = (props) => {
 
 
       <p>Here is an example of an array named 'x' that has four values. Arrays are zero based so the first value in the array, 'cat', is 0 and 'bird' is 3.</p>
-      <Code
+      <Pre
         code={[
           "/*         0      1       2        3 */",
           "let x = ['cat', 'dog', 'horse', 'bird']"
@@ -35,7 +34,7 @@ const Lesson04 = (props) => {
         language='javascript'
       />
       <p>To access one of the values in an array you use the name of the array followed by square brackets containg the 'index' of the value you want. It looks like this:</p>
-      <Code
+      <Pre
         code={[
           "name[2] // 2 is the 3rd element which is horse"
         ]}

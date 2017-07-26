@@ -3,7 +3,7 @@ import React from 'react'
 import './style.css'
 import { Button } from 'react-bootstrap'
 // import Img from './../../elements/Img'
-import Code from './../../elements/Code'
+import Pre from './../../elements/Pre'
 import Callout from './../../elements/Callout'
 // import { lesson } from './data';
 // import { space } from '../../../lib/utils'
@@ -24,8 +24,8 @@ const Lesson04 = (props) => {
         subTitle='What are they and how do you use them?'
       />
 
-      
-      <Code
+
+      <Pre
         code={[
           '<div id="about">',
           '',

@@ -2,8 +2,6 @@
 import React from 'react'
 import './style.css'
 import { Button } from 'react-bootstrap'
-import Code from './../../elements/Code'
-import Callout from './../../elements/Callout'
 import Header from '../../elements/Header'
 import Img from './../../elements/Img'
 import iThimble from './img/thimble.png'

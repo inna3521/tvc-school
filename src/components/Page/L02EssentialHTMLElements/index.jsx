@@ -101,7 +101,7 @@ const Lesson02 = (props) => {
             <tr>
               <td><pre>&lt;video&gt;</pre></td>
               <td><b>video:</b> use to put a video on the page<br/>
-                <iframe className="video-tag" width="160" height="90" src="https://www.youtube.com/embed/X_XGxzMrq04" frameBorder="0" allowFullScreen>
+                <iframe className='video-tag' width='160' height='90' title='dont mine a night' src="https://www.youtube.com/embed/X_XGxzMrq04" frameBorder="0" allowFullScreen>
                 </iframe>
               </td>
             </tr>

@@ -3,10 +3,7 @@ import React from 'react'
 import { Button, Table } from 'react-bootstrap'
 import Img from './../../elements/Img'
 import './style.css'
-import Code from './../../elements/Code'
-import Callout from './../../elements/Callout'
-// import { lesson } from './data';
-// import { space } from '../../../lib/utils'
+import Pre from './../../elements/Pre'
 import iCSSSyntax02 from './img/css-syntax.02.png'
 import iCSSSyntax03 from './img/css-syntax.03.png'
 import iKeyValuePair02 from './img/key-value-pair.02.png'
@@ -59,7 +56,7 @@ const Lesson04 = (props) => {
         src={iKeyValuePair02}
       />
       <p>You often see key / value pairs in code:</p>
-      <Code
+      <Pre
         code={[
             "var name = 'joe'",
         ]}
@@ -86,7 +83,7 @@ const Lesson04 = (props) => {
       </ul>
       <h3>Selector</h3>
       <p>Below is a typical CSS selector. It is called a 'selector' because it will select parts of the web page. In this case, it will select all &lt;p&gt; (paragraph) elements. Read on to learn what that means.</p>
-      <Code
+      <Pre
         code={[
           'p {',
           '  font-size: 12px;',
@@ -97,7 +94,7 @@ const Lesson04 = (props) => {
       <h3>Element Selector</h3>
 
       <p>An <em>element selector</em> selects all html elements of a given type. Below is a &lt;p&gt; (paragraph) selector.</p>
-      <Code
+      <Pre
         code={[
           'p {',
           '  font-size: 12px;',
@@ -115,7 +112,7 @@ const Lesson04 = (props) => {
       <h3>ID Selector</h3>
       <p>Remember from the HTML lessons that an HTML element can have an attribute.
         A &lt;div&gt; with a <em>id</em> attribute looks like this:</p>
-      <Code
+      <Pre
         code={[
           '<div id="about">',
           '',
@@ -124,7 +121,7 @@ const Lesson04 = (props) => {
         language='html'
       />
       <p>An <em>ID selector</em> will select whatever element has the specified ID. An ID selectory start with a pound sign (#). Here is a ID selector that will set the font-size to 24px for the element with the 'id' of 'about'. </p>
-      <Code
+      <Pre
         code={[
             '#about {',
             '  font-size: 24px;',
@@ -135,7 +132,7 @@ const Lesson04 = (props) => {
       <h3>Class Selector</h3>
       <p>HTML elements can also have a <em>class</em> attribute. Here are two
       &lt;p&gt; elements with a class attribute and one without.</p>
-      <Code
+      <Pre
         code={[
           '<p class="aside-style">paragraph 1</p>',
           '<p>paragraph 2</p>',
@@ -144,7 +141,7 @@ const Lesson04 = (props) => {
         language='html'
       />
       <p>A CSS class selector starts with a period (.).</p>
-      <Code
+      <Pre
         code={[
           '.aside-style {',
           '  font-size: 14px',
@@ -164,7 +161,7 @@ const Lesson04 = (props) => {
           <td>Element Selector</td>
           <td className='col-starts-with'>nothing</td>
           <td>
-            <Code
+            <Pre
               code={[
                 'p {',
                 '  font-size: 12px;',
@@ -174,7 +171,7 @@ const Lesson04 = (props) => {
             />
           </td>
           <td>
-            <Code
+            <Pre
               code={[
                 '<p>some text here</p>',
               ]}
@@ -186,7 +183,7 @@ const Lesson04 = (props) => {
           <td>ID Selector</td>
           <td className='col-starts-with'>#</td>
           <td>
-            <Code
+            <Pre
               code={[
                 '#about {',
                 '  font-size: 24px;',
@@ -196,7 +193,7 @@ const Lesson04 = (props) => {
             />
           </td>
           <td>
-            <Code
+            <Pre
               code={[
                 '<div id="about">',
                 '',
@@ -210,7 +207,7 @@ const Lesson04 = (props) => {
           <td>Class Selector</td>
           <td className='col-starts-with'>.</td>
           <td>
-            <Code
+            <Pre
               code={[
                 '.aside-style {',
                 '  font-size: 14px',
@@ -220,7 +217,7 @@ const Lesson04 = (props) => {
             />
           </td>
           <td>
-            <Code
+            <Pre
               code={[
                 '<p class="aside-style">paragraph 1</p>',
                 '<p>paragraph 2</p>',

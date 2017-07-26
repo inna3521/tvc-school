@@ -2,11 +2,7 @@
 import React from 'react'
 import './style.css'
 import { Button } from 'react-bootstrap'
-// import Img from './../../elements/Img'
-import Code from './../../elements/Code'
-import Callout from './../../elements/Callout'
-// import { lesson } from './data';
-// import { space } from '../../../lib/utils'
+import Pre from './../../elements/Pre'
 import Header from '../../elements/Header'
 
 const Lesson04 = (props) => {
@@ -26,21 +22,21 @@ const Lesson04 = (props) => {
 
       <p>Without varables programming languages would not be very useful and all of the apps that you use today would not exist. Variables are a place to store data for use later. The data stored in a variable can be changed.</p>
       <p>In order to use a veriable you must create it. In programming we call this 'declaring' the variable'. Here is how you do it.</p>
-      <Code
+      <Pre
         code={[
           'let x'
         ]}
         language='javascript'
       />
       <p>That single line of code declares (creates) a variable named 'x'. Now let's assign some data to x.</p>
-      <Code
+      <Pre
         code={[
           "x = 'San Ramon'"
         ]}
         language='javascript'
       />
       <p>You may be tempted to say 'x equals San Ramon' but you would not really be right. In programming, '=' is called the 'assignment operator'. It assigns data to a variable. Here is how you change the data assigned to x:</p>
-      <Code
+      <Pre
         code={[
           "x = 'Danville'"
         ]}

@@ -4,8 +4,6 @@ import { Button } from 'react-bootstrap'
 import Img from './../../elements/Img'
 import './style.css'
 import Callout from './../../elements/Callout'
-// import { lesson } from './data';
-// import { space } from '../../../lib/utils'
 import iKingFisherBird from './img/kingfisher-bird.jpg'
 import iAdlerBird from './img/adler-bird.jpg'
 import iSwans from './img/swans-1436266_640.jpg'
