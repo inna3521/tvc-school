@@ -2,7 +2,6 @@
 import React from 'react'
 import { Button, Table } from 'react-bootstrap'
 import Img from './../../elements/Img'
-import './style.css'
 import Pre from './../../elements/Pre'
 import iCSSSyntax02 from './img/css-syntax.02.png'
 import iCSSSyntax03 from './img/css-syntax.03.png'

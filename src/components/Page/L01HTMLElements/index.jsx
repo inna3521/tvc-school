@@ -1,8 +1,7 @@
-// Lesson01
+// L01HTMLElements
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import Img from './../../elements/Img'
-import './style.css'
 import Callout from './../../elements/Callout'
 import iHTMLTagAnatomy from './img/html-tag-anatomy.png'
 import iHTMLTagAttributes from './img/html-tag-attributes.png'

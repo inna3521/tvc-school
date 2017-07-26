@@ -1,6 +1,5 @@
 // L09MozillaThimble
 import React from 'react'
-import './style.css'
 import { Button } from 'react-bootstrap'
 import Header from '../../elements/Header'
 import Img from './../../elements/Img'

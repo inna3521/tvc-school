@@ -2,7 +2,6 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import Img from './../../elements/Img'
-import './style.css'
 import Callout from './../../elements/Callout'
 import iKingFisherBird from './img/kingfisher-bird.jpg'
 import iAdlerBird from './img/adler-bird.jpg'

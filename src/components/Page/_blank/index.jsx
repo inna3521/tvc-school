@@ -1,4 +1,4 @@
-// SiteTitle
+// _blank
 import React from 'react';
 import './style.css';
 

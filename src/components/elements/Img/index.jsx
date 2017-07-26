@@ -1,4 +1,4 @@
-// SiteTitle
+// Img
 import React from 'react'
 import { Image, Grid, Row, Well } from 'react-bootstrap'
 import classNames from 'classnames'

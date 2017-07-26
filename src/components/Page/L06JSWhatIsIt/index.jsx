@@ -1,6 +1,5 @@
 // _lesson
 import React from 'react'
-import './style.css'
 import { Button } from 'react-bootstrap'
 import Pre from './../../elements/Pre'
 import Header from '../../elements/Header'

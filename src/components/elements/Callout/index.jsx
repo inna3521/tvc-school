@@ -1,4 +1,4 @@
-// SiteTitle
+// Callout
 import React from 'react'
 import classNames from 'classnames'
 import P from '../../elements/P'

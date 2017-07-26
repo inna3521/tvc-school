@@ -1,4 +1,4 @@
-// Pre
+// Code
 import React from 'react';
 import { PrismCode } from 'react-prism'
 import classNames from 'classnames'
@@ -15,7 +15,7 @@ const Code = (props) => {
   let code = props.code
   let newCode = code.join('\n')
   return (
-    <PrismCode component='pre' className={styles}>
+    <PrismCode className={styles}>
       {`${newCode}`}
     </PrismCode>
   )

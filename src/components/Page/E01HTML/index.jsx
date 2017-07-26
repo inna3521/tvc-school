@@ -1,7 +1,6 @@
-// Lesson01
+// E01HTML
 import React from 'react'
 import { Button } from 'react-bootstrap'
-import './style.css'
 
 const Lesson01 = (props) => {
   // console.log('html', lesson.html);

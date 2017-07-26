@@ -2,7 +2,6 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import Img from './../../elements/Img'
-import './style.css'
 import iImageImage from './img/image-image.png'
 
 
