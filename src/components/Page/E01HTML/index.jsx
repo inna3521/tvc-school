@@ -52,37 +52,41 @@ const Lesson01 = (props) => {
       </section>
       <section>
         <h2>What's in the head? Metadata in HTML</h2>
-        <li>What is the HTML head?</li>
-        <li>Adding a title</li>
-        <li>Metadata: the &lt;meta&gt; element</li>
         <ol>
-          <li>Specifying your document's character encoding</li>
-          <li>Adding an author and description</li>
-          <li>Other types of metadata</li>
+          <li>What is the HTML head?</li>
+          <li>Adding a title</li>
+          <li>Metadata: the &lt;meta&gt; element</li>
+          <ol>
+            <li>Specifying your document's character encoding</li>
+            <li>Adding an author and description</li>
+            <li>Other types of metadata</li>
+          </ol>
+          <li>Adding custom icons to your site</li>
+          <li>Applying CSS and JavaScript to HTML</li>
+          <li>Setting the primary language of the document</li>
         </ol>
-        <li>Adding custom icons to your site</li>
-        <li>Applying CSS and JavaScript to HTML</li>
-        <li>Setting the primary language of the document</li>
       </section>
       <section>
         <h2>HTML text fundamentals</h2>
-        <li>The basics: Headings and Paragraphs</li>
         <ol>
-          <li>Implementing structural hierarchy</li>
-          <li>Why do we need structure?</li>
-          <li>Why do we need semantics?</li>
-        </ol>
-        <li>Lists</li>
-        <ol>
-          <li>Unordered</li>
-          <li>Ordered</li>
-          <li>Nesting lists</li>
-        </ol>
-        <li>Emphasis and importance</li>
-        <ol>
-          <li>Emphasis</li>
-          <li>Strong importance</li>
-          <li>Italic, bold, underline...</li>
+          <li>The basics: Headings and Paragraphs</li>
+          <ol>
+            <li>Implementing structural hierarchy</li>
+            <li>Why do we need structure?</li>
+            <li>Why do we need semantics?</li>
+          </ol>
+          <li>Lists</li>
+          <ol>
+            <li>Unordered</li>
+            <li>Ordered</li>
+            <li>Nesting lists</li>
+          </ol>
+          <li>Emphasis and importance</li>
+          <ol>
+            <li>Emphasis</li>
+            <li>Strong importance</li>
+            <li>Italic, bold, underline...</li>
+          </ol>
         </ol>
       </section>
       <section>
@@ -156,6 +160,28 @@ const Lesson01 = (props) => {
           </ol>
 
         </ol>
+      </section>
+      <section>
+        <h2>Debugging HTML</h2>
+        <ol>
+          <li>Debugging isn't scary</li>
+          <li>HTML and debugging</li>
+          <ol>
+            <li>Permissive code</li>
+            <ol>
+              <li>Permissive code exercise</li>
+            </ol>
+          </ol>
+          <li>HTML validation</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Marking up a letter</h2>
+        <p><b>Exercise</b></p>
+      </section>
+      <section>
+        <h2>Structuring a page of content</h2>
+        <p><b>Exercise</b></p>
       </section>
     </div>
       )

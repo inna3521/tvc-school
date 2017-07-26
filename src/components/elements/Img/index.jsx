@@ -12,6 +12,7 @@ const Img = (props) => {
 
   const styles = classNames(
     {
+      'img-size-small': props.size === 'small',
       'img-size-inline': props.size === 'inline',
       'img-inline': props.size === 'inline',
       'img-size-medium': props.size === 'medium',
