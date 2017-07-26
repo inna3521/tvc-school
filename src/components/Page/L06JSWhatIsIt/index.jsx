@@ -37,7 +37,7 @@ const L06JSWhatIsIt = (props) => {
           "  console.log(names[i])",
           "}"
         ]}
-        language='javascript'
+        language='js'
       />
 
       Variables

@@ -25,21 +25,21 @@ const Lesson04 = (props) => {
         code={[
           'let x'
         ]}
-        language='javascript'
+        language='js'
       />
       <p>That single line of code declares (creates) a variable named 'x'. Now let's assign some data to x.</p>
       <Pre
         code={[
           "x = 'San Ramon'"
         ]}
-        language='javascript'
+        language='js'
       />
       <p>You may be tempted to say 'x equals San Ramon' but you would not really be right. In programming, '=' is called the 'assignment operator'. It assigns data to a variable. Here is how you change the data assigned to x:</p>
       <Pre
         code={[
           "x = 'Danville'"
         ]}
-        language='javascript'
+        language='js'
       />
       <p>So that is how you create variables and assign data to them. Here are a few rules and guidelines for naming variables in JavaScript</p>
       <ul>

@@ -7,7 +7,7 @@ import classNames from 'classnames'
 const Code = (props) => {
   const styles = classNames(
     {
-    'language-javascript': props.language === 'javascript',
+    'language-javascript': props.language === 'js',
     'language-css': props.language === 'css',
     'language-html': props.language === 'html',
     }

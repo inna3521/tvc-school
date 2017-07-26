@@ -30,14 +30,14 @@ const Lesson04 = (props) => {
           "/*         0      1       2        3 */",
           "let x = ['cat', 'dog', 'horse', 'bird']"
         ]}
-        language='javascript'
+        language='js'
       />
       <p>To access one of the values in an array you use the name of the array followed by square brackets containg the 'index' of the value you want. It looks like this:</p>
       <Pre
         code={[
           "name[2] // 2 is the 3rd element which is horse"
         ]}
-        language='javascript'
+        language='js'
       />
       <p>Next we will learn about Mozilla's Thimble code editor which we will use for arrays.</p>
 

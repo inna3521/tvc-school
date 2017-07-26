@@ -59,7 +59,7 @@ const Lesson04 = (props) => {
         code={[
             "var name = 'joe'",
         ]}
-        language='javascript'
+        language='js'
       />
       <h2>CSS Syntax</h2>
       <p>CSS has the following syntax:</p>
