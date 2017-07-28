@@ -2,6 +2,7 @@
 import React from 'react';
 import { PrismCode } from 'react-prism'
 import classNames from 'classnames'
+import './style.css'
 
 // Takes an array of strings
 const Code = (props) => {
@@ -10,6 +11,7 @@ const Code = (props) => {
     'language-javascript': props.language === 'js',
     'language-css': props.language === 'css',
     'language-html': props.language === 'html',
+    'gray-code': props.language === 'gray',
     }
   )
   return (

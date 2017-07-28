@@ -20,8 +20,8 @@ const Lesson04 = (props) => {
       <Header
         title='JavaScript Operators with Math'
       />
+      <h2>Operators</h2>
       <section>
-        <h2>Operators</h2>
         <h3>Arithmetic operators</h3>
         <Table responsive className='tbl-operators'>
           <thead>
@@ -64,24 +64,10 @@ const Lesson04 = (props) => {
             </tr>
             <tr>
               <td>Remainder</td>
-              <td className='operator-symbol'>*</td>
+              <td className='operator-symbol'>%</td>
               <td>Use to find the remainder of division</td>
               <td><Code language='js' code='let x = 9 % 4'></Code></td>
               <td className='operator-answer'>2</td>
-            </tr>
-            <tr>
-              <td>Assignment</td>
-              <td className='operator-symbol'>=</td>
-              <td>Asigns a value to a variable. It <b>does not</b> mean 'equals'</td>
-              <td><Code language='js' code='let x = 9'></Code></td>
-              <td className='operator-answer'></td>
-            </tr>
-            <tr>
-              <td>NOT</td>
-              <td className='operator-symbol'>!</td>
-              <td>Also known as 'negation'. Turns any true value to valse and any false value to true.</td>
-              <td><Code language='js' code='let x = !1 = 1'></Code></td>
-              <td className='operator-answer'>false</td>
             </tr>
             <tr>
               <td>Exponentiation</td>
@@ -116,6 +102,31 @@ const Lesson04 = (props) => {
           ]}
           language='js'
         />
+      </section>
+      <section>
+        <h3>Assignment operators</h3>
+        <p>JavaScript has 12 assignment operators such as 'multiplication assignment' and 'division assignment'. We are going to focuse on just one of them which is simple called the 'assignment operator'.</p>
+        <Table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Symbol</th>
+              <th>Description</th>
+              <th>Example</th>
+              <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Assignment</td>
+              <td className='operator-symbol'>=</td>
+              <td>Use to assign a value to a variable<br/>Returns true or false</td>
+              <td><Code language='js' code='let x = 4'></Code></td>
+              <td className='operator-answer'></td>
+            </tr>
+
+          </tbody>
+        </Table>
       </section>
       <section>
         <h3>Relational operators</h3>
@@ -158,18 +169,39 @@ const Lesson04 = (props) => {
               <td><Code language='js' code='let x = 3 &gt;&#61;  4'></Code></td>
               <td className='operator-answer'>false</td>
             </tr>
+          </tbody>
+        </Table>
+      </section>
+      <section>
+        <h3>Equality operators</h3>
+        <Table>
+          <thead>
             <tr>
-              <td>Not equal</td>
-              <td className='operator-symbol'>&#33;&#61;&#61;</td>
-              <td>Use to compare two numbers<br/>Returns true or false</td>
-              <td><Code language='js' code='let x = 5 &#33;&#61;&#61;  7'></Code></td>
-              <td className='operator-answer'>true</td>
+              <th>Name</th>
+              <th>Symbol</th>
+              <th>Use</th>
+              <th>Example</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="gray-tr">
+              <td>Equality operator - DON'T USE IT</td>
+              <td className='operator-symbol'>==</td>
+              <td>Assign value to variable</td>
+              <td><Code language='gray' code='let x = 4'></Code></td>
+              <td className='operator-answer'></td>
+            </tr>
+            <tr className="gray-tr">
+              <td>Inequality operator - DON'T USE IT</td>
+              <td className='operator-symbol'>&lt;</td>
+              <td>Compare 2 values. Returns <i>true</i> if they are not equal</td>
+              <td><Code language='gray' code='x !=y'></Code></td>
+              <td className='operator-answer'></td>
             </tr>
           </tbody>
         </Table>
       </section>
-
-
 
     </div>
   )
