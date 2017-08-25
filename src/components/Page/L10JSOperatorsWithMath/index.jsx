@@ -105,7 +105,7 @@ const Lesson04 = (props) => {
       </section>
       <section>
         <h3>Assignment operators</h3>
-        <p>JavaScript has 12 assignment operators such as 'multiplication assignment' and 'division assignment'. We are going to focuse on just one of them which is simple called the 'assignment operator'.</p>
+        <p>JavaScript has 12 assignment operators such as 'multiplication assignment' and 'division assignment'. We are going to focus on just one of them which is simple called the 'assignment operator'.</p>
         <Table>
           <thead>
             <tr>
@@ -174,6 +174,7 @@ const Lesson04 = (props) => {
       </section>
       <section>
         <h3>Equality operators</h3>
+        <p>JaveScript equality operators have changed over time and some confusion has been introduced. The <Code language='js' code='==' /> and <Code language='js' code='!=' /> operators perform type conversion when comparing values. This often isn't what you want. To solve this, JavaScript introduced <Code language='js' code='===' /> and <Code language='js' code='!==' /> whcih do not do type conversion. Since you have not learned about type conversion yet we will postpone using the <Code language='js' code='==' /> and <Code language='js' code='!=' /> operators for another lesson.</p>
         <Table>
           <thead>
             <tr>
@@ -194,6 +195,13 @@ const Lesson04 = (props) => {
             </tr>
             <tr className="gray-tr">
               <td>Inequality operator - DON'T USE IT</td>
+              <td className='operator-symbol'>&lt;</td>
+              <td>Compare 2 values. Returns <i>true</i> if they are not equal</td>
+              <td><Code language='gray' code='x !=y'></Code></td>
+              <td className='operator-answer'></td>
+            </tr>
+            <tr>
+              <td>Identity operator</td>
               <td className='operator-symbol'>&lt;</td>
               <td>Compare 2 values. Returns <i>true</i> if they are not equal</td>
               <td><Code language='gray' code='x !=y'></Code></td>
