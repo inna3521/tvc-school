@@ -20,6 +20,7 @@ import L08JSArrays from './L08JSArrays'
 import L09MozillaThimble from './L09MozillaThimble'
 import E01HTML from './E01HTML'
 import L10JSOperatorsWithMath from './L10JSOperatorsWithMath'
+import L11Functions from './L11Functions'
 // import * as ku from '../../lib/ke-utils'
 
 const Page = ({ currentComponentId, updateCurrentComponentId }) => {
@@ -32,7 +33,7 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
 
   let currentComp
   // ku.log('Page.currentComponentId', currentComponentId, 'green')
-  // currentComponentId = 11
+  currentComponentId = 12
   switch (currentComponentId) {
     case 0:
       currentComp = <MenuItems
@@ -91,6 +92,11 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
         break;
     case 11:
       currentComp = <L10JSOperatorsWithMath
+        handleMenuItemClick={handleMenuItemClick}
+                    />
+        break;
+    case 12:
+      currentComp = <L11Functions
         handleMenuItemClick={handleMenuItemClick}
                     />
         break;

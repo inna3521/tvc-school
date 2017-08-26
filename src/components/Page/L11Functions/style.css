@@ -1,0 +1,14 @@
+/* L10JSOperatorsWithMath */
+
+.operator-symbol,  .operator-answer {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.gray-tr {
+  color: rgb(100, 100, 100)
+}
+
+.indent-it {
+  margin: 100px;
+}
