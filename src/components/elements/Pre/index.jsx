@@ -10,14 +10,17 @@ const Code = (props) => {
     'language-javascript': props.language === 'js',
     'language-css': props.language === 'css',
     'language-html': props.language === 'html',
+    'line-numbers': true,
     }
   )
   let code = props.code
   let newCode = code.join('\n')
   return (
-    <PrismCode component='pre' className={styles}>
-      {`${newCode}`}
-    </PrismCode>
+    <pre className={styles}>
+      <code>
+        {`${newCode}`}
+      </code>
+    </pre>
   )
 };
 

@@ -5,11 +5,11 @@ import { Button, Table } from 'react-bootstrap'
 import Pre from './../../elements/Pre'
 import Code from './../../elements/Code'
 import Header from '../../elements/Header'
-import { PrismCode } from 'react-prism'
 import Img from '../../elements/Img/index'
 import iFunctionSyntax from './img/function-syntax.png'
+import iParameters from './img/parameters.png'
 
-const Lesson04 = (props) => {
+const L11Functions = (props) => {
   return (
     <div>
       <Button
@@ -72,9 +72,8 @@ const Lesson04 = (props) => {
         ]}
         language='js'
       />
-      
-      <h2>Syntax of a Fucntion</h2>
 
+      <h2>Syntax of a Fucntion</h2>
       <Img
         src={iFunctionSyntax}
       />
@@ -87,8 +86,35 @@ const Lesson04 = (props) => {
         <li>Everything inside of the opening and closing curly brackets is the 'function body'</li>
 
       </ul>
+
+      <h2>Passing Parameters to a Function</h2>
+      <Img
+        src={iParameters}
+      />
+      <ul>
+        <li>Parameters are like variables, they hold values such as text and numbers</li>
+        <li>While you can pass many parameters to a function it is common to only pass a few, perhaps up to 6 or 7</li>
+        <li>Note that the parameters are separated by a comma</li>
+      </ul>
+
+      <h2>Calling (using) a Function</h2>
+      <ul>
+        <li>On lines 3 to 5 below is a function that takes two numbers and multiplies them</li>
+        <li>Line 1 calls that function passing it 2 numbers. Note that thenumbers are separated by a comma.</li>
+      </ul>
+
+      <Pre
+        code={[
+          'multiply(2, 4) // this line calls/uses the function',
+          '',
+          'function multipyTwoNumbers(num1, num2) {',
+          '  return num1 * num2',
+          '}',
+        ]}
+        language='js'
+      />
     </div>
   )
 };
 
-export default Lesson04;
+export default L11Functions;
