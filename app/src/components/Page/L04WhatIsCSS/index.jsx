@@ -1,5 +1,6 @@
 // Lesson04
 import React from 'react'
+import styles from './style.css'
 import { Button, Table } from 'react-bootstrap'
 import Img from './../../elements/Img'
 import Pre from './../../elements/Pre'
@@ -158,7 +159,7 @@ const Lesson04 = (props) => {
         </tr>
         <tr className='background-highlight-white'>
           <td>Element Selector</td>
-          <td className='col-starts-with'>nothing</td>
+          <td className={styles.colStartsWith}>nothing</td>
           <td>
             <Pre
               code={[
@@ -180,7 +181,7 @@ const Lesson04 = (props) => {
         </tr>
         <tr>
           <td>ID Selector</td>
-          <td className='col-starts-with'>#</td>
+          <td className={styles.colStartsWith}>#</td>
           <td>
             <Pre
               code={[
@@ -204,7 +205,7 @@ const Lesson04 = (props) => {
         </tr>
         <tr className='background-highlight-white'>
           <td>Class Selector</td>
-          <td className='col-starts-with'>.</td>
+          <td className={styles.colStartsWith}>.</td>
           <td>
             <Pre
               code={[

@@ -10,7 +10,7 @@ import L03HTMLChallenge01 from './L03HTMLChallenge01'
 import L04WhatIsCSS from './L04WhatIsCSS'
 import L05CSSChallenge01 from './L05CSSChallenge01'
 import Footer from './Footer'
-import './style.css'
+import styles from './style.css'
 import L06JSWhatIsIt from './L06JSWhatIsIt'
 import L07JSVariables from './L07JSVariables'
 import L08JSArrays from './L08JSArrays'
@@ -31,7 +31,7 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
 
   let currentComp
   // ku.log('Page.currentComponentId', currentComponentId, 'green')
-  currentComponentId = 1
+  // currentComponentId = 4
   switch (currentComponentId) {
     case 0:
       currentComp = <MenuItems
@@ -108,13 +108,10 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
       console.log('error: we got to default case')
   }
   return (
-    <div className='page-wrapper'>
-
-      {/* <E01HTML /> */}
-
+    <div>
       <header>
-        <h1 className='green-text site-title'>Tri-Valley Coders - SCHOOL</h1>
-        <h2 className='section-sub-title header-text'>Learn Build Grow Succeed</h2>
+        <h1 className="green-text">Tri-Valley Coders - SCHOOL</h1>
+        <h2>Learn Build Grow Succeed</h2>
       </header>
       {currentComp}
       <Footer />

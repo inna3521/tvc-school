@@ -35,6 +35,22 @@ const menuItems = [
     id: 9,
     itemText: '09. Mozilla Thimble'
   },
+  {
+    id: 10,
+    itemText: '10. HTML'
+  },
+  {
+    id: 11,
+    itemText: '11. Operators With Math'
+  },
+  {
+    id: 12,
+    itemText: '12. Functions'
+  },
+  {
+    id: 13,
+    itemText: '13. Conditional Control Flow ("if")'
+  },
 
 ]
 

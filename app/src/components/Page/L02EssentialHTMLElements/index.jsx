@@ -1,5 +1,6 @@
 // Lesson02
 import React from 'react'
+import styles from './style.css'
 import { Button } from 'react-bootstrap'
 import Img from './../../elements/Img'
 import iImageImage from './img/image-image.png'
@@ -55,7 +56,7 @@ const Lesson02 = (props) => {
             </tr>
             <tr>
               <td><pre>&lt;h1&gt; to &lt;h6&gt;</pre></td>
-              <td><b>headings:</b> used to create headings from <span className="sudo-h1">h1</span> ... to ... <span className="sudo-h2">h6</span></td>
+              <td><b>headings:</b> used to create headings from <span className={styles.sudoH1}>h1</span> ... to ... <span className={styles.sudoH2}>h6</span></td>
             </tr>
             <tr>
               <td><pre>&lt;header&gt;</pre></td>
@@ -100,7 +101,7 @@ const Lesson02 = (props) => {
             <tr>
               <td><pre>&lt;video&gt;</pre></td>
               <td><b>video:</b> use to put a video on the page<br/>
-                <iframe className='video-tag' width='160' height='90' title='dont mine a night' src="https://www.youtube.com/embed/X_XGxzMrq04" frameBorder="0" allowFullScreen>
+                <iframe className='videoTag' width='160' height='90' title='dont mine a night' src="https://www.youtube.com/embed/X_XGxzMrq04" frameBorder="0" allowFullScreen>
                 </iframe>
               </td>
             </tr>
@@ -109,7 +110,7 @@ const Lesson02 = (props) => {
 
       </section>
       <footer>
-        About MDN by <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"><span className="mdn-contributors"></span>Mozilla Contributors</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA 2.5</a> .
+        About MDN by <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"><span className={styles.mdnContributors}></span>Mozilla Contributors</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA 2.5</a> .
       </footer>
 
     </div>

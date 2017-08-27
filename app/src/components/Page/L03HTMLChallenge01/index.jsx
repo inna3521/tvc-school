@@ -1,5 +1,6 @@
 // Lesson03
 import React from 'react'
+import styles from './style.css'
 import { Button } from 'react-bootstrap'
 import Img from './../../elements/Img'
 import Callout from './../../elements/Callout'
@@ -63,7 +64,7 @@ const Lesson03 = (props) => {
       </section>
       <section>
         <h2>Sample Page</h2>
-        <div className="sample-page bg-gray">
+        <div className={styles.bgGray}>
           <header>
             <h1>BIRDS</h1>
             <p className="lead">Flying Higher Because They Can</p>
@@ -100,7 +101,7 @@ const Lesson03 = (props) => {
 
 
 
-      </div>
+    </div>
       )
       };
 
