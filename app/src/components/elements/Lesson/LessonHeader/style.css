@@ -1,7 +1,8 @@
-/* LessonHeader */
-.title {
+/* Lesson*/
+.lessonTitle {
   font-size: 2.0em /* 36px */
 }
-.subTitle {
+
+.lessonSubTitle {
   font-size: 1.5em /* 24px */
 }

@@ -2,24 +2,24 @@
 import React from 'react'
 import classNames from 'classnames'
 import P from '../../elements/P'
-import './style.css'
+import styles from './style.css'
 
 const Callout = (props) => {
-  const styles = classNames(
+  const callOutStyle = classNames(
     {
-      'ke-callout': true,
-      'ke-callout-danger': props.type === 'danger',
-      'ke-callout-warning': props.type === 'warning',
-      'ke-callout-goal': props.type === 'goal',
-      'ke-callout-info': props.type === 'info',
-      'ke-callout-medium': true,
+      [styles.callout]: true,
+      [styles.calloutDanger]: props.type === 'danger',
+      [styles.calloutWarning]: props.type === 'warning',
+      [styles.calloutGoal]: props.type === 'goal',
+      [styles.calloutInfo]: props.type === 'info',
+      [styles.calloutMedium]: true,
     }
   )
-  let text = props.text
-  let newText
 
-  if (Array.isArray(text)) {
-    newText = text.map((t, index) => {
+
+  let renderText
+  if (Array.isArray(props.text)) {
+    renderText = props.text.map((t, index) => {
       return (
         <P
           key={index}
@@ -28,12 +28,14 @@ const Callout = (props) => {
       )
     })
   } else {
-    newText = text
+      renderText = <P
+        text={props.text}
+                   />
   }
   return (
-    <div className={styles}>
+    <div className={callOutStyle}>
       <h4>{props.title}</h4>
-      {newText}
+      {renderText}
     </div>
   )
 }

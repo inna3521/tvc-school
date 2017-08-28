@@ -1,28 +1,24 @@
-// LessonHeader
+// LessonSection
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import styles from './style.css'
-import LessonHeader from './LessonHeader'
-import LessonFooter from './LessonFooter'
+import LessonSectionHeader from './LessonSectionHeader'
 
 /*
     props
       > title
       > subTitle
  */
-const Lesson = (props) => {
+const LessonSection = (props) => {
   return (
     <div>
-      <LessonHeader
+      <LessonSectionHeader
         title={props.title}
         subTitle={props.subTitle}
       />
       {props.children}
-      <LessonFooter/>
     </div>
-
-
   )
 }
 
-export default Lesson
+export default LessonSection

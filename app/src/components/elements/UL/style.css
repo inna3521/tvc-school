@@ -1,0 +1,78 @@
+/* SiteTitle */
+
+/* Common styles for all types */
+.ke-callout-medium {
+  max-width: 70%;
+}
+.ke-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  border-left-color: #999999;
+}
+
+.ke-callout p:last-child {
+  margin-bottom: 0;
+}
+.ke-callout code {
+  border-radius: 3px;
+}
+
+/* Tighten up space between multiple callouts */
+.ke-callout + .ke-callout {
+  margin-top: -5px;
+}
+
+/* Variations */
+.ke-callout-danger {
+  border-left-color: #ce4844;
+  background-color: rgb(242, 222, 222);
+  color: black;
+}
+
+.ke-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.ke-callout h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.ke-callout-danger h4 {
+  color: #ce4844;
+}
+
+.ke-callout-warning {
+  border-left-color: #ffe202;
+  /*background-color: #fff6b3;*/
+  background-color: #fff9cc;
+  color: black;
+}
+.ke-callout-warning h4 {
+  color: #aa6708;
+}
+.ke-callout-warning h3 {
+  color: #aa6708;
+}
+.ke-callout-info {
+  border-left-color: #1b809e;
+  background-color: #d1e5eb;
+  color: black;
+}
+.ke-callout-info h4 {
+  color: #1b809e;
+}
+
+.ke-callout-goal {
+  border-left-color: #008000;
+  background-color: #cce5cc;
+  color: black;
+}
+
+.ke-callout-goal h4 {
+  color: #008000;
+}
