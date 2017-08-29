@@ -1,6 +1,8 @@
 // Lesson02
 import React from 'react'
 import styles from './style.css'
+import Lesson from '../../elements/Lesson'
+import LessonSection from '../../elements/LessonSection/index'
 import { Button } from 'react-bootstrap'
 import Img from './../../elements/Img'
 import iImageImage from './img/image-image.png'
@@ -9,19 +11,14 @@ import iImageImage from './img/image-image.png'
 const Lesson02 = (props) => {
   // console.log('html', lesson.html);
   return (
-    <div>
-      <Button
-        bsStyle='primary'
-        onClick={() => props.handleMenuItemClick()}
-      >
-        Back
-      </Button>
-      <hr/>
-      <header >
-        <p className='lesson-title'>Essential HTML Elements</p>
-        <p className='lesson-sub-title'>Most Frequenty Used Elements</p>
-      </header>
-      <section>
+    <Lesson
+      title='Essential HTML Elements'
+      sutTitle='Most Frequenty Used Elements'
+      handleMenuItemClick={props.handleMenuItemClick}
+    >
+
+
+      <LessonSection>
         <h2>List of Essential Tags</h2>
         <p>These are the most frequently used tags.</p>
         <table className="table">
@@ -108,12 +105,12 @@ const Lesson02 = (props) => {
           </tbody>
         </table>
 
-      </section>
+      </LessonSection>
       <footer>
         About MDN by <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"><span className={styles.mdnContributors}></span>Mozilla Contributors</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA 2.5</a> .
       </footer>
 
-    </div>
+    </Lesson>
   )
 };
 
