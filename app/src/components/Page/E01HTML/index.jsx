@@ -9,10 +9,12 @@ const Lesson01 = (props) => {
       <Lesson
         title='Getting started with HTML'
         subTitle='test'
+        handleMenuItemClick={props.handleMenuItemClick}
       >
         <LessonSection
           title='What is HTML'
           subTitle='HTML Sub-Title'
+
         >
           <ol>
             <li>What is HTML</li>

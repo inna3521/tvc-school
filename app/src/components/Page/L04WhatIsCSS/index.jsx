@@ -9,7 +9,6 @@ import iKeyValuePair02 from './img/key-value-pair.02.png'
 import iKeyValuePair from './img/key-value-pair.png'
 import Lesson from '../../elements/Lesson'
 import UL from '../../elements/UL'
-import Table from '../../elements/Table'
 
 const Lesson04 = (props) => {
   // console.log('html', lesson.html);
@@ -17,6 +16,7 @@ const Lesson04 = (props) => {
     <Lesson
       title='CSS'
       subTitle='What is CSS?'
+      handleMenuItemClick={props.handleMenuItemClick}
     >
       <p>CSS stands for <span className="large-cap">C</span>ascading<span className="large-cap"> S</span>tyle <span className="large-cap">S</span>heets.
         We will get to the meaning of the name in a later lession.

@@ -13,7 +13,7 @@ import AMP from '../../elements/AMP'
 const Lesson02 = (props) => {
   const rows = [
     [
-      <pre><LT/>img<GT/>;</pre>,
+      <pre language='html'><LT/>img<GT/>;</pre>,
       [<b>image:</b>, ' is used to put an image on the page.',
       <Img
         src={iImageImage}
@@ -47,7 +47,7 @@ const Lesson02 = (props) => {
     [
       <pre><LT/>video<GT/></pre>,
       [<b>video:</b>, ' use to put a video on the page', <br/>,
-      <iframe className='videoTag' width='160' height='90' title='dont mine a night' src="https://www.youtube.com/embed/X_XGxzMrq04" frameBorder="0" allowFullScreen>
+      <iframe className={styles.videoTag} width='160' height='90' title='dont mine a night' src="https://www.youtube.com/embed/X_XGxzMrq04" frameBorder="0" allowFullScreen>
       </iframe>]
     ]
   ]

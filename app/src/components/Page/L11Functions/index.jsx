@@ -1,25 +1,18 @@
 // L10JSOperatorsWithMath
 import React from 'react'
 import './style.css'
-import { Button } from 'react-bootstrap'
 import Pre from './../../elements/Pre'
 import Img from '../../elements/Img/index'
 import iFunctionSyntax from './img/function-syntax.png'
 import iParameters from './img/parameters.png'
+import Lesson from '../../elements/Lesson'
 
 const L11Functions = (props) => {
   return (
-    <div>
-      <Button
-        bsStyle='primary'
-        onClick={() => props.handleMenuItemClick()}
-      >
-        Back
-      </Button>
-      <hr/>
-      {/* <Header
-        title='Functions'
-      /> */}
+    <Lesson
+      title='Functions'
+      handleMenuItemClick={props.handleMenuItemClick}
+    >
       <h1>What is a function?</h1>
       <p>A function is a grouping of reusable code. For example: Say you needed to do a bunch things many times in your application such as</p>
       <ol>
@@ -111,7 +104,7 @@ const L11Functions = (props) => {
         ]}
         language='js'
       />
-    </div>
+    </Lesson>
   )
 };
 

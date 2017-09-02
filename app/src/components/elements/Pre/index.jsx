@@ -1,21 +1,23 @@
 // Pre
 import React from 'react';
 import classNames from 'classnames'
+import styles from './style.css'
 
 // Takes an array of strings
 const Code = (props) => {
-  const styles = classNames(
+  const preStyles = classNames(
     {
     'language-javascript': props.language === 'js',
     'language-css': props.language === 'css',
     'language-html': props.language === 'html',
     'line-numbers': true,
+    
     }
   )
   let code = props.code
   let newCode = code.join('\n')
   return (
-    <pre className={styles}>
+    <pre className={preStyles}>
       <code>
         {`${newCode}`}
       </code>

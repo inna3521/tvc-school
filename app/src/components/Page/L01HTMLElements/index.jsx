@@ -19,7 +19,7 @@ const Lesson01 = (props) => {
       handleMenuItemClick={props.handleMenuItemClick}
     >
 
-
+      
       <LessonSection
         title='What are HTML Elements (a.k.a tags)'
         subTitle='Section Sub-Title'

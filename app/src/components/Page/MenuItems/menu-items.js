@@ -20,10 +20,6 @@ const menuItems = [
     itemText: '05. CSS Challenge 1'
   },
   {
-    id: 6,
-    itemText: '06. JavaScript, What is it?'
-  },
-  {
     id: 7,
     itemText: '07. Variables'
   },

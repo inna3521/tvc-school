@@ -1,7 +1,23 @@
 // _lesson
+
+
+
+
+
+/*
+      This lesson is not complete
+ */
+
+
+
+
+
+
+
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import Pre from './../../elements/Pre'
+// import Lesson from '../../elements/Lesson'
 
 const L06JSWhatIsIt = (props) => {
   return (

@@ -1,7 +1,6 @@
 // Lesson03
 import React from 'react'
 import styles from './style.css'
-import { Button } from 'react-bootstrap'
 import Img from './../../elements/Img'
 import Callout from './../../elements/Callout'
 import iKingFisherBird from './img/kingfisher-bird.jpg'
@@ -17,6 +16,7 @@ const Lesson03 = (props) => {
     <Lesson
       title='HTML Challenge 1'
       subTitle='Make a Page with HTML Only'
+      handleMenuItemClick={props.handleMenuItemClick}
     >
       <LessonSection>
         <h2>Getting Ready</h2>

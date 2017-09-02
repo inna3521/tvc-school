@@ -1,6 +1,5 @@
 // _lesson
 import React from 'react'
-import { Button } from 'react-bootstrap'
 import Img from './../../elements/Img'
 import iSearchForTvcSchool from './img/iSearchForTvcSchool.png'
 import iClickTvcSchool from './img/iClickTvcSchool.png'
@@ -24,6 +23,7 @@ const L05CSSChallenge01 = (props) => {
   return (
     <Lesson
       title='How to Start a New Project'
+      handleMenuItemClick={props.handleMenuItemClick}
     >
 
       <h2>Copy the Challenge Project on GitHub</h2>

@@ -1,25 +1,19 @@
 // _lesson
 import React from 'react'
-import { Button } from 'react-bootstrap'
 import Pre from './../../elements/Pre'
+import Lesson from '../../elements/Lesson'
+import UL from '../../elements/UL'
 
 const Lesson04 = (props) => {
   return (
-    <div>
-      <Button
-        bsStyle='primary'
-        onClick={() => props.handleMenuItemClick()}
-      >
-        Back
-      </Button>
-      <hr/>
-      {/* <Header
-        title='Variables'
-        subTitle='An Essiential Ingredient'
-      /> */}
+    <Lesson
+      title='Variables'
+      subTitle='An Essential Ingredient'
+      handleMenuItemClick={props.handleMenuItemClick}
+    >
 
       <p>Without varables programming languages would not be very useful and all of the apps that you use today would not exist. Variables are a place to store data for use later. The data stored in a variable can be changed.</p>
-      <p>In order to use a veriable you must create it. In programming we call this 'declaring' the variable'. Here is how you do it.</p>
+      <p>In order to use a veriable you must create it. In programming this is called 'declaring' the variable'. Here is how you do it.</p>
       <Pre
         code={[
           'let x'
@@ -41,16 +35,17 @@ const Lesson04 = (props) => {
         language='js'
       />
       <p>So that is how you create variables and assign data to them. Here are a few rules and guidelines for naming variables in JavaScript</p>
-      <ul>
-        <li>Variables names can include the letters a - z, A - Z, numbers 0 - 9, an underscore ( _ ) or a dollar sign ($).</li>
-        <li>The first character in the variable must be a letter, underscore or dollar sign. It cannnot be a number.</li>
-        <li>Any character after the first one can be a number</li>
-        <li>JavaScript varable names are usually 'camel case'. In camel case, words are combined without spaces, the first word is lower case and all other words start with a capital. For example 'camelCase' or 'someLongVariableName'</li>
-        <li>Variable names should be descriptive. For examle, a good variable name for a person's first name is 'firstName'</li>
-      </ul>
+      <UL
+        listItems={[
+          'Variables names can include the letters a - z, A - Z, numbers 0 - 9, an underscore ( _ ) or a dollar sign ($).',
+          'The first character in the variable must be a letter, underscore or dollar sign. It cannnot be a number.',
+          'Any character after the first one can be a number',
+          "JavaScript varable names are usually 'camel case'. In camel case, words are combined without spaces, the first word is lower case and all other words start with a capital. For example 'camelCase' or 'someLongVariableName'",
+          "Variable names should be descriptive. For examle, a good variable name for a person's first name is 'firstName'"
+        ]}
+      />
 
-
-    </div>
+    </Lesson>
   )
 };
 
