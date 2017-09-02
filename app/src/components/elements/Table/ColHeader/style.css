@@ -1,0 +1,7 @@
+.colHeader {
+  background-color: rgba(20, 20, 20, 0.4);
+  border: 0.5px solid rgba(128, 128, 128, 0.1);
+  font-size: 1.2em;
+  padding-left: 5px;
+  padding-right: 5px;
+}

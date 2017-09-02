@@ -1,7 +1,6 @@
 // LessonSection
 import React from 'react'
-import { Button } from 'react-bootstrap'
-import styles from './style.css'
+// import styles from './style.css'
 import LessonSectionHeader from './LessonSectionHeader'
 
 /*

@@ -1,7 +1,6 @@
 // LessonFooter
 import React from 'react'
-import { Button } from 'react-bootstrap'
-import styles from './style.css'
+// import styles from './style.css'
 
 /*
     props
@@ -11,7 +10,7 @@ import styles from './style.css'
 const Lesson = (props) => {
   return (
     <div>
-      <h4>Hellow from LessonFooter</h4>
+      <h4>Hello from LessonFooter</h4>
     </div>
   )
 }

@@ -1,11 +1,9 @@
 // E01HTML
 import React from 'react'
 import Lesson from '../../elements/Lesson/index'
-import { Button } from 'react-bootstrap'
 import LessonSection from '../../elements/LessonSection/index'
 
 const Lesson01 = (props) => {
-  // console.log('html', lesson.html);
   return (
     <div>
       <Lesson
@@ -16,7 +14,6 @@ const Lesson01 = (props) => {
           title='What is HTML'
           subTitle='HTML Sub-Title'
         >
-          <h2></h2>
           <ol>
             <li>What is HTML</li>
             <li>Anatomy of an HTML element</li>

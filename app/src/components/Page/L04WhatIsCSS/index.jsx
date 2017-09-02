@@ -1,51 +1,47 @@
 // Lesson04
 import React from 'react'
 import styles from './style.css'
-import { Button, Table } from 'react-bootstrap'
 import Img from './../../elements/Img'
 import Pre from './../../elements/Pre'
 import iCSSSyntax02 from './img/css-syntax.02.png'
 import iCSSSyntax03 from './img/css-syntax.03.png'
 import iKeyValuePair02 from './img/key-value-pair.02.png'
 import iKeyValuePair from './img/key-value-pair.png'
+import Lesson from '../../elements/Lesson'
+import UL from '../../elements/UL'
+import Table from '../../elements/Table'
 
 const Lesson04 = (props) => {
   // console.log('html', lesson.html);
   return (
-    <div>
-      <Button
-        bsStyle='primary'
-        onClick={() => props.handleMenuItemClick()}
-      >
-        Back
-      </Button>
-      <hr/>
-      <header>
-        <p className='lesson-title'>CSS</p>
-        <p className='lesson-sub-title'>What is CSS?</p>
-      </header>
-
+    <Lesson
+      title='CSS'
+      subTitle='What is CSS?'
+    >
       <p>CSS stands for <span className="large-cap">C</span>ascading<span className="large-cap"> S</span>tyle <span className="large-cap">S</span>heets.
         We will get to the meaning of the name in a later lession.
       </p>
       <p>
         While HTM defines the structure and content of your webpage, CSS determines the appearance and layout.
-        <ul>
-          <li>Appearance is called 'style' and includes things such as font color,
-          bold or non-bold and backgroun image or color.</li>
-          <li>Layout means where things appear on the page and their alignment.
-            With CSS you can center a heading or put an image on the right
-          side of the page or put two images side-b-side.</li>
-        </ul>
+        <UL
+          listItems={[
+            "Appearance is called 'style' and includes things such as font color, bold or non-bold and backgroud image or color",
+            'Layout means where things appear on the page and their alignment.',
+            'With CSS you can center a heading or put an image on the right side of the page or put two images side-by-side.'
+          ]}
+        />
       </p>
       <h2>Key / Value Pairs</h2>
       <p>To effectively work with CSS you need to know what key / value pairs are.
         Key / value pairs are everwhere in programming, not just in CSS. Here are
       couple of examples:</p>
-      <ul>
-        <li>name : joe</li>
-        <li>size : large</li>
-      </ul>
+      <UL
+        listItems={[
+          'name : joe',
+          'size : large'
+        ]}
+
+      />
       <Img
         src={iKeyValuePair}
       />
@@ -75,12 +71,14 @@ const Lesson04 = (props) => {
       <p>Up to now we have use the term 'style' and that is a commonly used term.
         However, to really understand CSS we need some additional vocabulary. We
       will learn the following terms:</p>
-      <ul>
-        <li>selector</li>
-        <li>element selector</li>
-        <li>id selector</li>
-        <li>class selector</li>
-      </ul>
+      <UL
+        listItems={[
+          'selector',
+          'element selector',
+          'id selector',
+          'class selector'
+        ]}
+      />
       <h3>Selector</h3>
       <p>Below is a typical CSS selector. It is called a 'selector' because it will select parts of the web page. In this case, it will select all &lt;p&gt; (paragraph) elements. Read on to learn what that means.</p>
       <Pre
@@ -104,11 +102,13 @@ const Lesson04 = (props) => {
         language='css'
       />
       <p>This selector will ...</p>
-      <ul>
-        <li><em>Select</em> all &lt;p&gt; elements (paragraphs)</li>
-        <li>Make the font size of all &lt;p&gt; elements 12px</li>
-        <li>It will make a fonts in all &lt;p&gt; elements green</li>
-      </ul>
+      <UL
+        listItems={[
+          '<em>Select</em> all &lt;p&gt; elements (paragraphs)',
+          'Make the font size of all &lt;p&gt; elements 12px',
+          'It will make a fonts in all &lt;p&gt; elements green'
+        ]}
+      />
       <h3>ID Selector</h3>
       <p>Remember from the HTML lessons that an HTML element can have an attribute.
         A &lt;div&gt; with a <em>id</em> attribute looks like this:</p>
@@ -150,87 +150,89 @@ const Lesson04 = (props) => {
         language='css'
       />
       <h2>Summary</h2>
-      <Table className='table-striped'>
-        <tr>
-          <th>Selector Type</th>
-          <th>Starts<br/>With</th>
-          <th>This selector</th>
-          <th>Will select this</th>
-        </tr>
-        <tr className='background-highlight-white'>
-          <td>Element Selector</td>
-          <td className={styles.colStartsWith}>nothing</td>
-          <td>
-            <Pre
-              code={[
-                'p {',
-                '  font-size: 12px;',
-                '}'
-              ]}
-              language='css'
-            />
-          </td>
-          <td>
-            <Pre
-              code={[
-                '<p>some text here</p>',
-              ]}
-              language='html'
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>ID Selector</td>
-          <td className={styles.colStartsWith}>#</td>
-          <td>
-            <Pre
-              code={[
-                '#about {',
-                '  font-size: 24px;',
-                '}'
-              ]}
-              language='css'
-            />
-          </td>
-          <td>
-            <Pre
-              code={[
-                '<div id="about">',
-                '',
-                '</div>'
-              ]}
-              language='html'
-            />
-          </td>
-        </tr>
-        <tr className='background-highlight-white'>
-          <td>Class Selector</td>
-          <td className={styles.colStartsWith}>.</td>
-          <td>
-            <Pre
-              code={[
-                '.aside-style {',
-                '  font-size: 14px',
-                '}',
-              ]}
-              language='css'
-            />
-          </td>
-          <td>
-            <Pre
-              code={[
-                '<p class="aside-style">paragraph 1</p>',
-                '<p>paragraph 2</p>',
-                '<p class="aside-style">paragraph 3</p>',
-              ]}
-              language='html'
-            />
-          </td>
-        </tr>
-      </Table>
+      <table>
+        <tbody>
+          <tr>
+            <th>Selector Type</th>
+            <th>Starts<br/>With</th>
+            <th>This selector</th>
+            <th>Will select this</th>
+          </tr>
+          <tr className='background-highlight-white'>
+            <td>Element Selector</td>
+            <td className={styles.colStartsWith}>nothing</td>
+            <td>
+              <Pre
+                code={[
+                  'p {',
+                  '  font-size: 12px;',
+                  '}'
+                ]}
+                language='css'
+              />
+            </td>
+            <td>
+              <Pre
+                code={[
+                  '<p>some text here</p>',
+                ]}
+                language='html'
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>ID Selector</td>
+            <td className={styles.colStartsWith}>#</td>
+            <td>
+              <Pre
+                code={[
+                  '#about {',
+                  '  font-size: 24px;',
+                  '}'
+                ]}
+                language='css'
+              />
+            </td>
+            <td>
+              <Pre
+                code={[
+                  '<div id="about">',
+                  '',
+                  '</div>'
+                ]}
+                language='html'
+              />
+            </td>
+          </tr>
+          <tr className='background-highlight-white'>
+            <td>Class Selector</td>
+            <td className={styles.colStartsWith}>.</td>
+            <td>
+              <Pre
+                code={[
+                  '.aside-style {',
+                  '  font-size: 14px',
+                  '}',
+                ]}
+                language='css'
+              />
+            </td>
+            <td>
+              <Pre
+                code={[
+                  '<p class="aside-style">paragraph 1</p>',
+                  '<p>paragraph 2</p>',
+                  '<p class="aside-style">paragraph 3</p>',
+                ]}
+                language='html'
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-    </div>
+    </Lesson>
       )
       };
 
-export default Lesson04;
+      export default Lesson04;

@@ -10,7 +10,7 @@ import L03HTMLChallenge01 from './L03HTMLChallenge01'
 import L04WhatIsCSS from './L04WhatIsCSS'
 import L05CSSChallenge01 from './L05CSSChallenge01'
 import Footer from './Footer'
-import styles from './style.css'
+// import styles from './style.css'
 import L06JSWhatIsIt from './L06JSWhatIsIt'
 import L07JSVariables from './L07JSVariables'
 import L08JSArrays from './L08JSArrays'
@@ -31,7 +31,7 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
 
   let currentComp
   // ku.log('Page.currentComponentId', currentComponentId, 'green')
-  // currentComponentId = 2
+  currentComponentId = 5
   switch (currentComponentId) {
     case 0:
       currentComp = <MenuItems

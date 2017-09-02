@@ -1,9 +1,8 @@
 // L10JSOperatorsWithMath
 import React from 'react'
 import './style.css'
-import { Button, Table } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import Pre from './../../elements/Pre'
-import Code from './../../elements/Code'
 import Img from '../../elements/Img/index'
 import iFunctionSyntax from './img/function-syntax.png'
 import iParameters from './img/parameters.png'

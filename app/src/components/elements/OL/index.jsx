@@ -15,9 +15,9 @@ const UL = (props) => {
   })
 
   return (
-    <ul>
+    <ol>
       {items}
-    </ul>
+    </ol>
   )
 }
 
