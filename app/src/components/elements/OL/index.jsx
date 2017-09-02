@@ -2,15 +2,16 @@
 import React from 'react'
 // import styles from './style.css'
 
-const UL = (props) => {
+const OL = (props) => {
 
   let items = props.listItems.map((t, index) => {
-    let itemText = {__html: t}
+    // let itemText = {__html: t}
     return (
-      <li
-        key={index}
-        dangerouslySetInnerHTML={itemText}
-      />
+      // <li
+      //   key={index}
+      //   dangerouslySetInnerHTML={itemText}
+      // />
+      <li key={index}>{t}</li>
     )
   })
 
@@ -21,4 +22,4 @@ const UL = (props) => {
   )
 }
 
-export default UL;
+export default OL;

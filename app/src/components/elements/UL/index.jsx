@@ -5,12 +5,13 @@ import React from 'react'
 const UL = (props) => {
 
   let items = props.listItems.map((t, index) => {
-    let itemText = {__html: t}
+    // let itemText = {__html: t}
     return (
-      <li
-        key={index}
-        dangerouslySetInnerHTML={itemText}
-      />
+      // <li
+      //   key={index}
+      //   dangerouslySetInnerHTML={itemText}
+      // />
+      <li key={index}>{t}</li>
     )
   })
 
