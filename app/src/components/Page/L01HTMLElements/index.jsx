@@ -9,7 +9,6 @@ import iHTMLTagAnatomy from './img/html-tag-anatomy.png'
 import iHTMLTagAttributes from './img/html-tag-attributes.png'
 import iSearchResults from './img/search-results.png'
 
-
 const Lesson01 = (props) => {
   // console.log('html', lesson.html);
   return (
@@ -18,8 +17,6 @@ const Lesson01 = (props) => {
       subTitle='What are They?'
       handleMenuItemClick={props.handleMenuItemClick}
     >
-
-      
       <LessonSection
         title='What are HTML Elements (a.k.a tags)'
         subTitle='Section Sub-Title'

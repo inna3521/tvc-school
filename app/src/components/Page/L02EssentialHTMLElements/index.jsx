@@ -9,11 +9,17 @@ import Table from '../../elements/Table'
 import LT from '../../elements/LT'
 import GT from '../../elements/GT'
 import AMP from '../../elements/AMP'
+import Pre from '../../elements/Pre'
 
 const Lesson02 = (props) => {
   const rows = [
     [
-      <pre language='html'><LT/>img<GT/>;</pre>,
+      <Pre
+        code={[
+          '<img src=>'
+        ]}
+        language='html'
+      />,
       [<b>image:</b>, ' is used to put an image on the page.',
       <Img
         src={iImageImage}
@@ -73,6 +79,19 @@ const Lesson02 = (props) => {
 
           rowData={rows}
         />
+        <Pre code={['<img>']} language='html'/>
+        <table>
+          <tbody>
+            <tr>
+              <th>Elements (aka tags)</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><Pre code={['<img>']} language='html'/></td>
+              <td>Descriptions for img</td>
+            </tr>
+          </tbody>
+        </table>
 
       </LessonSection>
       <footer>
