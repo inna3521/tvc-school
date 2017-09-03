@@ -1,7 +1,10 @@
-/* LessonHeader */
-.title {
-  font-size: 2.0em /* 36px */
+/* TD */
+
+
+.centerHorizontal {
+  text-align: center !important;
 }
-.subTitle {
-  font-size: 1.5em /* 24px */
+
+.centerVertical {
+  vertical-align: middle !important;
 }

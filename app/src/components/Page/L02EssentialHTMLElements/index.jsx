@@ -94,9 +94,7 @@ const Lesson02 = (props) => {
         </table>
 
       </LessonSection>
-      <footer>
-        About MDN by <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"><span className={styles.mdnContributors}></span>Mozilla Contributors</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA 2.5</a> .
-      </footer>
+
 
     </Lesson>
       )

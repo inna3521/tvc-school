@@ -1,5 +1,8 @@
 /* Code */
 
-.gray-code {
+.grayCode {
   color: rgb(100, 100, 100) !important;
+}
+.fontSize {
+  font-size: 1.1em;
 }

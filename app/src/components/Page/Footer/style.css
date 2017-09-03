@@ -5,6 +5,16 @@
 	padding-bottom: 15px;
 }*/
 
+.resourcesContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.resources {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
 
 
 .footerContainer {

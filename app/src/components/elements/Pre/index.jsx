@@ -8,9 +8,9 @@ const Code = (props) => {
 
   const preStyles = classNames(
     {
-    'language-javascript': props.language === 'js',
-    'language-css': props.language === 'css',
-    'language-html': props.language === 'html',
+    'language-javascript': props.js,
+    'language-css': props.css,
+    'language-html': props.html,
     'line-numbers': props.lineNumbers
 
     }

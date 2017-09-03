@@ -3,21 +3,13 @@
 .imgCiteRow {
   margin-top: 10px;
 }
-.imgWell {
-  padding: 0;
-  background-color: transparent;
-  background-image: none;
-  border: none;
-}
-.imgRow {
-  margin: auto;
-}
 
 /*
     Sizes
  */
 .imgSizeSmall {
-  max-width: 45%;
+  /*max-width: 30%;*/
+  max-width: 200px;
 }
 .imgSizeMedium {
   max-width: 70%;
@@ -29,6 +21,9 @@
   max-width: 50px;
 }
 .imgInline {
-  display: flex;
-  flex-flow: row nowrap;
+  display: inline;
+}
+.returnedNothing {
+  font-weight: bold;
+  color: red;
 }
