@@ -33,7 +33,7 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
 
   let currentComp
   // ku.log('Page.currentComponentId', currentComponentId, 'green')
-  currentComponentId = 14
+  // currentComponentId = 14
   switch (currentComponentId) {
     case 0:
       currentComp = <MenuItems
