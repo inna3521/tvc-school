@@ -1,12 +1,5 @@
 /* Img */
 
-.imgCiteRow {
-  margin-top: 10px;
-}
-
-/*
-    Sizes
- */
 .imgSizeSmall {
   /*max-width: 30%;*/
   max-width: 200px;
@@ -17,13 +10,8 @@
 .imgSizeLarge {
   max-width: 100%;
 }
-.imgSizeInline {
-  max-width: 50px;
-}
-.imgInline {
-  display: inline;
-}
-.returnedNothing {
-  font-weight: bold;
-  color: red;
+.responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }

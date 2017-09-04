@@ -1,34 +1,20 @@
 /* Footer */
 
-/*.footer {
-  padding-top: 15px;
-	padding-bottom: 15px;
-}*/
-
-.resourcesContainer {
+.footerContainer {
+  align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
-}
-.resources {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-}
-
-
-.footerContainer {
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-}
-
-.fa {
-	padding: 5px;
-	color: white;
+  margin-top: 50px;
 }
 
 .faBtns {
-	display: flex;
-	flex-direction: row;
+  margin: 0 0 10px 0;
+  font-size: 1.4em;
+}
+
+.mdnLicense {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 30px;
 }
