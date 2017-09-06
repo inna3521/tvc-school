@@ -21,7 +21,7 @@ import L11Functions from './L11Functions'
 import L12ControlFlow from './L12ControlFlow'
 // import * as ku from '../../lib/ke-utils'
 import Pre from '../elements/Pre'
-import L00 from './L00'
+import Code from '../elements/Code'
 
 const Page = ({ currentComponentId, updateCurrentComponentId }) => {
   const handleMenuItemClick = (val) => {
@@ -105,22 +105,17 @@ const Page = ({ currentComponentId, updateCurrentComponentId }) => {
         handleMenuItemClick={handleMenuItemClick}
                     />
         break;
-    case 14:
-      currentComp = <L00
-        handleMenuItemClick={handleMenuItemClick}
-                    />
-        break;
     default:
       currentComp = 'default'
       console.log('error: we got to default case')
   }
   return (
     <div>
-      <Pre
+      <Code
         code={[
           '<img>'
         ]}
-        language='html'
+        html
       />
       <header>
         <h1 className="green-text">Tri-Valley Coders - SCHOOL</h1>
