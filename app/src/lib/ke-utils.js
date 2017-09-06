@@ -44,8 +44,6 @@ const getStyle = (styleName) => {
     default:
       color = '';
   }
-
-  // console.log('color', color);
   return color;
 }
 

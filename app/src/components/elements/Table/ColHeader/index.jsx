@@ -6,7 +6,6 @@ const ColHeader = (props) => {
   colLabels = props.colLabels.map((l, index) => (
     <th key={index} className={styles.colHeader}>{l}</th>
   ))
-  console.log(colLabels)
   return (
     <tr>
       {colLabels}

@@ -1,21 +1,20 @@
-// Lesson
+// LessonHeader
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import styles from './style.css'
-
+import { Link } from 'react-router-dom'
 /*
     props
       > title
       > subTitle
  */
-const Lesson = (props) => {
+const LessonHeader = (props) => {
   return (
     <div>
-      <Button
-        bsStyle='primary'
-        onClick={() => props.handleMenuItemClick()}
-      >
-        Back
+      <Button>
+        <Link to='/'>
+          Back
+        </Link>
       </Button>
       <hr/>
       <div className={styles.lessonTitle}>{props.title}</div>
@@ -26,4 +25,4 @@ const Lesson = (props) => {
   )
 }
 
-export default Lesson
+export default LessonHeader

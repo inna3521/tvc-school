@@ -10,7 +10,6 @@ import iHTMLTagAttributes from './img/html-tag-attributes.png'
 import iSearchResults from './img/search-results.png'
 
 const Lesson01 = (props) => {
-  // console.log('html', lesson.html);
   return (
     <Lesson
       title='HTML Elements'

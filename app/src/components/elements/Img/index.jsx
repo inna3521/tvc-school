@@ -4,13 +4,10 @@ import classNames from 'classnames'
 import styles from './style.css'
 
 const Img = (props) => {
-  console.log('source', props.src)
-  console.log('inline', props.inline)
-  console.log('small', props.small)
+
   let cite = props.cite
     ? <cite>{`source: ${props.cite}`}</cite>
       : false
-  console.log('maxWidth', props.maxWidth)
   let mTop = 0
   let mRight = 0
   let mBottom = 0

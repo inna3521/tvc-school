@@ -3,6 +3,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import * as actionCreators from '../../../store/actions'
 import * as selectors from '../../../store/selectors'
+import { Link } from 'react-router-dom'
 import menuItems from './menu-items'
 import MenuItem from './MenuItem'
 // import * as ku from '../../../lib/ke-utils'
@@ -12,12 +13,12 @@ const MenuItems = (props) => {
 
 
     const items = menuItems.map((item) => (
-      <MenuItem
+      <li><Link
         key={item.id}
-        id={item.id}
-        itemText={item.itemText}
-        handleMenuItemClick={props.handleMenuItemClick}
-      />
+        to={item.to}
+      >
+        {item.name}
+      </Link></li>
     ))
   // ku.log('items', items, 'blue')
   return (

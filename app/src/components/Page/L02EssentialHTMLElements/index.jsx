@@ -1,6 +1,6 @@
 // L01HTMLElements
 import React from 'react'
-// import Lesson from '../../elements/Lesson'
+import Lesson from '../../elements/Lesson'
 // import LessonSection from '../../elements/LessonSection/index'
 // import UL from '../../elements/UL'
 // import Img from './../../elements/Img'
@@ -15,13 +15,13 @@ import React from 'react'
 import Code from '../../elements/Code'
 
 
-const L01EssentialHTMLElements = (props) => {
+const L02EssentialHTMLElements = (props) => {
   return (
-    <div>
+    <Lesson>
       <Code code={'<a>'} html />
       <Code code={['<img>']} html
       />
-    </div>
+    </Lesson>
       // <Lesson
         //   title='Essential HTML Elements'
         //   subTitle='Most Frequently Used Elements'
@@ -136,4 +136,4 @@ const L01EssentialHTMLElements = (props) => {
   )
 };
 
-export default L01EssentialHTMLElements;
+export default L02EssentialHTMLElements;

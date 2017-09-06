@@ -11,7 +11,6 @@ import Lesson from '../../elements/Lesson'
 import UL from '../../elements/UL'
 
 const Lesson04 = (props) => {
-  // console.log('html', lesson.html);
   return (
     <Lesson
       title='CSS'

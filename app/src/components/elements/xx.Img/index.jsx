@@ -4,9 +4,7 @@ import classNames from 'classnames'
 import styles from './style.css'
 
 const Img = (props) => {
-  console.log('source', props.src)
-  console.log('inline', props.inline)
-  console.log('small', props.small)
+
   let cite
   cite = props.cite
     ? <cite>{`source: ${props.cite}`}</cite>
