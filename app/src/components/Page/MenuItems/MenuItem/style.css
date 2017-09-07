@@ -1,8 +1,17 @@
 /* SiteTitle */
 
-.menu-item-text {
+.itemText {
   font-size: 1.3em;
+  color: white;
 }
+a {
+  font-size: 1.3em;
+  color: white;
+}
+li {
+  list-style: none;
+}
+
 
 /*
     Media Queries

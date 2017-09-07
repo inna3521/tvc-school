@@ -1,14 +1,10 @@
 // MenuItem
 import React from 'react';
-import './style.css';
+import styles from './style.css';
 
 const MenuItem = (props) => {
   return (
-    <li
-      onClick={() => props.handleMenuItemClick(props.id)}
-    >
-      <span className='menu-item-text'>{props.itemText}</span>
-    </li>
+    <li className={styles.itemText}>{props.itemText}</li>
   )
 }
 

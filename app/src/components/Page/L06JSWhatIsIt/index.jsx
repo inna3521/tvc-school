@@ -17,22 +17,14 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import Pre from './../../elements/Pre'
-// import Lesson from '../../elements/Lesson'
+import Lesson from '../../elements/Lesson'
 
 const L06JSWhatIsIt = (props) => {
   return (
-    <div>
-      <Button
-        bsStyle='primary'
-        onClick={() => props.handleMenuItemClick()}
-      >
-        Back
-      </Button>
-      <hr/>
-      {/* <Header
-        title='JavaScript, What is it?'
-        subTitle='What can you do with it?'
-      /> */}
+    <Lesson
+      title='JavaScript, What is it?'
+      subTitle='What can you do with it?'
+    >
 
       <p>To understand what JavaScript is what what it is used for you need to know three key concepts, <b>Static</b>, <b>dynamic</b> & <b>interactive</b> content. The exact definition of each type of content differs depending on who you are speaking with. Below is one useful way of defining these three key concepts.</p>
       <p><span className='keyword'>Content</span> is anything that appears on the page such as pictures and text.</p>
@@ -92,7 +84,7 @@ const L06JSWhatIsIt = (props) => {
         <li>Code alert message</li>
       </ol>
 
-    </div>
+    </Lesson>
   )
 };
 

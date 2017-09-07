@@ -11,11 +11,13 @@ import { Link } from 'react-router-dom'
 const LessonHeader = (props) => {
   return (
     <div>
-      <Button>
-        <Link to='/'>
+
+      <Link to='/'>
+        <Button>
           Back
-        </Link>
-      </Button>
+        </Button>
+      </Link>
+
       <hr/>
       <div className={styles.lessonTitle}>{props.title}</div>
       <div className={styles.lessonSubTitle}>{props.subTitle}</div>

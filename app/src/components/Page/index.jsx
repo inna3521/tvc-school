@@ -24,6 +24,8 @@ import L12ControlFlow from './L12ControlFlow'
 import Pre from '../elements/Pre'
 import Code from '../elements/Code'
 
+
+
 const Page = () => (
 
   <Router>
@@ -35,9 +37,18 @@ const Page = () => (
       <Route path='/01-html-elements' component={L01HTMLElements} />
       <Route path='/02-essential-html-elements' component={L02EssentialHTMLElements} />
       <Route path='/03-html-challenge-1' component={L03HTMLChallenge01} />
+      <Route path='/04-css-what-is-it' component={L04WhatIsCSS} />
+      <Route path='/05-css-challenge-1' component={L05CSSChallenge01} />
+      <Route path='/06-javascript-what-is-it' component={L06JSWhatIsIt} />
+      <Route path='/07-javascript-variables' component={L07JSVariables} />
+      <Route path='/08-javascript-arrays' component={L08JSArrays} />
+      <Route path='/09-mozilla-thimble' component={L09MozillaThimble} />
+      <Route path='/10-javascript-operators-with-math' component={L10JSOperatorsWithMath} />
+      <Route path='/11-javascript-functions' component={L11Functions} />
+      <Route path='/12-conditional-control-flow-if' component={L12ControlFlow} />
       <Route exact path='/' render={() => (
-          <MenuItems />
-        )} />
+        <MenuItems />
+      )} />
 
       <Footer />
     </div>
