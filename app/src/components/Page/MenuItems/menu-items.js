@@ -59,7 +59,11 @@ const menuItems = [
     to: '12-conditional-control-flow-if',
     name: '12. Conditional Control flow (if)',
   },
-
+  {
+    id: 12,
+    to: '13-moving-image-intro',
+    name: '13. Moving Image Project - Introduction',
+  },
 
 ]
 

@@ -20,6 +20,7 @@ import E01HTML from './E01HTML'
 import L10JSOperatorsWithMath from './L10JSOperatorsWithMath'
 import L11Functions from './L11Functions'
 import L12ControlFlow from './L12ControlFlow'
+import L13MovingImageIntro from './L13MovingImageIntro'
 // import * as ku from '../../lib/ke-utils'
 import Pre from '../elements/Pre'
 import Code from '../elements/Code'
@@ -46,6 +47,7 @@ const Page = () => (
       <Route path='/10-javascript-operators-with-math' component={L10JSOperatorsWithMath} />
       <Route path='/11-javascript-functions' component={L11Functions} />
       <Route path='/12-conditional-control-flow-if' component={L12ControlFlow} />
+      <Route path='/13-moving-image-intro' component={L13MovingImageIntro} />
       <Route exact path='/' render={() => (
         <MenuItems />
       )} />

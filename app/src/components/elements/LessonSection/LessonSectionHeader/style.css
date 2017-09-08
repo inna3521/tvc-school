@@ -1,1 +1,13 @@
 /* LessonSectionHeader */
+
+.lessonSection {
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1.7em
+}
+
+.subTitle {
+  font-size: 1.2em
+}
