@@ -8,6 +8,8 @@ import iParameters from './img/parameters.png'
 import Lesson from '../../elements/Lesson'
 import LessonSection from '../../elements/LessonSection'
 import Callout from '../../elements/Callout'
+import OL from '../../elements/OL'
+import UL from '../../elements/UL'
 
 const L11Functions = (props) => {
   return (
@@ -17,15 +19,17 @@ const L11Functions = (props) => {
     >
       <LessonSection
         title='What is a fnction?'
-        >
+      >
         <h1>What is a function?</h1>
         <p>A function is a grouping of reusable code. For example: Say you needed to do a bunch things many times in your application such as</p>
-        <ol>
-          <li>Create a file</li>
-          <li>Open the file</li>
-          <li>Write text to the file</li>
-          <li>Print the file</li>
-        </ol>
+        <OL
+          listItems={[
+            'Create a file',
+            'Open the file',
+            'Write text to the file',
+            'Print the file',
+          ]}
+        />
         <p>Doing that in pseudo code would look lik this</p>
         <Pre
           code={[
@@ -57,9 +61,9 @@ const L11Functions = (props) => {
             '}',
           ]}
           language='js'
-        />
-        <p>You can tell this function what to say with a little variation</p>
-        <Pre
+          />
+          <p>You can tell this function what to say with a little variation</p>
+          <Pre
           code={[
             "saySomething('hello class')",
             "",
@@ -72,35 +76,41 @@ const L11Functions = (props) => {
       </LessonSection>
       <LessonSection
         title='Syntax of a function'
-        >
+      >
         <Img
           src={iFunctionSyntax}
         />
-        <ul>
-          <li>The 'function' keyword tells JavaScript this is a function</li>
-          <li>The function keyword is followed by a space and then the functions name</li>
-          <li>The name is followed by a pair of parentheses</li>
-          <li>The parentheses are followed by a space an then an opening curly bracket</li>
-          <li>The functions ends with a closing curly bracket</li>
-          <li>Everything inside of the opening and closing curly brackets is the 'function body'</li>
-
-        </ul>
+        <UL
+          listItems={[
+            "The 'function' keyword tells JavaScript this is a function",
+            "The function keyword is followed by a space and then the functions name",
+            "The name is followed by a pair of parentheses",
+            "The parentheses are followed by a space an then an opening curly bracket",
+            "The functions ends with a closing curly bracket",
+            "Everything inside of the opening and closing curly brackets is the 'function body'",
+          ]}
+        />
 
         <h2>Passing Parameters to a Function</h2>
         <Img
           src={iParameters}
         />
-        <ul>
-          <li>Parameters are like variables, they hold values such as text and numbers</li>
-          <li>While you can pass many parameters to a function it is common to only pass a few, perhaps up to 6 or 7</li>
-          <li>Note that the parameters are separated by a comma</li>
-        </ul>
+        <UL
+          listItems={[
+            'Parameters are like variables, they hold values such as text and numbers',
+            'While you can pass many parameters to a function it is common to only pass a few, perhaps up to 6 or 7',
+            'Note that the parameters are separated by a comma',
+          ]}
+
+        />
 
         <h2>Calling (using) a Function</h2>
-        <ul>
-          <li>On lines 3 to 5 below is a function that takes two numbers and multiplies them</li>
-          <li>Line 1 calls that function passing it 2 numbers. Note that thenumbers are separated by a comma.</li>
-        </ul>
+        <UL
+          listItems={[
+            'On lines 3 to 5 below is a function that takes two numbers and multiplies them',
+            'Line 1 calls that function passing it 2 numbers. Note that thenumbers are separated by a comma',
+          ]}
+        />
 
         <Pre
           code={[

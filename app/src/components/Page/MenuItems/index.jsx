@@ -1,11 +1,12 @@
 // MenuItems
 import React from 'react'
+import styles from './style.css'
 import { connect } from 'react-redux'
 import * as actionCreators from '../../../store/actions'
 import * as selectors from '../../../store/selectors'
 import { Link } from 'react-router-dom'
 import menuItems from './menu-items'
-import MenuItem from './MenuItem'
+
 // import * as ku from '../../../lib/ke-utils'
 
 const MenuItems = (props) => {
@@ -13,7 +14,7 @@ const MenuItems = (props) => {
 
 
     const items = menuItems.map((item) => (
-      <li><Link
+      <li ><Link className={styles.linkText}
         key={item.id}
         to={item.to}
           >

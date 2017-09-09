@@ -1,5 +1,9 @@
 /* Footer */
 
+footer {
+  margin-top: 40px;
+}
+
 .footerContainer {
   align-items: center;
   display: flex;
@@ -8,13 +12,13 @@
 }
 
 .faBtns {
-  margin: 0 0 10px 0;
   font-size: 1.4em;
+  margin: 0 0 10px 0;
 }
 
 .mdnLicense {
+  align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
   margin-top: 30px;
 }

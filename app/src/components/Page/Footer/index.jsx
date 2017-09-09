@@ -1,8 +1,8 @@
 // Footer
 import React from 'react';
 import styles from './style.css';
-import classNames from 'classnames'
-import Img from './../../elements/Img'
+// import classNames from 'classnames'
+// import Img from './../../elements/Img'
 import Resources from './Resources'
 
 const Footer = () => {
@@ -22,7 +22,7 @@ const Footer = () => {
     marginLeft: 25,
   }
   return (
-    <div>
+    <footer>
       <Resources />
       <div className={styles.footerContainer}>
         <div className={styles.faBtns}>
@@ -42,7 +42,7 @@ const Footer = () => {
           <div>Licensed under <a href="http://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA 2.5</a></div>
         </div>
       </div>
-    </div>
+    </footer>
   )
 };
 
