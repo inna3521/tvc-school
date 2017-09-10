@@ -17,7 +17,7 @@ const MenuItems = (props) => {
       <li ><Link className={styles.linkText}
         key={item.id}
         to={item.to}
-          >
+           >
         {item.name}
       </Link></li>
     ))
