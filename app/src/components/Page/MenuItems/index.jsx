@@ -7,11 +7,10 @@ import * as selectors from '../../../store/selectors'
 import { Link } from 'react-router-dom'
 import menuItems from './menu-items'
 
-// import * as ku from '../../../lib/ke-utils'
+import * as ku from '../../../lib/ke-utils'
 
 const MenuItems = (props) => {
-  // ku.log('menuItems', menuItems, 'blue')
-
+  ku.log('menuItems', menuItems, 'blue')
 
     const items = menuItems.map((item) => (
       <li ><Link className={styles.linkText}
@@ -25,7 +24,9 @@ const MenuItems = (props) => {
   return (
     <div>
       <h2>Contents</h2>
-      {items}
+      <ol>
+        {items}
+      </ol>
     </div>
   )
 }

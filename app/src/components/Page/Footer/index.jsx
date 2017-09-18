@@ -7,7 +7,7 @@ import Resources from './Resources'
 
 const Footer = () => {
   const gitHubStyle = {
-    color: 'white',
+    color: 'black',
     marginRight: 25,
     marginLeft: 25,
   }

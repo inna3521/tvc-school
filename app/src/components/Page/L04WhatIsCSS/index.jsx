@@ -8,7 +8,11 @@ import iCSSSyntax03 from './img/css-syntax.03.png'
 import iKeyValuePair02 from './img/key-value-pair.02.png'
 import iKeyValuePair from './img/key-value-pair.png'
 import Lesson from '../../elements/Lesson'
+import Table from '../../elements/NewTable'
 import UL from '../../elements/UL'
+import TH from '../../elements/TH'
+import TR from '../../elements/TR'
+import TD from '../../elements/TD'
 
 const Lesson04 = (props) => {
   return (
@@ -149,86 +153,84 @@ const Lesson04 = (props) => {
         language='css'
       />
       <h2>Summary</h2>
-      <table>
-        <tbody>
-          <tr>
-            <th>Selector Type</th>
-            <th>Starts<br/>With</th>
-            <th>This selector</th>
-            <th>Will select this</th>
-          </tr>
-          <tr className='background-highlight-white'>
-            <td>Element Selector</td>
-            <td className={styles.colStartsWith}>nothing</td>
-            <td>
-              <Pre
-                code={[
+      <Table striped>
+        <TR>
+          <TH>Selector Type</TH>
+          <TH>Starts<br/>With</TH>
+          <TH>This selector</TH>
+          <TH>Will select this</TH>
+        </TR>
+        <TR className='background-highlight-white'>
+          <TD>Element Selector</TD>
+          <TD className={styles.colStartsWith}>nothing</TD>
+          <TD>
+            <Pre
+              code={[
                   'p {',
                   '  font-size: 12px;',
                   '}'
-                ]}
-                language='css'
-              />
-            </td>
-            <td>
-              <Pre
-                code={[
+              ]}
+              language='css'
+            />
+          </TD>
+          <TD>
+            <Pre
+              code={[
                   '<p>some text here</p>',
-                ]}
-                language='html'
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>ID Selector</td>
-            <td className={styles.colStartsWith}>#</td>
-            <td>
-              <Pre
-                code={[
+              ]}
+              language='html'
+            />
+          </TD>
+        </TR>
+        <TR>
+          <TD>ID Selector</TD>
+          <TD className={styles.colStartsWith}>#</TD>
+          <TD>
+            <Pre
+              code={[
                   '#about {',
                   '  font-size: 24px;',
                   '}'
-                ]}
-                language='css'
-              />
-            </td>
-            <td>
-              <Pre
-                code={[
+              ]}
+              language='css'
+            />
+          </TD>
+          <TD>
+            <Pre
+              code={[
                   '<div id="about">',
                   '',
                   '</div>'
-                ]}
-                language='html'
-              />
-            </td>
-          </tr>
-          <tr className='background-highlight-white'>
-            <td>Class Selector</td>
-            <td className={styles.colStartsWith}>.</td>
-            <td>
-              <Pre
-                code={[
+              ]}
+              language='html'
+            />
+          </TD>
+        </TR>
+        <TR className='background-highlight-white'>
+          <TD>Class Selector</TD>
+          <TD className={styles.colStartsWith}>.</TD>
+          <TD>
+            <Pre
+              code={[
                   '.aside-style {',
                   '  font-size: 14px',
                   '}',
-                ]}
-                language='css'
-              />
-            </td>
-            <td>
-              <Pre
-                code={[
+              ]}
+              language='css'
+            />
+          </TD>
+          <TD>
+            <Pre
+              code={[
                   '<p class="aside-style">paragraph 1</p>',
                   '<p>paragraph 2</p>',
                   '<p class="aside-style">paragraph 3</p>',
-                ]}
-                language='html'
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+              ]}
+              language='html'
+            />
+          </TD>
+        </TR>
+      </Table>
 
     </Lesson>
       )

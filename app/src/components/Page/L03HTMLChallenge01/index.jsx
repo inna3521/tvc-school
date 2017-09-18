@@ -20,11 +20,6 @@ const Lesson03 = (props) => {
       handleMenuItemClick={props.handleMenuItemClick}
     >
       <LessonSection>
-        <div>
-          <Code code={'<a>'} html />
-          <Code code={['<img>']} html
-          />
-        </div>
         <h2>Getting Ready</h2>
         <p>Here are some things to decide upon and organize before you begin.</p>
         <UL

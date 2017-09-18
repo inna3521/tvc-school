@@ -13,7 +13,7 @@ const LessonHeader = (props) => {
     <div>
 
       <Link to='/'>
-        <Button>
+        <Button bsStyle="info">
           Back
         </Button>
       </Link>

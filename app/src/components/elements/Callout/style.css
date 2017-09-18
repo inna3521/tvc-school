@@ -10,53 +10,30 @@
 .callout p:last-child {
   margin-bottom: 0px;
 }
-.callout h4 {
-  margin-bottom: 5px;
-  margin-top: 0;
-}
-.callout h3 {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
 .calloutMedium {
   max-width: 70%;
 }
 .calloutDanger {
-  border-left-color: #ce4844;
   background-color: rgb(242, 222, 222);
+  border-left-color: #ce4844;
   color: black;
-}
-h4 {
-  color: #ce4844;
 }
 .calloutWarning {
   background-color: #fff9cc;
   border-left-color: #ffe202;
   color: black;
 }
-.calloutWarning h4 {
-  color: #aa6708;
-}
-.calloutWarning h3 {
-  color: #aa6708;
-}
-
 .calloutInfo {
   color: black;
+  border-left-color: #1b809e;
   margin: 20px 0;
   padding: 20px;
 }
-.calloutInfo h4 {
-  color: #1b809e;
-}
+
 .calloutGoal {
   color: black;
   margin: 20px 0;
   padding: 20px;
-}
-.calloutGoal h4 {
-  color: #008000;
 }
 .callout code {
   border-radius: 3px;
@@ -64,4 +41,24 @@ h4 {
 /* Tighten up space between multiple callouts */
 .callout + .callout {
   margin-top: -5px;
+}
+
+
+.title{
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+.titleDanger {
+  color: #ce4844;
+}
+
+.titleWarning {
+  color: #aa6708;
+}
+
+.titleInfo {
+  color: #1b809e;
+}
+.titleGoal {
+  color: #008000;
 }

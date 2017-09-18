@@ -45,6 +45,7 @@ const Img = (props) => {
       [styles.imgSizeSmall]: props.small,
       [styles.imgSizeMedium]: props.medium,
       [styles.imgSizeLarge]: props.large,
+      [styles.imageProperties]: true,
     }
   )
 
@@ -53,19 +54,10 @@ const Img = (props) => {
     src={props.src}
     alt={props.alt}
                 />
-  if (cite) {
-    // imgae with div and cite
-    return (
-      <div>
-        {image}
-        {cite}
-      </div>
-    )
-  } else if(props.inline) {
-    // image with no div
+  if (props.inline) {
     return image
   } else {
-    // image with div
+    // It could have a cite or not
     return (
       <div className={localStyles} style={passedStyles}>
         {image}

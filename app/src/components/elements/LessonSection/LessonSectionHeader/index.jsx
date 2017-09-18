@@ -9,7 +9,7 @@ import styles from './style.css'
  */
 const LessonSection = (props) => {
   return (
-    <div className={styles.lessonSection}>
+    <div className={styles.header}>
       <div className={styles.title}>{props.title}</div>
       <div className={styles.subTitle}>{props.subTitle}</div>
       {props.children}

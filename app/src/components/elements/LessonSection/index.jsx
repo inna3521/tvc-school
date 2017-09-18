@@ -1,7 +1,8 @@
 // LessonSection
 import React from 'react'
-// import styles from './style.css'
+import styles from './style.css'
 import LessonSectionHeader from './LessonSectionHeader'
+
 
 /*
     props
@@ -10,7 +11,7 @@ import LessonSectionHeader from './LessonSectionHeader'
  */
 const LessonSection = (props) => {
   return (
-    <div>
+    <div className={styles.section}>
       <LessonSectionHeader
         title={props.title}
         subTitle={props.subTitle}
