@@ -7,7 +7,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import MenuItems from './MenuItems'
 import L01WhatIsHTML from './L01WhatIsHTML'
 import L02EssentialHTMLElements from './L02EssentialHTMLElements'
-import L03HTMLChallenge01 from './L03HTMLChallenge01'
+// import L03HTMLChallenge01 from './L03HTMLChallenge01'
+import L03FirstHTMLPage from './L03FirstHTMLPage'
 import L04WhatIsCSS from './L04WhatIsCSS'
 import L05CSSChallenge01 from './L05CSSChallenge01'
 import Footer from './Footer'
@@ -35,7 +36,7 @@ const Page = () => (
       </header>
       <Route path='/01-what-is-html' component={L01WhatIsHTML} />
       <Route path='/02-essential-html-elements' component={L02EssentialHTMLElements} />
-      <Route path='/03-html-challenge-1' component={L03HTMLChallenge01} />
+      <Route path='/03-first-html-page' component={L03FirstHTMLPage} />
       <Route path='/04-css-what-is-it' component={L04WhatIsCSS} />
       <Route path='/05-css-challenge-1' component={L05CSSChallenge01} />
       <Route path='/06-javascript-what-is-it' component={L06JSWhatIsIt} />

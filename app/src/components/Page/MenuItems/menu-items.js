@@ -11,8 +11,8 @@ const menuItems = [
   },
   {
     id: 3,
-    to: '03-html-challenge-1',
-    name: 'HTML Challenge 1',
+    to: '03-first-html-page',
+    name: 'First HTML Page',
   },
   {
     id: 4,

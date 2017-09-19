@@ -20,12 +20,11 @@ const L02EssentialHTMLElements = (props) => {
 
     <Lesson
       title='Essential HTML Elements'
-      subTitle='Most Frequently Used Elements'
       handleMenuItemClick={props.handleMenuItemClick}
     >
 
       <LessonSection>
-
+        <p>We are not going to go through this list together. Instead, we will use each of these elements in a web page.</p>
         <Table striped>
           <TR>
             <TH>Element (aka tag)</TH>
