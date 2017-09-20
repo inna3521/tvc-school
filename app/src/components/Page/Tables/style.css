@@ -1,0 +1,78 @@
+/* PlayTable*/
+
+.playTable {
+  background-color: transparent;
+  /*border: 1px solid darkgray;*/
+  border-collapse: separate;
+  border-spacing: 1px;
+}
+.playTable th {
+  background-color: lightblue;
+  padding: 8px;
+  /*border: 2px solid white;*/
+}
+.playTable td {
+  background-color: palegreen;
+  padding: 8px;
+}
+.playTable th:nth-child(-n+6) {
+  padding-right: 30px;
+}
+
+.bodyLabel {
+  border-left: 4px solid green;
+  font-weight: bold;
+}
+.rowLabel {
+  border-right: 4px solid black;
+  background-color: lightgray !important;
+  font-weight: bold;
+}
+.thLabel {
+  border-left: 4px solid blue;
+  background-color: lightblue !important;
+  font-weight: bold;
+}
+.playTable code {
+  /*background-color: transparent;*/
+  color: black;
+}
+.legend {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  padding: 15px;
+}
+.colorBox1 {
+  width: 20px;
+  height: 20px;
+  background-color: lightblue;
+}
+.colorBox2 {
+  width: 20px;
+  height: 20px;
+  background-color: palegreen;
+
+}
+.key {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  margin-left: 30px;
+  /*border: 0.5px dashed gray;*/
+}
+.legendLabel {
+  font-weight: bold;
+}
+.colorLabel {
+  margin-left: 5px;
+}
+.divLeft {
+  background-color: yellow;
+}
+.divRight {
+  background-color: gray;
+}
+.tableBodyLabel {
+  background-color: orange;
+}

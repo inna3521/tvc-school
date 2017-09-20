@@ -22,6 +22,7 @@ import L11Functions from './L11Functions'
 import L12ControlFlow from './L12ControlFlow'
 import L13MovingImageIntro from './L13MovingImageIntro'
 import L14FunctionsTry2 from './L14FunctionsTry2'
+import Tables from './Tables'
 // import * as ku from '../../lib/ke-utils'
 
 
@@ -39,6 +40,7 @@ const Page = () => (
       <Route path='/03-first-html-page' component={L03FirstHTMLPage} />
       <Route path='/04-css-what-is-it' component={L04WhatIsCSS} />
       <Route path='/05-css-challenge-1' component={L05CSSChallenge01} />
+      <Route path='/tables' component={Tables} />
       <Route path='/06-javascript-what-is-it' component={L06JSWhatIsIt} />
       <Route path='/07-javascript-variables' component={L07JSVariables} />
       <Route path='/08-javascript-arrays' component={L08JSArrays} />

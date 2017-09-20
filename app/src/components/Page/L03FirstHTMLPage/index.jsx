@@ -65,9 +65,11 @@ const FirstHTMLPage = (props) => {
       >
         <p>Projects often have many files organized by folders. While there is not one correct name for them, there are conventions. In future lessons we will be adding more files and folders to our project will get into the details of project structure once it has sufficient complexity. </p>
         <p>Our current project structure is shown below. Your HTML code will be entered in index.html. Open it now.</p>
+        <p><b>do something with README.md, they should open the project folder and not index.html. All left depending on what editor they will be using.</b></p>
         <ul className={styles.fileStructure}>
           <li><i className="fa fa-folder-open-o" aria-hidden="true"></i> first-html-page</li>
           <li className={styles.indent2}><i className="fa fa-file-code-o" aria-hidden="true"></i> index.html</li>
+          <li className={styles.indent2}><i className="fa fa-file-code-o" aria-hidden="true"></i> README.md</li>
         </ul>
 
 

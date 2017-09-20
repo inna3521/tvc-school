@@ -13,3 +13,25 @@
   width: 7%;
   margin-left: 20px;
 }
+.th {
+  vertical-align: bottom;
+  line-height: 1.42857143;
+  text-align: left;
+  background-color: lightblue;
+}
+.thInner {
+  padding: 8px;
+}
+.td {
+  padding: 8px;
+  background-color: palegreen;
+}
+.tableParts {
+  display: table;
+  background-color: transparent;
+  border-collapse: separate;
+  border-spacing: 1px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}

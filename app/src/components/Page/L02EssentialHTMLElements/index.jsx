@@ -13,7 +13,7 @@ import TR from '../../elements/TR'
 import TD from '../../elements/TD'
 import styles from './style.css'
 import Code from '../../elements/Code'
-
+import A from '../../elements/A'
 
 const L02EssentialHTMLElements = (props) => {
   return (
@@ -22,7 +22,6 @@ const L02EssentialHTMLElements = (props) => {
       title='Essential HTML Elements'
       handleMenuItemClick={props.handleMenuItemClick}
     >
-
       <LessonSection>
         <p>We are not going to go through this list together. Instead, we will use each of these elements in a web page.</p>
         <Table striped>
@@ -98,7 +97,7 @@ const L02EssentialHTMLElements = (props) => {
           </TR>
           <TR>
             <TD>
-              <Code code={'<ul>'} html/>
+              <Code code={'<ol>'} html/>
             </TD>
             <TD>
               <b>Ordered list</b> used in combination with <Code code={'<li>'} html/> to create a numbered list of items.
@@ -126,6 +125,16 @@ const L02EssentialHTMLElements = (props) => {
           </TR>
         </Table>
       </LessonSection>
+
+      <LessonSection
+        title='Tables'
+      >
+        <p>Tables are used to present content in rows and columns. A table consists of multiple element types that define the rows and columns. The most commonly used table elements are list below. For a complete list of table elements see <A href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">MDN web docs &lt;table&gt;</A> </p>
+
+
+      </LessonSection>
+
+
 
     </Lesson>
   )
