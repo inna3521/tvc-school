@@ -2,7 +2,7 @@
 import React from 'react';
 
 const P = (props) => (
-  <p>{props.text}</p>
+  <p>{props.children}</p>
 );
 
 export default P;

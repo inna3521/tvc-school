@@ -1,41 +1,29 @@
-// _lesson
+// Name
 import React from 'react'
-import { Button } from 'react-bootstrap'
-// import Img from './../../elements/Img'
+import './style.css'
 import Pre from './../../elements/Pre'
-import Callout from './../../elements/Callout'
-// import { lesson } from './data';
-// import { space } from '../../../lib/utils'
-import Header from '../../elements/Header'
+import Img from '../../elements/Img/index'
+import Lesson from '../../elements/Lesson'
+import LessonSection from '../../elements/LessonSection'
+import OL from '../../elements/OL'
+import UL from '../../elements/UL'
+import P from '../../elements/P'
 
-const Lesson04 = (props) => {
+const NAME = (props) => {
   return (
-    <div>
-      <Button
-        bsStyle='primary'
-        onClick={() => props.handleMenuItemClick()}
+    <Lesson
+      title=''
+      subtitle=''
+      handleMenuItemClick={props.handleMenuItemClick}
+    >
+      <LessonSection
+        title=''
       >
-        Back
-      </Button>
-      <hr/>
-      <Header
-        title='Variables'
-        subTitle='What are they and how do you use them?'
-      />
+        <P>Some text here</P>
+      </LessonSection>
 
-
-      <Pre
-        code={[
-          '<div id="about">',
-          '',
-          '</div>'
-        ]}
-        language='html'
-      />
-
-
-    </div>
+    </Lesson>
   )
 };
 
-export default Lesson04;
+export default NAME;

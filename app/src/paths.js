@@ -1,8 +1,11 @@
 'use strict';
 
 const path = require('path');
+// import path from 'path'
 const fs = require('fs');
+// import fs from 'fs'
 const url = require('url');
+// import url from 'url'
 
 // Make sure any symlinks in the project folder are resolved:
 // https://github.com/facebookincubator/create-react-app/issues/637

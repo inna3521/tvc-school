@@ -11,10 +11,11 @@ import LessonSectionHeader from './LessonSectionHeader'
  */
 const LessonSection = (props) => {
   return (
-    <div className={styles.section}>
+    <div>
       <LessonSectionHeader
         title={props.title}
         subTitle={props.subTitle}
+        level={props.level}
       />
       {props.children}
     </div>

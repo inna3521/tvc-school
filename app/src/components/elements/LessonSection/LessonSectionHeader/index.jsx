@@ -1,17 +1,31 @@
 // LessonSectionHeader
 import React from 'react'
 import styles from './style.css'
-
+import classNames from 'classnames'
 /*
     props
       > title
       > subTitle
  */
 const LessonSection = (props) => {
+  const level = props.level || 1
+  console.log('level', level === 2)
+
+  const titleStyles = classNames({
+    [styles.titleOne]: level === 1,
+    [styles.titleTwo]: level === 2,
+    [styles.titleThree]: level === 3,
+  })
+  // console.log('titleStyles', titleStyles)
+  const subTitleStyles = classNames({
+    [styles.subTitleOne]: level === 1,
+    [styles.subTitleTwo]: level === 2,
+    [styles.subTitleThree]: level === 3,
+  })
   return (
     <div className={styles.header}>
-      <div className={styles.title}>{props.title}</div>
-      <div className={styles.subTitle}>{props.subTitle}</div>
+      <div className={titleStyles}>{props.title}</div>
+      <div className={subTitleStyles}>{props.subTitle}</div>
       {props.children}
     </div>
   )

@@ -74,6 +74,11 @@ const menuItems = [
     to: '11-javascript-functions-try-2',
     name: 'Javascript Functions Again',
   },
+  {
+    id: 16,
+    to: 'install-and-config',
+    name: 'Getting Ready: Installation & Configuration',
+  },
 ]
 
 export default menuItems;

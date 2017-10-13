@@ -1,6 +1,7 @@
 // Page
 import React from 'react';
 import { connect } from 'react-redux';
+import styles from './style.css'
 import * as actionCreators from '../../store/actions';
 import * as selectors from '../../store/selectors';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
@@ -23,6 +24,7 @@ import L12ControlFlow from './L12ControlFlow'
 import L13MovingImageIntro from './L13MovingImageIntro'
 import L14FunctionsTry2 from './L14FunctionsTry2'
 import Tables from './Tables'
+import DevBoxConfig from './DevBoxConfig'
 // import * as ku from '../../lib/ke-utils'
 
 
@@ -32,8 +34,8 @@ const Page = () => (
   <Router>
     <div>
       <header>
-        <h1 className="green-text">Tri-Valley Coders - SCHOOL</h1>
-        <h3>Learn Build Grow Succeed</h3>
+        <h1 className={styles.title}>Tri-Valley Coders - SCHOOL</h1>
+        <div className={styles.subTitle}>Learn Build Grow Succeed</div>
       </header>
       <Route path='/01-what-is-html' component={L01WhatIsHTML} />
       <Route path='/02-essential-html-elements' component={L02EssentialHTMLElements} />
@@ -50,8 +52,11 @@ const Page = () => (
       <Route path='/12-conditional-control-flow-if' component={L12ControlFlow} />
       <Route path='/13-moving-image-intro' component={L13MovingImageIntro} />
       <Route path='/11-javascript-functions-try-2' component={L14FunctionsTry2} />
+      <Route path='/install-and-config' component={DevBoxConfig} />
       <Route exact path='/' render={() => (
-        <MenuItems />
+        <div>
+          <MenuItems />
+        </div>
       )} />
 
       <Footer />

@@ -1,10 +1,12 @@
 /* Lesson*/
-.lessonTitle {
-  font-size: 2.0em; /* 36px */
+.title {
+  font-size: 34px;
+  margin: 22px 0;
   text-align: center;
+  font-weight: bold;
 }
-
-.lessonSubTitle {
-  font-size: 1.5em; /* 24px */
+.subTitle {
+  font-size: 28px;
+  margin: 22px 0;
   text-align: center;
 }
