@@ -1,7 +1,7 @@
 // Pre
 import React from 'react';
 import classNames from 'classnames'
-import styles from './style.css'
+// import styles from './style.css'
 
 // Takes an array of strings
 const Code = (props) => {

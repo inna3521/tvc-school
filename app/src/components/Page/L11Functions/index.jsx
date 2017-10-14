@@ -7,7 +7,6 @@ import iFunctionSyntax from './img/function-syntax.png'
 import iParameters from './img/parameters.png'
 import Lesson from '../../elements/Lesson'
 import LessonSection from '../../elements/LessonSection'
-import Callout from '../../elements/Callout'
 import OL from '../../elements/OL'
 import UL from '../../elements/UL'
 

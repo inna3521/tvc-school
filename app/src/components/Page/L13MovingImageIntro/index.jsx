@@ -3,9 +3,7 @@ import React from 'react'
 import styles from './style.css'
 import Lesson from '../../elements/Lesson'
 import LessonSection from '../../elements/LessonSection/index'
-import UL from '../../elements/UL'
 import Img from './../../elements/Img'
-import Callout from './../../elements/Callout'
 import iPreview from './img/moving-image-preview.png'
 
 const L13MovingImageIntro = (props) => {

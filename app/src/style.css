@@ -1,7 +1,7 @@
 body {
   /*color: white;*/
   padding: 0 10%;
-  background-color: gray;
+  background-color: rgb(200, 200, 200)
 }
 header {
   display: flex;

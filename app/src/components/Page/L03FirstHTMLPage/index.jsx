@@ -1,16 +1,9 @@
 // Lesson03
 import React from 'react'
 import styles from './style.css'
-import Img from './../../elements/Img'
-import Callout from './../../elements/Callout'
-import iKingFisherBird from './img/kingfisher-bird.jpg'
-import iAdlerBird from './img/adler-bird.jpg'
-import iSwans from './img/swans-1436266_640.jpg'
 import UL from '../../elements/UL'
-import OL from '../../elements/OL'
 import Lesson from '../../elements/Lesson'
 import LessonSection from '../../elements/LessonSection'
-import Code from '../../elements/Code'
 import Pre from '../../elements/Pre'
 
 const FirstHTMLPage = (props) => {

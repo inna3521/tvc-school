@@ -2,9 +2,6 @@
 import React from 'react'
 import './style.css'
 import Lesson from '../../elements/Lesson'
-import Pre from './../../elements/Pre'
-import Code from './../../elements/Code'
-import Img from '../../elements/Img/index'
 
 const L12ControlFlow = (props) => {
   return (

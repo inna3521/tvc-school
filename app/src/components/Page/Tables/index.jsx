@@ -2,17 +2,11 @@
 import React from 'react'
 import Lesson from '../../elements/Lesson'
 import LessonSection from '../../elements/LessonSection/index'
-import UL from '../../elements/UL'
-import Img from './../../elements/Img'
-import Callout from './../../elements/Callout'
-import Pre from '../../elements/Pre'
 import Table from '../../elements/NewTable'
-import TH from '../../elements/TH'
 import TR from '../../elements/TR'
 import TD from '../../elements/TD'
 import styles from './style.css'
 import Code from '../../elements/Code'
-import A from '../../elements/A'
 
 const Tables = (props) => {
   return (

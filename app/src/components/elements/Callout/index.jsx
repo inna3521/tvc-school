@@ -1,7 +1,6 @@
 // Callout
 import React from 'react'
 import classNames from 'classnames'
-import P from '../../elements/P'
 import styles from './style.css'
 
 const Callout = (props) => {

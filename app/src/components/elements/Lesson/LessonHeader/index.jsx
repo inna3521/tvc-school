@@ -20,10 +20,8 @@ const LessonHeader = (props) => {
         </Button>
       </Link>
 
-      <hr/>
       <div className={styles.title}>{props.title}</div>
       <div className={styles.subtitle}>{props.subTitle}</div>
-      <hr/>
       {props.children}
     </div>
   )

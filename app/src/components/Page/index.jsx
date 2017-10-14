@@ -1,19 +1,14 @@
 // Page
 import React from 'react';
-import { connect } from 'react-redux';
 import styles from './style.css'
-import * as actionCreators from '../../store/actions';
-import * as selectors from '../../store/selectors';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import MenuItems from './MenuItems'
 import L01WhatIsHTML from './L01WhatIsHTML'
 import L02EssentialHTMLElements from './L02EssentialHTMLElements'
-// import L03HTMLChallenge01 from './L03HTMLChallenge01'
 import L03FirstHTMLPage from './L03FirstHTMLPage'
 import L04WhatIsCSS from './L04WhatIsCSS'
 import L05CSSChallenge01 from './L05CSSChallenge01'
 import Footer from './Footer'
-// import styles from './style.css'
 import L06JSWhatIsIt from './L06JSWhatIsIt'
 import L07JSVariables from './L07JSVariables'
 import L08JSArrays from './L08JSArrays'
