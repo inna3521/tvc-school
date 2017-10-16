@@ -87,6 +87,7 @@ const DevBoxConfig = (props) => {
                   '$ apm install highlight-selected intentions language-babel',
                 ]}
               />
+              />
             </LessonSection>
             <LessonSection
               title='Highly Recommended for Class'
