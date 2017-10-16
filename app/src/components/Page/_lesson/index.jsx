@@ -13,7 +13,7 @@ const NAME = (props) => {
   return (
     <Lesson
       title=''
-      subtitle=''
+      subTitle=''
       handleMenuItemClick={props.handleMenuItemClick}
     >
       <LessonSection
