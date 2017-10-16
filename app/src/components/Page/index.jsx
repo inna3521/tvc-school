@@ -20,6 +20,7 @@ import L13MovingImageIntro from './L13MovingImageIntro'
 import L14FunctionsTry2 from './L14FunctionsTry2'
 import Tables from './Tables'
 import DevBoxConfig from './DevBoxConfig'
+import FirstReactApp from './FirstReactApp'
 // import * as ku from '../../lib/ke-utils'
 
 
@@ -47,7 +48,8 @@ const Page = () => (
       <Route path='/12-conditional-control-flow-if' component={L12ControlFlow} />
       <Route path='/13-moving-image-intro' component={L13MovingImageIntro} />
       <Route path='/11-javascript-functions-try-2' component={L14FunctionsTry2} />
-      <Route path='/install-and-config' component={DevBoxConfig} />
+      <Route path='/dev-box-config' component={DevBoxConfig} />
+      <Route path='/first-react-app' component={FirstReactApp} />
       <Route exact path='/' render={() => (
         <div>
           <MenuItems />

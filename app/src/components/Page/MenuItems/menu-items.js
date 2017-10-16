@@ -76,8 +76,13 @@ const menuItems = [
   },
   {
     id: 16,
-    to: 'install-and-config',
+    to: 'dev-box-config',
     name: 'Getting Ready: Installation & Configuration',
+  },
+  {
+    id: 17,
+    to: 'first-react-app',
+    name: 'First React App',
   },
 ]
 
