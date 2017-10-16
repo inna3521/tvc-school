@@ -11,7 +11,7 @@ import LI from '../../elements/LI'
 const DevBoxConfig = (props) => {
   return (
     <Lesson
-      title='Setting-up YouR Development Environment'
+      title='Setting-up Your Development Environment'
       handleMenuItemClick={props.handleMenuItemClick}
     >
 
@@ -84,7 +84,7 @@ const DevBoxConfig = (props) => {
               <P>In terminal, enter the below command</P>
               <Pre
                 code={[
-                  '$ apm highlight-selected intentions language-babel',
+                  '$ apm install highlight-selected intentions language-babel',
                 ]}
               />
             </LessonSection>
@@ -93,7 +93,7 @@ const DevBoxConfig = (props) => {
               level={4}>
               <Pre
                 code={[
-                  '$ apm busy-signal linter linter-css linter-eslint linter-htmlhint linter-ui-default auto-complete-modules auto-complete-paths'
+                  '$ apm install busy-signal linter linter-css linter-eslint linter-htmlhint linter-ui-default autocomplete-modules autocomplete-paths'
                 ]}
               />
             </LessonSection>
@@ -116,6 +116,13 @@ const DevBoxConfig = (props) => {
                 <LI>pigments</LI>
                 <LI>todo-show</LI>
               </UL>
+              <P>If you want to install the above packages use this command:</P>
+              <Pre
+                code={[
+                  '$ apm install auto-detech-indentation atom-beautify atom-html-preview busy-signal custom-title docblockr git-plus git-time-machine markdown-preview-plus merge-conflicts open-in-browser pigments todo-show'
+                ]}
+              />
+
             </LessonSection>
           </LessonSection>
 
