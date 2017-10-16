@@ -84,6 +84,11 @@ const menuItems = [
     to: 'first-react-app',
     name: 'First React App',
   },
+  {
+    id: 17,
+    to: 'first-react-component',
+    name: 'First React Component',
+  },
 ]
 
 export default menuItems;
