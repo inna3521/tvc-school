@@ -21,7 +21,7 @@ const LessonHeader = (props) => {
       </Link>
 
       <div className={styles.title}>{props.title}</div>
-      <div className={styles.subtitle}>{props.subTitle}</div>
+      <div className={styles.subTitle}>{props.subTitle}</div>
       {props.children}
     </div>
   )
