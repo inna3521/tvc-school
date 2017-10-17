@@ -21,6 +21,7 @@ import L14FunctionsTry2 from './L14FunctionsTry2'
 import Tables from './Tables'
 import DevBoxConfig from './DevBoxConfig'
 import FirstReactApp from './FirstReactApp'
+import FirstReactComponent from './FirstReactComponent'
 // import * as ku from '../../lib/ke-utils'
 
 
@@ -50,6 +51,7 @@ const Page = () => (
       <Route path='/11-javascript-functions-try-2' component={L14FunctionsTry2} />
       <Route path='/dev-box-config' component={DevBoxConfig} />
       <Route path='/first-react-app' component={FirstReactApp} />
+      <Route path='/first-react-component' component={FirstReactComponent} />
       <Route exact path='/' render={() => (
         <div>
           <MenuItems />
