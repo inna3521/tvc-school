@@ -11,7 +11,7 @@ import LI from '../../elements/LI'
 const DevBoxConfig = (props) => {
   return (
     <Lesson
-      title='Setting-up Your Development Environment'
+      title='Setting Up Your Development Environment'
       handleMenuItemClick={props.handleMenuItemClick}
     >
 
@@ -34,7 +34,7 @@ const DevBoxConfig = (props) => {
       <LessonSection
         title='A Note on Hardware and OS'
       >
-        <P>I always recommend getting the best hardware you can afford and think it is better to buy a used machine than an under-powered one. Since I only know the hardware I own I don't really know what the minimum hardware requirement is. However, I highly suggest a minimum of a dual-core i5 or better processor and at least 4 gigs of RAM. The machine I use in class is a quad-core i5 with 8 GB of RAM and is up to pretty much anything I need to do.</P>
+        <P>I always recommend getting the best hardware you can afford and think it is better to buy a used machine than an under-powered new one. Since I only know the hardware I own I don't really know what the minimum hardware requirement is. However, I highly suggest a minimum of a dual-core i5 or better processor and at least 4 gigs of RAM. The machine I use in class is a quad-core i5 with 8 GB of RAM and is up to pretty much anything I need to do.</P>
         <P>Linux, Mac and Windows are all good for class and we have experience using Windows, Mac & Ubuntu.</P>
         <P>The best way to know if your machine is up to the task is to follow the install instructions below and see if your machine is adequately responsive while using Atom.</P>
       </LessonSection>
@@ -47,15 +47,15 @@ const DevBoxConfig = (props) => {
         >
           <P>npm is a package manager for NodeJS packages. Some people say 'npm' stands for 'node package manager', but I have also read it doesn't. npm comes with NodeJS, so install Node on your machine and npm will be ready to go.</P>
           <P>Node offers a LTS (long-term support) and 'Current' version. Be sure to install the LTS version.</P>
-          <LI><A href='https://nodejs.org'>NodeJS</A></LI>
-          <LI><A href='https://nodejs.org/en/download/'>MAC &amp; Windows nstall</A></LI>
+          <P>You can find Node at <A href='https://nodejs.org'>NodeJS</A>. Links to OS specific installations are below.</P>
+          <LI><A href='https://nodejs.org/en/download/'>MAC &amp; Windows</A></LI>
           <LI><A href='https://nodejs.org/en/download/package-manager/'>Linux</A></LI>
         </LessonSection>
         <LessonSection
           title='Yarn'
           level={2}
         >
-          <P>Yarn is an alternative to npm for managing npm packages. It is used by Create React App and we use it in class.</P>
+          <P>Yarn is an alternative to npm for managing npm packages. It is used by Create React App and we will use it in this class.</P>
           <UL>
             <LI><A href='https://yarnpkg.com/en/docs/install#linux-tab'>Linux</A></LI>
             <LI><A href='https://yarnpkg.com/en/docs/install#mac-tab'>Mac</A></LI>
@@ -103,7 +103,7 @@ const DevBoxConfig = (props) => {
               level={4}>
               <P>All of the below packages are very useful. Look them up on <A href='http://atom.io'>atom.io</A> and install the ones you think you will use. </P>
               <UL>
-                <LI>auto-detech-indentation</LI>
+                <LI>auto-detect-indentation</LI>
                 <LI>atom-beautify</LI>
                 <LI>atom-html-preview</LI>
                 <LI>busy-signal</LI>
@@ -120,7 +120,7 @@ const DevBoxConfig = (props) => {
               <P>If you want to install the above packages use this command:</P>
               <Pre
                 code={[
-                  '$ apm install auto-detech-indentation atom-beautify atom-html-preview busy-signal custom-title docblockr git-plus git-time-machine markdown-preview-plus merge-conflicts open-in-browser pigments todo-show'
+                  '$ apm install auto-detect-indentation atom-beautify atom-html-preview busy-signal custom-title docblockr git-plus git-time-machine markdown-preview-plus merge-conflicts open-in-browser pigments todo-show'
                 ]}
               />
 
