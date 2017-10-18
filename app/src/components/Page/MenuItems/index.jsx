@@ -12,10 +12,10 @@ import * as ku from '../../../lib/ke-utils'
 const MenuItems = (props) => {
   ku.log('menuItems', menuItems, 'blue')
 
-    const items = menuItems.map((item) => (
+    const items = menuItems.map((item, index) => (
       <li ><Link className={styles.linkText}
-        key={item.id}
-        to={item.to}
+        key={index}
+        to={item.path}
            >
         {item.name}
       </Link></li>
