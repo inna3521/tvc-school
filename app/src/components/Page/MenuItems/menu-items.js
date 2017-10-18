@@ -13,16 +13,16 @@ const menuItems = [
     name: 'Modifying Project Structure',
   },
   {
+    path: '/first-react-component',
+    name: 'First React Component',
+  },
+  {
     path: '',
     name: 'Implementing CSS Modules',
   },
   {
     path: '',
     name: 'Adding Bootstrap',
-  },
-  {
-    path: '',
-    name: 'First Component',
   },
   {
     path: '',

@@ -1,12 +1,12 @@
 // DevBoxConfig
 import React from 'react'
-import Pre from './../../elements/Pre'
-import Lesson from '../../elements/Lesson'
-import LessonSection from '../../elements/LessonSection'
-import UL from '../../elements/UL'
-import P from '../../elements/P'
-import A from '../../elements/A'
-import LI from '../../elements/LI'
+import Pre from './../../../elements/Pre'
+import Lesson from '../../../elements/Lesson'
+import LessonSection from '../../../elements/LessonSection'
+import UL from '../../../elements/UL'
+import P from '../../../elements/P'
+import A from '../../../elements/A'
+import LI from '../../../elements/LI'
 
 const DevBoxConfig = (props) => {
   return (

@@ -11,8 +11,8 @@ const Code = (props) => {
     'language-javascript': props.js,
     'language-css': props.css,
     'language-html': props.html,
-    'line-numbers': props.lineNumbers
-
+    // 'line-numbers': props.lineNumbers
+    'line-numbers': true,
     }
   )
   let code = props.code

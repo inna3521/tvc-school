@@ -1,15 +1,15 @@
 // ModifyProjectStructure
 import React from 'react'
 import './style.css'
-import Pre from './../../elements/Pre'
-import Img from '../../elements/Img/index'
-import Lesson from '../../elements/Lesson'
-import LessonSection from '../../elements/LessonSection'
-import OL from '../../elements/OL'
-import UL from '../../elements/UL'
-import P from '../../elements/P'
-import LI from '../../elements/LI'
-import ProjectStructure from '../ProjectStructure'
+import Pre from './../../../elements/Pre'
+import Img from '../../../elements/Img/index'
+import Lesson from '../../../elements/Lesson'
+import LessonSection from '../../../elements/LessonSection'
+import OL from '../../../elements/OL'
+import UL from '../../../elements/UL'
+import P from '../../../elements/P'
+import LI from '../../../elements/LI'
+import ProjectStructure from '../../../elements/ProjectStructure'
 import origStructure from './orig-structure'
 import nextStructure from './next-structure'
 
@@ -70,17 +70,19 @@ const ModifyProjectStructure = (props) => {
             level={3}
           >
             <OL>
-              <LI>Delete all code in Page/index.jsx and replace it with the below.</LI>
+              <LI>We will learn about React components in a later lesson. For now, delete all code in Page/index.jsx and replace it with the below.</LI>
             </OL>
             <Pre
               code={[
                 "import React, { Component } from 'react'",
                 "import './style.css'",
                 "",
-                "const Page = () => {",
-                "  return (",
-                "    <h1>Hello from the Page component</h1>",
-                "  )",
+                "class Page extends Component",
+                "  render() {",
+                "    return (",
+                "      <h1>Hello from the Page component</h1>",
+                "    )",
+                "  }",
                 "}",
                 "",
                 "export default Page",
@@ -95,7 +97,7 @@ const ModifyProjectStructure = (props) => {
             <OL>
               <LI>In src/index.js, change the line that reads...</LI>
               <Pre
-                code={["Import App from './App'"]} />
+                code={["Import Page from './App'"]} />
               to...
               <Pre code={["Import Page from '.components/Page'"]} />
               ... so that it uses the Page component instead of the App component which no longer exists.
