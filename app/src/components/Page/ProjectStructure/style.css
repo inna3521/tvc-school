@@ -10,6 +10,12 @@
 .indent4 {
   margin-left: 40px;
 }
+.indent6 {
+  margin-left: 60px;
+}
+.indent8 {
+  margin-left: 80px;
+}
 
 .fileStructure {
   list-style: none;

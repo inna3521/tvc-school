@@ -18,6 +18,7 @@ const DevBoxConfig = (props) => {
       <LessonSection
         title='What Is a Development Environment?'
       >
+
         <P>A development environment is a set of procedures and tools for developing, testing and debugging software.</P>
       </LessonSection>
       <LessonSection

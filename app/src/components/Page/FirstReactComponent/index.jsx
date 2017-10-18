@@ -8,6 +8,8 @@ import LessonSection from '../../elements/LessonSection'
 import OL from '../../elements/OL'
 import UL from '../../elements/UL'
 import P from '../../elements/P'
+import LI from '../../elements/LI'
+import A from '../../elements/A'
 
 const NAME = (props) => {
   return (
@@ -19,6 +21,7 @@ const NAME = (props) => {
       <LessonSection
         title=''
       >
+
         first component
 
         - new folder under components
@@ -34,7 +37,7 @@ const NAME = (props) => {
         - Put them in div so returns one element
         - mkdir Header/images
         - put the image file in there https://pixabay.com/en/banner-digital-header-strawberry-2003586/
-        - 
+        -
       </LessonSection>
 
     </Lesson>

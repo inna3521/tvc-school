@@ -22,9 +22,8 @@ import Tables from './Tables'
 import DevBoxConfig from './DevBoxConfig'
 import FirstReactApp from './FirstReactApp'
 import FirstReactComponent from './FirstReactComponent'
+import ModifyProjectStructure from './ModifyProjectStructure'
 // import * as ku from '../../lib/ke-utils'
-
-
 
 const Page = () => (
 
@@ -52,6 +51,7 @@ const Page = () => (
       <Route path='/dev-box-config' component={DevBoxConfig} />
       <Route path='/first-react-app' component={FirstReactApp} />
       <Route path='/first-react-component' component={FirstReactComponent} />
+      <Route path='/modify-project-structure' component={ModifyProjectStructure} />
       <Route exact path='/' render={() => (
         <div>
           <MenuItems />
