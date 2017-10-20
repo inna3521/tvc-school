@@ -17,8 +17,8 @@ const menuItems = [
     name: 'First React Component',
   },
   {
-    path: '',
-    name: 'Implementing CSS Modules',
+    path: 'styling',
+    name: 'Styling React',
   },
   {
     path: '',
