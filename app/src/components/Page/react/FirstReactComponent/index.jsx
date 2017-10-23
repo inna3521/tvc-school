@@ -14,7 +14,7 @@ import A from '../../../elements/A'
 const NAME = (props) => {
   return (
     <Lesson
-      title=''
+      title='First React Component'
       subTitle=''
       handleMenuItemClick={props.handleMenuItemClick}
     >

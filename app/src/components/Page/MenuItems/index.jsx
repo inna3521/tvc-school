@@ -13,12 +13,12 @@ const MenuItems = (props) => {
   ku.log('menuItems', menuItems, 'blue')
 
     const items = menuItems.map((item, index) => (
-      <li ><Link className={styles.linkText}
-        key={index}
-        to={item.path}
-           >
-        {item.name}
-      </Link></li>
+      <li key={index}>
+        <Link className={styles.linkText}
+          to={item.path}
+        >
+          {item.name}
+        </Link></li>
     ))
   // ku.log('items', items, 'blue')
   return (

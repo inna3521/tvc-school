@@ -32,7 +32,7 @@ const Styling = (props) => {
       >
         <P>Since React is an extention and thereby part of JavaScript, JavaScript key words cannot be used in JSX. Therefore, JSX differes from HTML in certain ways. One of those is you must use 'className' instead of 'class' when assigning a class to an element. For example, in HTML we might have ...</P>
         <Pre
-          js
+          html
           code={[
             '<div class="header">',
             '  <p>some text</p>',
