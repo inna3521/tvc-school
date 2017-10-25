@@ -8,7 +8,6 @@ const L12ControlFlow = (props) => {
     <Lesson
       title='Conditional Flow Control'
       subTitle='" if " statement'
-      handleMenuItemClick={props.handleMenuItemClick}
     >
       <p>What is an if statement?</p>
     </Lesson>

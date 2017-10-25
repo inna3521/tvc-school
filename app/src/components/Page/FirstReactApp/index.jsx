@@ -16,7 +16,6 @@ const FirstReactApp = (props) => {
     <Lesson
       title='First React App'
       subTitle='Hello World With React'
-      handleMenuItemClick={props.handleMenuItemClick}
     >
       <LessonSection
         title='Introduction'

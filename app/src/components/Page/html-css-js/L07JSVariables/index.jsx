@@ -9,7 +9,6 @@ const Lesson04 = (props) => {
     <Lesson
       title='Variables'
       subTitle='An Essential Ingredient'
-      handleMenuItemClick={props.handleMenuItemClick}
     >
 
       <p>Without varables programming languages would not be very useful and all of the apps that you use today would not exist. Variables are a place to store data for use later. The data stored in a variable can be changed.</p>

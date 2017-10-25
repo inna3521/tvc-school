@@ -7,7 +7,6 @@ const Lesson08 = (props) => {
   return (
     <Lesson
       title='Arrays'
-      handleMenuItemClick={props.handleMenuItemClick}
     >
       <p>An array is an ordered set of values that you refer to with a name and an index. That probably has little meaning to someone who doesn't already know what an array is. The best way to understand arrays is to see them in action. However, before we jump in you'll need to understand zero based v. one based counting.</p>
       <p>When using one based counting you start counting with the number 1. So 5 numbers would be 1, 2, 3, 4, 5.</p>

@@ -17,7 +17,6 @@ const Lesson03 = (props) => {
     <Lesson
       title='HTML Challenge 1'
       subTitle='Make a Page with HTML Only'
-      handleMenuItemClick={props.handleMenuItemClick}
     >
       <LessonSection>
         <h2>Getting Ready</h2>

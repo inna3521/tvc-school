@@ -19,7 +19,6 @@ const Lesson04 = (props) => {
     <Lesson
       title='CSS'
       subTitle='What is CSS?'
-      handleMenuItemClick={props.handleMenuItemClick}
     >
       <p>CSS stands for <span className="large-cap">C</span>ascading<span className="large-cap"> S</span>tyle <span className="large-cap">S</span>heets.
         We will get to the meaning of the name in a later lession.

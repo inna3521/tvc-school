@@ -11,7 +11,6 @@ const FirstHTMLPage = (props) => {
     <Lesson
       title='First HTML Page'
       subTitle='Make a Page with HTML Only'
-      handleMenuItemClick={props.handleMenuItemClick}
     >
       <LessonSection>
         <p>In this lesson, you will be building a web page with HTML only, using all of the tags introduced in the previous section. Before you start writing HTML we need to discuss code formatting.</p>

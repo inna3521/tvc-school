@@ -8,7 +8,6 @@ import LessonFooter from './LessonFooter'
     props
       > title
       > subTitle
-      > handleMenuItemClick={handleMenuItemClick}
  */
 const Lesson = (props) => {
   return (
@@ -16,7 +15,7 @@ const Lesson = (props) => {
       <LessonHeader
         title={props.title}
         subTitle={props.subTitle}
-        handleMenuItemClick={props.handleMenuItemClick}
+        back={props.back}
       />
       {props.children}
       <LessonFooter/>

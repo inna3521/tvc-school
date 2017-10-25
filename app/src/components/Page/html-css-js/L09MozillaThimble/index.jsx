@@ -10,7 +10,6 @@ const Lesson04 = (props) => {
     <Lesson
       title='Mozilla Thimble'
       subTitle='A Code Editor'
-      handleMenuItemClick={props.handleMenuItemClick}
     >
       <p>Mozilla Thimble is an online code editor much like Cloud9 but simplier. We will use it for today's lesson. Hear is how to get started with Thimble.</p>
       <h2>Launch and sign into Thimble</h2>

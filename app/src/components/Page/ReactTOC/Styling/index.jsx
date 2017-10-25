@@ -17,7 +17,6 @@ const Styling = (props) => {
     <Lesson
       title='Styling Components with CSS'
       subTitle=''
-      handleMenuItemClick={props.handleMenuItemClick}
     >
       <LessonSection
         title='Overview'

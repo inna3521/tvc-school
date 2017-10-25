@@ -23,7 +23,6 @@ const L05CSSChallenge01 = (props) => {
   return (
     <Lesson
       title='How to Start a New Project'
-      handleMenuItemClick={props.handleMenuItemClick}
     >
 
       <h2>Copy the Challenge Project on GitHub</h2>

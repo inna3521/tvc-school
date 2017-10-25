@@ -1,12 +1,12 @@
 const menuItems = [
 
   {
-    path: 'dev-box-config',
-    name: 'Getting Ready: Installation & Configuration',
+    path: 'menu-ap-welcome',
+    name: 'Restaurant Website Welcome',
   },
   {
-    path: 'first-react-app',
-    name: 'First React App',
+    path: 'menu-app/header',
+    name: 'Creating the Header',
   },
   {
     path: 'modify-project-structure',

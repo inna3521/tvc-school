@@ -22,7 +22,6 @@ const P01NewProject = (props) => {
     <div>
       <Button
         bsStyle='primary'
-        onClick={() => props.handleMenuItemClick()}
       >
         Back
       </Button>

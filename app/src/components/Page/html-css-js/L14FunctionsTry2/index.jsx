@@ -14,7 +14,6 @@ const L14 = (props) => {
   return (
     <Lesson
       title='Functions'
-      handleMenuItemClick={props.handleMenuItemClick}
     >
       <LessonSection
         title='What is a fnction?'

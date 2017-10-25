@@ -2,7 +2,8 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import styles from './style.css'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import Link from 'elements/Link'
 
 /*
     props
@@ -10,11 +11,11 @@ import { Link } from 'react-router-dom'
       > subTitle
  */
 const LessonHeader = (props) => {
-
+  // console.log('props', props)
   return (
     <div>
 
-      <Link to='/'>
+      <Link back={props.back}>
         <Button bsStyle="info">
           Back
         </Button>

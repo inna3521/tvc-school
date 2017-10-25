@@ -4,24 +4,25 @@
 .samplePage {
   padding: 10px 15px 10px 15px
 }
-.indent2 {
+.level1 {
   margin-left: 20px;
 }
-.indent4 {
+.level2 {
   margin-left: 40px;
 }
-.indent6 {
+.level3 {
   margin-left: 60px;
 }
-.indent8 {
+.level4 {
   margin-left: 80px;
 }
-
 .fileStructure {
-  list-style: none;
   line-height: 24px;
+  list-style: none;
 }
-
 .redText {
   color: red;
+}
+.fontSize {
+  font-size: 0.1em;
 }

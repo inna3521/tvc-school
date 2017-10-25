@@ -11,7 +11,6 @@ const L13MovingImageIntro = (props) => {
     <Lesson
       title='Moving Image Project'
       subTitle='Introduction'
-      handleMenuItemClick={props.handleMenuItemClick}
     >
       <LessonSection
         title='Project Demo'

@@ -5,17 +5,15 @@ import { connect } from 'react-redux'
 import * as actionCreators from '../../../store/actions'
 import * as selectors from '../../../store/selectors'
 import { Link } from 'react-router-dom'
-import menuItems from './menu-items'
-
 import * as ku from '../../../lib/ke-utils'
 
 const MenuItems = (props) => {
-  // ku.log('menuItems', menuItems, 'blue')
+  ku.log('menuItems.props', props, 'blue')
 
-    const items = menuItems.map((item, index) => (
+    const items = props.src.map((item, index) => (
       <li key={index}>
         <Link className={styles.linkText}
-          to={item.path}
+          to={item.to}
         >
           {item.name}
         </Link></li>

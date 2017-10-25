@@ -14,7 +14,6 @@ const Lesson01 = (props) => {
   return (
     <Lesson
       title='What is HTML'
-      handleMenuItemClick={props.handleMenuItemClick}
     >
       <LessonSection
 

@@ -9,10 +9,11 @@ import A from '../../../elements/A'
 import LI from '../../../elements/LI'
 
 const DevBoxConfig = (props) => {
+  console.log('props', props)
   return (
     <Lesson
       title='Setting Up Your Development Environment'
-      handleMenuItemClick={props.handleMenuItemClick}
+      // back={}
     >
 
       <LessonSection

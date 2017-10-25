@@ -13,7 +13,6 @@ const JSOperators = (props) => {
   return (
     <Lesson
       title='JavaScript Operators'
-      handleMenuItemClick={props.handleMenuItemClick}
     >
       <h2>Operators</h2>
       <LessonSection>

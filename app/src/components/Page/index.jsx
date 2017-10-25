@@ -2,7 +2,8 @@
 import React from 'react';
 import styles from './style.css'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import MenuItems from './MenuItems'
+import MenuItems from 'elements/MenuItems'
+import { homeMenuItems } from './menu-items'
 import Footer from './Footer'
 // import L01WhatIsHTML from './html-css-js/L01WhatIsHTML'
 // import L02EssentialHTMLElements from './html-css-js/L02EssentialHTMLElements'
@@ -19,13 +20,15 @@ import Footer from './Footer'
 // import L13MovingImageIntro from './html-css-js/L13MovingImageIntro'
 // import L14FunctionsTry2 from './html-css-js/L14FunctionsTry2'
 // import Tables from './html-css-js/Tables'
-import DevBoxConfig from './react/DevBoxConfig'
-import FirstReactApp from './react/FirstReactApp'
-import FirstReactComponent from './react/FirstReactComponent'
-import ModifyProjectStructure from './react/ModifyProjectStructure'
-import Styling from './react/Styling'
-import MenuApp from './react/MenuApp'
-import MenuAppHeader from './react/MenuApp/01MenuAppHeader'
+import ReactTOC from './ReactTOC'
+import DevBoxConfig from './ReactTOC/DevBoxConfig'
+import FirstReactApp from './ReactTOC/FirstReactApp'
+import FirstReactComponent from './ReactTOC/FirstReactComponent'
+import ModifyProjectStructure from './ReactTOC/ModifyProjectStructure'
+import Styling from './ReactTOC/Styling'
+import MenuApp from './ReactTOC/MenuApp'
+import MenuAppHeader from './ReactTOC/MenuApp/01MenuAppHeader'
+import MenuAppWelcome from './ReactTOC/MenuApp/MenuAppWelcome'
 // import * as ku from '../../lib/ke-utils'
 
 const Page = () => (
@@ -52,15 +55,24 @@ const Page = () => (
         <Route path='/13-moving-image-intro' component={L13MovingImageIntro} />
       <Route path='/11-javascript-functions-try-2' component={L14FunctionsTry2} /> */}
       <Route path='/dev-box-config' component={DevBoxConfig} />
-      <Route path='/first-react-app' component={FirstReactApp} />
-      <Route path='/first-react-component' component={FirstReactComponent} />
-      <Route path='/modify-project-structure' component={ModifyProjectStructure} />
-      <Route path='/styling' component={Styling} />
-      <Route path='/menu-app' component={MenuApp} />
-      <Route path='/menu-app/header' component={MenuAppHeader} />
+      <Route path='/react' component={ReactTOC} />
+      <Route path='/react/first-react-app' component={FirstReactApp} />
+      <Route path='/react/first-react-component' component={FirstReactComponent} />
+      <Route path='/react/modify-project-structure' component={ModifyProjectStructure} />
+      <Route path='/react/styling' component={Styling} />
+      {/* <Route path='/menu-app' component={MenuApp} /> */}
+      <Route path='/react/menu-app/welcome' component={MenuAppWelcome} />
+      <Route path='/react/menu-app/header' component={MenuAppHeader} />
       <Route exact path='/' render={() => (
         <div>
-          <MenuItems />
+          <MenuItems
+            src={homeMenuItems}
+          />
+        </div>
+      )} />
+      <Route exact path='/menu-app' render={() => (
+        <div>
+          <MenuApp />
         </div>
       )} />
 

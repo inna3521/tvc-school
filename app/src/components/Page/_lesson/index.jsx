@@ -14,7 +14,6 @@ const NAME = (props) => {
     <Lesson
       title=''
       subTitle=''
-      handleMenuItemClick={props.handleMenuItemClick}
     >
       <LessonSection
         title=''

@@ -18,7 +18,6 @@ const ModifyProjectStructure = (props) => {
     <Lesson
       title='Modifying Project Structure'
       subTitle=''
-      handleMenuItemClick={props.handleMenuItemClick}
     >
       <LessonSection
         title='Overview'
