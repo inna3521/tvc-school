@@ -10,7 +10,7 @@ import menuItems from './menu-items'
 import * as ku from '../../../lib/ke-utils'
 
 const MenuItems = (props) => {
-  ku.log('menuItems', menuItems, 'blue')
+  // ku.log('menuItems', menuItems, 'blue')
 
     const items = menuItems.map((item, index) => (
       <li key={index}>

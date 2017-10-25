@@ -21,52 +21,12 @@ const menuItems = [
     name: 'Styling React',
   },
   {
-    path: '',
-    name: 'Adding Bootstrap',
+    path: 'menu-app',
+    name: 'The Menu App',
   },
   {
     path: '',
     name: 'Types of Components',
-  },
-  {
-    path: '',
-    name: 'classnames ?',
-  },
-  {
-    path: '',
-    name: 'using map',
-  },
-  {
-    path: '',
-    name: 'Styling & CSS Modules'
-  },
-  {
-    path: '',
-    name: 'Props'
-  },
-  {
-    path: '',
-    name: 'State'
-  },
-  {
-    path: '',
-    name: 'Life-cycle Events'
-  },
-  {
-    path: '',
-    name: 'Handling Events'
-  },
-  {
-    path: '',
-    name: 'Conditional Rendering'
-  },
-  {
-    path: '',
-    name: 'Lists & Keys'
-  },
-  {
-    path: '',
-    name: 'Forms'
   },
 ]
 

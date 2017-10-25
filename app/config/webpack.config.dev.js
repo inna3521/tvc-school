@@ -16,6 +16,7 @@ const publicPath = '/';
 const publicUrl = '';
 const env = getClientEnvironment(publicUrl);
 
+
 module.exports = {
   devtool: 'cheap-module-source-map',
   entry: [
@@ -41,6 +42,7 @@ module.exports = {
     extensions: ['.web.js', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
       'react-native': 'react-native-web',
+      elements: path.resolve(process.env.APP_DIR, 'src/components/elements'),
     },
     plugins: [
       new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),

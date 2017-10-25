@@ -24,6 +24,8 @@ import FirstReactApp from './react/FirstReactApp'
 import FirstReactComponent from './react/FirstReactComponent'
 import ModifyProjectStructure from './react/ModifyProjectStructure'
 import Styling from './react/Styling'
+import MenuApp from './react/MenuApp'
+import MenuAppHeader from './react/MenuApp/01MenuAppHeader'
 // import * as ku from '../../lib/ke-utils'
 
 const Page = () => (
@@ -54,6 +56,8 @@ const Page = () => (
       <Route path='/first-react-component' component={FirstReactComponent} />
       <Route path='/modify-project-structure' component={ModifyProjectStructure} />
       <Route path='/styling' component={Styling} />
+      <Route path='/menu-app' component={MenuApp} />
+      <Route path='/menu-app/header' component={MenuAppHeader} />
       <Route exact path='/' render={() => (
         <div>
           <MenuItems />
