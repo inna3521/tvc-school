@@ -1,0 +1,7 @@
+.linkText {
+  color: black;
+}
+.linkText:hover {
+  color: black;
+  text-decoration: underline;
+}

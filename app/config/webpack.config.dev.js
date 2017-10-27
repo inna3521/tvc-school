@@ -43,6 +43,9 @@ module.exports = {
     alias: {
       'react-native': 'react-native-web',
       elements: path.resolve(process.env.APP_DIR, 'src/components/elements'),
+      lib: path.resolve(process.env.APP_DIR, 'src/lib'),
+      data: path.resolve(process.env.APP_DIR, 'src/data'),
+      store: path.resolve(process.env.APP_DIR, 'src/store'),
     },
     plugins: [
       new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),

@@ -1,5 +1,7 @@
 // Pre
 import React from 'react';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/styles';
 import classNames from 'classnames'
 // import styles from './style.css'
 
@@ -18,11 +20,9 @@ const Code = (props) => {
   let code = props.code
   let newCode = code.join('\n')
   return (
-    <pre className={preStyles}>
-      <code>
+      <SyntaxHighlighter showLineNumbers style={docco}>
         {`${newCode}`}
-      </code>
-    </pre>
+      </SyntaxHighlighter>
   )
 };
 

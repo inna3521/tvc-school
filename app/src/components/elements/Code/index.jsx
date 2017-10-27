@@ -2,6 +2,8 @@
 import React from 'react';
 import classNames from 'classnames'
 import styles from './style.css'
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/styles';
 
 // Takes an array of strings
 const Code = (props) => {
@@ -15,9 +17,9 @@ const Code = (props) => {
     }
   )
   return (
-    <code className={codeStyles}>
+    <SyntaxHighlighter showLineNumbers style={docco}>
       {`${props.code}`}
-    </code>
+    </SyntaxHighlighter>
   )
 };
 

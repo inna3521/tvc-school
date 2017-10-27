@@ -14,7 +14,6 @@ const LessonHeader = (props) => {
   // console.log('props', props)
   return (
     <div>
-
       <Link back={props.back}>
         <Button bsStyle="info">
           Back
