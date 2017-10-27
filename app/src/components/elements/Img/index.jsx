@@ -3,6 +3,15 @@ import React from 'react'
 import classNames from 'classnames'
 import styles from './style.css'
 
+/*
+    > cite
+    > margin - array[5, 10] or array[5, 10, 5, 10]
+    > maxWidth
+    > size - small, medium, large
+    > src
+    > alt
+    > inline - t/f
+*/
 const Img = (props) => {
 
   let cite = props.cite
