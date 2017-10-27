@@ -2,7 +2,7 @@
 import React from 'react'
 import PageTitle from 'elements/PageTitle'
 import MenuItems from 'elements/MenuItems'
-import { reactMenuItems } from 'data/menu-items'
+import { reactTOC } from 'data/menu-items'
 import * as ku from 'lib/ke-utils'
 
 const ReactTOC = (props) => {
@@ -14,7 +14,7 @@ const ReactTOC = (props) => {
         back={props.match}
       />
       <MenuItems
-        src={reactMenuItems}
+        src={reactTOC}
       />
     </div>
   )

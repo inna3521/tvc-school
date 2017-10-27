@@ -1,4 +1,15 @@
-export const reactMenuItems = [
+export const homeTOC = [
+  {
+    to: 'react-toc',
+    name: 'React TOC',
+  },
+  {
+    to: 'html-css-js',
+    name: 'HTML CSS JS',
+  },
+]
+
+export const reactTOC = [
   {
     to: 'react-toc/getting-ready-install-config',
     name: 'Getting Ready: Installation & Configuration',
@@ -20,12 +31,12 @@ export const reactMenuItems = [
     name: 'Styling React',
   },
   {
-    to: 'react-toc/menu-app',
-    name: 'The Menu App',
+    to: 'react-toc/restaurant-app-toc',
+    name: 'Restaurant App',
   },
 ]
 
-export const htmlCSSJSMenuItems = [
+export const htmlCSSJSTOC = [
   {
     to: 'html-css-js/01-what-is-html',
     name: 'What is HTML',
@@ -88,15 +99,15 @@ export const htmlCSSJSMenuItems = [
   },
 ]
 
-export const homeMenuItems = [
+export const restaurantAppTOC = [
   {
-    to: 'react-toc',
-    name: 'React TOC',
+    to: 'react-toc/restaurant-app-toc/introduction',
+    name: 'Restaurant Application Introduction',
   },
   {
-    to: 'html-css-js',
-    name: 'HTML CSS JS',
+    to: 'react-toc/restaurant-app-toc/header',
+    name: 'Making the Header',
   },
 ]
 
-export default { homeMenuItems, reactMenuItems, htmlCSSJSMenuItems };
+export default { homeTOC, reactTOC, htmlCSSJSTOC, restaurantAppTOC };

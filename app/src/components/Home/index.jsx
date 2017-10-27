@@ -3,16 +3,16 @@ import React from 'react';
 import styles from './style.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import MenuItems from 'elements/MenuItems'
-import { homeMenuItems } from 'data/menu-items'
+import { homeTOC } from 'data/menu-items'
 import ReactTOC from './ReactTOC'
 import GetReadyInstallConfig from './ReactTOC/GetReadyInstallConfig'
 import FirstReactApp from './ReactTOC/FirstReactApp'
 import FirstReactComponent from './ReactTOC/FirstReactComponent'
 import ModifyProjectStructure from './ReactTOC/ModifyProjectStructure'
 import Styling from './ReactTOC/Styling'
-// import MenuApp from './ReactTOC/MenuApp'
-// import MenuAppHeader from './ReactTOC/MenuApp/01MenuAppHeader'
-// import MenuAppWelcome from './ReactTOC/MenuApp/MenuAppWelcome'
+import RestaurantAppTOC from './ReactTOC/RestaurantAppTOC'
+import RA01Introduction from './ReactTOC/RestaurantAppTOC/RA01Introduction'
+import RA02Header from './ReactTOC/RestaurantAppTOC/RA02Header'
 // import * as ku from '../../lib/ke-utils'
 
 const Home = () => (
@@ -31,10 +31,11 @@ const Home = () => (
         <Route path='/react-toc/first-react-component' component={FirstReactComponent} />
         <Route path='/react-toc/modify-project-structure' component={ModifyProjectStructure} />
         <Route path='/react-toc/styling' component={Styling} />
-        {/* <Route path='/react-toc/menu-app/welcome' component={MenuAppWelcome} />
-        <Route path='/react-toc/menu-app/header' component={MenuAppHeader} /> */}
+        <Route exact path='/react-toc/restaurant-app-toc' component={RestaurantAppTOC} />
+        <Route path = '/react-toc/restaurant-app-toc/introduction' component={RA01Introduction} />
+        <Route path = '/react-toc/restaurant-app-toc/header' component={RA02Header} />
         <Route exact path='/' render={() => (
-          <MenuItems src={homeMenuItems} />
+          <MenuItems src={homeTOC} />
         )} />
 
       </Switch>

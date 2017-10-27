@@ -20,7 +20,7 @@ const LinkItem = (props) => {
   }
   const to = props.back
     ? backOne()
-    : props.to
+    : `/${props.to}`
 
   return (
     <Link to={to}>{props.children}</Link>
