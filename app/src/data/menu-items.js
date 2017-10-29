@@ -108,6 +108,18 @@ export const restaurantAppTOC = [
     to: 'react-toc/restaurant-app-toc/header',
     name: 'Making the Header',
   },
+  {
+    to: 'react-toc/restaurant-app-toc/gallery',
+    name: 'Making the Gallery',
+  },
+  {
+    to: 'react-toc/restaurant-app-toc/menu',
+    name: 'Making the Menu',
+  },
+  {
+    to: 'react-toc/restaurant-app-toc/interactive-navigation',
+    name: 'Interactive Navigation',
+  },
 ]
 
 export default { homeTOC, reactTOC, htmlCSSJSTOC, restaurantAppTOC };
