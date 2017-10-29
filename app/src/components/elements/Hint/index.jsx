@@ -12,6 +12,7 @@ class Hint extends Component {
   }
 
   render() {
+
     const handleHintClick = () => {
 
       console.log('click')
@@ -23,11 +24,14 @@ class Hint extends Component {
       show: this.state.show,
       hide: !this.state.show
     })
+    const title = this.props.title
+      ? this.props.title
+      : 'Hint'
 
     return (
       <div>
         <div>
-          <button onClick={handleHintClick}>Hint</button>
+          <button onClick={handleHintClick}>{title}</button>
         </div>
         <div className={hintStyle}>
           {this.props.children}
