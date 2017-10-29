@@ -8,7 +8,10 @@ const PageTitle = (props) => {
   return (
     <div className={styles.pageHeader}>
       <BackButton className={styles.back} back={props.back}/>
-      <h1 className={styles.title}>{props.title}</h1>
+      <div className={styles.titles}>
+        <h1 className={styles.title}>{props.title}</h1>
+        <h2 className={styles.subTitle}>{props.subTitle}</h2>
+      </div>
       <div className={styles.spacer}></div>
     </div>
   )

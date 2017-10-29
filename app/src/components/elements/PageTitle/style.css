@@ -6,6 +6,14 @@
 .title {
   margin: 0;
 }
+.titles {
+  text-align: center;
+}
+.subTitle {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: normal;
+}
 .spacer {
   width: 48.88px;
 }
