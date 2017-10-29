@@ -18,7 +18,7 @@ const RA02Header = (props) => {
     <div>
       <PageTitle title='Making the Header' back={props.match} />
       <Section title='Introduction' level={1}>
-        <P>In this section you will create a Header component which is shown below.</P>
+        <P>In this section you will create a Gallery component which is shown below.</P>
         <Img src={iHeader01} medium alt='header step 01' />
       </Section>
       <Section title='Requirements' level={1}>
