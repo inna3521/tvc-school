@@ -14,9 +14,10 @@ import Styling from './ReactTOC/Styling'
 import RestaurantAppTOC from './ReactTOC/RestaurantAppTOC'
 import RA01Introduction from './ReactTOC/RestaurantAppTOC/RA01Introduction'
 import RA02Header from './ReactTOC/RestaurantAppTOC/RA02Header'
-import RA03Gallery from './ReactTOC/RestaurantAppTOC/RA03Gallery'
-import RA04Menu from './ReactTOC/RestaurantAppTOC/RA04Menu'
-import RA05InteractiveNavigation from './ReactTOC/RestaurantAppTOC/RA05InteractiveNavigation'
+import RA03Nav from './ReactTOC/RestaurantAppTOC/RA03Nav'
+import RA04Gallery from './ReactTOC/RestaurantAppTOC/RA03Gallery'
+import RA05Menu from './ReactTOC/RestaurantAppTOC/RA04Menu'
+import RA06InteractiveNavigation from './ReactTOC/RestaurantAppTOC/RA05InteractiveNavigation'
 // import * as ku from '../../lib/ke-utils'
 
 const Home = () => (
@@ -38,9 +39,10 @@ const Home = () => (
         <Route exact path='/react-toc/restaurant-app-toc' component={RestaurantAppTOC} />
         <Route path = '/react-toc/restaurant-app-toc/introduction' component={RA01Introduction} />
         <Route path = '/react-toc/restaurant-app-toc/header' component={RA02Header} />
-        <Route path = '/react-toc/restaurant-app-toc/gallery' component={RA03Gallery} />
-        <Route path = '/react-toc/restaurant-app-toc/menu' component={RA04Menu} />
-        <Route path = '/react-toc/restaurant-app-toc/interactive-navigation' component={RA05InteractiveNavigation} />
+        <Route path = '/react-toc/restaurant-app-toc/nav' component={RA03Nav} />
+        <Route path = '/react-toc/restaurant-app-toc/gallery' component={RA04Gallery} />
+        <Route path = '/react-toc/restaurant-app-toc/menu' component={RA05Menu} />
+        <Route path = '/react-toc/restaurant-app-toc/interactive-navigation' component={RA06InteractiveNavigation} />
         <Route exact path='/' render={() => (
           <MenuItems src={homeTOC} />
         )} />
