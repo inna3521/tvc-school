@@ -15,9 +15,9 @@ import RestaurantAppTOC from './ReactTOC/RestaurantAppTOC'
 import RA01Introduction from './ReactTOC/RestaurantAppTOC/RA01Introduction'
 import RA02Header from './ReactTOC/RestaurantAppTOC/RA02Header'
 import RA03Nav from './ReactTOC/RestaurantAppTOC/RA03Nav'
-import RA04Gallery from './ReactTOC/RestaurantAppTOC/RA03Gallery'
-import RA05Menu from './ReactTOC/RestaurantAppTOC/RA04Menu'
-import RA06InteractiveNavigation from './ReactTOC/RestaurantAppTOC/RA05InteractiveNavigation'
+import RA04Gallery from './ReactTOC/RestaurantAppTOC/RA04Gallery'
+import RA05Menu from './ReactTOC/RestaurantAppTOC/RA05Menu'
+import RA06InteractiveNavigation from './ReactTOC/RestaurantAppTOC/RA06InteractiveNavigation'
 // import * as ku from '../../lib/ke-utils'
 
 const Home = () => (
