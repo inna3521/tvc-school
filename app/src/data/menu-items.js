@@ -109,6 +109,10 @@ export const restaurantAppTOC = [
     name: 'Making the Header',
   },
   {
+    to: 'react-toc/restaurant-app-toc/nav',
+    name: 'Making the Navigation Menu',
+  },
+  {
     to: 'react-toc/restaurant-app-toc/gallery',
     name: 'Making the Gallery',
   },
