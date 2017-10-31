@@ -14,7 +14,7 @@ import InlineTag from 'elements/InlineTag'
 import Hint from 'elements/Hint'
 import iMenu from './img/menu.png'
 
-const RA03Gallery = (props) => {
+const RA07MenuEdit = (props) => {
   return (
     <div>
       <PageTitle title='Making the Menu' back={props.match} />
@@ -46,10 +46,6 @@ const RA03Gallery = (props) => {
 
       <Section title='Structure & Styling' level={1}>
         <P>The button below reveals part of the answer. Don't click it until you have met the requiremets outlined above.</P>
-        <Hint>
-          <P>Considering which components will need menuItems available will tell you which component should import it.</P>
-        </Hint>
-
         <Hint title='JSX for Menu'>
           <Pre
             code={[
@@ -108,4 +104,4 @@ const RA03Gallery = (props) => {
   )
 };
 
-export default RA03Gallery;
+export default RA07MenuEdit

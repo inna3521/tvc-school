@@ -29,7 +29,7 @@ const RA05InteractiveNavigation = (props) => {
       <Section title='Requirements' level={1}>
         The Menu must meet the these requirements:
         <OL>
-          <LI>Use <A href='https://reactjs.org/docs/conditional-rendering.html#inline-if-else-with-conditional-operator'>Conditional Rendergin</A> to show &amp; hide nav items</LI>
+          <LI>Use <A href='https://reactjs.org/docs/conditional-rendering.html#inline-if-else-with-conditional-operator'>Conditional Renderingn</A> to show &amp; hide nav items</LI>
           <LI>Signed-out state: When the user is not signed-in, the Nav component must display a 'Sign-in' button</LI>
           <LI>Signed-in state: When the user is signed-in the Nav component must display 'Sign-out' & 'Edit Menu' buttons</LI>
           <LI>Clicking 'Sign-in' will
@@ -53,6 +53,12 @@ const RA05InteractiveNavigation = (props) => {
         <P>Looking at the mock-up of the final UI and give some thought to what component should maintain state. Think about where the items of state will be needed.</P>
       </Section>
       <Section title='Hints' level={1}>
+        <Hint>
+          <P>You will need to implement an event for the button click. Information for implement evetns is at <A href='https://reactjs.org/docs/handling-events.html'>Handling Events</A></P>
+        </Hint>
+        <Hint>
+          <P>Did you check-out <A href='https://reactjs.org/docs/conditional-rendering.html#inline-if-else-with-conditional-operator'>Conditional Rendering</A>?</P>
+        </Hint>
         <Hint>
           <P>For info on which component(s) should maintain state see the official React doc <A href='https://reactjs.org/docs/lifting-state-up.html'>Lifting State Up</A></P>
         </Hint>
@@ -84,32 +90,32 @@ const RA05InteractiveNavigation = (props) => {
               "      </div>",
               "}",
               "</ul>",
-          ]}
-        />
-      </Hint>
-      <Hint title='CSS for Nav'>
-        <Pre
-          code={[
-            ".nav-ul {",
-            "  display: flex;",
-            "  flex-flow: row wrap;",
-            "  font-size: 22px;",
-            "  justify-content: space-around;",
-            "  list-style-type: none;",
-            "}",
-            ".nav-ul li {",
-            "  margin: 5px 5px;",
-            "}",
-            ".nav-ul li:hover {",
-            "  text-decoration: underline;",
-            "}",
+            ]}
+          />
+        </Hint>
+        <Hint title='CSS for Nav'>
+          <Pre
+            code={[
+              ".nav-ul {",
+              "  display: flex;",
+              "  flex-flow: row wrap;",
+              "  font-size: 22px;",
+              "  justify-content: space-around;",
+              "  list-style-type: none;",
+              "}",
+              ".nav-ul li {",
+              "  margin: 5px 5px;",
+              "}",
+              ".nav-ul li:hover {",
+              "  text-decoration: underline;",
+              "}",
 
-          ]}
-        />
-      </Hint>
+            ]}
+          />
+        </Hint>
 
-    </Section>
-  </div>
+      </Section>
+    </div>
       )
       };
 

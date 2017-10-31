@@ -1,7 +1,8 @@
 .linkText {
-  color: black;
+  color: blue;
+  font-weight: bold;
 }
 .linkText:hover {
-  color: black;
+  color: blue;
   text-decoration: underline;
 }
