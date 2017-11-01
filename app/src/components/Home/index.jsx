@@ -4,7 +4,8 @@ import styles from './style.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Footer from './Footer'
 import MenuItems from 'elements/MenuItems'
-import { homeTOC } from 'data/menu-items'
+// import { homeTOC } from 'data/menu-items'
+import { restaurantAppTOC } from 'data/menu-items'
 import ReactTOC from './ReactTOC'
 import GetReadyInstallConfig from './ReactTOC/GetReadyInstallConfig'
 import FirstReactApp from './ReactTOC/FirstReactApp'
@@ -26,7 +27,7 @@ const Home = () => (
     <div>
       <header>
         <h1 className={styles.title}>Tri-Valley Coders - SCHOOL</h1>
-        <div className={styles.subTitle}>Learn Build Grow Succeed</div>
+        <div className={styles.subTitle}>Don't code alone!</div>
       </header>
       <Switch>
         <Route exact path='/react-toc' component={ReactTOC} />
@@ -44,7 +45,7 @@ const Home = () => (
         <Route path = '/react-toc/restaurant-app-toc/menu' component={RA05Menu} />
         <Route path = '/react-toc/restaurant-app-toc/interactive-navigation' component={RA06InteractiveNavigation} />
         <Route exact path='/' render={() => (
-          <MenuItems src={homeTOC} />
+          <MenuItems src={restaurantAppTOC} />
         )} />
 
       </Switch>

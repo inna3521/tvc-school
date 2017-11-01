@@ -1,16 +1,13 @@
 // RA05InteractiveNavigation
 import React from 'react'
-import './style.css'
 import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import Pre from 'elements/Pre'
 import Img from 'elements/Img'
 import OL from 'elements/OL'
-import UL from 'elements/UL'
 import LI from 'elements/LI'
 import P from 'elements/P'
 import A from 'elements/A'
-import InlineTag from 'elements/InlineTag'
 import Hint from 'elements/Hint'
 import iNavSignedOut from './img/nav-signedout.png'
 import iNavSignedIn from './img/nav-signedin.png'
@@ -29,7 +26,7 @@ const RA05InteractiveNavigation = (props) => {
       <Section title='Requirements' level={1}>
         The Menu must meet the these requirements:
         <OL>
-          <LI>Use <A href='https://reactjs.org/docs/conditional-rendering.html#inline-if-else-with-conditional-operator'>Conditional Renderingn</A> to show &amp; hide nav items</LI>
+          <LI>Use <A href='https://reactjs.org/docs/conditional-rendering.html#inline-if-else-with-conditional-operator'>Conditional Rendering</A> to show &amp; hide nav items</LI>
           <LI>Signed-out state: When the user is not signed-in, the Nav component must display a 'Sign-in' button</LI>
           <LI>Signed-in state: When the user is signed-in the Nav component must display 'Sign-out' & 'Edit Menu' buttons</LI>
           <LI>Clicking 'Sign-in' will
@@ -93,27 +90,6 @@ const RA05InteractiveNavigation = (props) => {
             ]}
           />
         </Hint>
-        <Hint title='CSS for Nav'>
-          <Pre
-            code={[
-              ".nav-ul {",
-              "  display: flex;",
-              "  flex-flow: row wrap;",
-              "  font-size: 22px;",
-              "  justify-content: space-around;",
-              "  list-style-type: none;",
-              "}",
-              ".nav-ul li {",
-              "  margin: 5px 5px;",
-              "}",
-              ".nav-ul li:hover {",
-              "  text-decoration: underline;",
-              "}",
-
-            ]}
-          />
-        </Hint>
-
       </Section>
     </div>
       )

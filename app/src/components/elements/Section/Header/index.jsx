@@ -16,11 +16,13 @@ const LessonSection = (props) => {
     [styles.titleTwo]: level === 2,
     [styles.titleThree]: level === 3,
     [styles.titleFour]: level === 4,
+    [styles.titleFont]: true,
   })
   const subTitleStyles = classNames({
     [styles.subTitleOne]: level === 1,
     [styles.subTitleTwo]: level === 2,
     [styles.subTitleThree]: level === 3,
+    [styles.titleFont]: true,
   })
   return (
     <div className={styles.header}>

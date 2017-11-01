@@ -1,16 +1,12 @@
 // Gallery
 import React from 'react'
-import './style.css'
 import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import Pre from 'elements/Pre'
 import Img from 'elements/Img'
-import OL from 'elements/OL'
 import UL from 'elements/UL'
 import LI from 'elements/LI'
 import P from 'elements/P'
-import A from 'elements/A'
-import InlineTag from 'elements/InlineTag'
 import Hint from 'elements/Hint'
 import iMenuEdit from './img/menu-edit.png'
 
@@ -47,7 +43,7 @@ const RA07MenuEdit = (props) => {
         <Hint title='CSS for MenuEdit'>
           <Pre
             code={[
-              
+
             ]}
           />
         </Hint>

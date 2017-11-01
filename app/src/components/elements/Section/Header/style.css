@@ -5,10 +5,13 @@
 }
 
 
-
+.titleFont {
+  font-family: 'Roboto', sans-serif;
+}
 .titleOne {
-  font-size: 34px;
+  font-size: 22px;
   margin: 22px 0;
+  background-color: white;
 }
 .titleTwo {
   font-size: 28px;

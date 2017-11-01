@@ -1,11 +1,9 @@
 // Gallery
 import React from 'react'
-import './style.css'
 import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import Pre from 'elements/Pre'
 import Img from 'elements/Img'
-import OL from 'elements/OL'
 import UL from 'elements/UL'
 import LI from 'elements/LI'
 import P from 'elements/P'
@@ -42,14 +40,13 @@ const RA03Gallery = (props) => {
         <Hint>
           <p>Create a MenuItem component to render an individual menu item.</p>
         </Hint>
+        <Hint>
+          <P>Considering which components will need menuItems available will tell you which component should import it.</P>
+        </Hint>
       </Section>
 
       <Section title='Structure & Styling' level={1}>
         <P>The button below reveals part of the answer. Don't click it until you have met the requiremets outlined above.</P>
-        <Hint>
-          <P>Considering which components will need menuItems available will tell you which component should import it.</P>
-        </Hint>
-
         <Hint title='JSX for Menu'>
           <Pre
             code={[
@@ -57,15 +54,6 @@ const RA03Gallery = (props) => {
               "  <h2>Our Menu</h2>",
               "  {renderItems}",
               "</div>",
-            ]}
-          />
-        </Hint>
-        <Hint title='CSS for Menu'>
-          <Pre
-            code={[
-              ".menu h2 {",
-              "  text-align: center;",
-              "}",
             ]}
           />
         </Hint>
@@ -79,27 +67,6 @@ const RA03Gallery = (props) => {
               "  </div>",
               "  <div className='menu-item-right'>{price}</div>",
               "</div>",
-            ]}
-          />
-        </Hint>
-        <Hint title='CSS for MenuItem'>
-          <Pre
-            code={[
-              ".menu-item {",
-              "  display: flex;",
-              "  justify-content: space-between;",
-              "  margin: 15px 0;",
-              "  max-width: 80%;",
-              "  margin: auto;",
-              "}",
-              ".menu-item-title {",
-              "  font-size: 1.2em;",
-              "  font-weight: bold;",
-              "  padding: 3px;",
-              "}",
-              "  .menu-item-description {",
-              "  padding: 3px;",
-              "}",
             ]}
           />
         </Hint>

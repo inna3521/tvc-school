@@ -1,11 +1,9 @@
 // Gallery
 import React from 'react'
-import './style.css'
 import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import Pre from 'elements/Pre'
 import Img from 'elements/Img'
-import OL from 'elements/OL'
 import UL from 'elements/UL'
 import LI from 'elements/LI'
 import P from 'elements/P'
@@ -57,19 +55,6 @@ const RA03Gallery = (props) => {
             ]}
           />
         </Hint>
-        <Hint title='CSS for Gallery'>
-          <Pre
-            code={[
-              ".gallery-items {",
-              "  display: flex;",
-              "  flex-flow: row wrap;",
-              "}",
-              ".gallery h2 {",
-              "  text-align: center;",
-              "}",
-            ]}
-          />
-        </Hint>
         <Hint title='JSX for GalleryItem'>
           <Pre
             code={[
@@ -79,30 +64,6 @@ const RA03Gallery = (props) => {
               "  <div className='gallery-description'>{description}</div>",
               "  <div className='gallery-price'>{price}</div>",
               "</div>",
-            ]}
-          />
-        </Hint>
-        <Hint title='CSS for GalleryItem'>
-          <Pre
-            code={[
-              ".gallery-item {",
-              "  display: flex;",
-              "  flex-flow: column nowrap;",
-              "  align-items: center;",
-              "  max-width: 80%;",
-              "  margin: 30px auto 30px auto;",
-              "}",
-              ".gallery-title {",
-              "  font-size: 1.2em;",
-              "  font-weight: bold;",
-              "  padding: 3px;",
-              "}",
-              ".gallery-description {",
-              "  padding: 3px;",
-              "}",
-              ".gallery-image {",
-              "  max-height: 200px;",
-              "}",
             ]}
           />
         </Hint>

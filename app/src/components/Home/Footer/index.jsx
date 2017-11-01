@@ -26,9 +26,9 @@ const Footer = () => {
       {/* <Resources /> */}
       <div className={styles.footerContainer}>
         <div className={styles.faBtns}>
-          <a href="https://github.com/trivalleycoders-org" style={gitHubStyle}>
-            <i className="fa fa-github fa-2x" aria-hidden="true"></i>
-          </a>
+          {/* <a href="https://github.com/trivalleycoders-org" style={gitHubStyle}> */}
+          {/* <i className="fa fa-github fa-2x" aria-hidden="true"></i> */}
+          {/* </a> */}
           <a href="https://www.meetup.com/trivalleycoders//" style={meetupStyle}>
             <i className="fa fa-meetup fa-2x meetup-logo" aria-hidden="true"></i>
           </a>

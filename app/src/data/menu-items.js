@@ -124,6 +124,10 @@ export const restaurantAppTOC = [
     to: 'react-toc/restaurant-app-toc/interactive-navigation',
     name: 'Interactive Navigation',
   },
+  {
+    to: 'react-toc/restaurant-app-toc/menu-edit',
+    name: 'Menu Edit - NOTHING HERE YET',
+  },
 ]
 
 export default { homeTOC, reactTOC, htmlCSSJSTOC, restaurantAppTOC };

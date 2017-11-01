@@ -1,6 +1,5 @@
 // MenuAppHeader
 import React from 'react'
-import './style.css'
 import Section from 'elements/Section'
 import PageTitle from 'elements/PageTitle'
 import UL from 'elements/UL'
@@ -25,8 +24,7 @@ const RA01Introduction = (props) => {
           </UL>
         </Section>
         <Section title='What will you build' level={2}>
-          <P>The completed site can be found
-            <a href="http://react-challenge-01.s3-website-us-west-2.amazonaws.com/">here</a>. This site has some optional features so I'll need to change things and publish pictures instead.</P>
+          <P>The completed site can be found <a href="http://react-challenge-01.s3-website-us-west-2.amazonaws.com/">here</a>. This site has some optional features so I'll need to change things and publish pictures instead.</P>
           <P>The site is first built as a static page (i.e., read only) and then you are challenged to add interactivity of increasing complexity. The official ReactJS documentation recommends building a React site statically first and then adding live data and interactivity. However, if you are an experienced React developer you are welcome to build the whole thing at once.</P>
         </Section>
         <Section title='Make the React components work first' level={2}>

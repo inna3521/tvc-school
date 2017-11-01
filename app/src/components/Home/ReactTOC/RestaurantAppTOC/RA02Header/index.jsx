@@ -1,11 +1,9 @@
 // MenuAppHeader
 import React from 'react'
-import './style.css'
 import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import Pre from 'elements/Pre'
 import Img from 'elements/Img'
-import OL from 'elements/OL'
 import UL from 'elements/UL'
 import LI from 'elements/LI'
 import P from 'elements/P'
@@ -31,7 +29,7 @@ const RA02Header = (props) => {
       </Section>
       <Section title='Structure & Styling' level={1}>
         <P>The button below reveals part of the answer. Don't click it until you have met the requiremets outlined above.</P>
-        <Hint>
+        <Hint title='JSX for Header'>
           <Pre
             code={[
               "<div className='header'>",
@@ -45,38 +43,6 @@ const RA02Header = (props) => {
               "  </div>",
               "  </div>",
               "</div>",
-            ]}
-          />
-          <Pre
-            code={[
-              '.header {',
-              '  align-items: stretch;',
-              '  background: -webkit-linear-gradient(to left, #0f980f, #003c00);',
-              '  background: linear-gradient(to left, #0f980f, #003c00);',
-              '  color: white;',
-              '  display: flex;',
-              '  justify-content: space-between;',
-              '  padding: 0 40px 0 40px;',
-              '}',
-              '.vegies {',
-              '  opacity: 0.8;',
-              '  width: 100%;',
-              '}',
-              '.header-left {',
-              '  align-items: center;',
-              '  display: flex;',
-              '  padding: 20px 0;',
-              '}',
-              '.header-right {',
-              '  display: flex;',
-              '  flex-flow: column nowrap;',
-              '  justify-content: space-between;',
-              '  padding: 20px 0 20px 0;',
-              '}',
-              '.header-titles {',
-              '  text-align: center;',
-              '}',
-
             ]}
           />
         </Hint>
