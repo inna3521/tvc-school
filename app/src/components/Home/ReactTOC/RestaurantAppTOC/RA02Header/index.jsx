@@ -23,8 +23,8 @@ const RA02Header = (props) => {
         Header must meet the these requirements:
         <UL>
           <LI>An <InlineTag angle>img</InlineTag> element which displays /images/vegies-left.jpg</LI>
-          <LI>Will have a  element <InlineTag angle>h1</InlineTag> element with the text 'Wholesome Foods'</LI>
-          <LI>Will have a  element <InlineTag angle>h2</InlineTag> element with the text 'Delicious meals made with locally sourced organic ingredients'</LI>
+          <LI>Will have an <InlineTag angle>h1</InlineTag> element with the text 'Wholesome Foods'</LI>
+          <LI>Will have an <InlineTag angle>h2</InlineTag> element with the text 'Delicious meals made with locally sourced organic ingredients'</LI>
         </UL>
       </Section>
       <Section title='Structure & Styling' level={1}>

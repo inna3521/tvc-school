@@ -19,7 +19,7 @@ const RA07MenuEdit = (props) => {
         <Img src={iMenuEdit} medium alt='MenuEdit component' />
       </Section>
       <Section title='Requirements' level={1}>
-        MenuEdit must meet the these requirements:
+        MenuEdit must meet these requirements:
         <UL>
           <LI>Enables user to edit the title, description and price</LI>
           <LI>Modifies menu data which is stored in state</LI>
@@ -30,7 +30,7 @@ const RA07MenuEdit = (props) => {
           <P>Give some thought to where the menu items need to live in state. Thinking of the application's components as a tree sturcture, consider each component that needs the menu items and place the menu items in state inside a component that is the parent to all of them.</P>
         </Hint>
         <Hint>
-          <P>For the sake of saving time in the context of this learning exercise, you could leave the import of menu items in the Menu component. However, this would be bad form for a reall application. With that in mind, once you have MenuEdit working, remove the import of menu items from the Menu component.</P>
+          <P>For the sake of saving time in the context of this learning exercise, you could leave the import of menu items in the Menu component. However, this would be bad form for a real application. With that in mind, once you have MenuEdit working, remove the import of menu items from the Menu component.</P>
         </Hint>
       </Section>
 

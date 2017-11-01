@@ -30,7 +30,7 @@ const shape = [
     level: 2,
   },
   {
-    name: 'Gallery Item',
+    name: 'GalleryItem',
     type: 'component',
     level: 3,
   },

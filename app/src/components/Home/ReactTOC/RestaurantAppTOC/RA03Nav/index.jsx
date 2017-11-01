@@ -22,10 +22,10 @@ const RA02Header = (props) => {
         <P>The navigation menu must meet these requirements:</P>
         <OL>
           <LI>The component will be named Nav</LI>
-          <LI>Nav with have 4 nav items</LI>
+          <LI>Nav will have 4 nav items:</LI>
           <OL>
             <LI>'Menu' with href=#menu</LI>
-            <LI>"Gallery" with href=#gallery</LI>
+            <LI>'Gallery' with href=#gallery</LI>
             <LI>'Location' with href=#location</LI>
             <LI>'Our Story' with href=#our-story</LI>
           </OL>

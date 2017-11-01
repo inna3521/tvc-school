@@ -17,16 +17,16 @@ const RA03Gallery = (props) => {
     <div>
       <PageTitle title='Making the Menu' back={props.match} />
       <Section title='Introduction' level={1}>
-        <P>In this section you will create the restaurant's Menu. For now it will read only. Editing is part of a later challenge. Here is a picture of the Menu:</P>
+        <P>In this section you will create the restaurant's Menu. For now it will be read only. Editing is part of a later challenge. Here is a picture of the Menu:</P>
         <Img src={iMenu} medium alt='menu read only' />
       </Section>
       <Section title='Requirements' level={1}>
-        The Menu must meet the these requirements:
+        The Menu must meet these requirements:
         <UL>
-          <LI>Will have a element <InlineTag angle>h2</InlineTag> element with the text 'Our Menu'</LI>
+          <LI>Will have an <InlineTag angle>h2</InlineTag> element with the text 'Our Menu'</LI>
           <LI>Will display all menu items from /src/menu-data.js</LI>
-          <LI>Each menu item will have a title, the description and price.</LI>
-          <LI>Each menu item will be on its own row.</LI>
+          <LI>Each menu item will have a title, the description and price</LI>
+          <LI>Each menu item will be on its own row</LI>
           <LI>Create two components Menu &amp; MenuItem</LI>
         </UL>
       </Section>
