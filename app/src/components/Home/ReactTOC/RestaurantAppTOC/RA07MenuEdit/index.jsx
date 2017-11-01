@@ -13,21 +13,24 @@ import iMenuEdit from './img/menu-edit.png'
 const RA07MenuEdit = (props) => {
   return (
     <div>
-      <PageTitle title='Making the Menu' back={props.match} />
+      <PageTitle title='Making Menu Edit' back={props.match} />
       <Section title='Introduction' level={1}>
-        <P>In this section you will create a component named MenuEdith which will allow the user to edit the menu. Below is the UI for this component.</P>
-        <Img src={iMenuEdit} medium alt='menu read only' />
+        <P>In this section you will create a component named MenuEdit which will allow the user to edit the menu. Changes to the menu will be stored in state. Below is the UI for this component.</P>
+        <Img src={iMenuEdit} medium alt='MenuEdit component' />
       </Section>
       <Section title='Requirements' level={1}>
-        The Menu must meet the these requirements:
+        MenuEdit must meet the these requirements:
         <UL>
-          <LI>The user will be able to change the title, description and price.</LI>
-          <LI>Changes to the data will be stored in state</LI>
+          <LI>Enables user to edit the title, description and price</LI>
+          <LI>Modifies menu data which is stored in state</LI>
         </UL>
       </Section>
       <Section title='Tips' level={1}>
         <Hint>
-          <p>Use the onChange() event</p>
+          <P>Give some thought to where the menu items need to live in state. Thinking of the application's components as a tree sturcture, consider each component that needs the menu items and place the menu items in state inside a component that is the parent to all of them.</P>
+        </Hint>
+        <Hint>
+          <P>For the sake of saving time in the context of this learning exercise, you could leave the import of menu items in the Menu component. However, this would be bad form for a reall application. With that in mind, once you have MenuEdit working, remove the import of menu items from the Menu component.</P>
         </Hint>
       </Section>
 
@@ -36,51 +39,32 @@ const RA07MenuEdit = (props) => {
         <Hint title='JSX for MenuEdit'>
           <Pre
             code={[
-
-            ]}
-          />
-        </Hint>
-        <Hint title='CSS for MenuEdit'>
-          <Pre
-            code={[
-
+              "<div className='menu-edit'>",
+              "  <h2>Our Menu</h2>",
+              "    {renderItems}",
+              "  <button className='button menu-edit-done'",
+              "    onClick={props.handleEditMenuClick}",
+              "  >Done</button>",
+              "</div>",
             ]}
           />
         </Hint>
         <Hint title='JSX for MenuItem'>
           <Pre
             code={[
-              "<div className='menu-item'>",
-              "  <div className='menu-item-left'>",
-              "    <div className='menu-item-title'>{title}</div>",
-              "    <div className='menu-item-description'>{description}</div>",
+              "<div className='menu-edit-item'>",
+              "  <div className='menu-edit-item-left'>",
+              "    <input className='title-input' type='text' value={title} onChange={(event) => handleChange('title', event.target.value)}  /><br/>",
+              "    <input className='description-input' type='text' value={description} onChange={(event) => handleChange('description', event.target.value)}  />",
               "  </div>",
-              "  <div className='menu-item-right'>{price}</div>",
+              "  <div className='menu-edit-item-right'>",
+              "    <input className='price-input' type='text' value={price} onChange={(event) => handleChange('price', event.target.value)}  />",
+              "  </div>",
               "</div>",
             ]}
           />
         </Hint>
-        <Hint title='CSS for MenuItem'>
-          <Pre
-            code={[
-              ".menu-item {",
-              "  display: flex;",
-              "  justify-content: space-between;",
-              "  margin: 15px 0;",
-              "  max-width: 80%;",
-              "  margin: auto;",
-              "}",
-              ".menu-item-title {",
-              "  font-size: 1.2em;",
-              "  font-weight: bold;",
-              "  padding: 3px;",
-              "}",
-              "  .menu-item-description {",
-              "  padding: 3px;",
-              "}",
-            ]}
-          />
-        </Hint>
+
       </Section>
     </div>
   )

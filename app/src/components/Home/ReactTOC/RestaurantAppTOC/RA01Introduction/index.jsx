@@ -5,6 +5,8 @@ import PageTitle from 'elements/PageTitle'
 import UL from 'elements/UL'
 import P from 'elements/P'
 import LI from 'elements/LI'
+import A from 'elements/A'
+import Callout from 'elements/Callout'
 import ProjectStructure from 'elements/ProjectStructure'
 import fInitComponentModel from './init-component-model'
 
@@ -14,7 +16,11 @@ const RA01Introduction = (props) => {
       <PageTitle title='Introduction' back={props.match}/>
       <Section title='Welcome' level={1}>
         <P>Welcome to React Restaurant Website Challenge! In this challenge you will build a website for a restaurant named 'Wholesome Foods' which does it best to appeal to health concious clients while serving a mix of healty but sometimes cholesterol ridden dishes.</P>
-        <P>It is expected that only magicians who type fast as hackers in the movies can build the entire website in the 1.75 hours alloted. However, before we depart for the day we will discuss the possibility of having a follow-up session in two weeks.</P>
+        <P>This is a challenge, not a tutorial and as such, much is left out for you to figure out. Your best source of information for solving the challenges is <A href='https://reactjs.org/'>Facebook's React site</A></P>
+        <Callout goal>
+          <P>If you are interested in learning about the concepts in this challenge in more depth as well as more advanced React concepts &amp; techniques, make sure you are a member of our Meetup group <A href='https://www.meetup.com/trivalleycoders/'>TriValley Coders</A> to receive notification of upcoming classes.</P>
+        </Callout>
+
         <Section title='What you get to start with' level={2}>
           <UL>
             <LI>fully function starter project</LI>
@@ -33,6 +39,9 @@ const RA01Introduction = (props) => {
         <Section title='The Initial Component Model' level={2}>
           <P>When you complete this part of the project the component module will look as below.</P>
           <ProjectStructure shape={fInitComponentModel}/>
+        </Section>
+        <Section title='The Finished App' level={1}>
+          <P>Here is the <A href='http://wholesome-foods.s3-website-us-west-2.amazonaws.com/'>finished app</A> so you can see it in action</P>
         </Section>
       </Section>
     </div>

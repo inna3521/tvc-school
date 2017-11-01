@@ -126,7 +126,7 @@ export const restaurantAppTOC = [
   },
   {
     to: 'react-toc/restaurant-app-toc/menu-edit',
-    name: 'Menu Edit - NOTHING HERE YET',
+    name: 'Menu Edit',
   },
 ]
 

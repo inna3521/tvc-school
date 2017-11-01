@@ -4,20 +4,21 @@ import classNames from 'classnames'
 import styles from './style.css'
 
 const Callout = (props) => {
+  console.log(props)
   const callOutStyle = classNames(
     {
       [styles.callout]: true,
-      [styles.calloutDanger]: props.type === 'danger',
-      [styles.calloutWarning]: props.type === 'warning',
-      [styles.calloutGoal]: props.type === 'goal',
-      [styles.calloutInfo]: props.type === 'info',
+      [styles.calloutDanger]: props.danger,
+      [styles.calloutWarning]: props.warning,
+      [styles.calloutGoal]: props.goal,
+      [styles.calloutInfo]: props.info,
     }
   )
   const titleStyle = classNames({
-    [styles.titleDanger]: props.type === 'danger',
-    [styles.titleWarning]: props.type === 'warning',
-    [styles.titleGoal]: props.type === 'goal',
-    [styles.titleInfo]: props.type === 'info',
+    [styles.titleDanger]: props.danger,
+    [styles.titleWarning]: props.warning,
+    [styles.titleGoal]: props.goal,
+    [styles.titleInfo]: props.info,
   })
 
   return (

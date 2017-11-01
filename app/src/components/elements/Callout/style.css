@@ -32,6 +32,8 @@
 
 .calloutGoal {
   color: black;
+  border-left-color: #008000;
+  background-color: white;
   margin: 20px 0;
   padding: 20px;
 }

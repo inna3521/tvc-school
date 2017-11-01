@@ -59,10 +59,10 @@ const RA03Gallery = (props) => {
           <Pre
             code={[
               "<div className='gallery-item'>",
-              "  <img className='gallery-image img-responsive' src={image} />",
-              "  <div className='gallery-title'>{title}</div>",
-              "  <div className='gallery-description'>{description}</div>",
-              "  <div className='gallery-price'>{price}</div>",
+              "  <img className='gallery-item-image img-responsive' src={image}  alt={title}/>",
+              "  <div className='gallery-item-title'>{title}</div>",
+              "  <div className='gallery-item-description'>{description}</div>",
+              "  <div id='gallery-item-price'>{price}</div>",
               "</div>",
             ]}
           />

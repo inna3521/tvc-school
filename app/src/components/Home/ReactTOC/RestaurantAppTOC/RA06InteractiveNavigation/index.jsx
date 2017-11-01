@@ -68,24 +68,24 @@ const RA05InteractiveNavigation = (props) => {
       </Section>
       <Section title='Structure &amp; CSS' level={1}>
         <P>The button below reveals part of the answer. Don't click it until you have met the requiremets outlined above.</P>
-        <Hint title='JSX (AND ANSWER!) for Nav'>
+        <Hint title='JSX for Nav'>
           <Pre
             code={[
               "<ul className='nav-ul'>",
-              "  <li><Button href='#menu'>Menu</Button></li>",
-              "  <li><Button href='#gallery'>Gallery</Button></li>",
-              "  <li><Button href='#location'>Location</Button></li>",
-              "  <li><Button href='#our-story'>Our Story</Button></li>",
-              "{",
-              "  props.signedIn",
-              "    ? <div className='sign-in'>",
-              "        <li><Button onClick={props.handleEditMenuClick}>Edit Menu</Button></li>",
-              "        <li><Button onClick={props.handleSignInClick}>Sign-out</Button></li>",
+              "  <li><button className='button' href='#menu'>Menu</button></li>",
+              "  <li><button className='button' href='#gallery'>Gallery</button></li>",
+              "  <li><button className='button' href='#location'>Location</button></li>",
+              "  <li><button className='button' href='#our-story'>Our Story</button></li>",
+              "  {",
+              "    props.signedIn",
+              "      ? <div className='sign-in'>",
+              "        <li><button className='button' onClick={props.handleEditMenuClick}>Edit Menu</button></li>",
+              "        <li><button className='button' onClick={props.handleSignInClick}>Sign-out</button></li>",
               "      </div>",
-              "    : <div className='sign-in'>",
-              "        <li><Button onClick={props.handleSignInClick}>Sign-in</Button></li>",
-              "      </div>",
-              "}",
+              "      : <div className='sign-in'>",
+              "        <li><button className='button' onClick={props.handleSignInClick}>Sign-in</button></li>",
+              "        </div>",
+              "  }",
               "</ul>",
             ]}
           />
