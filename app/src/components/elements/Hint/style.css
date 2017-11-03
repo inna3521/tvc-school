@@ -1,6 +1,6 @@
-.show {
+.showHint {
   display: inline;
 }
-.hide {
+.hideHint {
   display: none;
 }

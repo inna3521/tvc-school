@@ -7,27 +7,30 @@ class Hint extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: false,
+      showHint: false,
     }
+
   }
+
   handleHintClick = () => {
     // test to work around issue where style 'show' is always active
     let val
-    this.state.show
+    this.state.showHint
       ? val = false
       : val = true
-
-    this.setState({ show: val  })
+    this.setState({ showHint: !this.state.showHint  })
   }
+
   render() {
+    console.log('showHint', this.state.showHint)
     const hintStyle = classNames({
-      show: this.state.show,
-      hide: !this.state.show
+      [styles.showHint]: this.state.showHint === true,
+      [styles.hideHint]: this.state.showHint === false,
     })
     const title = this.props.title
       ? this.props.title
       : 'Hint'
-
+    console.log('hintStyle', hintStyle)
     return (
       <div>
         <div>
