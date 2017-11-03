@@ -1,4 +1,3 @@
-// Gallery
 import React from 'react'
 import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
@@ -11,6 +10,7 @@ import A from 'elements/A'
 import InlineTag from 'elements/InlineTag'
 import Hint from 'elements/Hint'
 import iGallery from './img/gallery.png'
+import CodeHeader from 'elements/CodeHeader'
 
 const RA03Gallery = (props) => {
   return (
@@ -21,12 +21,12 @@ const RA03Gallery = (props) => {
         <Img src={iGallery} medium alt='gallery step 01' />
       </Section>
       <Section title='Requirements' level={1}>
-        Header must meet these requirements:
+        Gallery must meet these requirements:
         <UL>
           <LI>Will have an <InlineTag angle>h2</InlineTag> element with the text 'Our Fresh Meals'</LI>
           <LI>Will display all menu items from /src/menu-data.js</LI>
           <LI>Each menu item will have a picture, a title, the description and price.</LI>
-          <LI>Create two components Gallery &amp; GalleryItem</LI>
+          <LI>Create two components, Gallery &amp; GalleryItem</LI>
         </UL>
       </Section>
       <Section title='Tips' level={1}>
@@ -42,7 +42,7 @@ const RA03Gallery = (props) => {
       </Section>
 
       <Section title='Structure & Styling' level={1}>
-        <P>The button below reveals part of the answer. Don't click it until you have met the requiremets outlined above.</P>
+        <CodeHeader />
         <Hint title='JSX for Gallery'>
           <Pre
             code={[

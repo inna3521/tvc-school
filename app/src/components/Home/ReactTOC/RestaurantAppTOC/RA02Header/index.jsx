@@ -1,4 +1,3 @@
-// MenuAppHeader
 import React from 'react'
 import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
@@ -10,6 +9,7 @@ import P from 'elements/P'
 import InlineTag from 'elements/InlineTag'
 import Hint from 'elements/Hint'
 import iHeader01 from './img/header-step01.png'
+import CodeHeader from 'elements/CodeHeader'
 
 const RA02Header = (props) => {
   return (
@@ -28,7 +28,7 @@ const RA02Header = (props) => {
         </UL>
       </Section>
       <Section title='Structure & Styling' level={1}>
-        <P>The button below reveals part of the answer. Don't click it until you have met the requiremets outlined above.</P>
+        <CodeHeader />
         <Hint title='JSX for Header'>
           <Pre
             code={[

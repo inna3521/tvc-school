@@ -9,8 +9,9 @@ import LI from 'elements/LI'
 import P from 'elements/P'
 import Hint from 'elements/Hint'
 import iNav from './img/nav.png'
+import CodeHeader from 'elements/CodeHeader'
 
-const RA02Header = (props) => {
+const RA03Nav = (props) => {
   return (
     <div>
       <PageTitle title='Making the Nav Menu' back={props.match} />
@@ -33,7 +34,7 @@ const RA02Header = (props) => {
         </OL>
       </Section>
       <Section title='Structure & Styling' level={1}>
-        <P>The button below reveals part of the answer. Don't click it until you have met the requiremets outlined above.</P>
+        <CodeHeader />
         <Hint title='JSX for Nav'>
           <Pre
             code={[
@@ -46,10 +47,28 @@ const RA02Header = (props) => {
             ]}
           />
         </Hint>
-
+        <Hint title='New JSX for Header'>
+          <Pre
+            linesAdded={[10]}
+            code={[
+              "<div className='header'>",
+              "  <div className='header-left'>",
+              "    <img className='img-responsive' src={iVegies} alt='fresh vegies'/>",
+              "  </div>",
+              "  <div className='header-right'>",
+              "    <div className='header-titles'>",
+              "      <h1>Wholesome Foods</h1>",
+              "      <h2>Delicious meals made with locally sourced organic ingredients.</h2>",
+              "    </div>",
+              "    <Nav />",
+              "  </div>",
+              "</div>",
+            ]}
+          />
+        </Hint>
       </Section>
     </div>
   )
 };
 
-export default RA02Header;
+export default RA03Nav;
