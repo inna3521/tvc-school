@@ -16,13 +16,13 @@ const RA02Header = (props) => {
     <div>
       <PageTitle title='Making the Header' back={props.match} />
       <Section title='Introduction' level={1}>
-        <P>In this section you will create a Gallery component which is shown below.</P>
+        <P>In this section you will create a component named Header which will look as show below.</P>
         <Img src={iHeader01} medium alt='header step 01' />
       </Section>
       <Section title='Requirements' level={1}>
-        Header must meet the these requirements:
+        Header must meet these requirements:
         <UL>
-          <LI>An <InlineTag angle>img</InlineTag> element which displays /images/vegies-left.jpg</LI>
+          <LI>An <InlineTag angle>img</InlineTag> element which displays src/images/vegies-left.jpg</LI>
           <LI>Will have an <InlineTag angle>h1</InlineTag> element with the text 'Wholesome Foods'</LI>
           <LI>Will have an <InlineTag angle>h2</InlineTag> element with the text 'Delicious meals made with locally sourced organic ingredients'</LI>
         </UL>
