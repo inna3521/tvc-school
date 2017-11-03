@@ -11,9 +11,13 @@ class Hint extends Component {
     }
   }
   handleHintClick = () => {
-    this.setState({
-      show: !this.state.show,
-    })
+    // test to work around issue where style 'show' is always active
+    let val
+    this.state.show
+      ? val = false
+      : val = true
+
+    this.setState({ show: val  })
   }
   render() {
     const hintStyle = classNames({
