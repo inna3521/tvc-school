@@ -15,6 +15,16 @@ const shape = [
     level: 3,
   },
   {
+    name: 'Gallery',
+    type: 'component',
+    level: 2,
+  },
+  {
+    name: 'GalleryItem',
+    type: 'component',
+    level: 3,
+  },
+  {
     name: 'Menu',
     type: 'component',
     level: 2,
@@ -25,15 +35,16 @@ const shape = [
     level: 3,
   },
   {
-    name: 'Gallery',
+    name: 'MenuEdit',
     type: 'component',
     level: 2,
   },
   {
-    name: 'GalleryItem',
+    name: 'MenuItem',
     type: 'component',
     level: 3,
   },
+
 
 
 ]

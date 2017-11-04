@@ -20,14 +20,11 @@ const Code = (props) => {
   let { linesAdded, linesRemoved } = props
   let removed = !linesRemoved ? [] : linesRemoved
   let added = !linesAdded ? [] : linesAdded
-  
+
   let code = props.code
   let newCode = code.join('\n')
 
   return (
-      // <SyntaxHighlighter showLineNumbers style={docco} wrapLines={true}>
-      //   {`${newCode}`}
-      // </SyntaxHighlighter>
       <SyntaxHighlighter
         showLineNumbers
         style={docco}
