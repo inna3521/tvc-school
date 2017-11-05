@@ -70,7 +70,7 @@ const RA01Introduction = (props) => {
         <Section title='Make the React components work first' level={2}>
           <P>This is a React challenge and styling is a 'nice to have'. It is recommended you only do the bare minimum of styling necessary to display the data, and then attend to making it look nice.</P>
         </Section>
-        
+
         <Section title='The Finished App' level={1}>
           <P>Here is the <A href='http://wholesome-foods.s3-website-us-west-2.amazonaws.com/'>finished app</A> so you can see it in action.</P>
           <P>When you are done the application will contain these components:</P>
