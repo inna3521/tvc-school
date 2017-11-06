@@ -11,6 +11,7 @@ import A from 'elements/A'
 import Hint from 'elements/Hint'
 import iNavSignedOut from './img/nav-signedout.png'
 import iNavSignedIn from './img/nav-signedin.png'
+import CodeHeader from 'elements/CodeHeader'
 
 const RA05InteractiveNavigation = (props) => {
   return (
@@ -18,7 +19,7 @@ const RA05InteractiveNavigation = (props) => {
       <PageTitle title='Interactive Navigation' subTitle='Using State &amp; Events' back={props.match} />
       <Section title='Introduction' level={1}>
         <P>In this section you will make the navigation interactive by adding a Sign-in button that toggles to Sign-out. Additionally, when Sign-in is active, an Edit Menu button will appear.</P>
-        <P>Here is the menu with Sign-in active (user is not signed-in)</P>
+        <P>Here is the menu with Sign-in &amp; Edit Menu active (user is not signed-in)</P>
         <Img src={iNavSignedOut} medium alt='nav with user signed-out' />
         <P>Here is the menu with Sign-out active</P>
         <Img src={iNavSignedIn} medium alt='nav with user signed-out' />
@@ -43,7 +44,7 @@ const RA05InteractiveNavigation = (props) => {
               <LI>result in the 'Edit Menu' button being hidden</LI>
             </OL>
           </LI>
-          <LI>Clicking 'Edit Menu' will print 'edit menu mode' to the console</LI>
+          <LI>Clicking 'Edit Menu' will print 'edit menu mode' to the console. (Printing to the console is temporary until we have the EditMenu component created.)</LI>
         </OL>
       </Section>
       <Section title='Tips'>
@@ -67,15 +68,16 @@ const RA05InteractiveNavigation = (props) => {
         </Hint>
       </Section>
       <Section title='Structure &amp; CSS' level={1}>
-        <P>The button below reveals part of the answer. Don't click it until you have met the requiremets outlined above.</P>
+        <CodeHeader />
         <Hint title='JSX for Nav'>
           <Pre
+            linesAdded={[6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}
             code={[
               "<ul className='nav-ul'>",
-              "  <li><button className='button' href='#menu'>Menu</button></li>",
-              "  <li><button className='button' href='#gallery'>Gallery</button></li>",
-              "  <li><button className='button' href='#location'>Location</button></li>",
-              "  <li><button className='button' href='#our-story'>Our Story</button></li>",
+              "  <li><a href='#menu'><button className='button'>Menu</button></a></li>",
+              "  <li><a href='#gallery'><button className='button'>Gallery</button></a></li>",
+              "  <li><a href='#location'><button className='button'>Location</button></a></li>",
+              "  <li><a href='#our-story'><button className='button'>Our Story</button></a></li>",
               "  {",
               "    props.signedIn",
               "      ? <div className='sign-in'>",

@@ -7,31 +7,29 @@ class Hint extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: false,
+      showHint: false,
     }
+
+  }
+
+  handleHintClick = () => {
+    this.setState({ showHint: !this.state.showHint  })
   }
 
   render() {
-
-    const handleHintClick = () => {
-
-      console.log('click')
-      this.setState({
-        show: !this.state.show,
-      })
-    }
+    console.log('showHint', this.state.showHint)
     const hintStyle = classNames({
-      show: this.state.show,
-      hide: !this.state.show
+      [styles.showHint]: this.state.showHint === true,
+      [styles.hideHint]: this.state.showHint === false,
     })
     const title = this.props.title
       ? this.props.title
       : 'Hint'
-
+    console.log('hintStyle', hintStyle)
     return (
       <div>
         <div>
-          <button onClick={handleHintClick}>{title}</button>
+          <button onClick={this.handleHintClick}>{title}</button>
         </div>
         <div className={hintStyle}>
           {this.props.children}

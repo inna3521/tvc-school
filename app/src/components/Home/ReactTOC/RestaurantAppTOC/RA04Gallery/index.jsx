@@ -1,4 +1,3 @@
-// Gallery
 import React from 'react'
 import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
@@ -11,6 +10,7 @@ import A from 'elements/A'
 import InlineTag from 'elements/InlineTag'
 import Hint from 'elements/Hint'
 import iGallery from './img/gallery.png'
+import CodeHeader from 'elements/CodeHeader'
 
 const RA03Gallery = (props) => {
   return (
@@ -42,7 +42,7 @@ const RA03Gallery = (props) => {
       </Section>
 
       <Section title='Structure & Styling' level={1}>
-        <P>The button below reveals part of the answer. Don't click it until you have met the requiremets outlined above.</P>
+        <CodeHeader />
         <Hint title='JSX for Gallery'>
           <Pre
             code={[

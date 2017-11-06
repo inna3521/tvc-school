@@ -9,17 +9,18 @@ import LI from 'elements/LI'
 import P from 'elements/P'
 import Hint from 'elements/Hint'
 import iNav from './img/nav.png'
+import CodeHeader from 'elements/CodeHeader'
 
-const RA02Header = (props) => {
+const RA03Nav = (props) => {
   return (
     <div>
       <PageTitle title='Making the Nav Menu' back={props.match} />
       <Section title='Introduction' level={1}>
-        <P>In this section you will add a navigation menu to Header.</P>
+        <P>In this section you will add component named Nav to Header. Nav will look as show below.</P>
         <Img src={iNav} medium alt='header step 01' />
       </Section>
       <Section title='Requirements' level={1}>
-        <P>The navigation menu must meet these requirements:</P>
+        <P>Nav must meet these requirements:</P>
         <OL>
           <LI>The component will be named Nav</LI>
           <LI>Nav will have 4 nav items:</LI>
@@ -33,23 +34,41 @@ const RA02Header = (props) => {
         </OL>
       </Section>
       <Section title='Structure & Styling' level={1}>
-        <P>The button below reveals part of the answer. Don't click it until you have met the requiremets outlined above.</P>
+        <CodeHeader />
         <Hint title='JSX for Nav'>
           <Pre
             code={[
               "<ul className='nav-ul'>",
-              "  <li><button href='#menu'>Menu</button></li>",
-              "  <li><button href='#gallery'>Gallery</button></li>",
-              "  <li><button href='#location'>Location</button></li>",
-              "  <li><button href='#our-story'>Our Story</button></li>",
+              "  <li><a href='#menu'><button className='button'>Menu</button></a></li>",
+              "  <li><a href='#gallery'><button className='button'>Gallery</button></a></li>",
+              "  <li><a href='#location'><button className='button'>Location</button></a></li>",
+              "  <li><a href='#our-story'><button className='button'>Our Story</button></a></li>",
               "</ul>",
             ]}
           />
         </Hint>
-
+        <Hint title='New JSX for Header'>
+          <Pre
+            linesAdded={[10]}
+            code={[
+              "<div className='header'>",
+              "  <div className='header-left'>",
+              "    <img className='img-responsive' src={iVegies} alt='fresh vegies'/>",
+              "  </div>",
+              "  <div className='header-right'>",
+              "    <div className='header-titles'>",
+              "      <h1>Wholesome Foods</h1>",
+              "      <h2>Delicious meals made with locally sourced organic ingredients.</h2>",
+              "    </div>",
+              "    <Nav />",
+              "  </div>",
+              "</div>",
+            ]}
+          />
+        </Hint>
       </Section>
     </div>
   )
 };
 
-export default RA02Header;
+export default RA03Nav;

@@ -9,6 +9,7 @@ import LI from 'elements/LI'
 import P from 'elements/P'
 import Hint from 'elements/Hint'
 import iMenuEdit from './img/menu-edit.png'
+import CodeHeader from 'elements/CodeHeader'
 
 const RA07MenuEdit = (props) => {
   return (
@@ -35,7 +36,7 @@ const RA07MenuEdit = (props) => {
       </Section>
 
       <Section title='Structure & Styling' level={1}>
-        <P>The button below reveals part of the answer. Don't click it until you have met the requiremets outlined above.</P>
+        <CodeHeader />
         <Hint title='JSX for MenuEdit'>
           <Pre
             code={[

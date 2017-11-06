@@ -1,4 +1,3 @@
-// Gallery
 import React from 'react'
 import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
@@ -11,8 +10,9 @@ import A from 'elements/A'
 import InlineTag from 'elements/InlineTag'
 import Hint from 'elements/Hint'
 import iMenu from './img/menu.png'
+import CodeHeader from 'elements/CodeHeader'
 
-const RA03Gallery = (props) => {
+const RA05Menu = (props) => {
   return (
     <div>
       <PageTitle title='Making the Menu' back={props.match} />
@@ -27,7 +27,7 @@ const RA03Gallery = (props) => {
           <LI>Will display all menu items from /src/menu-data.js</LI>
           <LI>Each menu item will have a title, the description and price</LI>
           <LI>Each menu item will be on its own row</LI>
-          <LI>Create two components Menu &amp; MenuItem</LI>
+          <LI>Create two components, Menu &amp; MenuItem</LI>
         </UL>
       </Section>
       <Section title='Tips' level={1}>
@@ -46,7 +46,7 @@ const RA03Gallery = (props) => {
       </Section>
 
       <Section title='Structure & Styling' level={1}>
-        <P>The button below reveals part of the answer. Don't click it until you have met the requiremets outlined above.</P>
+        <CodeHeader />
         <Hint title='JSX for Menu'>
           <Pre
             code={[
@@ -75,4 +75,4 @@ const RA03Gallery = (props) => {
   )
 };
 
-export default RA03Gallery;
+export default RA05Menu;
