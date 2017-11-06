@@ -21,11 +21,11 @@ const RA03Gallery = (props) => {
         <Img src={iGallery} medium alt='gallery step 01' />
       </Section>
       <Section title='Requirements' level={1}>
-        Header must meet these requirements:
+        Gallery must meet these requirements:
         <UL>
           <LI>Will have an <InlineTag angle>h2</InlineTag> element with the text 'Our Fresh Meals'</LI>
           <LI>Will display all menu items from /src/menu-data.js</LI>
-          <LI>Each menu item will have a picture, a title, the description and price.</LI>
+          <LI>Each gallery item will have a picture, a title, the description and price.</LI>
           <LI>Create two components Gallery &amp; GalleryItem</LI>
         </UL>
       </Section>
