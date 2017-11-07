@@ -4,7 +4,8 @@ import React from 'react'
 
 const UL = (props) => {
   return (
-    <ul>{props.children}</ul>
+    // <ul>{props.children}</ul>
+    <ul {...props}></ul>
   )
 }
 
