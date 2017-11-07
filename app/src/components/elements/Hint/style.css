@@ -1,6 +1,55 @@
 .showHint {
-  display: inline;
+  display: block;
 }
 .hideHint {
   display: none;
+}
+.btn {
+  background-color: #f0ad4e;
+  background-image: none;
+  border: 1px solid transparent;
+  border-color: #eea236;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 6px 12px;
+  text-align: center;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.btn:focus {
+  background-color: #ec971f;
+  border-color: #985f0d;
+  color: #fff;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.btn:active {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+
+.btn:active:hover, .btn:active:focus  {
+  color: #fff;
+  background-color: #d58512;
+  border-color: #985f0d;
+}
+.btn:active {
+  background-image: none;
 }

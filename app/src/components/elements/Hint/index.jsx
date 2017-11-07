@@ -17,7 +17,6 @@ class Hint extends Component {
   }
 
   render() {
-    console.log('showHint', this.state.showHint)
     const hintStyle = classNames({
       [styles.showHint]: this.state.showHint === true,
       [styles.hideHint]: this.state.showHint === false,
@@ -25,12 +24,14 @@ class Hint extends Component {
     const title = this.props.title
       ? this.props.title
       : 'Hint'
-    console.log('hintStyle', hintStyle)
     return (
       <div>
-        <div>
-          <button onClick={this.handleHintClick}>{title}</button>
-        </div>
+        <button className={styles.btn} onClick={this.handleHintClick}>
+          {title}&nbsp;&nbsp;
+          {this.state.showHint
+            ? <i className="fa fa-chevron-down" aria-hidden="true"></i>
+            : <i className="fa fa-chevron-right" aria-hidden="true"></i>}
+        </button>
         <div className={hintStyle}>
           {this.props.children}
         </div>
