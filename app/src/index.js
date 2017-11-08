@@ -7,6 +7,7 @@ import './style.css';
 import Home from './components/Home';
 
 ReactDOM.render(
+
   <Provider store={configureStore()}>
     <Home />
   </Provider>,
