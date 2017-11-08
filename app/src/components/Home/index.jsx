@@ -2,24 +2,25 @@
 import React from 'react';
 import styles from './style.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Footer from './Footer'
-import MenuItems from 'elements/MenuItems'
 // import { homeTOC } from 'data/menu-items'
 import { restaurantAppTOC } from 'data/menu-items'
-import ReactTOC from './ReactTOC'
-import GetReadyInstallConfig from './ReactTOC/GetReadyInstallConfig'
 import FirstReactApp from './ReactTOC/FirstReactApp'
 import FirstReactComponent from './ReactTOC/FirstReactComponent'
+import Footer from './Footer'
+import GetReadyInstallConfig from './ReactTOC/GetReadyInstallConfig'
+import MenuItems from 'elements/MenuItems'
 import ModifyProjectStructure from './ReactTOC/ModifyProjectStructure'
-import Styling from './ReactTOC/Styling'
-import RestaurantAppTOC from './ReactTOC/RestaurantAppTOC'
+import PropTypes from './ReactTOC/PropTypes'
 import RA01Introduction from './ReactTOC/RestaurantAppTOC/RA01Introduction'
 import RA02Header from './ReactTOC/RestaurantAppTOC/RA02Header'
 import RA03Nav from './ReactTOC/RestaurantAppTOC/RA03Nav'
 import RA04Gallery from './ReactTOC/RestaurantAppTOC/RA04Gallery'
+import ReactTOC from './ReactTOC'
 import RA05Menu from './ReactTOC/RestaurantAppTOC/RA05Menu'
 import RA06InteractiveNavigation from './ReactTOC/RestaurantAppTOC/RA06InteractiveNavigation'
 import RA07MenuEdit from './ReactTOC/RestaurantAppTOC/RA07MenuEdit'
+import RestaurantAppTOC from './ReactTOC/RestaurantAppTOC'
+import Styling from './ReactTOC/Styling'
 // import * as ku from '../../lib/ke-utils'
 
 const Home = () => (
@@ -40,6 +41,7 @@ const Home = () => (
         <Route path='/react-toc/styling' component={Styling} />
         <Route exact path='/react-toc/restaurant-app-toc' component={RestaurantAppTOC} />
         <Route path = '/react-toc/restaurant-app-toc/introduction' component={RA01Introduction} />
+        <Route path = '/react-toc/prop-types' component={PropTypes}/>
         <Route path = '/react-toc/restaurant-app-toc/header' component={RA02Header} />
         <Route path = '/react-toc/restaurant-app-toc/nav' component={RA03Nav} />
         <Route path = '/react-toc/restaurant-app-toc/gallery' component={RA04Gallery} />

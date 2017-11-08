@@ -34,6 +34,10 @@ export const reactTOC = [
     to: 'react-toc/restaurant-app-toc',
     name: 'Restaurant App',
   },
+  {
+    to: 'react-toc/prop-types',
+    name: 'PropTypes',
+  },
 ]
 
 export const htmlCSSJSTOC = [
