@@ -39,6 +39,7 @@
     "react-dom": "^15.6.1",
     "react-error-overlay": "^1.0.10",
     "react-redux": "^5.0.6",
+    "react-responsive": "^3.0.0",
     "react-router-dom": "^4.2.2",
     "react-syntax-highlighter": "^5.8.0",
     "redux": "^3.7.2",

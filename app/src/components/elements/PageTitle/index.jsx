@@ -7,7 +7,11 @@ import PropTypes from 'prop-types'
 const PageTitle = (props) => {
   return (
     <div className={styles.pageHeader}>
-      <BackButton className={styles.back} back={props.back}/>
+      {
+        props.back
+          ? <BackButton className={styles.back} back={props.back}/>
+          : null
+      }
       <div className={styles.titles}>
         <h1 className={styles.title}>{props.title}</h1>
         <h2 className={styles.subTitle}>{props.subTitle}</h2>

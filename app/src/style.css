@@ -1,8 +1,7 @@
 body {
-  /*color: white;*/
   padding: 0 10%;
-  background-color: rgb(240, 240, 240);
   font-family: 'Lora', serif;
+  font-size: 16px;
 }
 header {
   display: flex;
@@ -11,14 +10,14 @@ header {
   justify-content: center;
   padding-bottom: 20px;
 }
-:global(.red-text) {
+/*:global(.red-text) {
   color: red;
   font-weight: bold;
-}
+}*/
 :global(.container) {
   width: auto;
 }
-:global(.green-text) {
+/*:global(.green-text) {
   color: #34E97C;
 }
 .image-image {
@@ -36,4 +35,4 @@ em {
   font-weight: bold;
   font-style: italic;
   color: #34E97C;
-}
+}*/

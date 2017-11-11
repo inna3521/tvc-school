@@ -10,6 +10,8 @@ import InlineTag from 'elements/InlineTag'
 import Hint from 'elements/Hint'
 import iHeader01 from './img/header-step01.png'
 import CodeHeader from 'elements/CodeHeader'
+import ProjectStructure from 'elements/ProjectStructure'
+import HeaderStructure from './header-structure'
 
 const RA02Header = (props) => {
   return (
@@ -26,6 +28,28 @@ const RA02Header = (props) => {
           <LI>Will have an <InlineTag angle>h1</InlineTag> element with the text 'Wholesome Foods'</LI>
           <LI>Will have an <InlineTag angle>h2</InlineTag> element with the text 'Delicious meals made with locally sourced organic ingredients'</LI>
         </UL>
+      </Section>
+      <Section title='Tips / Hints' level={1}>
+        <Hint title='Structure for a function component'>
+          <Pre
+            code={[
+              "import React from 'react'",
+              "",
+              "const ComponentName = () => {",
+              "  return (",
+              "    <p>Return some JSX</p>",
+              "  )",
+              "}",
+
+            ]}
+          />
+        </Hint>
+        <Hint title='Where to put your component'>
+          <P>There are different practices in the React community. For this project, place a component inside of the folder of the component that is rendering it. So with Header, it will look like this:</P>
+          <ProjectStructure shape={HeaderStructure}>
+
+          </ProjectStructure>
+        </Hint>
       </Section>
       <Section title='Structure & Styling' level={1}>
         <CodeHeader />

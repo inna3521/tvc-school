@@ -12,6 +12,7 @@ import MenuItems from 'elements/MenuItems'
 import ModifyProjectStructure from './ReactTOC/ModifyProjectStructure'
 import PropTypes from './ReactTOC/PropTypes'
 import RA01Introduction from './ReactTOC/RestaurantAppTOC/RA01Introduction'
+import RA011GettingStarted from './ReactTOC/RestaurantAppTOC/RA011GettingStarted'
 import RA02Header from './ReactTOC/RestaurantAppTOC/RA02Header'
 import RA03Nav from './ReactTOC/RestaurantAppTOC/RA03Nav'
 import RA04Gallery from './ReactTOC/RestaurantAppTOC/RA04Gallery'
@@ -22,32 +23,34 @@ import RA07MenuEdit from './ReactTOC/RestaurantAppTOC/RA07MenuEdit'
 import RestaurantAppTOC from './ReactTOC/RestaurantAppTOC'
 import Styling from './ReactTOC/Styling'
 // import * as ku from '../../lib/ke-utils'
+import TopBar from './TopBar'
 
 const Home = () => (
 
   <Router>
     <div>
-      <header>
-        <h1 className={styles.title}>Tri-Valley Coders - SCHOOL</h1>
-        <div className={styles.subTitle}>Don't code alone!</div>
-      </header>
+      <TopBar />
+
       <Switch>
-        <Route exact path='/react-toc' component={ReactTOC} />
-        <Route path='/react-toc/getting-ready-install-config' component={GetReadyInstallConfig} />
-        <Route path='/react-toc/first-react-app' component={FirstReactApp} />
-        <Route path='/react-toc/moidfy-project-structure' component={ModifyProjectStructure} />
-        <Route path='/react-toc/first-react-component' component={FirstReactComponent} />
-        <Route path='/react-toc/modify-project-structure' component={ModifyProjectStructure} />
-        <Route path='/react-toc/styling' component={Styling} />
-        <Route exact path='/react-toc/restaurant-app-toc' component={RestaurantAppTOC} />
+        {/* <Route exact path='/react-toc' component={ReactTOC} />
+          <Route path='/react-toc/getting-ready-install-config' component={GetReadyInstallConfig} />
+          <Route path='/react-toc/first-react-app' component={FirstReactApp} />
+          <Route path='/react-toc/moidfy-project-structure' component={ModifyProjectStructure} />
+          <Route path='/react-toc/first-react-component' component={FirstReactComponent} />
+          <Route path='/react-toc/modify-project-structure' component={ModifyProjectStructure} />
+        <Route path='/react-toc/styling' component={Styling} /> */}
+
+
         <Route path = '/react-toc/restaurant-app-toc/introduction' component={RA01Introduction} />
-        <Route path = '/react-toc/prop-types' component={PropTypes}/>
+
+        <Route path = '/react-toc/restaurant-app-toc/getting-started' component={RA011GettingStarted} />
         <Route path = '/react-toc/restaurant-app-toc/header' component={RA02Header} />
         <Route path = '/react-toc/restaurant-app-toc/nav' component={RA03Nav} />
         <Route path = '/react-toc/restaurant-app-toc/gallery' component={RA04Gallery} />
         <Route path = '/react-toc/restaurant-app-toc/menu' component={RA05Menu} />
         <Route path = '/react-toc/restaurant-app-toc/interactive-navigation' component={RA06InteractiveNavigation} />
         <Route path = '/react-toc/restaurant-app-toc/menu-edit' component={RA07MenuEdit} />
+        <Route path='/react-toc' component={RestaurantAppTOC} />
         <Route exact path='/' render={() => (
           <MenuItems src={restaurantAppTOC} />
         )} />

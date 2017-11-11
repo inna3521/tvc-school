@@ -7,7 +7,7 @@ import classNames from 'classnames'
       > title
       > subTitle
  */
-const LessonSection = (props) => {
+const Section = (props) => {
 
   const level = props.level || 1
 
@@ -33,4 +33,4 @@ const LessonSection = (props) => {
   )
 }
 
-export default LessonSection
+export default Section

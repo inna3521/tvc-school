@@ -7,12 +7,16 @@ import * as ku from 'lib/ke-utils'
 
 const ReactTOC = (props) => {
   // ku.log('ReactTOC: reactMenuItems', reactMenuItems, 'blue')
+  const subTitleStyle = {
+    fontSize: 28,
+    fontStyle: 'italic',
+    fontWeight: 200,
+  }
   return (
     <div>
-      <PageTitle
-        title='React Lessons'
-        back={props.match}
-      />
+      <header>
+        <div style={subTitleStyle}>Don't code alone!</div>
+      </header>
       <MenuItems
         src={restaurantAppTOC}
       />
