@@ -1,12 +1,9 @@
 // ReactTOC
 import React from 'react'
-import PageTitle from 'elements/PageTitle'
 import MenuItems from 'elements/MenuItems'
 import { restaurantAppTOC } from 'data/menu-items'
-import * as ku from 'lib/ke-utils'
 
-const ReactTOC = (props) => {
-  // ku.log('ReactTOC: reactMenuItems', reactMenuItems, 'blue')
+const RA011GettingStarted = (props) => {
   const subTitleStyle = {
     fontSize: 28,
     fontStyle: 'italic',
@@ -24,4 +21,4 @@ const ReactTOC = (props) => {
   )
 }
 
-export default ReactTOC
+export default RA011GettingStarted

@@ -2,20 +2,13 @@
 import React from 'react'
 import Section from 'elements/Section'
 import PageTitle from 'elements/PageTitle'
-import UL from 'elements/UL'
 import P from 'elements/P'
 import LI from 'elements/LI'
 import A from 'elements/A'
 import OL from 'elements/OL'
 import Pre from 'elements/Pre'
-import Callout from 'elements/Callout'
-import ProjectStructure from 'elements/ProjectStructure'
-import fInitComponentModel from './init-component-model'
 
 const RA01Introduction = (props) => {
-  const redText = {
-    color: 'red',
-  }
   return (
     <div>
       <PageTitle title='Getting Started' back={props.match}/>

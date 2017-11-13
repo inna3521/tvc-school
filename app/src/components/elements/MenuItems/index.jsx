@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import * as actionCreators from '../../../store/actions'
 import * as selectors from '../../../store/selectors'
 import Link from 'elements/Link'
+import Button from 'elements/Button'
 // import * as ku from 'lib/ke-utils'
 
 const MenuItems = ({ src }) => {
@@ -18,13 +19,20 @@ const MenuItems = ({ src }) => {
         {item.name}
       </Link></li>
   ))
-  // ku.log('MenuItems: items', items, 'blue')
   return (
-    <div>
-      <h2>Contents</h2>
-      <ol>
-        {items}
-      </ol>
+    <div className={styles.wrapper}>
+      <div className={styles.leftSide}>
+        <h2>Contents</h2>
+        <ol>
+          {items}
+        </ol>
+      </div>
+
+      <div className={styles.rightSide}>
+        <a href='https://join.slack.com/t/trivalleycoders/shared_invite/enQtMjY5ODI5OTQzMDcyLWU5ZGI1MDMxNGMzYjk1NzBiMTZjOGQ5OWE4Zjg5MTU0NzgyNWE3N2RjMGJmODcxMzkyZGMwMTNmYjFhZDllZDY'>
+          <Button green><i className="fa fa-slack fa-2x" aria-hidden="true"></i>Join the Conversation on Slack</Button>
+        </a>
+      </div>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
-const LT = () => (
+const GT = () => (
   <span>&gt;</span>
 )
 
-export default LT
+export default GT

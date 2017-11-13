@@ -2,18 +2,9 @@
 import React from 'react'
 import Section from 'elements/Section'
 import PageTitle from 'elements/PageTitle'
-import UL from 'elements/UL'
 import P from 'elements/P'
-import LI from 'elements/LI'
-import A from 'elements/A'
-import Callout from 'elements/Callout'
-import ProjectStructure from 'elements/ProjectStructure'
-import fInitComponentModel from './init-component-model'
 
-const RA01Introduction = (props) => {
-  const redText = {
-    color: 'red',
-  }
+const CodeOfConduct = (props) => {
   return (
     <div>
       <PageTitle title='TriValley Coders' subTitle='Code of Conduct' back={props.match}/>
@@ -52,4 +43,4 @@ const RA01Introduction = (props) => {
   )
 };
 
-export default RA01Introduction;
+export default CodeOfConduct;

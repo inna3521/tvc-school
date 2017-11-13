@@ -2,12 +2,8 @@
 import React from 'react'
 import styles from './style.css'
 import classNames from 'classnames'
-/*
-    props
-      > title
-      > subTitle
- */
-const Section = (props) => {
+
+const Header = (props) => {
 
   const level = props.level || 1
 
@@ -33,4 +29,4 @@ const Section = (props) => {
   )
 }
 
-export default Section
+export default Header

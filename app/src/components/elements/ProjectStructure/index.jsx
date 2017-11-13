@@ -10,12 +10,12 @@ const ProjectStructure = (props) => {
     switch (m.type) {
 
       case 'folder':
-        return <Folder level={m.level}>{m.name}</Folder>
+        return <Folder key={index} level={m.level}>{m.name}</Folder>
       case 'component':
-        return <Component level={m.level}>{m.name}</Component>
+        return <Component key={index} level={m.level}>{m.name}</Component>
       case 'file':
       default:
-        return <File level={m.level}>{m.name}</File>
+        return <File key={index} level={m.level}>{m.name}</File>
     }
   })
   return (

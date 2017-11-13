@@ -6,7 +6,7 @@ import { docco } from 'react-syntax-highlighter/dist/styles';
 // import styles from './style.css'
 
 // Takes an array of strings
-const Code = (props) => {
+const Pre = (props) => {
 
   // const preStyles = classNames(
   //   {
@@ -45,4 +45,4 @@ const Code = (props) => {
   )
 };
 
-export default Code;
+export default Pre;

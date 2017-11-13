@@ -3,7 +3,7 @@ import React from 'react'
 import styles from '../style.css'
 import classNames from 'classnames'
 
-const Folder = (props) => {
+const File = (props) => {
   const liStyles = classNames({
     [styles.level1]: props.level === 1,
     [styles.level2]: props.level === 2,
@@ -16,4 +16,4 @@ const Folder = (props) => {
   )
 }
 
-export default Folder
+export default File

@@ -1,7 +1,7 @@
 import React from 'react'
 
-const LT = () => (
+const AMP = () => (
   <span>&amp;</span>
 )
 
-export default LT
+export default AMP

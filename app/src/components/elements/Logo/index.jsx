@@ -3,7 +3,7 @@ import React from 'react';
 import { Table } from 'react-bootstrap';
 import './style.css';
 
-const Table = (props) => (
+const Logo = (props) => (
   <Table>
     <thead>
       props.hableHeadings.map((t, index) = {
@@ -14,4 +14,4 @@ const Table = (props) => (
 
 )
 
-export default Table;
+export default Logo;

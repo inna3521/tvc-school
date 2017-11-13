@@ -8,7 +8,7 @@ import OL from 'elements/OL'
 import P from 'elements/P'
 import LI from 'elements/LI'
 
-const NAME = (props) => {
+const FirstReactComponent = (props) => {
   return (
     <div>
       <PageTitle title='First React Component' back={props.match}
@@ -116,4 +116,4 @@ const NAME = (props) => {
       )
       };
 
-export default NAME;
+export default FirstReactComponent;

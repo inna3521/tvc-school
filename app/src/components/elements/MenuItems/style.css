@@ -8,3 +8,16 @@
   font-weight: bold;
   text-decoration: underline;
 }
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+.leftSide {
+  flex-basis: 50%;
+}
+.rightSide {
+  align-items: center;
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+}

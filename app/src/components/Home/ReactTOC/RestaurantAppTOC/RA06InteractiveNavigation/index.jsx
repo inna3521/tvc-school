@@ -13,7 +13,7 @@ import iNavSignedOut from './img/nav-signedout.png'
 import iNavSignedIn from './img/nav-signedin.png'
 import CodeHeader from 'elements/CodeHeader'
 
-const RA05InteractiveNavigation = (props) => {
+const RA06InteractiveNavigation = (props) => {
   return (
     <div>
       <PageTitle title='Interactive Navigation' subTitle='Using State &amp; Events' back={props.match} />
@@ -94,7 +94,7 @@ const RA05InteractiveNavigation = (props) => {
         </Hint>
       </Section>
     </div>
-      )
-      };
+  )
+};
 
-      export default RA05InteractiveNavigation;
+export default RA06InteractiveNavigation;
