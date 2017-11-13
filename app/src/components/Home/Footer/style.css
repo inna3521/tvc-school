@@ -3,22 +3,36 @@
 footer {
   margin-top: 40px;
 }
-
+.copy {
+  text-align: center;
+}
+.fa {
+  color: white;
+  padding: 5px 10px;
+}
+.faBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 15px;
+}
+.facebook {
+  color: #445796;
+}
+.faIcon {
+  margin: 0 10px;
+}
 .footerContainer {
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  margin-top: 50px;
 }
-
-.faBtns {
-  font-size: 1.4em;
-  margin: 0 0 10px 0;
+.github {
+  color: white;
 }
-
-.mdnLicense {
-  align-items: center;
-  display: flex;
-  flex-flow: column nowrap;
-  margin-top: 30px;
+.meetup {
+  color: #ED3F64;
+}
+.slack {
+  color: white;
 }
