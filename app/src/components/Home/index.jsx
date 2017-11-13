@@ -24,6 +24,7 @@ import RestaurantAppTOC from './ReactTOC/RestaurantAppTOC'
 import Styling from './ReactTOC/Styling'
 // import * as ku from '../../lib/ke-utils'
 import TopBar from './TopBar'
+import CodeOfConduct from './CodeOfConduct'
 
 const Home = () => (
 
@@ -40,7 +41,7 @@ const Home = () => (
           <Route path='/react-toc/modify-project-structure' component={ModifyProjectStructure} />
         <Route path='/react-toc/styling' component={Styling} /> */}
 
-
+        <Route path = '/code-of-conduct' component={CodeOfConduct} />
         <Route path = '/react-toc/restaurant-app-toc/introduction' component={RA01Introduction} />
 
         <Route path = '/react-toc/restaurant-app-toc/getting-started' component={RA011GettingStarted} />
@@ -54,6 +55,7 @@ const Home = () => (
         <Route exact path='/' render={() => (
           <MenuItems src={restaurantAppTOC} />
         )} />
+
 
       </Switch>
       <Footer />
