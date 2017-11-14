@@ -37,7 +37,7 @@ const CodeOfConduct = (props) => {
       <Section title='Policy' level={1}>
         <P>Harassment includes offensive verbal comments related to gender, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.</P>
         <P>Participants asked to stop any harassing behavior are expected to comply immediately. Sponsors are also subject to the anti-harassment policy. In particular, sponsors should not use sexualized images, activities, or other material. Organizers and other volunteers should not use sexualized clothing/uniforms/costumes, or otherwise create a sexualized environment.</P>
-        <P>If a participant engages in harassing behavior, the organizers may take any action they deem appropriate, including warning the offender of expulsion from the community.</P>
+        <P>If a participant engages in harassing behavior, the organizers may take any action they deem appropriate, including warning the offender or expulsion from the community.</P>
       </Section>
     </div>
   )
