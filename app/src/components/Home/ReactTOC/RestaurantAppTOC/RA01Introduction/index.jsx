@@ -23,7 +23,7 @@ const RA01Introduction = (props) => {
         <Callout goal>
           <P>If you are interested in learning about the concepts in this challenge in more depth as well as more advanced React concepts &amp; techniques, make sure you are a member of our Meetup group <A href='https://www.meetup.com/trivalleycoders/'>TriValley Coders</A> to receive notification of upcoming classes.</P>
         </Callout>
-        <Section title='Who is the Challeng For?' level={2}>
+        <Section title='Who is the Challenge For?' level={2}>
           <P>This challenge is designed for those new to ReactJS. If you know some HTML, CSS and have a good grasp of JavaScript, you are ready to proceed.</P>
         </Section>
         <Section title='What you get to start with' level={2}>
@@ -58,7 +58,7 @@ const RA01Introduction = (props) => {
           <Section title='Gallery (skill level 3)' level={3}>
             <UL>
               <LI>Create a container component</LI>
-              <LI><A href='https://reactjs.org/docs/lists-and-keys.html#rendering-multiple-components'>Rendering multiple instances of a components</A> with <A href=''>Array.map()</A></LI>
+              <LI><A href='https://reactjs.org/docs/lists-and-keys.html#rendering-multiple-components'>Rendering multiple instances of a components</A> with <A href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map'>Array.map()</A></LI>
               <LI>Using a key when rendering multiple instances of a component</LI>
               <LI>Assign an array of components to a constant for rendering later</LI>
               <LI>Passing props</LI>
