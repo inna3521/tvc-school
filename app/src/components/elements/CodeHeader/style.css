@@ -17,9 +17,10 @@
 }
 .green {
   background-color: #dbffdb;
-
+  color: rgb(100, 100, 100);
 }
 .red {
   background-color: #ffecec;
+  color: rgb(100, 100, 100);
   margin-left: 10px;
 }
