@@ -16,7 +16,7 @@ const RA03Nav = (props) => {
     <div>
       <PageTitle title='Making the Nav Menu' back={props.match} />
       <Section title='Introduction' level={1}>
-        <P>In this section you will add component named Nav to Header. Nav will look as show below.</P>
+        <P>In this section you will add a component named Nav to Header. Nav will look as shown below.</P>
         <Img src={iNav} medium alt='header step 01' />
       </Section>
       <Section title='Requirements' level={1}>
