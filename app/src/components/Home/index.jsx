@@ -52,9 +52,13 @@ const Home = () => (
         <Route path = '/react-toc/restaurant-app-toc/interactive-navigation' component={RA06InteractiveNavigation} />
         <Route path = '/react-toc/restaurant-app-toc/menu-edit' component={RA07MenuEdit} />
         <Route path='/react-toc' component={RestaurantAppTOC} />
-        <Route exact path='/' render={() => (
-          <MenuItems src={restaurantAppTOC} />
-        )} />
+        <Route
+          exact
+          path='/'
+          render={() => (
+            <MenuItems src={restaurantAppTOC} />
+          )}
+        />
 
 
       </Switch>
