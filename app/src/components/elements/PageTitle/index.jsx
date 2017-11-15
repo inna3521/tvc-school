@@ -4,17 +4,17 @@ import BackButton from 'elements/BackButton'
 import PropTypes from 'prop-types'
 // import * as ku from 'lib/ke-utils'
 
-const PageTitle = (props) => {
+const PageTitle = ({ match, title, subTitle }) => {
   return (
     <div className={styles.pageHeader}>
       {
-        props.back
-          ? <BackButton className={styles.back} back={props.back}/>
-          : null
+        match
+          ? <BackButton className={styles.back} match={match}/>
+          : <button>no back</button>
       }
       <div className={styles.titles}>
-        <h1 className={styles.title}>{props.title}</h1>
-        <h2 className={styles.subTitle}>{props.subTitle}</h2>
+        <h1 className={styles.title}>{title}</h1>
+        <h2 className={styles.subTitle}>{subTitle}</h2>
       </div>
       <div className={styles.spacer}></div>
     </div>

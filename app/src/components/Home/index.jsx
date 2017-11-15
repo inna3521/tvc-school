@@ -2,31 +2,29 @@
 import React from 'react';
 // import styles from './style.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-// import { homeTOC } from 'data/menu-items'
-import { restaurantAppTOC } from 'data/menu-items'
-// import FirstReactApp from './ReactTOC/FirstReactApp'
-// import FirstReactComponent from './ReactTOC/FirstReactComponent'
+import { homeTOC, reactTOC, restaurantAppTOC } from 'data/menu-items'
 import Footer from './Footer'
-// import GetReadyInstallConfig from './ReactTOC/GetReadyInstallConfig'
-import MenuItems from 'elements/MenuItems'
-// import ModifyProjectStructure from './ReactTOC/ModifyProjectStructure'
-// import PropTypes from './ReactTOC/PropTypes'
+import TOC from 'elements/TOC'
 import RA01Introduction from './ReactTOC/RestaurantAppTOC/RA01Introduction'
 import RA011GettingStarted from './ReactTOC/RestaurantAppTOC/RA011GettingStarted'
 import RA02Header from './ReactTOC/RestaurantAppTOC/RA02Header'
 import RA03Nav from './ReactTOC/RestaurantAppTOC/RA03Nav'
 import RA04Gallery from './ReactTOC/RestaurantAppTOC/RA04Gallery'
-// import ReactTOC from './ReactTOC'
 import RA05Menu from './ReactTOC/RestaurantAppTOC/RA05Menu'
 import RA06InteractiveNavigation from './ReactTOC/RestaurantAppTOC/RA06InteractiveNavigation'
 import RA07MenuEdit from './ReactTOC/RestaurantAppTOC/RA07MenuEdit'
 import RestaurantAppTOC from './ReactTOC/RestaurantAppTOC'
-// import Styling from './ReactTOC/Styling'
-// import * as ku from '../../lib/ke-utils'
 import TopBar from './TopBar'
 import CodeOfConduct from './CodeOfConduct'
+// import Styling from './ReactTOC/Styling'
+// import ModifyProjectStructure from './ReactTOC/ModifyProjectStructure'
+// import GetReadyInstallConfig from './ReactTOC/GetReadyInstallConfig'
+// import FirstReactApp from './ReactTOC/FirstReactApp'
+// import FirstReactComponent from './ReactTOC/FirstReactComponent'
+// import PropTypes from './ReactTOC/PropTypes'
+// import * as ku from '../../lib/ke-utils'
 
-const Home = () => (
+const Home = (props) => (
 
   <Router>
     <div>
@@ -51,13 +49,20 @@ const Home = () => (
         <Route path = '/react-toc/restaurant-app-toc/menu' component={RA05Menu} />
         <Route path = '/react-toc/restaurant-app-toc/interactive-navigation' component={RA06InteractiveNavigation} />
         <Route path = '/react-toc/restaurant-app-toc/menu-edit' component={RA07MenuEdit} />
-        <Route path='/react-toc' component={RestaurantAppTOC} />
-        <Route
-          exact
-          path='/'
-          render={() => (
-            <MenuItems src={restaurantAppTOC} />
-          )}
+
+        <Route exact path='/react-toc'
+          render={({ match }) => {
+            return(
+              <TOC src={reactTOC} pageTitle='React' match={match} />
+            )
+          }}
+        />
+        <Route exact path='/'
+          render={({ match }) => {
+            return (
+              <TOC src={homeTOC} pageTitle='HOME' match={match} />
+            )
+          }}
         />
 
 

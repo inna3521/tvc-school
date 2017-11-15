@@ -1,6 +1,6 @@
 // ReactTOC
 import React from 'react'
-import MenuItems from 'elements/MenuItems'
+import TOC from 'elements/TOC'
 import { restaurantAppTOC } from 'data/menu-items'
 
 const RA011GettingStarted = (props) => {
@@ -14,7 +14,7 @@ const RA011GettingStarted = (props) => {
       <header>
         <div style={subTitleStyle}>Don't code alone!</div>
       </header>
-      <MenuItems
+      <TOC
         src={restaurantAppTOC}
       />
     </div>

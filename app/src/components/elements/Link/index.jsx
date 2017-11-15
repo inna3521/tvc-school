@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 /*
     Parameters
@@ -9,22 +10,26 @@ import { Link } from 'react-router-dom'
 */
 const LinkItem = (props) => {
   const backOne = () => {
-    // const path = props.back.path
-    // const arrPath = path.split('/')
-    const arrPath = props.back.path.split('/')
+    const arrPath = props.match.path.split('/')
     // remove the last element
     arrPath.splice(arrPath.length - 1, 1)
     // remove the first element which is always ""
     arrPath.splice(0, 1)
     return `/${arrPath.join('/')}`
   }
-  const to = props.back
+  const to = props.match
     ? backOne()
     : `/${props.to}`
 
   return (
     <Link to={to}>{props.children}</Link>
   )
+}
+
+// Must provide either to or back
+LinkItem.propTypes = {
+  to: PropTypes.string,
+  match: PropTypes.object // if present, to will be ignored
 }
 
 export default LinkItem

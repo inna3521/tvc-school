@@ -2,7 +2,7 @@
 import React from 'react'
 import styles from './style.css'
 import PageTitle from 'elements/PageTitle'
-import MenuItems from 'elements/MenuItems'
+import TOC from 'elements/TOC'
 import { reactTOC } from 'data/menu-items'
 
 // import * as ku from 'lib/ke-utils'
@@ -18,7 +18,7 @@ const ReactTOC = (props) => {
       />
       <button>HI</button>
       <div className={styles.contentWrapper}>
-        <MenuItems
+        <TOC
           src={reactTOC}
         />
         <div>
