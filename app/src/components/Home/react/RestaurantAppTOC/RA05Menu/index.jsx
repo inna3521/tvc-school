@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import Pre from 'elements/Pre'
@@ -12,10 +13,10 @@ import Hint from 'elements/Hint'
 import iMenu from './img/menu.png'
 import CodeHeader from 'elements/CodeHeader'
 
-const RA05Menu = (props) => {
+const RA05Menu = ({ match }) => {
   return (
     <div>
-      <PageTitle title='Making the Menu' back={props.match} />
+      <PageTitle title='Making the Menu' match={match} />
       <Section title='Introduction' level={1}>
         <P>In this section you will create the restaurant's Menu. For now it will be read only. Editing is part of a later challenge. Here is a picture of the Menu:</P>
         <Img src={iMenu} medium alt='menu read only' />
@@ -74,5 +75,7 @@ const RA05Menu = (props) => {
     </div>
   )
 };
-
+RA05Menu.propTypes = {
+  match: PropTypes.object.isRequired
+}
 export default RA05Menu;

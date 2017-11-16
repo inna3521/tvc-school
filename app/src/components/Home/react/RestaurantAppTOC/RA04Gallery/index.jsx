@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import Pre from 'elements/Pre'
@@ -12,7 +13,7 @@ import Hint from 'elements/Hint'
 import iGallery from './img/gallery.png'
 import CodeHeader from 'elements/CodeHeader'
 
-const RA03Gallery = (props) => {
+const RA04Gallery = (props) => {
   return (
     <div>
       <PageTitle title='Making the Gallery' back={props.match} />
@@ -71,5 +72,7 @@ const RA03Gallery = (props) => {
     </div>
   )
 };
-
-export default RA03Gallery;
+RA04Gallery.propTypes = {
+  match: PropTypes.object.isRequired
+}
+export default RA04Gallery;

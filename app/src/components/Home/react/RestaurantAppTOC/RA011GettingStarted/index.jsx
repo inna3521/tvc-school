@@ -1,5 +1,6 @@
 // MenuAppHeader
 import React from 'react'
+import PropTypes from 'prop-types'
 import Section from 'elements/Section'
 import PageTitle from 'elements/PageTitle'
 import P from 'elements/P'
@@ -9,13 +10,14 @@ import OL from 'elements/OL'
 import Pre from 'elements/Pre'
 import Button from 'elements/Button'
 
-const RA01Introduction = (props) => {
+const RA011GettingStarted = ({ match }) => {
+  console.log('RA011: match', match)
   const liStyle = {
     padding: '30px 0 20px 0'
   }
   return (
     <div>
-      <PageTitle title='Getting Started' back={props.match}/>
+      <PageTitle title='Getting Started' match={match}/>
       <Section level={2}>
         <P>Follow these instructions to get started.</P>
         <OL>
@@ -44,5 +46,7 @@ const RA01Introduction = (props) => {
     </div>
   )
 };
-
-export default RA01Introduction;
+RA011GettingStarted.propTypes = {
+  match: PropTypes.object.isRequired
+}
+export default RA011GettingStarted;

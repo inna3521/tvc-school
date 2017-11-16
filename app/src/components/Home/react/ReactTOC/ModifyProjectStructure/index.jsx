@@ -1,5 +1,5 @@
-// ModifyProjectStructure
 import React from 'react'
+import PropTypes from 'prop-types'
 import './style.css'
 import PageTitle from 'elements/PageTitle'
 import Pre from 'elements/Pre'
@@ -11,10 +11,10 @@ import ProjectStructure from 'elements/ProjectStructure'
 import origStructure from './orig-structure'
 import nextStructure from './next-structure'
 
-const ModifyProjectStructure = (props) => {
+const ModifyProjectStructure = ({ match }) => {
   return (
     <div>
-      <PageTitle title='Modifying Project Structure' back={props.match} />
+      <PageTitle title='Modifying Project Structure' match={match} />
       <Section title='Overview' level={1}>
         <P>Create React App creates a very simple project structure. If left this way the project will get unmanagable. A real-life app has many components and a flat list of components will be confusing.</P>
         <P>In class we will use several project organizational methods.</P>
@@ -106,4 +106,7 @@ const ModifyProjectStructure = (props) => {
     </div>
   )
 };
+ModifyProjectStructure.propTypes = {
+  match: PropTypes.object.isRequired
+}
 export default ModifyProjectStructure;

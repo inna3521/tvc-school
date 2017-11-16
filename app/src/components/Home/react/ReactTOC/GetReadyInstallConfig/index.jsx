@@ -1,5 +1,5 @@
-// DevBoxConfig
 import React from 'react'
+import PropTypes from 'prop-types'
 import Pre from 'elements/Pre'
 import Section from 'elements/Section'
 import PageTitle from 'elements/PageTitle'
@@ -8,11 +8,10 @@ import P from 'elements/P'
 import A from 'elements/A'
 import LI from 'elements/LI'
 
-const GetReadyInstallConfig = (props) => {
-  console.log('props', props)
+const GetReadyInstallConfig = ({ match }) => {
   return (
     <div>
-      <PageTitle title='Getting Ready: Installation & Configuration' back={props.match}/>
+      <PageTitle title='Getting Ready: Installation & Configuration' match={match}/>
 
       <Section title='What Is a Development Environment?' level={1}>
 
@@ -121,5 +120,7 @@ const GetReadyInstallConfig = (props) => {
     </div>
   )
 };
-
+GetReadyInstallConfig.propTypes = {
+  match: PropTypes.object.isRequired
+}
 export default GetReadyInstallConfig

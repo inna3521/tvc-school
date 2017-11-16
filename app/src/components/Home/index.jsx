@@ -2,18 +2,7 @@
 import React from 'react';
 // import styles from './style.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { homeTOC, reactTOC, htmlCSSJSTOC, restaurantAppTOC } from 'data/menu-items'
 import Footer from './Footer'
-import TOC from 'elements/TOC'
-import RA01Introduction from './ReactTOC/RestaurantAppTOC/RA01Introduction'
-import RA011GettingStarted from './ReactTOC/RestaurantAppTOC/RA011GettingStarted'
-import RA02Header from './ReactTOC/RestaurantAppTOC/RA02Header'
-import RA03Nav from './ReactTOC/RestaurantAppTOC/RA03Nav'
-import RA04Gallery from './ReactTOC/RestaurantAppTOC/RA04Gallery'
-import RA05Menu from './ReactTOC/RestaurantAppTOC/RA05Menu'
-import RA06InteractiveNavigation from './ReactTOC/RestaurantAppTOC/RA06InteractiveNavigation'
-import RA07MenuEdit from './ReactTOC/RestaurantAppTOC/RA07MenuEdit'
-import RestaurantAppTOC from './ReactTOC/RestaurantAppTOC'
 import TopBar from './TopBar'
 import CodeOfConduct from './CodeOfConduct'
 // import Styling from './ReactTOC/Styling'
@@ -48,6 +37,7 @@ const Home = (props) => (
         /> */}
         {routes.map((r) => (
           <Route
+            key={r.path}
             path={r.path}
             exact={r.exact}
             component={r.component}
@@ -62,15 +52,8 @@ const Home = (props) => (
         <Route path='/react-toc/styling' component={Styling} /> */}
 
         <Route path='/code-of-conduct' component={CodeOfConduct} />
-        <Route path='/react-toc/restaurant-app-toc/introduction' component={RA01Introduction} />
 
-        <Route path='/react-toc/restaurant-app-toc/getting-started' component={RA011GettingStarted} />
-        <Route path='/react-toc/restaurant-app-toc/header' component={RA02Header} />
-        <Route path='/react-toc/restaurant-app-toc/nav' component={RA03Nav} />
-        <Route path='/react-toc/restaurant-app-toc/gallery' component={RA04Gallery} />
-        <Route path='/react-toc/restaurant-app-toc/menu' component={RA05Menu} />
-        <Route path='/react-toc/restaurant-app-toc/interactive-navigation' component={RA06InteractiveNavigation} />
-        <Route path='/react-toc/restaurant-app-toc/menu-edit' component={RA07MenuEdit} />
+
         {/* <Route exact path='/react-toc'
           render={({ match }) => {
             return(

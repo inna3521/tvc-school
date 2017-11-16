@@ -1,5 +1,6 @@
 // Gallery
 import React from 'react'
+import PropTypes from 'prop-types'
 import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import Pre from 'elements/Pre'
@@ -11,10 +12,10 @@ import Hint from 'elements/Hint'
 import iMenuEdit from './img/menu-edit.png'
 import CodeHeader from 'elements/CodeHeader'
 
-const RA07MenuEdit = (props) => {
+const RA07MenuEdit = ({ match }) => {
   return (
     <div>
-      <PageTitle title='Making Menu Edit' back={props.match} />
+      <PageTitle title='Making Menu Edit' match={match} />
       <Section title='Introduction' level={1}>
         <P>In this section you will create a component named MenuEdit which will allow the user to edit the menu. Changes to the menu will be stored in state. Below is the UI for this component.</P>
         <Img src={iMenuEdit} medium alt='MenuEdit component' />
@@ -70,5 +71,7 @@ const RA07MenuEdit = (props) => {
     </div>
   )
 };
-
+RA07MenuEdit.propTypes = {
+  match: PropTypes.object.isRequired
+}
 export default RA07MenuEdit

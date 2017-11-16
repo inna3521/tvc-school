@@ -1,5 +1,6 @@
 // MenuAppHeader
 import React from 'react'
+import PropTypes from 'prop-types'
 import Section from 'elements/Section'
 import PageTitle from 'elements/PageTitle'
 import UL from 'elements/UL'
@@ -10,13 +11,13 @@ import Callout from 'elements/Callout'
 import ProjectStructure from 'elements/ProjectStructure'
 import fInitComponentModel from './init-component-model'
 
-const RA01Introduction = (props) => {
+const RA01Introduction = ({ match }) => {
   const redText = {
     color: 'red',
   }
   return (
     <div>
-      <PageTitle title='Introduction' back={props.match}/>
+      <PageTitle title='Introduction' match={match}/>
       <Section title='Welcome' level={1}>
         <P>Welcome to the React Restaurant Website Challenge! In this challenge you will build a website for a restaurant named 'Wholesome Foods' which does its best to appeal to health conscious clients while serving a mix of healthy but sometimes cholesterol ridden dishes.</P>
         <P>This is a challenge, not a tutorial and as such, instructions are left intentionally vague to encourage the use of problem solving skills. Your best source of information for solving the challenge is <A href='https://reactjs.org/'>Facebook's React site</A>.</P>
@@ -98,5 +99,9 @@ const RA01Introduction = (props) => {
     </div>
   )
 };
+
+RA01Introduction.propTypes = {
+  match: PropTypes.object.isRequired
+}
 
 export default RA01Introduction;

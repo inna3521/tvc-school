@@ -1,5 +1,6 @@
 // RA05InteractiveNavigation
 import React from 'react'
+import PropTypes from 'prop-types'
 import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import Pre from 'elements/Pre'
@@ -13,10 +14,10 @@ import iNavSignedOut from './img/nav-signedout.png'
 import iNavSignedIn from './img/nav-signedin.png'
 import CodeHeader from 'elements/CodeHeader'
 
-const RA06InteractiveNavigation = (props) => {
+const RA06InteractiveNavigation = ({ match }) => {
   return (
     <div>
-      <PageTitle title='Interactive Navigation' subTitle='Using State &amp; Events' back={props.match} />
+      <PageTitle title='Interactive Navigation' subTitle='Using State &amp; Events' match={match} />
       <Section title='Introduction' level={1}>
         <P>In this section you will make the navigation interactive by adding a Sign-in button that toggles to Sign-out. Additionally, when Sign-in is active, an Edit Menu button will appear.</P>
         <P>Here is the menu with Sign-in &amp; Edit Menu active (user is not signed-in)</P>
@@ -96,5 +97,7 @@ const RA06InteractiveNavigation = (props) => {
     </div>
   )
 };
-
+RA06InteractiveNavigation.propTypes = {
+  match: PropTypes.object.isRequired
+}
 export default RA06InteractiveNavigation;
