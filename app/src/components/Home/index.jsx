@@ -2,7 +2,7 @@
 import React from 'react';
 // import styles from './style.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { homeTOC, reactTOC, restaurantAppTOC } from 'data/menu-items'
+import { homeTOC, reactTOC, htmlCSSJSTOC, restaurantAppTOC } from 'data/menu-items'
 import Footer from './Footer'
 import TOC from 'elements/TOC'
 import RA01Introduction from './ReactTOC/RestaurantAppTOC/RA01Introduction'
@@ -23,14 +23,36 @@ import CodeOfConduct from './CodeOfConduct'
 // import FirstReactComponent from './ReactTOC/FirstReactComponent'
 // import PropTypes from './ReactTOC/PropTypes'
 // import * as ku from '../../lib/ke-utils'
+import { routes } from './components'
 
 const Home = (props) => (
+  /*
+      Components can be functions so I could write a function that returns the fucntions. However, since my components are very large (# lines) that would be pretty messy and they are essentially functions, just in another module.
+      Would it be possible to declare all the componets in another module and then just import that one. Don't see why not and would be more tity. Could group components into separate modules based on some category which would make each individual on more managable.
+  */
 
   <Router>
     <div>
       <TopBar />
 
       <Switch>
+        {/* <Route
+          path={routes[0].path}
+          exact={routes[0].exact}
+          component={routes[0].component}
+          />
+          <Route
+          path={routes[1].path}
+          exact={routes[1].exact}
+          component={routes[1].component}
+        /> */}
+        {routes.map((r) => (
+          <Route
+            path={r.path}
+            exact={r.exact}
+            component={r.component}
+          />
+        ))}
         {/* <Route exact path='/react-toc' component={ReactTOC} />
           <Route path='/react-toc/getting-ready-install-config' component={GetReadyInstallConfig} />
           <Route path='/react-toc/first-react-app' component={FirstReactApp} />
@@ -39,33 +61,30 @@ const Home = (props) => (
           <Route path='/react-toc/modify-project-structure' component={ModifyProjectStructure} />
         <Route path='/react-toc/styling' component={Styling} /> */}
 
-        <Route path = '/code-of-conduct' component={CodeOfConduct} />
-        <Route path = '/react-toc/restaurant-app-toc/introduction' component={RA01Introduction} />
+        <Route path='/code-of-conduct' component={CodeOfConduct} />
+        <Route path='/react-toc/restaurant-app-toc/introduction' component={RA01Introduction} />
 
-        <Route path = '/react-toc/restaurant-app-toc/getting-started' component={RA011GettingStarted} />
-        <Route path = '/react-toc/restaurant-app-toc/header' component={RA02Header} />
-        <Route path = '/react-toc/restaurant-app-toc/nav' component={RA03Nav} />
-        <Route path = '/react-toc/restaurant-app-toc/gallery' component={RA04Gallery} />
-        <Route path = '/react-toc/restaurant-app-toc/menu' component={RA05Menu} />
-        <Route path = '/react-toc/restaurant-app-toc/interactive-navigation' component={RA06InteractiveNavigation} />
-        <Route path = '/react-toc/restaurant-app-toc/menu-edit' component={RA07MenuEdit} />
-
-        <Route exact path='/react-toc'
+        <Route path='/react-toc/restaurant-app-toc/getting-started' component={RA011GettingStarted} />
+        <Route path='/react-toc/restaurant-app-toc/header' component={RA02Header} />
+        <Route path='/react-toc/restaurant-app-toc/nav' component={RA03Nav} />
+        <Route path='/react-toc/restaurant-app-toc/gallery' component={RA04Gallery} />
+        <Route path='/react-toc/restaurant-app-toc/menu' component={RA05Menu} />
+        <Route path='/react-toc/restaurant-app-toc/interactive-navigation' component={RA06InteractiveNavigation} />
+        <Route path='/react-toc/restaurant-app-toc/menu-edit' component={RA07MenuEdit} />
+        {/* <Route exact path='/react-toc'
           render={({ match }) => {
             return(
-              <TOC src={reactTOC} pageTitle='React' match={match} />
+          <TOC src={reactTOC} pageTitle='React' match={match} />
             )
           }}
-        />
-        <Route exact path='/'
+        /> */}
+        {/* <Route exact path='/'
           render={({ match }) => {
             return (
-              <TOC src={homeTOC} pageTitle='HOME' match={match} />
+          <TOC src={homeTOC} pageTitle='HOME' match={match} />
             )
-          }}
+        }} */}
         />
-
-
       </Switch>
       <Footer />
     </div>
