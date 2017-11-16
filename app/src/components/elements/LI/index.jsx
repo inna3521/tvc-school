@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const LI = (props) => {
-  console.log("LI test", props)
   return (
     <li style={props.style}>{props.children}</li>
   )
