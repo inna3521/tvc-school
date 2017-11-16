@@ -41,7 +41,7 @@ const RA01Introduction = (props) => {
         <Section title='What you will learn' subTitle='Listed by component' level={2}>
           <Section title='Header (skill level 1)' level={3}>
             <UL>
-              <LI>Using JSX (See <A href='https://reactjs.org/docs/introducing-jsx.html'>Introducing JSX</A>)</LI>
+              <LI>Using JSX (See <A href='https://reactjs.org/docs/introducing-jsx.html'></A>)</LI>
               <LI>Create a function component (<A href='https://reactjs.org/docs/components-and-props.html#functional-and-class-components'>Functional &amp; Class Components</A>)</LI>
               <LI>Importing an image</LI>
               <LI>Importing data from a separate module</LI>

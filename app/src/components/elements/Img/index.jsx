@@ -13,7 +13,6 @@ import styles from './style.css'
     > inline - t/f
 */
 const Img = (props) => {
-
   let cite = props.cite
     ? <cite>{`source: ${props.cite}`}</cite>
       : false

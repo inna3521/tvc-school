@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 // square
 // angle
@@ -19,6 +20,13 @@ const InlineTag = (props) => {
   return (
     <span>{openBracket}{props.children}{closeBracket}</span>
   )
+}
+
+InlineTag.propTypes = {
+  square: PropTypes.bool,
+  angle: PropTypes.bool,
+  curley: PropTypes.bool,
+  children: PropTypes.string.isRequired,
 }
 
 export default InlineTag;
