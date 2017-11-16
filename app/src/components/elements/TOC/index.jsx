@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import Link from 'elements/Link'
 import Button from 'elements/Button'
 import PageTitle from 'elements/PageTitle'
+import routes from '../../Home/components'
 // import * as ku from 'lib/ke-utils'
 
 const TOC = ({ src, pageTitle, match }) => {

@@ -23,18 +23,7 @@ const Home = (props) => (
   <Router>
     <div>
       <TopBar />
-
       <Switch>
-        {/* <Route
-          path={routes[0].path}
-          exact={routes[0].exact}
-          component={routes[0].component}
-          />
-          <Route
-          path={routes[1].path}
-          exact={routes[1].exact}
-          component={routes[1].component}
-        /> */}
         {routes.map((r) => (
           <Route
             key={r.path}
@@ -43,31 +32,7 @@ const Home = (props) => (
             component={r.component}
           />
         ))}
-        {/* <Route exact path='/react-toc' component={ReactTOC} />
-          <Route path='/react-toc/getting-ready-install-config' component={GetReadyInstallConfig} />
-          <Route path='/react-toc/first-react-app' component={FirstReactApp} />
-          <Route path='/react-toc/moidfy-project-structure' component={ModifyProjectStructure} />
-          <Route path='/react-toc/first-react-component' component={FirstReactComponent} />
-          <Route path='/react-toc/modify-project-structure' component={ModifyProjectStructure} />
-        <Route path='/react-toc/styling' component={Styling} /> */}
-
         <Route path='/code-of-conduct' component={CodeOfConduct} />
-
-
-        {/* <Route exact path='/react-toc'
-          render={({ match }) => {
-            return(
-          <TOC src={reactTOC} pageTitle='React' match={match} />
-            )
-          }}
-        /> */}
-        {/* <Route exact path='/'
-          render={({ match }) => {
-            return (
-          <TOC src={homeTOC} pageTitle='HOME' match={match} />
-            )
-        }} */}
-        />
       </Switch>
       <Footer />
     </div>

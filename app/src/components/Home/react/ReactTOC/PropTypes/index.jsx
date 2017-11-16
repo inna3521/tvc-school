@@ -9,7 +9,7 @@ import P from 'elements/P'
 import A from 'elements/A'
 import iWarning from './img/warning.png'
 
-const PropTypes = ({ match }) => {
+const UsingPropTypes = ({ match }) => {
   return (
     <div>
       <PageTitle title='PropTypes' match={match}/>
@@ -77,4 +77,4 @@ const PropTypes = ({ match }) => {
 PropTypes.propTypes = {
   match: PropTypes.object.isRequired
 }
-export default PropTypes;
+export default UsingPropTypes;

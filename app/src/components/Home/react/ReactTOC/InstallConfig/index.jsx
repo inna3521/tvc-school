@@ -8,7 +8,7 @@ import P from 'elements/P'
 import A from 'elements/A'
 import LI from 'elements/LI'
 
-const GetReadyInstallConfig = ({ match }) => {
+const InstallConfig = ({ match }) => {
   return (
     <div>
       <PageTitle title='Getting Ready: Installation & Configuration' match={match}/>
@@ -120,7 +120,7 @@ const GetReadyInstallConfig = ({ match }) => {
     </div>
   )
 };
-GetReadyInstallConfig.propTypes = {
+InstallConfig.propTypes = {
   match: PropTypes.object.isRequired
 }
-export default GetReadyInstallConfig
+export default InstallConfig

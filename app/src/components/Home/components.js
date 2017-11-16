@@ -10,6 +10,12 @@ import RA04Gallery from './react/RestaurantAppTOC/RA04Gallery'
 import RA05Menu from './react/RestaurantAppTOC/RA05Menu'
 import RA06InteractiveNavigation from './react/RestaurantAppTOC/RA06InteractiveNavigation'
 import RA07MenuEdit from './react/RestaurantAppTOC/RA07MenuEdit'
+import Styling from './react/ReactTOC/Styling'
+import ModifyProjectStructure from './react/ReactTOC/ModifyProjectStructure'
+import InstallConfig from './react/ReactTOC/InstallConfig'
+import FirstReactApp from './react/ReactTOC/FirstReactApp'
+import FirstReactComponent from './react/ReactTOC/FirstReactComponent'
+import PropTypes from './react/ReactTOC/PropTypes'
 
 export const routes = [
   {
@@ -21,6 +27,30 @@ export const routes = [
     path: '/react-toc',
     exact: true,
     component: withRouter(({ match }) => <TOC src={reactTOC} pageTitle='React' match={match} />),
+  },
+  {
+    path: '/react-toc/styling',
+    component: withRouter(({ match }) => <Styling match={match} />),
+  },
+  {
+    path: '/react-toc/modify-project-sturcture',
+    component: withRouter(({ match }) => <ModifyProjectStructure match={match} />),
+  },
+  {
+    path: '/react-toc/install-config',
+    component: withRouter(({ match }) => <InstallConfig match={match} />),
+  },
+  {
+    path: '/react-toc/first-react-app',
+    component: withRouter(({ match }) => <FirstReactApp match={match} />),
+  },
+  {
+    path: '/react-toc/first-react-component',
+    component: withRouter(({ match }) => <FirstReactComponent match={match} />),
+  },
+  {
+    path: '/react-toc/prop-types',
+    component: withRouter(({ match }) => <PropTypes match={match} />),
   },
   {
     path: '/restaurant-app-toc',
