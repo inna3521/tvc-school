@@ -1,0 +1,27 @@
+/* TOC */
+
+.linkText {
+  color: black;
+}
+.linkText:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.contentWrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+.leftSide {
+  flex-basis: 50%;
+}
+.rightSide {
+  align-items: center;
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+}
+.pageTitle {
+  padding-top: 30px;
+  text-align: center;
+}

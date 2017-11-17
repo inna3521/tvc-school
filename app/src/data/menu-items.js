@@ -31,7 +31,7 @@ export const reactTOC = [
     name: 'Styling React',
   },
   {
-    to: 'react-toc/restaurant-app-toc',
+    to: 'restaurant-app-toc',
     name: 'Restaurant App',
   },
   {
@@ -105,35 +105,35 @@ export const htmlCSSJSTOC = [
 
 export const restaurantAppTOC = [
   {
-    to: 'react-toc/restaurant-app-toc/introduction',
+    to: 'restaurant-app-toc/introduction',
     name: 'Restaurant Application Introduction',
   },
   {
-    to: 'react-toc/restaurant-app-toc/getting-started',
+    to: 'restaurant-app-toc/getting-started',
     name: 'Getting Started',
   },
   {
-    to: 'react-toc/restaurant-app-toc/header',
+    to: 'restaurant-app-toc/header',
     name: 'Making the Header',
   },
   {
-    to: 'react-toc/restaurant-app-toc/nav',
+    to: 'restaurant-app-toc/nav',
     name: 'Making the Navigation Menu',
   },
   {
-    to: 'react-toc/restaurant-app-toc/gallery',
+    to: 'restaurant-app-toc/gallery',
     name: 'Making the Gallery',
   },
   {
-    to: 'react-toc/restaurant-app-toc/menu',
+    to: 'restaurant-app-toc/menu',
     name: 'Making the Menu',
   },
   {
-    to: 'react-toc/restaurant-app-toc/interactive-navigation',
+    to: 'restaurant-app-toc/interactive-navigation',
     name: 'Interactive Navigation',
   },
   {
-    to: 'react-toc/restaurant-app-toc/menu-edit',
+    to: 'restaurant-app-toc/menu-edit',
     name: 'Menu Edit',
   },
 ]

@@ -4,10 +4,10 @@ import Section from 'elements/Section'
 import PageTitle from 'elements/PageTitle'
 import P from 'elements/P'
 
-const CodeOfConduct = (props) => {
+const CodeOfConduct = ({ match }) => {
   return (
     <div>
-      <PageTitle title='TriValley Coders' subTitle='Code of Conduct' back={props.match}/>
+      <PageTitle title='TriValley Coders' subTitle='Code of Conduct' match={match}/>
       <Section title='Rules' level={1}>
 
 

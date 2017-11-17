@@ -1,6 +1,6 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from 'redux'
 // import { merge, prepend, dissoc, without } from 'ramda';
-import { merge } from 'ramda';
+import { merge } from 'ramda'
 // import * as ku from '../lib/ke-utils';
 
 export const currentComponentId = (state = { id: 0 }, { type, payload }) => {
@@ -11,7 +11,7 @@ export const currentComponentId = (state = { id: 0 }, { type, payload }) => {
     default:
       return state;
   }
-};
+}
 
 export const requests = (state = {}, { type, payload, meta }) => {
   switch (type) {
@@ -24,7 +24,7 @@ export const requests = (state = {}, { type, payload, meta }) => {
     default:
       return state;
   }
-};
+}
 
 export default combineReducers({
   ui: combineReducers({
