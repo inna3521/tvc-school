@@ -11,7 +11,6 @@ import Pre from 'elements/Pre'
 import Button from 'elements/Button'
 
 const RA011GettingStarted = ({ match }) => {
-  console.log('RA011: match', match)
   const liStyle = {
     padding: '30px 0 20px 0'
   }

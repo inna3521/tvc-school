@@ -13,10 +13,10 @@ import Hint from 'elements/Hint'
 import iGallery from './img/gallery.png'
 import CodeHeader from 'elements/CodeHeader'
 
-const RA04Gallery = (props) => {
+const RA04Gallery = ({ match }) => {
   return (
     <div>
-      <PageTitle title='Making the Gallery' back={props.match} />
+      <PageTitle title='Making the Gallery' match={match} />
       <Section title='Introduction' level={1}>
         <P>In this section you will create a Gallery component as shown below.</P>
         <Img src={iGallery} medium alt='gallery step 01' />

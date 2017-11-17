@@ -12,6 +12,7 @@ import ProjectStructure from 'elements/ProjectStructure'
 import fInitComponentModel from './init-component-model'
 
 const RA01Introduction = ({ match }) => {
+  console.log('RA01: match', match)
   const redText = {
     color: 'red',
   }
