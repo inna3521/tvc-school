@@ -10,7 +10,7 @@ const PageTitle = ({ match, title, subTitle }) => {
       {
         match
           ? <BackButton className={styles.back} match={match}/>
-          : <button>no back</button>
+          : null
       }
       <div className={styles.titles}>
         <h1 className={styles.title}>{title}</h1>
