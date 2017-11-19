@@ -1,7 +1,7 @@
 // L01HTMLElements
 import React from 'react'
-import Lesson from 'elements/Lesson'
-import LessonSection from 'elements/LessonSection/index'
+import PageTitle from 'elements/PageTitle'
+import Section from 'elements/Section'
 import UL from 'elements/UL'
 import Img from 'elements/Img'
 import Callout from 'elements/Callout'
@@ -10,14 +10,11 @@ import iHTMLTagAttributes from './img/html-tag-attributes.png'
 import iSelfClosing from './img/self-closing-element.svg'
 import A from 'elements/A/'
 
-const Lesson01 = (props) => {
+const WhatIsHTML = ({ match }) => {
   return (
-    <Lesson
-      title='What is HTML'
-    >
-      <LessonSection
-
-      >
+    <div>
+      <PageTitle title='What is HTML' match={match} />
+      <Section title='Introduction' level={1}>
         <Callout
           type='info'
           title='HTML'
@@ -38,12 +35,9 @@ const Lesson01 = (props) => {
           <dd>Structure includes whether an element is a paragraph, image, bulleted list or other HTML element, and can include alignment and position on the page. However, appearance such as alignment, position and color is largely determined by CSS.</dd>
         </dl>
         <p>Your understanding of content, display and structure will become clearer as you move through the HTML and CSS sections of this course.</p>
-      </LessonSection>
-      <LessonSection
-        title='What are HTML Elements (aka. tags)'
-      >
+      </Section>
+      <Section title='What are HTML Elements (aka. tags)'>
         <p>HTML elements are used to create the structure of a web page. With HTML elements you can create paragraphs, images, tables and much more. HTML elements have a specific structure that must be followed.</p>
-
         <UL
           listItems={[
             'The below tag is a <em>paragraph</em> element.',
@@ -62,10 +56,8 @@ const Lesson01 = (props) => {
           src={iSelfClosing}
           alt="self-closing html tag"
         />
-      </LessonSection>
-      <LessonSection
-        title='Attributes'
-      >
+      </Section>
+      <Section title='Attributes'>
         <p>HTML elements can be modified by using attributes.</p>
         <UL
           listItems={[
@@ -79,11 +71,8 @@ const Lesson01 = (props) => {
           cite='Mozilla Developer Network Contributors'
           alt=""
         />
-      </LessonSection>
-      <LessonSection
-        title='Additional Information'
-        subTitle='Looking-up and learning about HTML elements'
-      >
+      </Section>
+      <Section title='Additional Information' subTitle='Looking-up and learning about HTML elements'>
         <p>Both W3Schools and MDN have a complete list of all HTML elements.</p>
         <UL
           listItems={[
@@ -93,9 +82,9 @@ const Lesson01 = (props) => {
         />
         <p>Often, the fastest way to look-up an element would be to search for it. For example, if you wanted to know the tag to display an image on the page you could search for 'html tag image mdn' and it will most likely be the first search result.</p>
 
-      </LessonSection>
-    </Lesson>
+      </Section>
+    </div>
   )
 };
 
-export default Lesson01;
+export default WhatIsHTML;

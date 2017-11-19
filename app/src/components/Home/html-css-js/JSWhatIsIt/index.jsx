@@ -1,29 +1,16 @@
-// _lesson
-
-
-
-
-
-/*
-      This lesson is not complete
- */
-
-
-
-
-
-
-
 import React from 'react'
-import Pre from './../../elements/Pre'
-import Lesson from '../../elements/Lesson'
+import Pre from 'elements/Pre'
+import PageTitle from 'elements/PageTitle'
 
-const L06JSWhatIsIt = (props) => {
+const JSWhatIsIt = ({ match }) => {
+  const warnStyle = {
+    color: 'red',
+    fontWeight: 'bold',
+  }
   return (
-    <Lesson
-      title='JavaScript, What is it?'
-      subTitle='What can you do with it?'
-    >
+    <div>
+      <h1 style={warnStyle}>This page is not complete at all!</h1>
+      <PageTitle title='JavaScript, What is it?' subTitle='What can you do with it?' match={match} />
       <h1>THIS LESSON IS NOT COMPLETE</h1>
       <p>To understand what JavaScript is what what it is used for you need to know three key concepts, <b>Static</b>, <b>dynamic</b> & <b>interactive</b> content. The exact definition of each type of content differs depending on who you are speaking with. Below is one useful way of defining these three key concepts.</p>
       <p><span className='keyword'>Content</span> is anything that appears on the page such as pictures and text.</p>
@@ -38,10 +25,10 @@ const L06JSWhatIsIt = (props) => {
       <p>JavaScript looks like this</p>
       <Pre
         code={[
-          "let names = ['Jack', 'Jane', 'Alice'] ",
-          "for (let i=0; i<3; i++) {",
-          "  console.log(names[i])",
-          "}"
+            "let names = ['Jack', 'Jane', 'Alice'] ",
+            "for (let i=0; i<3; i++) {",
+            "  console.log(names[i])",
+            "}"
         ]}
         language='js'
       />
@@ -83,8 +70,8 @@ const L06JSWhatIsIt = (props) => {
         <li>Code alert message</li>
       </ol>
 
-    </Lesson>
-  )
-};
+    </div>
+      )
+      };
 
-export default L06JSWhatIsIt;
+export default JSWhatIsIt;

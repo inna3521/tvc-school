@@ -1,7 +1,7 @@
 // L01HTMLElements
 import React from 'react'
-import Lesson from 'elements/Lesson'
-import LessonSection from 'elements/LessonSection/index'
+import PageTitle from 'elements/PageTitle'
+import Section from 'elements/Section'
 import iImageImage from './img/image-image.png'
 import Table from 'elements/NewTable'
 import TH from 'elements/TH'
@@ -11,13 +11,11 @@ import styles from './style.css'
 import Code from 'elements/Code'
 import A from 'elements/A'
 
-const L02EssentialHTMLElements = (props) => {
+const EssentialHTMLElements = ({ match }) => {
   return (
-
-    <Lesson
-      title='Essential HTML Elements'
-    >
-      <LessonSection>
+    <div>
+      <PageTitle title='Essential HTML Elements' match={match}/>
+      <Section>
         <p>We are not going to go through this list together. Instead, we will use each of these elements in a web page.</p>
         <Table striped>
           <TR>
@@ -119,20 +117,18 @@ const L02EssentialHTMLElements = (props) => {
             </TD>
           </TR>
         </Table>
-      </LessonSection>
+      </Section>
 
-      <LessonSection
-        title='Tables'
-      >
+      <Section title='Tables'>
         <p>Tables are used to present content in rows and columns. A table consists of multiple element types that define the rows and columns. The most commonly used table elements are list below. For a complete list of table elements see <A href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">MDN web docs &lt;table&gt;</A> </p>
 
 
-      </LessonSection>
+      </Section>
 
 
 
-    </Lesson>
+    </div>
   )
 };
 
-export default L02EssentialHTMLElements;
+export default EssentialHTMLElements;

@@ -2,6 +2,7 @@ import React from 'react'
 import TOC from 'elements/TOC'
 import { withRouter } from 'react-router-dom'
 // React
+import InitialConcepts from './react/ReactTOC/InitialConcepts'
 import Styling from './react/ReactTOC/Styling'
 import ModifyProjectStructure from './react/ReactTOC/ModifyProjectStructure'
 import InstallConfig from './react/ReactTOC/InstallConfig'
@@ -18,14 +19,14 @@ import RA05Menu from './react/RestaurantAppTOC/RA05Menu'
 import RA06InteractiveNavigation from './react/RestaurantAppTOC/RA06InteractiveNavigation'
 import RA07MenuEdit from './react/RestaurantAppTOC/RA07MenuEdit'
 // HTML, CSS, JS
-// import L01WhatIsHTML from './html-css-js/L01WhatIsHTML'
-// import L02EssentialHTMLElements from './html-css-js/L02EssentialHTMLElements'
-// import L03FirstHTMLPage from './html-css-js/L03FirstHTMLPage'
-// import L04WhatIsCSS from './html-css-js/L04WhatIsCSS'
-// import L05CSSChallenge01 from './html-css-js/L05CSSChallenge01'
-// import L06JSWhatIsIt from './html-css-js/L06JSWhatIsIt'
-// import L07JSVariables from './html-css-js/L07JSVariables'
-// import L08JSArrays from './html-css-js/L08JSArrays'
+import WhatIsHTML from './html-css-js/WhatIsHTML'
+import EssentialHTMLElements from './html-css-js/EssentialHTMLElements'
+import FirstHTMLPage from './html-css-js/FirstHTMLPage'
+import WhatIsCSS from './html-css-js/WhatIsCSS'
+import CSSChallenge01 from './html-css-js/CSSChallenge01'
+import JSWhatIsIt from './html-css-js/JSWhatIsIt'
+import JSVariables from './html-css-js/JSVariables'
+import Arrays from './html-css-js/Arrays'
 // import L09MozillaThimble from './html-css-js/L09MozillaThimble'
 // import L10JSOperators from './html-css-js/L10JSOperators'
 // import L11Functions from './html-css-js/L11Functions'
@@ -43,6 +44,62 @@ export const routes = [
     exact: true,
     component: withRouter(() => <TOC rootPath='/' pageTitle='Home' />),
   },
+  // HTMLTOC
+  {
+    name: 'HTML',
+    type: 'toc',
+    path: '/html',
+    exact: true,
+    component: withRouter(({ match }) => <TOC rootPath='html' pageTitle='html' match={match} />),
+  },
+  {
+    name: 'What is HTML?',
+    type: 'page',
+    path: '/html/what-is-html',
+    component: withRouter(({ match }) => <WhatIsHTML match={match} />),
+  },
+  {
+    name: 'Essential HTML Elements',
+    type: 'page',
+    path: '/html/essential-html-elements',
+    component: withRouter(({ match }) => <EssentialHTMLElements match={match} />),
+  },
+  {
+    name: 'First HTML Page',
+    type: 'page',
+    path: '/html/first-html-page',
+    component: withRouter(({ match }) => <FirstHTMLPage match={match} />),
+  },
+  {
+    name: 'What is CSS',
+    type: 'page',
+    path: '/html/what-is-css',
+    component: withRouter(({ match }) => <WhatIsCSS match={match} />),
+  },
+  {
+    name: 'CSS Challenge',
+    type: 'page',
+    path: '/html/css-challenge',
+    component: withRouter(({ match }) => <CSSChallenge01 match={match} />),
+  },
+  {
+    name: 'JavaScript, What is it?',
+    type: 'page',
+    path: '/html/js-what-is-it',
+    component: withRouter(({ match }) => <JSWhatIsIt match={match} />),
+  },
+  {
+    name: 'JavaScript Variables',
+    type: 'page',
+    path: '/html/js-variables',
+    component: withRouter(({ match }) => <JSVariables match={match} />),
+  },
+  {
+    name: 'Arrays',
+    type: 'page',
+    path: '/html/arrays',
+    component: withRouter(({ match }) => <Arrays match={match} />),
+  },
   // ReactTOC
   {
     name: 'React',
@@ -50,6 +107,12 @@ export const routes = [
     path: '/react-toc',
     exact: true,
     component: withRouter(({ match }) => <TOC rootPath='react-toc' pageTitle='React' match={match} />),
+  },
+  {
+    name: 'Initial Concepts',
+    type: 'page',
+    path: '/react-toc/initial-concepts',
+    component: withRouter(({ match }) => <InitialConcepts match={match} />),
   },
   {
     name: 'Styling React Components',
