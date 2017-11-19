@@ -11,7 +11,7 @@ const BackButton = ({ match }) => {
 }
 
 BackButton.propTypes = {
-  back: PropTypes.object.isRequired,
+  match: PropTypes.object.isRequired,
 }
 
 export default BackButton
