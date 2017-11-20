@@ -1,18 +1,22 @@
 // Home
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect, withRouter } from 'react-router-dom'
 import Footer from './Footer'
 import TopBar from './TopBar'
+import PageTitle from './PageTitle'
 import CodeOfConduct from './CodeOfConduct'
 import { routes } from 'toc/toc'
+// import PageTitle from './PageTitle'
 
 const Home = (props) => {
 
   return (
     <Router>
       <div id="Home">
-        <Redirect to='/' />  {/* hopefully this will only run once.*/}
         <TopBar />
+        <Route render={
+          withRouter(({ match, location }) => <PageTitle match={match} location={location} />)
+        } />
 
         <Switch>
           {routes.map((r) => (

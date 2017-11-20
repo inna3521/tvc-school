@@ -1,7 +1,6 @@
 // MenuAppHeader
 import React from 'react'
 import PropTypes from 'prop-types'
-import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import Pre from 'elements/Pre'
 import Img from 'elements/Img'
@@ -12,10 +11,9 @@ import Hint from 'elements/Hint'
 import iNav from './img/nav.png'
 import CodeHeader from 'elements/CodeHeader'
 
-const RA03Nav = ({ match }) => {
+const RA03Nav = () => {
   return (
-    <div>
-      <PageTitle title='Making the Nav Menu' match={match} />
+    <div id='RA03Nav'>
       <Section title='Introduction' level={1}>
         <P>In this section you will add a component named Nav to Header. Nav will look as shown below.</P>
         <Img src={iNav} medium alt='header step 01' />
@@ -71,7 +69,4 @@ const RA03Nav = ({ match }) => {
     </div>
   )
 };
-RA03Nav.propTypes = {
-  match: PropTypes.object.isRequired
-}
 export default RA03Nav;

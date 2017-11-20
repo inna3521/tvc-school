@@ -4,7 +4,9 @@ export const getCurrentRouteId = (state) => {
   // ku.log('selectors.getCurrentComponentId: state', state, 'orange' )
   //; ku.log('selectors.getCurrentComponentId: id', state.ui.currentComponentId.id, 'orange' )
   return state.ui.currentRouteIndex;
-
+}
+export const getRoutes = (state) => {
+  return state.routes
 }
 
 // redux selectors

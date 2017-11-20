@@ -2,7 +2,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Section from 'elements/Section'
-import PageTitle from 'elements/PageTitle'
 import UL from 'elements/UL'
 import P from 'elements/P'
 import LI from 'elements/LI'
@@ -10,11 +9,10 @@ import A from 'elements/A'
 import Img from 'elements/Img'
 import iOneTwoWayBinding from './img/2and1-way-binding.png'
 
-const InitialConcepts = ({ match }) => {
+const AboutReact = () => {
 
   return (
-    <div>
-      <PageTitle title='Initial Concepts' match={match}/>
+    <div id='AboutReact'>
       <Section title='Introduction' level={1}>
         <P>As you progress throught the you will be learning several key React concepts. ... </P>
       </Section>
@@ -55,8 +53,5 @@ const InitialConcepts = ({ match }) => {
           )
           };
 
-          InitialConcepts.propTypes = {
-            match: PropTypes.object.isRequired
-          }
 
-          export default InitialConcepts
+          export default AboutReact

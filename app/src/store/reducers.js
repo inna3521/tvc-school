@@ -5,9 +5,10 @@ import { merge } from 'ramda'
 import routesList from 'toc/toc'
 
 const transformRoutes = () => {
-  const newRoutes = routesList.map((r) => {
+  const newRoutes = routesList.map((r, index) => {
     return {
-      name: r.name,
+      index: index,
+      title: r.title,
       type: r.type,
       path: r.path,
     }

@@ -2,7 +2,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Section from 'elements/Section'
-import PageTitle from 'elements/PageTitle'
 import P from 'elements/P'
 import LI from 'elements/LI'
 import A from 'elements/A'
@@ -10,13 +9,12 @@ import OL from 'elements/OL'
 import Pre from 'elements/Pre'
 import Button from 'elements/Button'
 
-const RA011GettingStarted = ({ match }) => {
+const RA011GettingStarted = () => {
   const liStyle = {
     padding: '30px 0 20px 0'
   }
   return (
-    <div>
-      <PageTitle title='Getting Started' match={match}/>
+    <div id='RA011GettingStarted'>
       <Section level={2}>
         <P>Follow these instructions to get started.</P>
         <OL>
@@ -45,7 +43,4 @@ const RA011GettingStarted = ({ match }) => {
     </div>
   )
 };
-RA011GettingStarted.propTypes = {
-  match: PropTypes.object.isRequired
-}
 export default RA011GettingStarted;

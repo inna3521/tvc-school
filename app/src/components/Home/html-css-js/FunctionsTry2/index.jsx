@@ -4,16 +4,14 @@ import Pre from 'elements/Pre'
 import Img from 'elements/Img/index'
 import iFunctionSyntax from './img/function-syntax.png'
 import iParameters from './img/parameters.png'
-import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import OL from 'elements/OL'
 import UL from 'elements/UL'
 import LI from 'elements/UL'
 
-const FunctionsTry2 = ({ match }) => {
+const FunctionsTry2 = () => {
   return (
-    <div>
-      <PageTitle title='Functions Tyy 2' match={match} />
+    <div id='FunctionsTry2'>
       <Section title='What is a fnction?'>
         <p>A function is a grouping of reusable code. For example: Say you needed to do a bunch things many times in your application such as</p>
         <OL>

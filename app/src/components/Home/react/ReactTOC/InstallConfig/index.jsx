@@ -2,16 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Pre from 'elements/Pre'
 import Section from 'elements/Section'
-import PageTitle from 'elements/PageTitle'
 import UL from 'elements/UL'
 import P from 'elements/P'
 import A from 'elements/A'
 import LI from 'elements/LI'
 
-const InstallConfig = ({ match }) => {
+const InstallConfig = () => {
   return (
-    <div>
-      <PageTitle title='Getting Ready: Installation & Configuration' match={match}/>
+    <div id='InstallConfig'>
 
       <Section title='What Is a Development Environment?' level={1}>
 
@@ -120,7 +118,4 @@ const InstallConfig = ({ match }) => {
     </div>
   )
 };
-InstallConfig.propTypes = {
-  match: PropTypes.object.isRequired
-}
 export default InstallConfig

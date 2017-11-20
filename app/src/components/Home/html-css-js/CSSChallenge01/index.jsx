@@ -9,7 +9,6 @@ import iForking from './img/iForking.png'
 import iClickRepositories from './img/iClickRepositories.png'
 import iCloneToEdit from './img/iCloneToEdit.png'
 import iProjectNameEtc from './img/iProjectNameEtc.png'
-import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import Img from 'elements/Img'
 import OL from 'elements/OL'
@@ -20,15 +19,14 @@ import Angle from 'elements/Angle'
 import AMP from 'elements/AMP'
 import SP from 'elements/SP'
 
-const CSSChallenge01 = ({ match }) => {
+const CSSChallenge01 = () => {
   const warnStyle =  {
     color: 'red',
     fontWeight: 'bold',
   }
   return (
-    <div>
+    <div id='CSSChallenge01'>
       <h1 style={warnStyle}>This page wasn't updated to use the newer elements/ because it really needs to be completely rewritten. Most of its content is not showing</h1>
-      <PageTitle title='How to Start a New Project' match={match} />
 
       <Section title='Copy the Challenge Project on GitHub'>
         <p>Follow the below instructions to create a copy of the challenge project in your GitHub repository. You will be performing a process know as <em>forking</em></p>

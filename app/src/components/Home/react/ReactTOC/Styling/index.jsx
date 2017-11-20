@@ -2,7 +2,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './style.css'
-import PageTitle from 'elements/PageTitle'
 import Pre from 'elements/Pre'
 import Code from 'elements/Code'
 import Section from 'elements/Section'
@@ -12,10 +11,9 @@ import P from 'elements/P'
 import A from 'elements/A'
 import LI from 'elements/LI'
 
-const Styling = ({ match }) => {
+const Styling = () => {
   return (
-    <div>
-      <PageTitle title='Styling Components with CSS' match={match} />
+    <div id='Styling'>
       <Section title='Overview' level={1}>
         <P>In react you can have one style sheet that contains all of  your css. You can write your CSS in the traditional way as well as use make use of SASS or LESS. In my experience, the best way to style React components is using CSS Modules. Using the traditional approach means that all styles are global and you must still use unique names.</P>
         <P>In this course we will use two techniques for styling. First, we will primarily use the traditional with the exception that we will be keeping our CSS in the stylesheet for the component it relates to. We will put styles that are used throughout the application in src/index.css. All other CSS will go in the style.css file associated with it.</P>
@@ -81,7 +79,4 @@ const Styling = ({ match }) => {
     </div>
   )
 };
-Styling.propTypes = {
-  match: PropTypes.object.isRequired
-}
 export default Styling;

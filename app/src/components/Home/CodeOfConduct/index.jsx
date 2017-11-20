@@ -1,16 +1,12 @@
 // MenuAppHeader
 import React from 'react'
 import Section from 'elements/Section'
-import PageTitle from 'elements/PageTitle'
 import P from 'elements/P'
 
-const CodeOfConduct = ({ match }) => {
+const CodeOfConduct = () => {
   return (
-    <div>
-      <PageTitle title='TriValley Coders' subTitle='Code of Conduct' match={match}/>
+    <div id='CodeOfConduct'>
       <Section title='Rules' level={1}>
-
-
         <Section title='Be considerate' level={2}>
           <P>Your words and actions will affect others in this community and you will in turn depend on the words and actions of others. Any decision you take will affect other community members, and we expect you to take those consequences into account when making decisions.</P>
         </Section>

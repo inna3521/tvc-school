@@ -1,6 +1,5 @@
 // L01HTMLElements
 import React from 'react'
-import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import UL from 'elements/UL'
 import Img from 'elements/Img'
@@ -10,10 +9,9 @@ import iHTMLTagAttributes from './img/html-tag-attributes.png'
 import iSelfClosing from './img/self-closing-element.svg'
 import A from 'elements/A/'
 
-const WhatIsHTML = ({ match }) => {
+const WhatIsHTML = () => {
   return (
-    <div>
-      <PageTitle title='What is HTML' match={match} />
+    <div id='WhatIsHTML'>
       <Section title='Introduction' level={1}>
         <Callout
           type='info'

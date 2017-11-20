@@ -3,7 +3,6 @@ import styles from './style.css'
 import PropTypes from 'prop-types'
 import Link from 'elements/Link'
 import Button from 'elements/Button'
-import PageTitle from 'elements/PageTitle'
 import routes from 'toc/toc'
 // import * as ku from 'lib/ke-utils'
 
@@ -15,7 +14,7 @@ import routes from 'toc/toc'
 const transformRoutes = (routes) => {
   const newRoutes = routes.map((r) => {
     let o = {
-      name: r.name,
+      title: r.title,
       path: r.path.substring(1)
     }
     return o
@@ -52,12 +51,11 @@ const TOC = ({ rootPath, pageTitle, match }) => {
       <Link className={styles.linkText}
         to={item.path}
       >
-        {item.name}
+        {item.title}
       </Link></li>
   ))
   return (
     <div className={styles.wrapper}>
-      <PageTitle title={pageTitle} match={match} />
       <div className={styles.contentWrapper}>
         <div className={styles.leftSide}>
           <h2>Contents</h2>

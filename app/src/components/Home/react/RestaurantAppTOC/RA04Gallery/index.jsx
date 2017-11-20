@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import Pre from 'elements/Pre'
 import Img from 'elements/Img'
@@ -13,10 +12,9 @@ import Hint from 'elements/Hint'
 import iGallery from './img/gallery.png'
 import CodeHeader from 'elements/CodeHeader'
 
-const RA04Gallery = ({ match }) => {
+const RA04Gallery = () => {
   return (
-    <div>
-      <PageTitle title='Making the Gallery' match={match} />
+    <div id='RA04Gallery'>
       <Section title='Introduction' level={1}>
         <P>In this section you will create a Gallery component as shown below.</P>
         <Img src={iGallery} medium alt='gallery step 01' />
@@ -72,7 +70,4 @@ const RA04Gallery = ({ match }) => {
     </div>
   )
 };
-RA04Gallery.propTypes = {
-  match: PropTypes.object.isRequired
-}
 export default RA04Gallery;

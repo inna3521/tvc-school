@@ -9,8 +9,4 @@ const NavButton = ({ path, children }) => {
   )
 }
 
-NavButton.propTypes = {
-  match: PropTypes.object.isRequired,
-}
-
 export default NavButton

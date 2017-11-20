@@ -4,15 +4,13 @@ import Pre from 'elements/Pre'
 import Img from 'elements/Img/index'
 import iFunctionSyntax from './img/function-syntax.png'
 import iParameters from './img/parameters.png'
-import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import OL from 'elements/OL'
 import UL from 'elements/UL'
 
-const Functions = ({ match }) => {
+const Functions = () => {
   return (
-    <div>
-      <PageTitle title='Functions' match={match} />
+    <div id='Functions'>
       <Section
         title='What is a fnction?'
       >

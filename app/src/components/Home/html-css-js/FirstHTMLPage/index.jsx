@@ -2,14 +2,13 @@
 import React from 'react'
 import styles from './style.css'
 import UL from 'elements/UL'
-import PageTitle from 'elements/PageTitle'
+import LI from 'elements/LI'
 import Section from 'elements/Section'
 import Pre from 'elements/Pre'
 
-const FirstHTMLPage = ({ match }) => {
+const FirstHTMLPage = () => {
   return (
-    <div>
-      <PageTitle title='First HTML Page' subTitle='Make a Page with HTML Only' match={match}/>
+    <div id='FirstHTMLPage'>
       <Section>
         <p>In this lesson, you will be building a web page with HTML only, using all of the tags introduced in the previous section. Before you start writing HTML we need to discuss code formatting.</p>
       </Section>
@@ -33,12 +32,10 @@ const FirstHTMLPage = ({ match }) => {
           ]}
         />
         <p>In the above sample</p>
-        <UL
-          listItems={[
-            'Each element that is inside of another element is indented 2 spaces more than its containing element.',
-            'While not visible, the indent is spaces and not tabs.',
-          ]}
-        />
+        <UL>
+          <LI>Each element that is inside of another element is indented 2 spaces more than its containing element.</LI>
+          <LI>While not visible, the indent is spaces and not tabs.</LI>
+        </UL>
         <p>For the moment, the above 2 bullet points are our coding standard. We will specify more as the course progresses.</p>
       </Section>
       <Section title='Getting Ready' >

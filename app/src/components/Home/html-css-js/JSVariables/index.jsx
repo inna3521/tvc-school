@@ -1,14 +1,12 @@
 // _lesson
 import React from 'react'
 import Pre from 'elements/Pre'
-import PageTitle from 'elements/PageTitle'
 import UL from 'elements/UL'
 import LI from 'elements/LI'
 
-const JSVariables = ({ match }) => {
+const JSVariables = () => {
   return (
-    <div>
-      <PageTitle title='Variables' subTitle='An Essential Ingredient' match={match} />
+    <div id='JSVariables'>
 
       <p>Without varables programming languages would not be very useful and all of the apps that you use today would not exist. Variables are a place to store data for use later. The data stored in a variable can be changed.</p>
       <p>In order to use a veriable you must create it. In programming this is called 'declaring' the variable'. Here is how you do it.</p>

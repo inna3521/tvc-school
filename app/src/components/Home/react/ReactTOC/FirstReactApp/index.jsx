@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './style.css'
-import PageTitle from 'elements/PageTitle'
 import Pre from 'elements/Pre'
 import Section from 'elements/Section'
 import OL from 'elements/OL'
@@ -9,10 +8,9 @@ import P from 'elements/P'
 import A from 'elements/A'
 import LI from 'elements/LI'
 
-const FirstReactApp = ({ match }) => {
+const FirstReactApp = () => {
   return (
-    <div>
-      <PageTitle title='First React App' match={match}/>
+    <div id='FirstReactApp'>
       <Section title='Introduction' level={1}>
         <P>In this lesson, we will use Create React App to create our initial project.</P>
         <P>Setting-up a React app is quite complex and could take you weeks to learn. So that we can stay focused on React we will be using <A href='https://github.com/facebookincubator/create-react-app'>Create React App (CRA)</A> which is made by Facebook and creates a fully configured React app to use as a starting point for a project.</P>
@@ -41,7 +39,4 @@ const FirstReactApp = ({ match }) => {
     </div>
   )
 };
-FirstReactApp.propTypes = {
-  match: PropTypes.object.isRequired
-}
 export default FirstReactApp;

@@ -1,18 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './style.css'
-import PageTitle from 'elements/PageTitle'
 import Pre from 'elements/Pre'
 import Section from 'elements/Section'
 import OL from 'elements/OL'
 import P from 'elements/P'
 import LI from 'elements/LI'
 
-const FirstReactComponent = ({ match }) => {
+const FirstReactComponent = () => {
   return (
-    <div>
-      <PageTitle title='First React Component' match={match}
-      />
+    <div id='FirstReactComponent'>
       <Section title='Overview' level={1}>
         <P>Our first React component will be a header for our app. We will create it and then render it inside of the Page component. The Header component will be a 'functional' component. We will explore what that means in a later lesson. For now, we will explore the basics of creating a component.</P>
         first component
@@ -115,7 +112,4 @@ const FirstReactComponent = ({ match }) => {
     </div>
       )
       };
-FirstReactComponent.propTypes = {
-  match: PropTypes.object.isRequired
-}
 export default FirstReactComponent;

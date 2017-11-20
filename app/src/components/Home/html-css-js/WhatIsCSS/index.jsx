@@ -1,4 +1,3 @@
-// Lesson04
 import React from 'react'
 import styles from './style.css'
 import Img from 'elements/Img'
@@ -7,7 +6,6 @@ import iCSSSyntax02 from './img/css-syntax.02.png'
 import iCSSSyntax03 from './img/css-syntax.03.png'
 import iKeyValuePair02 from './img/key-value-pair.02.png'
 import iKeyValuePair from './img/key-value-pair.png'
-import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import Table from 'elements/NewTable'
 import UL from 'elements/UL'
@@ -15,11 +13,9 @@ import TH from 'elements/TH'
 import TR from 'elements/TR'
 import TD from 'elements/TD'
 
-const Lesson04 = ({ match }) => {
+const WhatIsCSS = () => {
   return (
-    <div>
-      <PageTitle title='CSS' subTitle='What is CSS?' match={match} />
-
+    <div id='WhatIsCSS'>
       <p>CSS stands for <span className="large-cap">C</span>ascading<span className="large-cap"> S</span>tyle <span className="large-cap">S</span>heets.
         We will get to the meaning of the name in a later lesson.
       </p>
@@ -242,4 +238,4 @@ const Lesson04 = ({ match }) => {
       )
       };
 
-      export default Lesson04;
+      export default WhatIsCSS;

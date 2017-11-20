@@ -1,6 +1,5 @@
 import React from 'react'
 import Pre from 'elements/Pre'
-import PageTitle from 'elements/PageTitle'
 
 const JSWhatIsIt = ({ match }) => {
   const warnStyle = {
@@ -8,9 +7,8 @@ const JSWhatIsIt = ({ match }) => {
     fontWeight: 'bold',
   }
   return (
-    <div>
+    <div id='JSWhatIsIt'>
       <h1 style={warnStyle}>This page is not complete at all!</h1>
-      <PageTitle title='JavaScript, What is it?' subTitle='What can you do with it?' match={match} />
       <h1>THIS LESSON IS NOT COMPLETE</h1>
       <p>To understand what JavaScript is what what it is used for you need to know three key concepts, <b>Static</b>, <b>dynamic</b> & <b>interactive</b> content. The exact definition of each type of content differs depending on who you are speaking with. Below is one useful way of defining these three key concepts.</p>
       <p><span className='keyword'>Content</span> is anything that appears on the page such as pictures and text.</p>

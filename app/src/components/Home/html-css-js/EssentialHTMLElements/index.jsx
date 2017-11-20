@@ -1,6 +1,5 @@
 // L01HTMLElements
 import React from 'react'
-import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import iImageImage from './img/image-image.png'
 import Table from 'elements/NewTable'
@@ -11,10 +10,9 @@ import styles from './style.css'
 import Code from 'elements/Code'
 import A from 'elements/A'
 
-const EssentialHTMLElements = ({ match }) => {
+const EssentialHTMLElements = () => {
   return (
-    <div>
-      <PageTitle title='Essential HTML Elements' match={match}/>
+    <div id='EssentialHTMLElements'>
       <Section>
         <p>We are not going to go through this list together. Instead, we will use each of these elements in a web page.</p>
         <Table striped>

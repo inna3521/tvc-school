@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import PageTitle from 'elements/PageTitle'
 import Section from 'elements/Section'
 import Pre from 'elements/Pre'
 import Img from 'elements/Img'
@@ -14,10 +13,9 @@ import CodeHeader from 'elements/CodeHeader'
 import ProjectStructure from 'elements/ProjectStructure'
 import HeaderStructure from './header-structure'
 
-const RA02Header = ({ match }) => {
+const RA02Header = () => {
   return (
-    <div>
-      <PageTitle title='Making the Header' match={match} />
+    <div id='RA02Header'>
       <Section title='Introduction' level={1}>
         <P>In this section you will create a component named Header which will look as shown below.</P>
         <Img src={iHeader01} medium alt='header step 01' />
@@ -75,7 +73,4 @@ const RA02Header = ({ match }) => {
     </div>
   )
 };
-RA02Header.propTypes = {
-  match: PropTypes.object.isRequired
-}
 export default RA02Header;

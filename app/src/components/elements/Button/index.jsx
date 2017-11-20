@@ -13,7 +13,6 @@ const Button = (props) => {
     [styles.btnAmber]: props.amber,
     [styles.btnRed]: props.red,
   })
-  console.log('children', props.children.length)
   const newChildren = props.children.map((c, index) => {
     const childStyle = classNames({
       [styles.childMargin]: index > 0,

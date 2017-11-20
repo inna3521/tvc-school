@@ -8,7 +8,7 @@ import PropTypes from 'prop-types'
 // import * as ku from 'lib/ke-utils'
 
 const PageTitle = ({ match, title, subTitle }) => {
-  console.log('match', match)
+  console.log('PageTitle: match', match)
   return (
     <div className={styles.pageHeader}>
 
