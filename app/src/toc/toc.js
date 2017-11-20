@@ -8,7 +8,7 @@ import restaurantTOC from 'toc/restaurant-toc'
 const homeTOC = [
   // HomeTOC
   {
-    name: 'Home',
+    title: 'Home',
     type: 'root',
     path: '/',
     exact: true,

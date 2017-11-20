@@ -14,56 +14,56 @@ import RA07MenuEdit from 'Home/react/RestaurantAppTOC/RA07MenuEdit'
 export const routes = [
   // RestaurantAppTOC
   {
-    name: 'Restaurant Application',
+    title: 'Restaurant Application',
     type: 'toc',
     path: '/restaurant-app-toc',
     exact: true,
     component: withRouter(({ match }) => <TOC rootPath='restaurant-app-toc' pageTitle='Restaurant App' match={match} />),
   },
   {
-    name: 'Introduction',
+    title: 'Introduction',
     type: 'page',
     path: '/restaurant-app-toc/introduction',
     component: withRouter(({ match }) => <RA01Introduction match={match}/>)
   },
   {
-    name: 'Getting Started',
+    title: 'Getting Started',
     type: 'page',
     path: '/restaurant-app-toc/getting-started',
     component: withRouter(({ match }) => <RA011GettingStarted match={match} />)
   },
   {
-    name: 'Making the Header',
+    title: 'Making the Header',
     type: 'page',
     path: '/restaurant-app-toc/header',
     component: withRouter(({ match }) => <RA02Header match={match} />),
   },
   {
-    name: 'Navigation',
+    title: 'Navigation',
     type: 'page',
     path: '/restaurant-app-toc/nav',
     component: withRouter(({ match }) => <RA03Nav match={match} />),
   },
   {
-    name: 'Gallery',
+    title: 'Gallery',
     type: 'page',
     path: '/restaurant-app-toc/gallery',
     component: withRouter(({ match }) => <RA04Gallery match={match} />),
   },
   {
-    name: 'Menu',
+    title: 'Menu',
     type: 'page',
     path: '/restaurant-app-toc/menu',
     component: withRouter(({ match }) => <RA05Menu match={match} />),
   },
   {
-    name: 'Interactive Navigation',
+    title: 'Interactive Navigation',
     type: 'page',
     path: '/restaurant-app-toc/interactive-navigation',
     component: withRouter(({ match }) => <RA06InteractiveNavigation match={match} />),
   },
   {
-    name: 'Editing the Menu',
+    title: 'Editing the Menu',
     type: 'page',
     path: '/restaurant-app-toc/menu-edit',
     component: withRouter(({ match }) => <RA07MenuEdit match={match} />),
