@@ -2,21 +2,23 @@
 import React from 'react'
 import './style.css'
 import { Table } from 'react-bootstrap'
-import Pre from './../../elements/Pre'
-import Code from './../../elements/Code'
-import Lesson from '../../elements/Lesson'
-import LessonSection from '../../elements/LessonSection'
+import Pre from 'elements/Pre'
+import Code from 'elements/Code'
+import PageTitle from 'elements/PageTitle'
+import Section from 'elements/Section'
 import styles from './style.css'
 
 
-const JSOperators = (props) => {
+const JSOperators = ({ match }) => {
+  const warnStyle = {
+    color: 'red',
+    fontWeight: 'bold',
+  }
   return (
-    <Lesson
-      title='JavaScript Operators'
-    >
-      <h2>Operators</h2>
-      <LessonSection>
-        <h3>Arithmetic operators</h3>
+    <div>
+      <h1 style={warnStyle}>This lesson shows several cases of where the current styling is not adequate. Needs review and modification.</h1>
+      <PageTitle title='JavaScript Operators' match={match} />
+      <Section title='Arithmetic Operators' level={1}>
         <Table responsive>
           <thead>
             <tr>
@@ -72,33 +74,33 @@ const JSOperators = (props) => {
             </tr>
           </tbody>
         </Table>
-      </LessonSection>
-      <LessonSection>
-        <h2>Examples</h2>
-        <h3>Addition</h3>
-        <Pre
-          code={[
+      </Section>
+      <Section title='Examples' level={2}>
+        <Section title='Addition' level={4}>
+          <Pre
+            code={[
               'let x = 2',
               'let y = 3',
               'let a = x + y',
               '// answer = 5'
-          ]}
-          language='js'
-        />
-        <h3>Remainder</h3>
-        <p>The remainder operator returns the remainder of division.</p>
-        <Pre
-          code={[
-            'let x = 7',
-            'let y = 4',
-            'let a = x % y',
-            '// answer = 5'
-          ]}
-          language='js'
-        />
-      </LessonSection>
-      <LessonSection>
-        <h3>Assignment operators</h3>
+            ]}
+            language='js'
+          />
+        </Section>
+        <Section title='Remainder' level={4}>
+          <p>The remainder operator returns the remainder of division.</p>
+          <Pre
+            code={[
+              'let x = 7',
+              'let y = 4',
+              'let a = x % y',
+              '// answer = 5'
+            ]}
+            language='js'
+          />
+        </Section>
+      </Section>
+      <Section title='Assignment Operators' level={1}>
         <p>JavaScript has 12 assignment operators such as 'multiplication assignment' and 'division assignment'. We are going to focus on just one of them which is simply called the 'assignment operator'.</p>
         <Table>
           <thead>
@@ -121,9 +123,8 @@ const JSOperators = (props) => {
 
           </tbody>
         </Table>
-      </LessonSection>
-      <LessonSection>
-        <h3>Relational operators</h3>
+      </Section>
+      <Section title='Relational Operators' level={2}>
         <Table>
           <thead>
             <tr>
@@ -165,9 +166,8 @@ const JSOperators = (props) => {
             </tr>
           </tbody>
         </Table>
-      </LessonSection>
-      <LessonSection>
-        <h3>Equality operators</h3>
+      </Section>
+      <Section title='Equality Operators' level={2}>
         <p>JaveScript equality operators have changed over time and some confusion has been introduced. The <Code language='js' code='==' /> and <Code language='js' code='!=' /> operators perform type conversion when comparing values. This often isn't what you want. To solve this, JavaScript introduced <Code language='js' code='===' /> and <Code language='js' code='!==' /> which do not do type conversion. Since you have not learned about type conversion yet we will postpone using the <Code language='js' code='==' /> and <Code language='js' code='!=' /> operators for another lesson.</p>
           <Table>
             <thead>
@@ -210,10 +210,10 @@ const JSOperators = (props) => {
               </tr>
             </tbody>
           </Table>
-        </LessonSection>
+        </Section>
 
-        </Lesson>
-  )
-};
+        </div>
+          )
+          };
 
-export default JSOperators;
+          export default JSOperators;

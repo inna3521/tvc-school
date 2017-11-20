@@ -1,10 +1,10 @@
 // Home
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Footer from './Footer'
 import TopBar from './TopBar'
 import CodeOfConduct from './CodeOfConduct'
-import { routes } from './components'
+import { routes } from './toc'
 
 const Home = (props) => (
   <Router>

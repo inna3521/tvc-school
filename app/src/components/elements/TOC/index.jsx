@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Link from 'elements/Link'
 import Button from 'elements/Button'
 import PageTitle from 'elements/PageTitle'
-import routes from '../../Home/components'
+import routes from 'Home/toc'
 // import * as ku from 'lib/ke-utils'
 
 /*

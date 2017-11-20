@@ -1,4 +1,3 @@
-// PlayTable
 import React from 'react'
 import Lesson from '../../elements/Lesson'
 import LessonSection from '../../elements/LessonSection/index'
