@@ -1,9 +1,9 @@
 // import * as ku from './../lib/ke-utils'
 
-export const getCurrentComponentId = (state) => {
+export const getCurrentRouteId = (state) => {
   // ku.log('selectors.getCurrentComponentId: state', state, 'orange' )
   //; ku.log('selectors.getCurrentComponentId: id', state.ui.currentComponentId.id, 'orange' )
-  return state.ui.currentComponentId.id;
+  return state.ui.currentRouteIndex;
 
 }
 

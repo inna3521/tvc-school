@@ -1,0 +1,24 @@
+/* PageTitle */
+.pageHeader {
+  align-items: center;
+  display: flex;
+  padding: 25px 0 15px 0;
+  justify-content: space-between;
+}
+.title {
+  font-size: 1.6em;
+  margin: 0;
+  /*font-family: 'Roboto', sans-serif;*/
+}
+.titles {
+  text-align: center;
+}
+.subTitle {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+}
+.spacer {
+  width: 48.88px;
+}

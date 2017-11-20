@@ -6,12 +6,11 @@
     Why? Because state is an object
  */
 
-export const updateCurrentComponentId = ( id ) => {
+export const setCurrentRouteIndex = ( index ) => {
   // ku.log('actions.updateCurrentComponentId: id', id, 'green');
   return {
-  // value will be true / false
-  type: 'app/currentComponentId',
-  payload: { id },
+  type: 'app/setCurrentRouteIndex',
+  payload: index,
   }
 };
 

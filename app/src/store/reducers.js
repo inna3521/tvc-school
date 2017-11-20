@@ -2,33 +2,39 @@ import { combineReducers } from 'redux'
 // import { merge, prepend, dissoc, without } from 'ramda';
 import { merge } from 'ramda'
 // import * as ku from '../lib/ke-utils';
+import routesList from 'toc/toc'
 
-export const currentComponentId = (state = { id: 0 }, { type, payload }) => {
+const transformRoutes = () => {
+  const newRoutes = routesList.map((r) => {
+    return {
+      name: r.name,
+      type: r.type,
+      path: r.path,
+    }
+  })
+  return newRoutes
+}
+
+
+export const routes = (state = transformRoutes(), {type, payload}) => {
   switch (type) {
-    case 'app/currentComponentId':
-      // ku.log('reducers.updateComponentId.payload', payload, 'orange');
-      return payload;
+    case 'app/getRoutes':
+      return transformRoutes()
     default:
-      return state;
+      return state
   }
 }
 
-export const requests = (state = {}, { type, payload, meta }) => {
+export const currentRouteIndex = (state = 0, {type, payload}) => {
   switch (type) {
-    case 'app/markRequestPending':
-      return merge(state, { [meta.key]: { status: 'pending', error: null } });
-    case 'app/markRequestSuccess':
-      return merge(state, { [meta.key]: { status: 'success', error: null } });
-    case 'app/markRequestFailed':
-      return merge(state, { [meta.key]: { status: 'failure', error: payload } });
+    case 'app/setCurrentRouteIndex':
+      return merge(state, { currentRouteIndex: payload })
     default:
-      return state;
+      return state
   }
 }
 
 export default combineReducers({
-  ui: combineReducers({
-    currentComponentId,
-  }),
-  requests,
+  currentRouteIndex,
+  routes,
 })
