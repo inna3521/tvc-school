@@ -4,7 +4,14 @@ import { merge } from 'ramda'
 // import * as ku from '../lib/ke-utils';
 import routesList from 'toc/toc'
 
+/* test stuff
+import { withRouter } from 'react-router-dom'
+import React from 'react'
+import TOC from 'elements/TOC'
+*/
+
 const transformRoutes = () => {
+
   const newRoutes = routesList.map((r, index) => {
     return {
       index: index,

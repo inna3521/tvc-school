@@ -6,8 +6,18 @@ import P from 'elements/P'
 import A from 'elements/A'
 
 const JSX = () => {
+  const redStyle = {
+    color: 'red',
+    fontWeight: 'bold',
+  }
+  const noteStyle = {
+    backgroundColor: 'gray',
+    padding: 20,
+  }
   return (
     <div id='JSX'>
+      <div style={noteStyle}><p style={redStyle}>Show sample of JSX with className highlighted</p>
+        <p style={redStyle}>Use <A href='https://babeljs.io/repl/'>Babel REPL</A> to demonstrate what is happening behind the scenes.</p></div>
       <Section title='Introduction' level={1}>
         <P>JSX is a syntax extension to JavaScript, commonly used with React when building the UI of a component.  You can use React without JSX, but JSX makes React much more readable.  </P>
         <P>If you've ever used a template language, such as EJS or Handlebars.js, then the concepts of JSX should feel familiar.  Let's take a look at some basic examples below.</P>

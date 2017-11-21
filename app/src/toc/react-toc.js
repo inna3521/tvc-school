@@ -26,16 +26,10 @@ export const routes = [
     component: withRouter(({ match }) => <InitialConcepts match={match} />),
   },
   {
-    title: 'JSX',
+    title: 'Installation & Configuration',
     type: 'page',
-    path: '/react-toc/jsx',
-    component: withRouter(({ match }) => <JSX match={match} />),
-  },
-  {
-    title: 'Styling React Components',
-    type: 'page',
-    path: '/react-toc/styling',
-    component: withRouter(({ match }) => <Styling match={match} />),
+    path: '/react-toc/install-config',
+    component: withRouter(({ match }) => <InstallConfig match={match} />),
   },
   {
     title: 'Modifying the Project Structure',
@@ -44,10 +38,10 @@ export const routes = [
     component: withRouter(({ match }) => <ModifyProjectStructure match={match} />),
   },
   {
-    title: 'Installation & Configuration',
+    title: 'JSX',
     type: 'page',
-    path: '/react-toc/install-config',
-    component: withRouter(({ match }) => <InstallConfig match={match} />),
+    path: '/react-toc/jsx',
+    component: withRouter(({ match }) => <JSX match={match} />),
   },
   {
     title: 'First React App',
@@ -60,6 +54,12 @@ export const routes = [
     type: 'page',
     path: '/react-toc/first-react-component',
     component: withRouter(({ match }) => <FirstReactComponent match={match} />),
+  },
+  {
+    title: 'Styling React Components',
+    type: 'page',
+    path: '/react-toc/styling',
+    component: withRouter(({ match }) => <Styling match={match} />),
   },
   {
     title: 'Validating Props with PropTypes',

@@ -1,14 +1,13 @@
 // Home
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect, withRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom'
 import Footer from './Footer'
 import TopBar from './TopBar'
 import PageTitle from './PageTitle'
 import CodeOfConduct from './CodeOfConduct'
 import { routes } from 'toc/toc'
-// import PageTitle from './PageTitle'
 
-const Home = (props) => {
+const Home = () => {
 
   return (
     <Router>

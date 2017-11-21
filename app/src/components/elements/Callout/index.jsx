@@ -4,7 +4,6 @@ import classNames from 'classnames'
 import styles from './style.css'
 
 const Callout = (props) => {
-  console.log(props)
   const callOutStyle = classNames(
     {
       [styles.callout]: true,

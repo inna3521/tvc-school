@@ -5,15 +5,11 @@ import * as actionCreators from 'store/actions'
 import * as selectors from 'store/selectors'
 import NavButton from './NavButton'
 import PropTypes from 'prop-types'
-// import * as ku from 'lib/ke-utils'
 
 const PageTitle = ({ routes, location}) => {
   const { pathname } = location
   const route = routes.filter((r, index) => (r.path === pathname))[0]
-  console.log('route', route)
   const { index, title } = route
-  console.log('index', index)
-  console.log('title', title)
   const previous = route.index > 0
     ? routes[index - 1].path
     : ''
@@ -35,8 +31,8 @@ const PageTitle = ({ routes, location}) => {
 }
 
 PageTitle.propTypes = {
-  back: PropTypes.object,
-  title: PropTypes.string
+  routes: PropTypes.array,
+  location: PropTypes.object,
 }
 const mapStateToProps = (state) => ({
   // currentRouteIndex: selectors.getCurrentRouteIndex(state)

@@ -6,6 +6,7 @@ import Section from 'elements/Section'
 import OL from 'elements/OL'
 import P from 'elements/P'
 import LI from 'elements/LI'
+import Callout from 'elements/Callout'
 
 const FirstReactComponent = () => {
   return (
@@ -27,7 +28,9 @@ const FirstReactComponent = () => {
         - Put them in div so returns one element
         - mkdir Header/images
         - put the image file in there https://pixabay.com/en/banner-digital-header-strawberry-2003586/
-        -
+        <Callout title='A note on semicolons' info>
+          <p>Our code does not use semicolons at the end of lines. There are very few cases in JavaScript where they are needed. As such, we save our fingers a bit and don't type them.</p>
+        </Callout>
       </Section>
       <Section title='Making the Header Component' level={1}>
         <P>Follow these steps to create the Header component.</P>
