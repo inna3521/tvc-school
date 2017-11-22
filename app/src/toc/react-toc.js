@@ -9,7 +9,8 @@ import InstallConfig from 'Home/react/ReactTOC/InstallConfig'
 import FirstReactApp from 'Home/react/ReactTOC/FirstReactApp'
 import FirstReactComponent from 'Home/react/ReactTOC/FirstReactComponent'
 import PropTypes from 'Home/react/ReactTOC/PropTypes'
-import JSX from '../components/Home/react/ReactTOC/JSX'
+import JSX from 'Home/react/ReactTOC/JSX'
+import ES6React from 'Home/react/ReactTOC/ES6React'
 // ReactTOC
 export const routes = [
   {
@@ -24,6 +25,12 @@ export const routes = [
     type: 'page',
     path: '/react-toc/initial-concepts',
     component: withRouter(({ match }) => <InitialConcepts match={match} />),
+  },
+  {
+    title: 'ES6 Techniques for React',
+    type: 'page',
+    path: '/react-toc/es6-react',
+    component: withRouter(({ match }) => <ES6React match={match} />),
   },
   {
     title: 'Installation & Configuration',

@@ -9,10 +9,14 @@ import LI from 'elements/LI'
 import ProjectStructure from 'elements/ProjectStructure'
 import origStructure from './orig-structure'
 import nextStructure from './next-structure'
+import LessonStatus from 'elements/LessonStatus'
 
 const ModifyProjectStructure = () => {
   return (
     <div id='ModifyProjectStructure'>
+      <LessonStatus draftOne>
+        
+      </LessonStatus>
       <Section title='Overview' level={1}>
         <P>Create React App creates a very simple project structure. If left this way the project will get unmanagable. A real-life app has many components and a flat list of components will be confusing.</P>
         <P>In class we will use several project organizational methods.</P>

@@ -6,11 +6,14 @@ import UL from 'elements/UL'
 import P from 'elements/P'
 import A from 'elements/A'
 import LI from 'elements/LI'
+import LessonStatus from 'elements/LessonStatus'
 
 const InstallConfig = () => {
   return (
     <div id='InstallConfig'>
-
+      <LessonStatus draft-1>
+        
+      </LessonStatus>
       <Section title='What Is a Development Environment?' level={1}>
 
         <P>A development environment is a set of procedures and tools for developing, testing and debugging software.</P>

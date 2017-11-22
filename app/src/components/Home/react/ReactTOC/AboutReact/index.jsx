@@ -8,11 +8,14 @@ import LI from 'elements/LI'
 import A from 'elements/A'
 import Img from 'elements/Img'
 import iOneTwoWayBinding from './img/2and1-way-binding.png'
-
+import LessonStatus from 'elements/LessonStatus'
 const AboutReact = () => {
 
   return (
     <div id='AboutReact'>
+      <LessonStatus outline>
+        <LI>just a mixed bag of ideas at this point</LI>
+      </LessonStatus>
       <Section title='Introduction' level={1}>
         <P>As you progress throught the you will be learning several key React concepts. ... </P>
       </Section>

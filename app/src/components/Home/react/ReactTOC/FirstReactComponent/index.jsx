@@ -7,10 +7,14 @@ import OL from 'elements/OL'
 import P from 'elements/P'
 import LI from 'elements/LI'
 import Callout from 'elements/Callout'
+import LessonStatus from 'elements/LessonStatus'
 
 const FirstReactComponent = () => {
   return (
     <div id='FirstReactComponent'>
+      <LessonStatus underConstruction>
+        
+      </LessonStatus>
       <Section title='Overview' level={1}>
         <P>Our first React component will be a header for our app. We will create it and then render it inside of the Page component. The Header component will be a 'functional' component. We will explore what that means in a later lesson. For now, we will explore the basics of creating a component.</P>
         first component

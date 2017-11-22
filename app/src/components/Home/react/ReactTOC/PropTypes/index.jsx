@@ -7,10 +7,14 @@ import Section from 'elements/Section'
 import P from 'elements/P'
 import A from 'elements/A'
 import iWarning from './img/warning.png'
+import LessonStatus from 'elements/LessonStatus'
 
 const UsingPropTypes = () => {
   return (
     <div id='UsingPropTypes'>
+      <LessonStatus draftOne>
+
+      </LessonStatus>
       <Section title='Introduction' level={1}>
         <P>In this lesson, we will discuss a helpful debugging feature in the React ecosystem, called PropTypes.</P>
         <P>PropTypes is used for typechecking a components props.  When props are not passed to the component or are passed with a different type than expected, PropTypes will issue a warning in the console, making debugging easier.</P>

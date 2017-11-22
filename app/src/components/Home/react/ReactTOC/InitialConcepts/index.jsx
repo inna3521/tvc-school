@@ -7,11 +7,15 @@ import LI from 'elements/LI'
 import A from 'elements/A'
 import Img from 'elements/Img'
 import iOneTwoWayBinding from './img/2and1-way-binding.png'
+import LessonStatus from 'elements/LessonStatus'
 
 const InitialConcepts = () => {
 
   return (
     <div id='InitialConcepts'>
+      <LessonStatus draftOne>
+        
+      </LessonStatus>
       <Section title='Introduction' level={1}>
         <P>As you progress through this course you will be learning several key React concepts. The concepts are summarized below and expanded upon in later lessons.</P>
         <Section title='JSX' level={2}>
