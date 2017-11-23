@@ -8,6 +8,8 @@
 }
 .btn {
   background: #3498db;
+  background: #6ab9ee;
+  background: rgb(50, 50, 50);
   -webkit-border-radius: 4;
   -moz-border-radius: 4;
   border-radius: 4px;
@@ -15,7 +17,7 @@
   border-width: 0;
   color: #ffffff;
   font-family: Arial;
-  font-size: 12px;
+  font-size: 14px;
   outline: none;
   padding: 5px 10px 5px 10px;
   text-decoration: none;
