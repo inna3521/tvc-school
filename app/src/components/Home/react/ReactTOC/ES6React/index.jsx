@@ -13,18 +13,20 @@ const ES6React = () => {
     <div id='ES6React'>
       <LessonStatus underConstruction>
         <LI>MDN categorizes things different than I have been doing. Spread &amp; destructuring works for both arrays and objects and I should follow their way.</LI>
+        <h4>So</h4>
+        <LI>Arrow functions</LI>
+        <LI>Destructuring assignment</LI>
+        <LI>Spread syntax</LI>
+        <LI>Rest parameters</LI>
+        <LI>Template literals</LI>
       </LessonStatus>
       <Section title='Introduction' level={1}>
         <P>While you can create React applications without using any ES6 syntax the React community has embraced its use. In this lesson will cover the ES6 syntax that is most commonly used in the React community. Below is a list of what this lesson will cover</P>
         <UL>
-          <LI>Arrow functions</LI>
-          <LI>Object destructuring</LI>
-          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
-
-
-
-          <LI><A href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator'>Object spread operator</A></LI>
-          <LI>Array spread operator</LI>
+          <LI><A href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions'>Arrow functions</A></LI>
+          <LI><A href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment'>Destructuring assignment</A></LI>
+          <LI><A href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator'>Spread syntax</A></LI>
+          <LI><A href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters'>Rest parameters</A></LI>
           <LI><A href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals'>Template literals</A></LI>
         </UL>
       </Section>
