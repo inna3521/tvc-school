@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './style.css'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
@@ -15,8 +16,17 @@ const LinkItem = ({ to, match, children }) => {
     ? backOne()
     : `/${to}`
 
+  const linkStyle = {
+    color: '#31b0d5',
+    fontWeight: 'bold',
+  }
+  const linkActiveStyle = {
+    // color: '#5bc0de',
+    color: 'green',
+    textDecoration: 'underline',
+  }
   return (
-    <Link to={path}>{children}</Link>
+    <Link to={path} style={linkStyle} activeStyle={linkActiveStyle}>{children}</Link>
   )
 }
 

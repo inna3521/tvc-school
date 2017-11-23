@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 import Link from 'elements/Link'
 import Button from 'elements/Button'
 import routes from 'toc/toc'
+import OL from 'elements/OL'
+import LI from 'elements/LI'
 // import * as ku from 'lib/ke-utils'
 
 /*
@@ -47,21 +49,22 @@ const TOC = ({ rootPath, pageTitle, match }) => {
   let currentRoutes = transformRoutes(tmp)
 
   const items = currentRoutes.map((item, index) => (
-    <li key={index}>
-      <Link className={styles.linkText}
-        to={item.path}
-      >
+    <LI key={index}>
+      <Link to={item.path}>
         {item.title}
-      </Link></li>
+      </Link></LI>
   ))
+  const olStyle = {
+    color: '#31b0d5',
+  }
   return (
     <div className={styles.wrapper}>
       <div className={styles.contentWrapper}>
         <div className={styles.leftSide}>
-          <h2>Contents</h2>
-          <ol>
+          <h2 className={styles.contents}>Contents</h2>
+          <OL style={olStyle}>
             {items}
-          </ol>
+          </OL>
         </div>
 
         <div className={styles.rightSide}>

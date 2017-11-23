@@ -2,9 +2,9 @@
 import React from 'react'
 // import styles from './style.css'
 
-const OL = (props) => {
+const OL = ({style, children}) => {
   return (
-    <ol>{props.children}</ol>
+    <ol style={style}>{children}</ol>
   )
 }
 

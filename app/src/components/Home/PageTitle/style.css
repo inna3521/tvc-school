@@ -5,11 +5,11 @@
   padding: 25px 0 15px 0;
 }
 .pageTitles {
+  background-color: rgb(50, 50, 50);
+  border: 1px solid rgb(35, 35, 35);
   color: white;
   font-weight: bold;
   padding: 10px 0;
-  background-color: rgb(50, 50, 50);
-  border: 1px solid rgb(35, 35, 35);
 }
 .title {
   font-size: 2em;
@@ -20,10 +20,10 @@
   text-align: center;
 }
 .subTitle {
-  margin: 0;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.4em;
   font-weight: normal;
-  font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 .spacer {
   width: 48.88px;

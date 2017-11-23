@@ -9,6 +9,10 @@ import Pre from 'elements/Pre'
 import Callout from 'elements/Callout'
 import LessonStatus from 'elements/LessonStatus'
 
+const mdnArrowFunctions = 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions'
+const mdnFunction = 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function'
+const mdnThis = 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this'
+
 const ArrowFunctions = () => {
 
   return (
@@ -20,14 +24,12 @@ const ArrowFunctions = () => {
         <P>This guide is for those who understand traditional JavaScript function but are not familiar with arrow functions. It will show tradition functions and those same functions rewritten with arrow syntax.</P>
       </Section>
       <Section title='What Are Arrow Functions?' level={2}>
-        <P><A href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions'>Arrow functions</A> do not introduce any new functionality / abilities to JavaScript. They are simply a new and briefer syntax for writing functions that could be written with the traditional function() {} syntax.</P>
+        <P>An <A href={mdnArrowFunctions}>arrow function expression</A> has a shorter syntax than a <A href={mdnFunction}>function expression</A>. It also does not have its own <A href={mdnThis}>this</A>. Instead it has the 'this' of the scope it is in and thus you do not have to explicitly bind it to a class.</P>
+        <P></P>
       </Section>
       <Section title='Must I Use Arrow Functions?' level={2}>
         <P>No. There is no requirement to do so and there is nothing you can do with arrow functions that you cannot do with traditional functions.</P>
-
-      </Section>
-      <Section title='Should I Use Arrow Functions?' leval={2}>
-        <P>That is up to you but I suggest you get to know them well because, unless you write code in isolation, and few if any of us do, you are going to be reading code that has them. You may even work on a team that requires their use.</P>
+        <P>This guide will focus on the syntax of arrow functions. For more information on 'this' see <A href={mdnArrowFunctions}>Arrow Functions (MDN)</A></P>
       </Section>
       <Section title='Arrow Function Rules' level={1}>
         <P>The examples in this guide will illustrate the following rules.</P>
