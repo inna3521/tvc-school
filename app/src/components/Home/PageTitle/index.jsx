@@ -10,22 +10,37 @@ const PageTitle = ({ routes, location}) => {
   const { pathname } = location
   const route = routes.filter((r, index) => (r.path === pathname))[0]
   const { index, title } = route
-  const previous = route.index > 0
+
+  console.log('index', index)
+  const prevIndex = index - 1
+  console.log('prevIndex', prevIndex)
+  const nextIndex = index + 1
+  console.log('nextIndex', nextIndex)
+  const maxIndex = routes.length - 1
+  console.log('maxIndex', maxIndex)
+  const previous = index > 0
+  const next = index < maxIndex
+  const previousRoute = previous
     ? routes[index - 1].path
     : ''
-  const next = route.index <= routes.length -1
-    ? routes[index + 1].path
+  const nextRoute = next
+    ? routes[index].path
     : ''
   return (
     <div className={styles.pageHeader}>
-
-      <NavButton className={styles.back} path={previous}>Back</NavButton>
+      {previous
+        ? <NavButton className={styles.back} path={previous}>Back</NavButton>
+        : <div className={styles.spacer}></div>
+      }
 
       <div className={styles.titles}>
         <h1 className={styles.title}>{title}</h1>
         {/* <h2 className={styles.subTitle}>{subTitle}</h2> */}
       </div>
-      <NavButton className={styles.back} path={next}>Next</NavButton>
+      {next
+        ? <NavButton className={styles.back} path={next}>Next</NavButton>
+        : <div className={styles.spacer}></div>
+      }
     </div>
   )
 }
