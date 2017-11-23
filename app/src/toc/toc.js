@@ -10,7 +10,7 @@ const homeTOC = [
   // HomeTOC
   {
     title: 'Home',
-    type: 'root',
+    type: 'toc',
     path: '/',
     exact: true,
     component: withRouter(() => <TOC rootPath='/' pageTitle='Home' />),
