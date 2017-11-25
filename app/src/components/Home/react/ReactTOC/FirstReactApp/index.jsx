@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import './style.css'
 import Pre from 'elements/Pre'
 import Section from 'elements/Section'
@@ -12,7 +11,7 @@ const FirstReactApp = () => {
   return (
     <div id='FirstReactApp'>
       <LessonStatus underConstruction>
-        
+
       </LessonStatus>
       <Section title='Introduction' level={1}>
         <P>In this lesson, we will use Create React App to create our initial project.</P>

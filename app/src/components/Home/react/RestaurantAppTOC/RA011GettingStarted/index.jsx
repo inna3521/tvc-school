@@ -1,6 +1,5 @@
 // MenuAppHeader
 import React from 'react'
-import PropTypes from 'prop-types'
 import Section from 'elements/Section'
 import P from 'elements/P'
 import LI from 'elements/LI'

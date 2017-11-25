@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import './style.css'
 import Pre from 'elements/Pre'
 import Section from 'elements/Section'
@@ -15,7 +14,7 @@ const ModifyProjectStructure = () => {
   return (
     <div id='ModifyProjectStructure'>
       <LessonStatus draftOne>
-        
+
       </LessonStatus>
       <Section title='Overview' level={1}>
         <P>Create React App creates a very simple project structure. If left this way the project will get unmanagable. A real-life app has many components and a flat list of components will be confusing.</P>

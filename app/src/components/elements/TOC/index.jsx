@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './style.css'
-import PropTypes from 'prop-types'
 import Link from 'elements/Link'
 import Button from 'elements/Button'
 import routes from 'toc/toc'
@@ -29,12 +28,13 @@ const transformRoutes = (routes) => {
     Filter all routes to get only those that match the passed-in rootPath
     Path.split('/') always returns the first element as "" bec the path starts with '/'. Therefore, the root of the path is the element at index 1
     If the rootPath === '/' only list routes with type==='toc'
+    Exclude route with path '/' which is Home. Otherwise Home appears in Contents when you are alread Home so redundant
 */
 function filterRoutes(rootPath) {
   let filteredRoutes = []
   if (rootPath === '/') {
     filteredRoutes = routes.filter((element) => {
-      return element.type === 'toc'
+      return element.type === 'toc' && element.path !== '/'
     })
   } else {
     filteredRoutes = routes.filter((element) => {

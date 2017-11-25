@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Pre from 'elements/Pre'
 import Section from 'elements/Section'
 import UL from 'elements/UL'
@@ -12,7 +11,7 @@ const InstallConfig = () => {
   return (
     <div id='InstallConfig'>
       <LessonStatus draft-1>
-        
+
       </LessonStatus>
       <Section title='What Is a Development Environment?' level={1}>
 

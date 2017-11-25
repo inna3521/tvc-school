@@ -1,6 +1,5 @@
 // RA05InteractiveNavigation
 import React from 'react'
-import PropTypes from 'prop-types'
 import Section from 'elements/Section'
 import Pre from 'elements/Pre'
 import Img from 'elements/Img'
