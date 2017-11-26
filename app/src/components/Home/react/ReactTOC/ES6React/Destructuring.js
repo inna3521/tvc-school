@@ -1,9 +1,7 @@
 import React from 'react'
 import Section from 'elements/Section'
 import P from 'elements/P'
-import A from 'elements/A'
 import Pre from 'elements/Pre'
-import Link from 'elements/Link'
 
 const Destructuring = ({ mdnDestructuring }) => (
   <div>

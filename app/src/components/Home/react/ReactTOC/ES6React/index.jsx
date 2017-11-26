@@ -4,8 +4,6 @@ import UL from 'elements/UL'
 import P from 'elements/P'
 import LI from 'elements/LI'
 import A from 'elements/A'
-import Pre from 'elements/Pre'
-import Link from 'elements/Link'
 import ArrowFunctions from './Arrow'
 import Destructuring from './Destructuring'
 
