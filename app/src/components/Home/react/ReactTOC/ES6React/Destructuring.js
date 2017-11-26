@@ -2,14 +2,15 @@ import React from 'react'
 import Section from 'elements/Section'
 import P from 'elements/P'
 import Pre from 'elements/Pre'
+import A from 'elements/A'
 
 const Destructuring = ({ mdnDestructuring }) => (
   <div>
     <Section title='Destructuring' level={1}>
-      <P><a href={mdnDestructuring}>Destructuring</a> offers a more efficient &amp; concise way of extracting one or more values from data stored in objects and arrays.</P>
+      <P><A href={mdnDestructuring}>Destructuring</A> offers a more efficient &amp; concise way of extracting one or more values from data stored in objects and arrays.</P>
     </Section>
     <Section title='Object Destructuring' level={2}>
-      <P>You will often see object destructuring used when passing an object as an argument to a function. In React this is very common as you will see later, data is passed between components via 'props' and props is an object.</P>
+
       <P>In the below example you start with object 'obj' that contains two properties. On line 2 you extract those properties and assign them 2 new constants 'make' &amp; 'model'.</P>
       <Pre
         code={[
@@ -19,6 +20,7 @@ const Destructuring = ({ mdnDestructuring }) => (
           "console.log(model) // Q90x",
         ]}
       />
+      <P>Object destructuring is often used when passing an object as an argument to a function. In React this is very common as you will see later, data is passed between components via 'props' and props is an object.</P>
       <P>When passing an object as an argument to a function you can use destructuring to extract the data you need. In the below example model, cyl and drive are extracted out of the passed-in object. However, horsePower is not extracted and therefore produces an error.</P>
       <Pre
         code={[
