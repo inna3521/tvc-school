@@ -17,8 +17,6 @@ const homeTOC = [
   },
 ]
 
-const tmp = []
-export const routes = tmp.concat(homeTOC, htmlTOC, reactTOC, restaurantTOC, jsTOC)
-
+export const routes = [...homeTOC, ...htmlTOC, ...reactTOC, ...restaurantTOC, ...jsTOC]
 
 export default routes
