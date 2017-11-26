@@ -15,7 +15,7 @@ const shape = [
     level: 4,
   },
   {
-    name: 'index.jsx',
+    name: 'index.js',
     type: 'file',
     level: 5,
   },

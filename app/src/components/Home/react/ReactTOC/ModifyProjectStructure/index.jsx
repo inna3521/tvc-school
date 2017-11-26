@@ -41,14 +41,14 @@ const ModifyProjectStructure = () => {
             <LI>Create directory /src/components</LI>
             <LI>Create directory /components/Page</LI>
             <LI>Move App.css & App.js to /components/Page</LI>
-            <LI>Rename App.js to index.jsx</LI>
+            <LI>Rename App.js to index.js</LI>
             <LI>Rename App.css to style.css</LI>
           </OL>
         </Section>
         <Section title='Modify code to work with the new structure' level={2}>
-          <Section title='Page/index.jsx' level={3}>
+          <Section title='Page/index.js' level={3}>
             <OL>
-              <LI>We will learn about React components in a later lesson. For now, delete all code in Page/index.jsx and replace it with the below.</LI>
+              <LI>We will learn about React components in a later lesson. For now, delete all code in Page/index.js and replace it with the below.</LI>
             </OL>
             <Pre
               code={[
