@@ -14,8 +14,13 @@ const Code = (props) => {
   //   [styles.fontSize]: true,
   //   }
   // )
+  const codeStyle = {
+    display: 'inline',
+  }
   return (
-    <SyntaxHighlighter showLineNumbers style={docco}>
+    <SyntaxHighlighter
+      customStyle={codeStyle}
+      style={docco}>
       {`${props.code}`}
     </SyntaxHighlighter>
   )
