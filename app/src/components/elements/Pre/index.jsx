@@ -2,11 +2,11 @@
 import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/styles';
-// import classNames from 'classnames'
-// import styles from './style.css'
+
 
 // Takes an array of strings
-const Pre = (props) => {
+// Currently you can only send one of linesAdded, linesRemoved or linesBols
+const Pre = ({ linesAdded, linesRemoved, linesBold, code,  }) => {
 
   // const preStyles = classNames(
   //   {
@@ -17,11 +17,11 @@ const Pre = (props) => {
   //   'line-numbers': true,
   //   }
   // )
-  let { linesAdded, linesRemoved } = props
+
   let removed = !linesRemoved ? [] : linesRemoved
   let added = !linesAdded ? [] : linesAdded
 
-  let code = props.code
+
   let newCode = code.join('\n')
 
   return (
