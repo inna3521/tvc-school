@@ -12,16 +12,16 @@ import styles from './style.css'
     > alt
     > inline - t/f
 */
-const Img = (props) => {
-  let cite = props.cite
-    ? <cite>{`source: ${props.cite}`}</cite>
+const Img = ({ cite, margin, maxWidth, small, medium, large, src, alt, inline, border }) => {
+  let renderCite = cite
+    ? <cite>{`source: ${cite}`}</cite>
       : false
   let mTop = 0
   let mRight = 0
   let mBottom = 0
   let mLeft = 0
-  if (props.margin) {
-    const margin = props.margin
+  if (margin) {
+
     const len = margin.length
 
     if (len > 0) {
@@ -39,8 +39,7 @@ const Img = (props) => {
     }
   }
   let passedStyles = {}
-  passedStyles.maxWidth = props.maxWidth
-  if (props.margin) {
+  if (margin) {
     passedStyles.marginTop = mTop
     passedStyles.marginRight = mRight
     passedStyles.marginBottom = mBottom
@@ -50,26 +49,27 @@ const Img = (props) => {
   // const imgMaxWidth = 10
   const localStyles = classNames(
     {
-      [styles.imgSizeSmall]: props.small,
-      [styles.imgSizeMedium]: props.medium,
-      [styles.imgSizeLarge]: props.large,
+      [styles.imgSizeSmall]: small,
+      [styles.imgSizeMedium]: medium,
+      [styles.imgSizeLarge]: large,
       [styles.imageProperties]: true,
+      [styles.border]: true,
     }
   )
 
   const image = <img
     className={styles.responsive}
-    src={props.src}
-    alt={props.alt}
+    src={src}
+    alt={alt}
                 />
-  if (props.inline) {
+  if (inline) {
     return image
   } else {
     // It could have a cite or not
     return (
       <div className={localStyles} style={passedStyles}>
         {image}
-        {cite}
+        {renderCite}
       </div>
     )
   }
