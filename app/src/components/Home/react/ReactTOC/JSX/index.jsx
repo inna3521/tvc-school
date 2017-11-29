@@ -9,7 +9,6 @@ import Code from 'elements/Code'
 import Callout from 'elements/Callout'
 
 const JSX = () => {
-
   return (
     <div id='JSX'>
       <LessonStatus draftOne>
@@ -86,14 +85,12 @@ const JSX = () => {
       </Section>
       <Section title='Embedding Expressions in JSX' level={1}>
         <P>Part of the real power in JSX is that you can embed any JavaScript expression within JSX by enclosing it in curly braces. Here is a </P>
-
         <Pre
           code={[
             "const name = 'Joe'",
             "<p>I'm going to learn coding with {name}</p>",
           ]}
         />
-
       </Section>
       <Section title='Editor Syntax Highlighting' level={1}>
         <P>It's likely that your editor of choice will not recognize JSX syntax.  This can make for an unpleasurable coding experience.  Check out <A href='http://babeljs.io/docs/editors'>Babel for editors</A> to add JSX syntax highlighting to your favorite editor!</P>
