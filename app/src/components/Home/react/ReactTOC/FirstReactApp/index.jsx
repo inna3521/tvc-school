@@ -49,7 +49,7 @@ const FirstReactApp = () => {
       </Section>
       <Section title='Create React App - Closer Look' level={1}>
         <P>This section will briefly discuss the output of create-react-app in your terminal.</P>
-        <Img src={iCraResults} alt='create react app results' />
+        <Img src={iCraResults} medium margin={[100, 100, 100, 100]} alt='create react app results' />
         <P>As you can see from the above image, create-react-app proivdes you will a list of commands that can be used with your new project.</P>
         <NewTable>
           <TR>
