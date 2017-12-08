@@ -2,42 +2,42 @@ const shape = [
   {
     name: 'src',
     type: 'folder',
-    level: 2,
+    level: 1,
   },
   {
     name: 'components',
     type: 'folder',
-    level: 3,
+    level: 2,
   },
   {
     name: 'Page',
     type: 'folder',
-    level: 4,
+    level: 3,
   },
   {
     name: 'index.js',
     type: 'file',
-    level: 5,
+    level: 4,
   },
   {
     name: 'style.css',
     type: 'file',
-    level: 5,
+    level: 4,
   },
   {
     name: 'index.css',
     type: 'file',
-    level: 3,
+    level: 2,
   },
   {
     name: 'index.js',
     type: 'file',
-    level: 3,
+    level: 2,
   },
   {
     name: 'registerServiceWorker.js',
     type: 'file',
-    level: 3,
+    level: 2,
   },
 
 ]

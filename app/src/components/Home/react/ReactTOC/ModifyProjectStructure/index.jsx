@@ -17,7 +17,7 @@ const ModifyProjectStructure = () => {
 
       </LessonStatus>
       <Section title='Overview' level={1}>
-        <P>Create React App creates a very simple project structure. If left this way the project will get unmanagable. A real-life app has many components and a flat list of components will be confusing.</P>
+        <P>Create React App creates a very simple flat project structure. If left this way the project will get unmanagable. A real-life app has many components and a flat list of components will become confusing.</P>
         <P>In class we will use several project organizational methods.</P>
         <OL>
           <LI>One folder for each compoment</LI>
@@ -27,7 +27,8 @@ const ModifyProjectStructure = () => {
         <P>In this lesson, we will begin to make use of methods 1 & 2.</P>
       </Section>
       <Section title='Initial Modifications' level={1}>
-        <Section title='Current Structure' level={2}>
+        <Section title='Initial Structure' level={2}>
+          <P>Below is the structure as created by Create React App</P>
           <ProjectStructure shape={origStructure} />
         </Section>
         <Section title='New Structure' level={2}>
