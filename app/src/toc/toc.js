@@ -5,6 +5,7 @@ import htmlTOC from 'toc/html-toc'
 import reactTOC from 'toc/react-toc'
 import restaurantTOC from 'toc/restaurant-toc'
 import jsTOC from 'toc/js-toc'
+import presentTOC from 'toc/present-toc'
 
 const homeTOC = [
   // HomeTOC
@@ -17,6 +18,6 @@ const homeTOC = [
   },
 ]
 
-export const routes = [...homeTOC, ...htmlTOC, ...reactTOC, ...restaurantTOC, ...jsTOC]
+export const routes = [...homeTOC, ...htmlTOC, ...reactTOC, ...restaurantTOC, ...jsTOC, ...presentTOC]
 
 export default routes
