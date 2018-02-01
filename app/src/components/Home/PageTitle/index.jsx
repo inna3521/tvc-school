@@ -15,7 +15,6 @@ const PageTitle = ({ routes, location}) => {
   const previous = index > 0 // t/f value
   const next = index < maxIndex // t/f value
   // TOC
-  console.log('location', location)
   let previousTOCPath = ''
   for (let i=index-1; i>=0; i--) {
     if (routes[i].type === 'toc') {
@@ -23,7 +22,6 @@ const PageTitle = ({ routes, location}) => {
       break
     }
   }
-  console.log('previousTOCPath', previousTOCPath)
   // Buttons
   const previousButton = previous
     ? <NavButton className={styles.back} path={routes[index - 1].path}><i className="fa fa-chevron-left" aria-hidden="true"></i> {routes[index - 1].title}</NavButton>

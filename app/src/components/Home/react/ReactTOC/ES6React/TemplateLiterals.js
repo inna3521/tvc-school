@@ -4,7 +4,6 @@ import P from 'elements/P'
 import Pre from 'elements/Pre'
 import OL from 'elements/OL'
 import LI from 'elements/LI'
-import Code from 'elements/Code'
 import A from 'elements/A'
 
 const TemplateLiterals = ({ mdnTemplateLiterals }) => (

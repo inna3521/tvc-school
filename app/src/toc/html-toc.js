@@ -1,7 +1,6 @@
 import React from 'react'
 import TOC from 'elements/TOC'
 import { withRouter } from 'react-router-dom'
-// HTML, CSS, JS
 import WhatIsHTML from 'Home/html-css-js/WhatIsHTML'
 import EssentialHTMLElements from 'Home/html-css-js/EssentialHTMLElements'
 import FirstHTMLPage from 'Home/html-css-js/FirstHTMLPage'
@@ -15,10 +14,8 @@ import Operators from 'Home/html-css-js/Operators'
 import Functions from 'Home/html-css-js/Functions'
 import ControlFlow from 'Home/html-css-js/ControlFlow'
 import FunctionsTry2 from 'Home/html-css-js/FunctionsTry2'
-// import Tables from './html-css-js/Tables'
 
 export const routes = [
-  // HTMLTOC
   {
     title: 'HTML',
     type: 'toc',

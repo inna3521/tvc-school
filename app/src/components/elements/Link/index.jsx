@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 const LinkItem = ({ to, match, children }) => {
@@ -25,7 +25,7 @@ const LinkItem = ({ to, match, children }) => {
     textDecoration: 'underline',
   }
   return (
-    <Link to={path} style={linkStyle} activeStyle={linkActiveStyle}>{children}</Link>
+    <NavLink to={path} style={linkStyle} activeStyle={linkActiveStyle}>{children}</NavLink>
   )
 }
 
