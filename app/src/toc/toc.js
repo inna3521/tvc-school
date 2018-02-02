@@ -6,6 +6,7 @@ import reactTOC from 'toc/react-toc'
 import restaurantTOC from 'toc/restaurant-toc'
 import jsTOC from 'toc/js-toc'
 import configurationTOC from 'toc/configuration-toc'
+import computerSkills from 'toc/computer-skills-toc'
 
 const homeTOC = [
   // HomeTOC
@@ -18,6 +19,6 @@ const homeTOC = [
   },
 ]
 
-export const routes = [...homeTOC, ...htmlTOC, ...reactTOC, ...restaurantTOC, ...jsTOC, ...configurationTOC]
+export const routes = [...homeTOC, ...htmlTOC, ...reactTOC, ...restaurantTOC, ...jsTOC, ...configurationTOC, ...computerSkills]
 
 export default routes
