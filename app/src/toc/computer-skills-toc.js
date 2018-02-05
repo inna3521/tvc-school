@@ -4,24 +4,26 @@ import { withRouter } from 'react-router-dom'
 import FileManagement from 'Home/computer-skills/FileManagement'
 import UsingAtom from 'Home/computer-skills/UsingAtom'
 
+const rootPath = '/computer-skills'
+
 export const routes = [
   {
     title: 'Computer Skills',
     type: 'toc',
-    path: '/computer-skills',
+    path: rootPath,
     exact: true,
     component: withRouter(({ match }) => <TOC rootPath='computer-skills' pageTitle='Computer Skills' match={match} />),
   },
   {
     title: 'File Management',
     type: 'page',
-    path: '/computer-skills/file-management',
+    path: `${rootPath}/file-management`,
     component: withRouter(({ match }) => <FileManagement match={match} />),
   },
   {
     title: 'Using Atom',
     type: 'page',
-    path: '/computer-skills/using-atom',
+    path: `${rootPath}/using-atom`,
     component: withRouter(({ match }) => <UsingAtom match={match} />),
   },
 ]
