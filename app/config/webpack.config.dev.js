@@ -16,6 +16,7 @@ const publicPath = '/';
 const publicUrl = '';
 const env = getClientEnvironment(publicUrl);
 
+console.log('APP_DIR', process.env.APP_DIR)
 
 module.exports = {
   devtool: 'cheap-module-source-map',
