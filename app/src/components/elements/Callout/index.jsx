@@ -3,27 +3,27 @@ import React from 'react'
 import classNames from 'classnames'
 import styles from './style.css'
 
-const Callout = (props) => {
+const Callout = ({ danger, warning, goal, info, title, children }) => {
   const callOutStyle = classNames(
     {
       [styles.callout]: true,
-      [styles.calloutDanger]: props.danger,
-      [styles.calloutWarning]: props.warning,
-      [styles.calloutGoal]: props.goal,
-      [styles.calloutInfo]: props.info,
+      [styles.calloutDanger]: danger,
+      [styles.calloutWarning]: warning,
+      [styles.calloutGoal]: goal,
+      [styles.calloutInfo]: info,
     }
   )
   const titleStyle = classNames({
-    [styles.titleDanger]: props.danger,
-    [styles.titleWarning]: props.warning,
-    [styles.titleGoal]: props.goal,
-    [styles.titleInfo]: props.info,
+    [styles.titleDanger]: danger,
+    [styles.titleWarning]: warning,
+    [styles.titleGoal]: goal,
+    [styles.titleInfo]: info,
   })
 
   return (
     <div className={callOutStyle}>
-      <h4 className={titleStyle}>{props.title}</h4>
-      {props.children}
+      <h4 className={titleStyle}>{title}</h4>
+      {children}
     </div>
   )
 

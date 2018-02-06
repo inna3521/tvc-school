@@ -13,6 +13,7 @@ import A from 'elements/A'
 const EssentialHTMLElements = () => {
   return (
     <div id='EssentialHTMLElements'>
+      <input type='text' placeholder='hi'/>
       <Section>
         <p>We are not going to go through this list together. Instead, we will use each of these elements in a web page.</p>
         <Table striped>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="280"
+   viewBox="0 0 500 280"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="attribute-anatomy.svg"
+   inkscape:export-filename="/home/klequis/dev/inna/tvc-school/app/src/components/Home/html/HTML01/media/attribute-anatomy.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#26272c"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.025"
+     inkscape:cx="386.36142"
+     inkscape:cy="214.87419"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     guidecolor="#ff0000"
+     guideopacity="1"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showborder="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4172"
+       spacingx="5.0000001"
+       spacingy="5.0000002"
+       color="#ff0000"
+       opacity="0.89411765"
+       empcolor="#fd0000"
+       empopacity="1" />
+    <sodipodi:guide
+       position="0,300.71429"
+       orientation="1,0"
+       id="guide4198" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-772.36216)">
+    <g
+       id="g4423"
+       transform="matrix(0.68156124,0,0,0.68156124,-227.87807,437.12788)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4148"
+         y="713.79071"
+         x="468.57144"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="fill:#ffffff;fill-opacity:1"
+           y="713.79071"
+           x="468.57144"
+           id="tspan4150"
+           sodipodi:role="line">&lt;p <tspan
+   id="tspan4164"
+   style="fill:#858eff;fill-opacity:0.94117647">class</tspan>=<tspan
+   id="tspan4178"
+   style="fill:#64c2ef;fill-opacity:0.94117647">&quot;bold-text&quot;</tspan>&gt;</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path4211"
+         d="m 545.5259,673.84562 0,-48.6207 89.436,0 0,50.56553"
+         style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.23404229px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4213"
+         d="m 588.29268,625.04509 0,-30.24391"
+         style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4219"
+         y="538.21582"
+         x="588.53662"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#858eff;fill-opacity:0.94117647"
+           y="538.21582"
+           x="588.53662"
+           id="tspan4221"
+           sodipodi:role="line">Attribute</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#858eff;fill-opacity:0.94117647"
+           id="tspan4223"
+           y="588.21582"
+           x="588.53662"
+           sodipodi:role="line">Name</tspan></text>
+      <g
+         transform="matrix(-2.3342401,0,0,-1,2796.8779,1733.017)"
+         id="g4243">
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.23404229px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 815.7698,1007.9851 0,-48.62066 89.436,0 0,50.56556"
+           id="path4211-4"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 858.53658,959.18461 0,-30.24391"
+           id="path4213-6"
+           inkscape:connector-curvature="0" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4219-1"
+         y="838.17291"
+         x="792.91528"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#64c2ef;fill-opacity:0.94117647;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           id="tspan4419"
+           sodipodi:role="line"
+           x="792.91528"
+           y="838.17291">Attribute</tspan><tspan
+           id="tspan4421"
+           sodipodi:role="line"
+           x="792.91528"
+           y="888.17291">Value</tspan></text>
+    </g>
+  </g>
+</svg>

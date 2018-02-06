@@ -4,7 +4,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/styles';
 
 // Takes an array of strings
-const Code = (props) => {
+const Code = ({ code }) => {
   // const codeStyles = classNames(
   //   {
   //   'language-javascript': props.js,
@@ -21,7 +21,7 @@ const Code = (props) => {
     <SyntaxHighlighter
       customStyle={codeStyle}
       style={docco}>
-      {`${props.code}`}
+      {`${code}`}
     </SyntaxHighlighter>
   )
 };
