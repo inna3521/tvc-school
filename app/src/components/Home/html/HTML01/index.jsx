@@ -157,7 +157,14 @@ const HTML01 = () => {
       ]}
     />
     <Quiz
-      
+      question='The answer is 2'
+      choices={[
+        'Answer One',
+        'Answer Two',
+        'Answer Three'
+      ]}
+      answer={2}
+
     />
   </div>)
 };
