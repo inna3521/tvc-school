@@ -1,10 +1,10 @@
 import React from 'react'
-import Pre from 'elements/Pre'
+// import Pre from 'elements/Pre'
 import Section from 'elements/Section'
-import Callout from 'elements/Callout'
+// import Callout from 'elements/Callout'
 import LessonStatus from 'elements/LessonStatus'
-import VideoStep from 'elements/VideoStep'
-import Step from 'elements/Step'
+// import VideoStep from 'elements/VideoStep'
+// import Step from 'elements/Step'
 // import newFile from './media/new-file.mp4'
 
 const FileManagement = () => {

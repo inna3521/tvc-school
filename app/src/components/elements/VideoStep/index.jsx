@@ -1,6 +1,6 @@
 import React from 'react'
 import Video from 'elements/Video'
-import { Grid, Row, Col, Media } from 'react-bootstrap'
+import { Media } from 'react-bootstrap'
 
 export const VideoStep = ({ src, children }) => {
   return (

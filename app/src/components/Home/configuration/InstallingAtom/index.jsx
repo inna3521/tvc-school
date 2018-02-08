@@ -1,5 +1,4 @@
 import React from 'react'
-import Pre from 'elements/Pre'
 import Section from 'elements/Section'
 import Callout from 'elements/Callout'
 import LessonStatus from 'elements/LessonStatus'

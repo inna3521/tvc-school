@@ -1,0 +1,16 @@
+.question {
+  background-color: rgb(100, 100, 100);
+  border: 1px solid rgb(75, 75, 75);
+  border-left-width: 5px;
+  border-radius: 3px;
+  margin: 20px 0;
+  padding: 20px;
+}
+.questionCorrect {
+  background-color:  lightgreen;
+  border-color: darkgreen;
+  border-left-color: #008000;
+  color: #008000;
+  margin: 20px 0;
+  padding: 20px;
+}

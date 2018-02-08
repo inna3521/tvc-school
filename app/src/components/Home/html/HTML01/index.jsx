@@ -14,6 +14,7 @@ import Pre from 'elements/Pre'
 import styles from './style.css'
 import iAttributeAnatomy from './media/attribute-anatomy.png'
 import Quiz from 'elements/Quiz'
+import Question from 'elements/Question'
 
 const HTML01 = () => {
 
@@ -38,15 +39,14 @@ const HTML01 = () => {
         <Img
           src={iElement}
         />
-        <P>
-          In the above diagram
+        <P>In the above diagram</P>
           <UL>
             <LI>Note that the element has an open tag and a closing tag</LI>
             <LI>The opening and closing tags differ only in that the closing tag has a '/' before the letter 'p'.</LI>
             <LI>Between the opening and closing tag is the content. It this case the content is text, but can be other things which you will learn later.</LI>
             <LI>The opening and closing tags together make-up an element. Elements almost always have content.</LI>
           </UL>
-        </P>
+
       </Section>
       <Section title='Examples' level={2}>
         <UL>
@@ -156,16 +156,56 @@ const HTML01 = () => {
         '</html>',
       ]}
     />
-    <Quiz
-      question='The answer is 2'
-      choices={[
-        'Answer One',
-        'Answer Two',
-        'Answer Three'
-      ]}
-      answer={2}
+    <Quiz>
+      <Question
+        question='HTML stands for?'
+        choices={[
+          'High Tolerance Modeling Language',
+          'Hypertext Markup Language',
+          'Horizontal Title Meta Language'
+        ]}
+        answer={2}
 
-    />
+      />
+      <Question
+        question='HTM creates'
+        choices={[
+          'Interactivity',
+          'Styling of the page',
+          'Page structure',
+        ]}
+        answer={3}
+      />
+      <Question
+        question='Select the HTML element that is correctly formed'
+        choices={[
+          '<p>some test</p>',
+          '(p)some text(/p)',
+          '<p>some test<p>',
+          '</p>some text<p>'
+        ]}
+        answer={1}
+      />
+      <Question
+        question='Select the answer that is most correct'
+        choices={[
+          'A HTML element has two tags and some content',
+          'A HTML element is made up of two main elements and one or more sub-elements',
+          'A HTML element is a tag',
+          'A HTML element has an opening tag, come content, and a closing tag'
+        ]}
+        answer={4}
+      />
+      <Question
+        question='HTML Elements can contain other elements?'
+        choices={[
+          'True',
+          'False',
+        ]}
+        answer={1}
+      />
+    </Quiz>
+
   </div>)
 };
 
