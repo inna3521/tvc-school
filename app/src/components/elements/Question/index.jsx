@@ -1,105 +1,108 @@
-import React, {Component} from 'react'
-import { log } from '../../../lib/ke-utils'
+import React, { Component } from 'react'
+import shortid from 'shortid'
+import Choice from 'elements/Choice'
 
-const questionStateUnansweredStyle = {
-  backgroundColor: 'rgb(100, 100, 100)',
-  border: '1px solid rgb(75, 75, 75)',
-  borderLeftWidth: '5px',
-  borderRadius: '3px',
-  margin: '20px 0',
-  padding: '20px',
-}
-const questionStateCorrectStyle = {
-  backgroundColor: 'green',
-  border: '1px solid rgb(75, 75, 75)',
-  borderLeftWidth: '5px',
-  borderRadius: '3px',
-  margin: '20px 0',
-  padding: '20px',
+const choiceAlpha = ['a', 'b', 'c', 'd', 'e']
+
+const baseStyle = {
+  textAlign: 'left',
 }
 
-const questionStateWrongStyle = {
-  backgroundColor: 'yellow',
+const unansweredStyle = {
+  backgroundColor: 'inherit',
   border: '1px solid rgb(75, 75, 75)',
   borderLeftWidth: '5px',
   borderRadius: '3px',
   margin: '20px 0',
   padding: '20px',
 }
+
+const correctStyle = {
+  backgroundColor: 'rgb(181, 255, 191)',
+  border: '1px solid rgb(75, 75, 75)',
+  borderLeftWidth: '5px',
+  borderLeftColor: 'green',
+  borderRadius: '3px',
+  margin: '20px 0',
+  padding: '20px',
+}
+
+const wrongStyle = {
+  backgroundColor: 'rgb(255, 181, 191)',
+  border: '1px solid rgb(75, 75, 75)',
+  borderLeftWidth: '5px',
+  borderLeftColor: 'red',
+  borderRadius: '3px',
+  margin: '20px 0',
+  padding: '20px',
+}
+const titleStyle = {
+  margin: '0 0 15px 0',
+}
+const CORRECT = 'correct'
+const UNANSWERED = 'unanswered'
+const WRONG = 'wrong'
 
 class Question extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      questionState: 'unanswered', // unanswered, correct, wrong
-      checked: '',
+      questionState: UNANSWERED, // unanswered || correct || wrong
+      inputChecked: '',
+      tag: shortid.generate()
     }
   }
-
-  handleOptionChange = (e) => {
+  getIndexForAlpha = (alphaVal) => {
+    return  choiceAlpha.indexOf(alphaVal, 0) + 1
+  }
+  getAlphaForIndex = (index) => {
+    return choiceAlpha[index]
+  }
+  isAnswerCorrect = (alphaVal) => {
+    return this.getIndexForAlpha(alphaVal) === this.props.answer
+  }
+  handleChange = (e) => {
     const val = e.target.value
-    // log('val', val, 'blue')
+    const id = e.target.id
+    const correct = this.isAnswerCorrect(val)
     this.setState({
-      checked: val
+      inputChecked: id,
+      questionState: correct === true ? CORRECT : WRONG,
     })
-    // console.clear()
-    const { choiceNames, answer, } = this.props
-    // log('choiceNames', choiceNames, 'blue')
-    const valIndex = choiceNames.indexOf(val, 0) + 1
-    // log('valIndex', valIndex, 'blue')
-
-     const questionState = valIndex === answer
-      ? 'correct' // log('CORRECT', '', 'blue')
-      : 'wrong' // log('WRONG', '', 'blue')
-    this.setState({
-      questionState: questionState,
-    })
+  }
+  questionStateStyle = () => {
+    switch (this.state.questionState) {
+      case 'correct':
+        return { ...baseStyle, ...correctStyle }
+      case 'wrong':
+        return  { ...baseStyle, ...wrongStyle }
+      case 'unanswered':
+      default:
+        return { ...baseStyle, ...unansweredStyle }
+    }
   }
 
   render() {
-    const { question, choices, choiceNames, name } = this.props
-    // log('name', name, 'blue')
+    const { tag } = this.state
+    const { choices, question } = this.props
     const renderChoices = choices.map((c, index) => {
-      log('c', c, 'blue')
-      const choiceName = choiceNames[index]
       return (
-        <div key={`input${name}-${index}`}>
-          <input
-            type="radio"
-            id={choiceName}
-            name={name}
-            checked={this.state.checked === {choiceName}}
-            onChange={(e) => this.handleOptionChange(e)}
-            value={choiceName} />
-          <label key={`label${index}`} htmlFor={choiceName}>{c}</label>
-        </div>
+        <Choice
+          key={index}
+          index={index}
+          tag={tag}
+          value={this.getAlphaForIndex(index)}
+          handleChange={this.handleChange}
+          inputChecked={this.state.inputChecked}
+          label={c}
+          questionState={this.state.questionState}
+        />
       )
     })
-    const questionStateStyle = () => {
-      // log('questionState', this.state.questionState, 'blue')
-      switch (this.state.questionState) {
-        case 'correct':
-          // log('correct', '', 'blue')
-          return questionStateCorrectStyle
-        case 'wrong':
-          // log('wrong', '', 'blue')
-          return questionStateWrongStyle
-        case 'unanswered':
-        default:
-          // log('unanswered', '', 'blue')
-          return questionStateUnansweredStyle
-      }
-    }
-    // log('questionStateStyle', questionStateStyle(), 'blue')
     return (
-      <div style={questionStateStyle()}>
-        <h4>{question}</h4>
-        <form>
-          <div>
-            {renderChoices}
-          </div>
-
-        </form>
+      <div style={this.questionStateStyle()}>
+        <h4 style={titleStyle}>{question}</h4>
+        {renderChoices}
       </div>
     )
   }
