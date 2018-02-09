@@ -20,8 +20,8 @@ import Amp from 'elements/Amp'
 const HTML01 = () => {
 
   return (<div id='AboutReact'>
-    <LessonStatus outline="outline">
-      <LI>just a mixed bag of ideas at this point</LI>
+    <LessonStatus draft>
+      DRAFT
     </LessonStatus>
     <Section title='What is HTML?' level={1}>
       <P><em>HTML</em> stands for <b>H</b>yper<b>t</b>ext <b>M</b>arkup <b>L</b>anguage. HTML creates the structure of a web page. Using HTML you can add paragraphs, headings, links, images and much more to your web page.</P>

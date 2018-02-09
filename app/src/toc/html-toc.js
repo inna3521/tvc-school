@@ -5,6 +5,7 @@ import WhatIsHTML from 'Home/html/WhatIsHTML'
 import EssentialHTMLElements from 'Home/html/EssentialHTMLElements'
 import FirstHTMLPage from 'Home/html/FirstHTMLPage'
 import HTML01 from 'Home/html/HTML01'
+import HTML02 from 'Home/html/HTML02'
 
 const rootPath = '/html'
 
@@ -17,10 +18,16 @@ export const routes = [
     component: withRouter(({ match }) => <TOC rootPath='html' pageTitle='HTML' match={match} />),
   },
   {
-    title: 'HTML 01?',
+    title: 'Introduction to HTML',
     type: 'page',
     path: `${rootPath}/html-01`,
     component: withRouter(({ match }) => <HTML01 match={match} />),
+  },
+  {
+    title: 'HTML Elements',
+    type: 'page',
+    path: `${rootPath}/html-02`,
+    component: withRouter(({ match }) => <HTML02 match={match} />),
   },
   {
     title: 'What is HTML?',
