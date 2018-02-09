@@ -15,6 +15,7 @@ import styles from './style.css'
 import iAttributeAnatomy from './media/attribute-anatomy.png'
 import Quiz from 'elements/Quiz'
 import Question from 'elements/Question'
+import Amp from 'elements/Amp'
 
 const HTML01 = () => {
 
@@ -34,31 +35,25 @@ const HTML01 = () => {
     </Callout>
     <Section title='Elements'>
       <P>HTML is made-up of <em>elements</em>. Each element represents something that can appear on a web page. There are over 100 HTML elements. However, you can create a complete web site with 15 or 20 of the most frequently used elements.</P>
+      <P>Some common elements are <Angle>p</Angle> for 'paragraph', <Angle>img</Angle> for 'image' and <Angle>button</Angle> for 'button'.</P>
       <Section title='Anatomy of a HTML Element' level={2}>
-        <P>Below is an example of a '&lt;p&gt;' element. The 'p' stands for 'paragraph'. When you use the '&lt;p&gt;' element a pargraph is created on the web</P> page.
+        <P>Below is an example of a <Angle>p</Angle> element. The 'p' stands for 'paragraph'. When you use the <Angle>p</Angle> element a pargraph is created on the web page.</P>
+        <P>The diagram below explains the parts of a HTML element using the <Angle>p</Angle> element as an example.</P>
+        <UL>
+          <LI>Note that the element has an open tag and a closing tag</LI>
+          <LI>The opening and closing tags differ only in that the closing tag has a '/' before the letter 'p'.</LI>
+          <LI>Between the opening and closing tag is the content. It this case the content is text, but can be other things which you will learn later.</LI>
+          <LI>The opening and closing tags together make-up an element. Elements almost always have content.</LI>
+        </UL>
         <Img
           src={iElement}
         />
-        <P>In the above diagram</P>
-          <UL>
-            <LI>Note that the element has an open tag and a closing tag</LI>
-            <LI>The opening and closing tags differ only in that the closing tag has a '/' before the letter 'p'.</LI>
-            <LI>Between the opening and closing tag is the content. It this case the content is text, but can be other things which you will learn later.</LI>
-            <LI>The opening and closing tags together make-up an element. Elements almost always have content.</LI>
-          </UL>
+
 
       </Section>
-      <Section title='Examples' level={2}>
-        <UL>
-          <LI><Angle>p</Angle> creates a paragraph</LI>
-          <LI><Angle>img</Angle> creates an image</LI>
-          <LI><Angle>table</Angle> creates a table</LI>
-          <LI><Angle>a</Angle> creates a link</LI>
-          <LI><Angle>video</Angle> creates a video</LI>
-        </UL>
-      </Section>
+
       <Section title='Elements are Containers' level={2}>
-        <P>Elements are <i>containers</i> in that elements can be put inside of elements. Using elements as containers provides organization and the ability to style groups of elements instead of each individual one.</P>
+        <P>Elements are <i>containers</i> in that elements can be put inside of other elements. Using elements as containers provides organization and the ability to style groups of elements instead of each individual one.</P>
         <P>Here is an example of a <Angle>header</Angle> element which contains two elements, a <Angle>h1</Angle> and a <Angle>p</Angle> element.</P>
         <Pre
           code={[
@@ -77,8 +72,8 @@ const HTML01 = () => {
         </Callout>
       </Section>
       <Section title='Attributes' level={2}>
-        <P>Attributes add additional information to an element and can change its behavior. align, autocomplete, </P>
-        <P>As an example of a behavior change controlled by an attribute, here are two inputs, the first does not have the 'disabled' attribute but the second does. As a result you can type in the first edit box but not in the second.</P>
+        <P>Attributes add additional information to an element and can change its appearence <Amp/> behavior.</P>
+        <P>As an example of a behavior change controlled by an attribute, examine the two inputs below. The first does not have the 'disabled' attribute but the second does. As a result you can type in the first edit box but not in the second. Give it a try.</P>
         <Pre
           caption=' This input does not have the disabled attribute and you can type in it.'
           code={[
@@ -97,7 +92,7 @@ const HTML01 = () => {
       <Callout warning
         title='Double or single quotes'
         >
-        <p>While single quotes (&apos;) work most of the time they don't always work. When typeing the value of attributes use double quotes (&quot;)</p>
+        <p>Always use couble quotes (&quot;) for attribute values. While single quotes (&apos;) often work, they don't always.</p>
       </Callout>
       <Section title='Anatomy of an Attribute'>
         <img src={iAttributeAnatomy} alt='attribute anatome' />

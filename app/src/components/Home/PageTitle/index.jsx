@@ -13,7 +13,7 @@ const PageTitle = ({ routes, location}) => {
   const { index, title } = route
   const maxIndex = routes.length - 1
   const previous = index > 0 // t/f value
-  const next = index < maxIndex // t/f value
+  const next = index < maxIndex // t/f vaue
   // TOC
   let previousTOCPath = ''
   for (let i=index-1; i>=0; i--) {
