@@ -16,7 +16,7 @@ import UL from 'elements/UL'
 import LT from 'elements/LT'
 import GT from 'elements/GT'
 import Angle from 'elements/Angle'
-import AMP from 'elements/AMP'
+import AMP from 'elements/Amp'
 import SP from 'elements/SP'
 
 const CSSChallenge01 = () => {
