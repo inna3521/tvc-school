@@ -1,0 +1,11 @@
+# klequis
+- javascript-03: empty
+- javascript-02.student: comparison operators
+- javascript-02: comparison operators
+- javascript-01: arithmetic-operators, if-challenges
+- js-intro-01.complete: functions - Delete it
+- **js-intro-02.complete: 5 projects**
+- js-if-statements: exercises on using 'if', code in script.js
+- t.file-management: good stuff. needs touch-up. Has html watch
+- lessons.older: an attempt at teaching the box model. Run it
+- learn-js: duddles in learning JS: download and see what's in it
