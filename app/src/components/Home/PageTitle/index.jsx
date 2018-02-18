@@ -1,16 +1,18 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import classNames from 'classnames'
 import styles from './style.css'
 import * as actionCreators from 'store/actions'
 import * as selectors from 'store/selectors'
 import NavButton from './NavButton'
 import PropTypes from 'prop-types'
+import { log } from 'lib/ke-utils'
 
 const PageTitle = ({ routes, location }) => {
   // Location
   const { pathname } = location
   const route = routes.filter((r, index) => (r.path === pathname))[0]
-  const { index, title, subTitle } = route
+  const { index, title, subTitle, type } = route
   const maxIndex = routes.length - 1
   const previous = index > 0 // t/f value
   const next = index < maxIndex // t/f vaue
@@ -33,6 +35,10 @@ const PageTitle = ({ routes, location }) => {
     ? <NavButton className={styles.back} path={previousTOCPath}>TOC <i className="fa fa-chevron-up" aria-hidden="true"></i></NavButton>
     : null
 
+  const pageTitlesStyle = classNames({
+    [styles.pageTitles]: true,
+    [styles.tocStyle]: type === 'toc',
+  })
   return (
 
     <div className={styles.pageHeader}>
@@ -47,7 +53,7 @@ const PageTitle = ({ routes, location }) => {
           {nextButton}
         </div>
       </div>
-      <div className={styles.pageTitles}>
+      <div className={pageTitlesStyle}>
         <div className={styles.titles}>
           <h1 className={styles.title}>{title}</h1>
           {subTitle ? <h2 className={styles.subTitle}>{subTitle}</h2> : null}
