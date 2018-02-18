@@ -1,16 +1,12 @@
 // E01HTML
 import React from 'react'
-import Lesson from 'elements/Lesson/index'
-import LessonSection from 'elements/LessonSection/index'
+import Section from 'elements/Section/index'
 
 const Lesson01 = (props) => {
   return (
     <div>
-      <Lesson
-        title='Getting started with HTML'
-        subTitle='test'
-      >
-        <LessonSection
+      <div>
+        <Section
           title='What is HTML'
           subTitle='HTML Sub-Title'
 
@@ -36,7 +32,7 @@ const Lesson01 = (props) => {
             <li>Entity references: including special characters in HTML</li>
             <li>HTML comments</li>
           </ol>
-        </LessonSection>
+        </Section>
         <section>
           <h2>What's in the head? Metadata in HTML</h2>
           <ol>
@@ -170,7 +166,7 @@ const Lesson01 = (props) => {
           <h2>Structuring a page of content</h2>
           <p><b>Exercise</b></p>
         </section>
-      </Lesson>
+      </div>
     </div>
   )
 };

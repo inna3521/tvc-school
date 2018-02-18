@@ -9,6 +9,7 @@ import configurationTOC from 'toc/configuration-toc'
 import computerSkills from 'toc/computer-skills-toc'
 // import databaseTOC from 'toc/database-toc'
 import cssTOC from './css-toc'
+import documentStructureTOC from './document-structure-toc'
 
 const homeTOC = [
   // HomeTOC
@@ -21,7 +22,16 @@ const homeTOC = [
   },
 ]
 
-export const routes = [...homeTOC, ...configurationTOC, ...computerSkills, ...htmlTOC, ...cssTOC, ...javascriptTOC]
+export const routes = [
+  ...homeTOC,
+  ...documentStructureTOC,
+  ...configurationTOC,
+  ...computerSkills,
+  ...htmlTOC,
+  ...cssTOC,
+  ...javascriptTOC,
+
+]
 
 // export const routes = [...homeTOC, ...htmlTOC, ...reactTOC, ...restaurantTOC, ...jsTOC, ...configurationTOC, ...computerSkills, ...databaseTOC]
 

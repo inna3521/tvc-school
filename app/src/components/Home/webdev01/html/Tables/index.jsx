@@ -1,19 +1,16 @@
 import React from 'react'
-import Lesson from '../../elements/Lesson'
-import LessonSection from '../../elements/LessonSection/index'
-import Table from '../../elements/NewTable'
-import TR from '../../elements/TR'
-import TD from '../../elements/TD'
+import Section from 'elements/Section'
+import Table from 'elements/NewTable'
+import TR from 'elements/TR'
+import TD from 'elements/TD'
 import styles from './style.css'
-import Code from '../../elements/Code'
+import Code from 'elements/Code'
 
 const Tables = (props) => {
   return (
 
-    <Lesson
-      title='Tables'
-    >
-      <LessonSection
+    <div>
+      <Section
         title='Anotomy of a Table'
       >
         <div className={styles.legend}>
@@ -75,10 +72,8 @@ const Tables = (props) => {
             </tr>
           </tbody>
         </table>
-      </LessonSection>
-      <LessonSection
-        title='Table Elements'
-      >
+      </Section>
+      <Section title='Table Elements'>
         <Table>
           <TR>
             <TD>
@@ -129,8 +124,8 @@ const Tables = (props) => {
             </TD>
           </TR>
         </Table>
-      </LessonSection>
-    </Lesson>
+      </Section>
+    </div>
       )
       };
 

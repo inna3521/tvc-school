@@ -6,11 +6,11 @@ import * as selectors from 'store/selectors'
 import NavButton from './NavButton'
 import PropTypes from 'prop-types'
 
-const PageTitle = ({ routes, location}) => {
+const PageTitle = ({ routes, location }) => {
   // Location
   const { pathname } = location
   const route = routes.filter((r, index) => (r.path === pathname))[0]
-  const { index, title } = route
+  const { index, title, subTitle } = route
   const maxIndex = routes.length - 1
   const previous = index > 0 // t/f value
   const next = index < maxIndex // t/f vaue
@@ -50,7 +50,7 @@ const PageTitle = ({ routes, location}) => {
       <div className={styles.pageTitles}>
         <div className={styles.titles}>
           <h1 className={styles.title}>{title}</h1>
-          {/* <h2 className={styles.subTitle}>{subTitle}</h2> */}
+          {subTitle ? <h2 className={styles.subTitle}>{subTitle}</h2> : null}
         </div>
       </div>
     </div>

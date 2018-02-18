@@ -16,6 +16,7 @@ const transformRoutes = () => {
     return {
       index: index,
       title: r.title,
+      subTitle: r.subTitle,
       type: r.type,
       path: r.path,
     }

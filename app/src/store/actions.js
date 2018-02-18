@@ -1,10 +1,4 @@
-// import api from '../api';
 // import * as ku from '../lib/ke-utils'
-
-/*
-    payload must always be an object. If you are passing in a string you must put it in an object: e.g., payload: { value }. If the parameter(s) pass in are already an object then do: e.g., payload: objectName.
-    Why? Because state is an object
- */
 
 export const setCurrentRouteIndex = ( index ) => {
   // ku.log('actions.updateCurrentComponentId: id', id, 'green');
@@ -18,10 +12,7 @@ export const markRequestPending = (key) => ({
   type: 'app/markRequestPending',
   meta: { key },
 });
-/*
-    Variations of an actionCreator
- */
-// This variation allows you to log
+
 export const markRequestSuccess = (key) => {
   // you can use console.log() here
   return ({
@@ -29,11 +20,6 @@ export const markRequestSuccess = (key) => {
     meta: { key },
   });
 }
-// This variation is shorter but you can't log
-/*export const markRequestSuccess = (key) => ({
-  type: 'app/markRequestSuccess',
-  meta: { key },
-});*/
 
 export const markRequestFailed = (reason, key) => ({
   type: 'app/markRequestFailed',

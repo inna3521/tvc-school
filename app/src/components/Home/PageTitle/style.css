@@ -12,6 +12,7 @@
   padding: 10px 0;
 }
 .title {
+  font-family: 'Roboto', sans-serif;
   font-size: 2em;
   margin: 0;
   /*font-family: 'Roboto', sans-serif;*/
@@ -20,10 +21,11 @@
   text-align: center;
 }
 .subTitle {
+  color: rgb(200, 200, 200);
   font-family: 'Roboto', sans-serif;
   font-size: 1.4em;
   font-weight: normal;
-  margin: 0;
+  margin: 10px 0 0 0;
 }
 .spacer {
   width: 48.88px;

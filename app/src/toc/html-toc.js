@@ -6,46 +6,82 @@ import EssentialHTMLElements from 'Home/webdev01/html/EssentialHTMLElements'
 import FirstHTMLPage from 'Home/webdev01/html/FirstHTMLPage'
 import HTML01 from 'Home/webdev01/html/HTML01'
 import HTML02 from 'Home/webdev01/html/HTML02'
+import E01HTML from 'Home/webdev01/html/E01HTML'
+import MozillaThimble from 'Home/webdev01/html/MozillaThimble'
+import Tables from 'Home/webdev01/html/Tables'
+import ChallengeBirds from 'Home/webdev01/html/ChallengeBirds'
+import NewProject from 'Home/webdev01/html/NewProject'
 
-const rootPath = '/html'
+const rootPath = 'html'
+
 
 export const routes = [
   {
     title: 'HTML',
     type: 'toc',
-    path: rootPath,
+    path: `/${rootPath}`,
     exact: true,
-    component: withRouter(({ match }) => <TOC rootPath='html' pageTitle='HTML' match={match} />),
+    component: withRouter(({ match }) => <TOC rootPath={rootPath} pageTitle='HTML' match={match} />),
   },
   {
-    title: 'Introduction to HTML',
+    title: 'HTML01 - Introduction to HTML',
     type: 'page',
-    path: `${rootPath}/html-01`,
+    path: `/${rootPath}/html-01`,
     component: withRouter(({ match }) => <HTML01 match={match} />),
   },
   {
-    title: 'HTML Elements',
+    title: 'merge - E01HTML - What is HTML',
     type: 'page',
-    path: `${rootPath}/html-02`,
-    component: withRouter(({ match }) => <HTML02 match={match} />),
+    path: `/${rootPath}/e01html`,
+    component: withRouter(({ match }) => <E01HTML match={match} />),
   },
   {
-    title: 'What is HTML?',
+    title: 'merge - What is HTML?',
     type: 'page',
-    path: `${rootPath}/what-is-html`,
+    path: `/${rootPath}/what-is-html`,
     component: withRouter(({ match }) => <WhatIsHTML match={match} />),
+  },
+  {
+    title: 'merge - HTML02 - HTML Elements',
+    type: 'page',
+    path: `/${rootPath}/html-02`,
+    component: withRouter(({ match }) => <HTML02 match={match} />),
   },
   {
     title: 'Essential HTML Elements',
     type: 'page',
-    path: `${rootPath}/essential-html-elements`,
+    path: `/${rootPath}/essential-html-elements`,
     component: withRouter(({ match }) => <EssentialHTMLElements match={match} />),
   },
   {
     title: 'First HTML Page',
     type: 'page',
-    path: `${rootPath}/first-html-page`,
+    path: `/${rootPath}/first-html-page`,
     component: withRouter(({ match }) => <FirstHTMLPage match={match} />),
+  },
+  {
+    title: 'zz-Mozilla Thimble',
+    type: 'page',
+    path: `/${rootPath}/mozilla-thimble`,
+    component: withRouter(({ match }) => <MozillaThimble match={match} />),
+  },
+  {
+    title: 'ab-Tables',
+    type: 'page',
+    path: `/${rootPath}/html-tables`,
+    component: withRouter(({ match }) => <Tables match={match} />),
+  },
+  {
+    title: 'aa-ChallengeBirds',
+    type: 'page',
+    path: `/${rootPath}/challenge-birds`,
+    component: withRouter(({ match }) => <ChallengeBirds match={match} />),
+  },
+  {
+    title: 'zz-NewProject',
+    type: 'page',
+    path: `/${rootPath}/new-project`,
+    component: withRouter(({ match }) => <NewProject match={match} />),
   },
 ]
 

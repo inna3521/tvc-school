@@ -5,7 +5,7 @@ import Button from 'elements/Button'
 import routes from 'toc/toc'
 import OL from 'elements/OL'
 import LI from 'elements/LI'
-// import * as ku from 'lib/ke-utils'
+// import { log } from 'lib/ke-utils'
 
 /*
     Remove leading '/' from path:
@@ -76,11 +76,5 @@ const TOC = ({ rootPath, pageTitle, match }) => {
     </div>
       )
       }
-
-// TOC.propTypes = {
-//   src: PropTypes.array.isRequired,
-//   pageTitle: PropTypes.string.isRequired,
-//   back: PropTypes.object,
-// }
 
 export default TOC
