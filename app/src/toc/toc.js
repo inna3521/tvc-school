@@ -10,6 +10,7 @@ import computerSkills from 'toc/computer-skills-toc'
 // import databaseTOC from 'toc/database-toc'
 import cssTOC from './css-toc'
 import documentStructureTOC from './document-structure-toc'
+import overviewTOC from 'toc/overview-toc'
 
 const homeTOC = [
   // HomeTOC
@@ -25,6 +26,7 @@ const homeTOC = [
 export const routes = [
   ...homeTOC,
   ...documentStructureTOC,
+  ...overviewTOC,
   ...configurationTOC,
   ...computerSkills,
   ...htmlTOC,
