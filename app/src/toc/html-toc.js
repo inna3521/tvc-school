@@ -1,11 +1,11 @@
 import React from 'react'
 import TOC from 'elements/TOC'
 import { withRouter } from 'react-router-dom'
-import WhatIsHTML from 'Home/html/WhatIsHTML'
-import EssentialHTMLElements from 'Home/html/EssentialHTMLElements'
-import FirstHTMLPage from 'Home/html/FirstHTMLPage'
-import HTML01 from 'Home/html/HTML01'
-import HTML02 from 'Home/html/HTML02'
+import WhatIsHTML from 'Home/webdev01/html/WhatIsHTML'
+import EssentialHTMLElements from 'Home/webdev01/html/EssentialHTMLElements'
+import FirstHTMLPage from 'Home/webdev01/html/FirstHTMLPage'
+import HTML01 from 'Home/webdev01/html/HTML01'
+import HTML02 from 'Home/webdev01/html/HTML02'
 
 const rootPath = '/html'
 

@@ -6,6 +6,7 @@ import TopBar from './TopBar'
 import PageTitle from './PageTitle'
 import CodeOfConduct from './CodeOfConduct'
 import { routes } from 'toc/toc'
+// import WebDev01 from './courses/WebDev01'
 
 const Home = () => {
 
@@ -27,6 +28,7 @@ const Home = () => {
             />
           ))}
           <Route path='/code-of-conduct' component={CodeOfConduct} />
+
         </Switch>
         <Footer />
       </div>

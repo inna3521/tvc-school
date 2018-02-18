@@ -1,8 +1,8 @@
 import React from 'react'
 import TOC from 'elements/TOC'
 import { withRouter } from 'react-router-dom'
-import WhatIsCSS from 'Home/css/WhatIsCSS'
-import CSSChallenge01 from 'Home/css/CSSChallenge01'
+import WhatIsCSS from 'Home/webdev01/css/WhatIsCSS'
+import CSSChallenge01 from 'Home/webdev01/css/CSSChallenge01'
 
 const rootPath = '/css'
 

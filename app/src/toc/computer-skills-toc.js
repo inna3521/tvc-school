@@ -1,8 +1,8 @@
 import React from 'react'
 import TOC from 'elements/TOC'
 import { withRouter } from 'react-router-dom'
-import FileManagement from 'Home/computer-skills/FileManagement'
-import UsingAtom from 'Home/computer-skills/UsingAtom'
+import FileManagement from 'Home/webdev01/computer-skills/FileManagement'
+import UsingAtom from 'Home/webdev01/computer-skills/UsingAtom'
 
 const rootPath = '/computer-skills'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import TOC from 'elements/TOC'
 import { withRouter } from 'react-router-dom'
-import InstallingAtom from 'Home/configuration/InstallingAtom'
+import InstallingAtom from 'Home/webdev01/configuration/InstallingAtom'
 
 const rootPath = '/configuration'
 
