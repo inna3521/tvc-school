@@ -1,88 +1,241 @@
-// L01HTMLElements
+// MenuAppHeader
 import React from 'react'
 import Section from 'elements/Section'
 import UL from 'elements/UL'
+import P from 'elements/P'
+import LI from 'elements/LI'
+import A from 'elements/A'
 import Img from 'elements/Img'
+import LessonStatus from 'elements/LessonStatus'
 import Callout from 'elements/Callout'
-import iHTMLTagAnatomy from './img/html-tag-anatomy.png'
-import iHTMLTagAttributes from './img/html-tag-attributes.png'
-import iSelfClosing from './img/self-closing-element.svg'
-import A from 'elements/A/'
+import iElements from './media/elements.png'
+import iElement from './media/element.png'
+import iTags from './media/tags.png'
+import iContent from './media/content.png'
+import iAttributeAnatomy from './media/attribute-anatomy.png'
+import iNameValue01 from './media/name-value-01.svg'
+import iNameValue02 from './media/name-value-02.svg'
+import Angle from 'elements/Angle'
+import Pre from 'elements/Pre'
+import styles from './style.css'
+import Quiz from 'elements/Quiz'
+import Question from 'elements/Question'
+import Amp from 'elements/Amp'
+import Code from 'elements/Code'
+
 
 const WhatIsHTML = () => {
-  return (
-    <div id='WhatIsHTML'>
-      <Section title='Introduction' level={1}>
+
+  return (<div id='WhatIsHTML'>
+    <LessonStatus draft>
+      DRAFT
+    </LessonStatus>
+    <Section title='What is HTML?' level={1}>
+      <P><em>HTML</em> stands for <b>H</b>yper<b>t</b>ext <b>M</b>arkup <b>L</b>anguage. HTML creates the structure of a web page. Using HTML you can add paragraphs, headings, links, images and much more to your web page.</P>
+      <P>HTML is called a <em>markup language</em>. It is not a programming language as it is focused on the presentation of content.</P>
+    </Section>
+    <Section title='HTML is made of Elements'>
+      <P>HTML is made-up of <em>elements</em>. Each element represents something that can appear on a web page. For example, paragraphs or headings. <Code code={'<p></p>'} /> is a paragraph element and <Code code={'<title></title>'} /> is a title element.</P>
+      <Img src={iElements} />
+      <P>There are over 100 HTML elements. However, you can create a complete web site with 15 or 20 of the most frequently used elements.</P>
+
+    <Section title='Elements are made of Tags'>
+      <P>Most elements have an opening tag and a closing tag.</P>
+    <P> The opening and closing tags differ only in that the closing tag has a '/' before the letter 'p'.</P>
+      <Img src={iTags} />
+    </Section>
+    <Section title='Content goes between Tags'>
+      <Img src={iContent} />
+    </Section>
+    <Section title='Attributes Modify Elements'>
+      <P>Attributes are name / value pairs that go inside of the the element's opening tag, after the element name but before the closing angle bracket ('>')</P>
+      <Img src={iAttributeAnatomy} />
+      <P>Attributes always take the form:</P>
+      <Img src={iNameValue01} />
+      <P>Where 'name' on the left side of the '=' is the name of the attribute and 'value' on the right side of the '=' is the value of the attribute. It is a little like algebra, for example x = 3, 'x' would be the name and '3' would be the value.</P>
+      <P>Below is an attribute named 'color' with a value of 'blue':</P>
+      <Img src={iNameValue02} />
+      <Section title='Attributes add Extra Information or Change Behavior' level={2}>
+        <P>Attributes add additional information to an element and can change its appearence <Amp/> behavior.</P>
+        <P>As an example of a behavior change controlled by an attribute, examine the two inputs below. The first does not have the 'disabled' attribute but the second does. As a result you can type in the first edit box but not in the second. Give it a try.</P>
+        <Pre
+          caption=' This input does not have the disabled attribute and you can type in it.'
+          code={[
+            '<input type="text" />',
+          ]}
+        />
+        <input className={styles.inputWidth} type='text' placeholder='you can type in here'/>
+        <Pre
+          caption='This input has the disabled attribute. Its behavior is change so you can not type in it.'
+          code={[
+            '<input type="text" disabled="true"/>'
+          ]}
+        />
+        <input className={styles.inputWidth} type='text' placeholder="disabled! you can't type in here" disabled/>  
+      </Section>
+
+      <Callout info>
+        <p>Name / value pairs are very common in programming. They are often called 'properties'.</p>
+      </Callout>
+    </Section>
+      <Section title='Anatomy of a HTML Element' level={2}>
+        <P>Below is an example of a <Angle>p</Angle> element. The 'p' stands for 'paragraph'. When you use the <Angle>p</Angle> element a pargraph is created on the web page.</P>
+        <P>The diagram below explains the parts of a HTML element using the <Angle>p</Angle> element as an example.</P>
+        <UL>
+          <LI>Note that the element has an open tag and a closing tag</LI>
+          <LI>The opening and closing tags differ only in that the closing tag has a '/' before the letter 'p'.</LI>
+          <LI>Between the opening and closing tag is the content. It this case the content is text, but can be other things which you will learn later.</LI>
+          <LI>The opening and closing tags together make-up an element. Elements almost always have content.</LI>
+        </UL>
+        <Img
+          src={iElement}
+        />
+
+
+      </Section>
+
+      <Section title='Elements are Containers' level={2}>
+        <P>Elements are <i>containers</i> in that elements can be put inside of other elements. Using elements as containers provides organization and the ability to style groups of elements instead of each individual one.</P>
+        <P>Here is an example of a <Angle>header</Angle> element which contains two elements, a <Angle>h1</Angle> and a <Angle>p</Angle> element.</P>
+        <Pre
+          code={[
+            "<header>",
+            "  <h1>Introduction to HTML</h1>",
+            "  <p>HTML is a markup language</p>",
+            "</header>"
+          ]}
+        />
         <Callout
-          type='info'
-          title='HTML'
-        >
-          <p>
-            HTML (Hypertext Markup Language) is the code that is used to structure and display a web page and its content. For example, content could be structured within a set of paragraphs,  a list of bulleted points, or using images and data tables.
-          </p>
-          <cite>source: Mozilla Developer Network Contributors</cite>
+          title='Indenting'
+          warning>
+          <p>Notice in the above example the contained elements, (i.e., the <Angle>h1</Angle> &amp; <Angle>p</Angle> elements) are indented 2 spaces. This shows that they are inside of the <Angle>Header</Angle> element.</p>
+          <p>Indenting is curcial. A page of HTML can get very long and without indenting it quickly becomes difficult and fustrating to read and modify.</p>
+          <p><b>Indent!</b></p>
         </Callout>
-
-        <p>So HTML is the code to structure and display a web page and its content, but what is structure, display and content?</p>
-        <dl>
-          <dt>Content</dt>
-          <dd>Content is everything you see displayed on a web page. It consists of text and pictures.</dd>
-          <dt>Display</dt>
-          <dd>Display is the result of the process of combining HTML and CSS (we learn about CSS later) to create what you see on the page</dd>
-          <dt>Structure</dt>
-          <dd>Structure includes whether an element is a paragraph, image, bulleted list or other HTML element, and can include alignment and position on the page. However, appearance such as alignment, position and color is largely determined by CSS.</dd>
-        </dl>
-        <p>Your understanding of content, display and structure will become clearer as you move through the HTML and CSS sections of this course.</p>
       </Section>
-      <Section title='What are HTML Elements (aka. tags)'>
-        <p>HTML elements are used to create the structure of a web page. With HTML elements you can create paragraphs, images, tables and much more. HTML elements have a specific structure that must be followed.</p>
-        <UL
-          listItems={[
-            'The below tag is a <em>paragraph</em> element.',
-            'Most HTML elements come in pairs known as the <em>opening tag</em> and <em>closing tag</em>',
-            "To be very specific, elements are made-up of tags. However, people often call an 'element' a 'tag'.",
-            'Content, in this case words, goes between the opening and closing tags.',
-          ]}
-        />
-        <Img
-          src={iHTMLTagAnatomy}
-          cite='Mozilla Developer Network Contributors'
-          alt="anatomy of html tag"
-        />
-        <p>Some tags are <em>self-closing</em>. They do not have a closing tag.</p>
-        <Img
-          src={iSelfClosing}
-          alt="self-closing html tag"
-        />
-      </Section>
-      <Section title='Attributes'>
-        <p>HTML elements can be modified by using attributes.</p>
-        <UL
-          listItems={[
-            'Attributes go inside of the opening tag.',
-            'The most common attribute is <em>class</em>, which connects the element to a CSS class/style. We will learn about CSS in a later lesson. Attributes are not visible on the page.',
-          ]}
-        />
-
-        <Img
-          src={iHTMLTagAttributes}
-          cite='Mozilla Developer Network Contributors'
-          alt=""
-        />
-      </Section>
-      <Section title='Additional Information' subTitle='Looking-up and learning about HTML elements'>
-        <p>Both W3Schools and MDN have a complete list of all HTML elements.</p>
-        <UL
-          listItems={[
-            <A href="https://www.w3schools.com/tags/">W3Schools HTML Element Reference</A>,
-            <A href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN HTML element reference</A>,
-          ]}
-        />
-        <p>Often, the fastest way to look-up an element would be to search for it. For example, if you wanted to know the tag to display an image on the page you could search for 'html tag image mdn' and it will most likely be the first search result.</p>
+      <Section title='Attributes' level={2}>
 
       </Section>
-    </div>
-  )
+      <Callout warning
+        title='Double or single quotes'
+        >
+        <p>Always use couble quotes (&quot;) for attribute values. While single quotes (&apos;) often work, they don't always.</p>
+      </Callout>
+    <Callout warning>
+      <p><em>Content</em> is the text, images and other data displayed on the web page.</p>
+    </Callout>
+    <Callout info>
+      <p>A web page is also called a <b>document</b>. The terms 'web page' and 'document' will be used through out this course.</p>
+    </Callout>
+
+      <Section title='Anatomy of an Attribute'>
+        <img src={iAttributeAnatomy} alt='attribute anatome' />
+        <P>The attribute is a combination of a name and a value. In programming this is known as a 'name value pair'.</P>
+        <UL>
+          <li>Attributes go inside the opening tag after the name of the element</li>
+          <li>The attribute name and value are separated by an '=' sign with no spaces</li>
+          <li>The attribute name is on the left side of the '=' sign and is not in quotes</li>
+          <li>The attribute value is no the right side of the '=' sign and is in double quotes</li>
+
+        </UL>
+      </Section>
+      <Section title='Empty Elements'>
+        <P>Not all elements have content. These elements are known as <em>empty elements</em> or <em>self closing elements</em>. They have attributes but no content</P>
+        <Pre
+          caption='The <p> element has content'
+          code={['<p>some content</p>']}
+        />
+        <Pre
+          caption='The <img>, image, element does not take content'
+          code={['<img src="flower.jpg" />']}
+        />
+        <ul>
+          <li><Angle>img</Angle> has only only one tag</li>
+          <li>There is a '/' before the closing '>'</li>
+        </ul>
+      </Section>
+    </Section>
+    <Callout title='Congratulations!' goal>
+      <p>You have completed the lesson on HTML.</p>
+      <p>In the next lesson you will begin learning specific HTML elements.</p>
+    </Callout>
+    <Pre
+      linesAdded={[9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]}
+      code={[
+        '<!DOCTYPE html>',
+        '<html>',
+        '<head>',
+        '  <meta charset="utf-8">',
+        '  <link rel="stylesheet" href="bootstrap.min.css">',
+        '  <title>p-html-01</title>',
+        '</head>',
+        '<body>',
+        '  <header>',
+        '    <h1>Your Name</h1>',
+        '    <h2>Software Student</h2>',
+        '  </header>',
+        '  <section>',
+        '    <p>I am currently learning HTML. This is my first web page.</p>',
+        '  </section>',
+        '  <section>',
+        '    <h2>The Matrix</h2>',
+        '    <img src="matrix.jpg" alt="">',
+        '  </section>',
+        '</body>',
+        '</html>',
+      ]}
+    />
+    <Quiz>
+      <Question
+        question='HTML stands for?'
+        choices={[
+          'High Tolerance Modeling Language',
+          'Hypertext Markup Language',
+          'Horizontal Title Meta Language'
+        ]}
+        answer={2}
+
+      />
+      <Question
+        question='HTM creates'
+        choices={[
+          'Interactivity',
+          'Styling of the page',
+          'Page structure',
+        ]}
+        answer={3}
+      />
+      <Question
+        question='Select the HTML element that is correctly formed'
+        choices={[
+          '<p>some test</p>',
+          '(p)some text(/p)',
+          '<p>some test<p>',
+          '</p>some text<p>'
+        ]}
+        answer={1}
+      />
+      <Question
+        question='Select the answer that is most correct'
+        choices={[
+          'A HTML element has two tags and some content',
+          'A HTML element is made up of two main elements and one or more sub-elements',
+          'A HTML element is a tag',
+          'A HTML element has an opening tag, come content, and a closing tag'
+        ]}
+        answer={4}
+      />
+      <Question
+        question='HTML Elements can contain other elements?'
+        choices={[
+          'True',
+          'False',
+        ]}
+        answer={1}
+      />
+    </Quiz>
+
+  </div>)
 };
 
-export default WhatIsHTML;
+export default WhatIsHTML

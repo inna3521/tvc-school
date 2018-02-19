@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="280"
+   viewBox="0 0 500 280"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="tags.svg"
+   inkscape:export-filename="/home/klequis/dev/inna/tvc-school/app/src/components/Home/webdev01/html/WhatIsHTML/media/tags.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4183"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#858eff;stroke-width:1pt;stroke-opacity:0.94117647;fill:#858eff;fill-opacity:0.94117647"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4183-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#858eff;fill-opacity:0.94117647;fill-rule:evenodd;stroke:#858eff;stroke-width:1pt;stroke-opacity:0.94117647"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#26272c"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.025"
+     inkscape:cx="145.87362"
+     inkscape:cy="209.02053"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     guidecolor="#ff0000"
+     guideopacity="1"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showborder="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4172"
+       spacingx="5.0000001"
+       spacingy="5.0000002"
+       color="#ff0000"
+       opacity="0.89411765"
+       empcolor="#fd0000"
+       empopacity="1" />
+    <sodipodi:guide
+       position="0,300.71429"
+       orientation="1,0"
+       id="guide4198" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-772.36216)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:27.26244926px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="161.48206"
+       y="923.61993"
+       id="text4148"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4150"
+         x="161.48206"
+         y="923.61993"
+         style="fill:#ffffff;fill-opacity:1">&lt;p&gt;  &lt;/p&gt;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:27.26244926px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="198.27008"
+       y="827.02808"
+       id="text4219"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="198.27008"
+         y="827.02808"
+         id="tspan4223"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.26244926px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#858eff;fill-opacity:0.94117647">Opening Tag</tspan></text>
+    <circle
+       id="path4170"
+       style="fill:#000000;stroke:none"
+       cx="239.02438"
+       cy="518.70361"
+       r="1.5" />
+    <path
+       style="fill:#858eff;fill-opacity:0.94117647;fill-rule:evenodd;stroke:#858eff;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.94117647;marker-end:url(#Arrow1Lend)"
+       d="m 196.82927,848.55728 0,44.87805"
+       id="path4174"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:27.26244926px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="281.13086"
+       y="1019.3784"
+       id="text4219-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="281.13086"
+         y="1019.3784"
+         id="tspan4223-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.26244926px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#858eff;fill-opacity:0.94117647">Closing Tag</tspan></text>
+    <path
+       style="fill:#858eff;fill-opacity:0.94117647;fill-rule:evenodd;stroke:#858eff;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.94117647;marker-end:url(#Arrow1Lend-7)"
+       d="m 280.73171,983.43828 0,-44.87805"
+       id="path4174-1"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

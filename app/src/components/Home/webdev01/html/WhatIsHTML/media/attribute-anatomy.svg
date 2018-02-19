@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="attribute-anatomy.svg"
-   inkscape:export-filename="/home/klequis/dev/inna/tvc-school/app/src/components/Home/html/HTML01/media/attribute-anatomy.png"
+   inkscape:export-filename="/home/klequis/dev/inna/tvc-school/app/src/components/Home/webdev01/html/WhatIsHTML/media/attribute-anatomy.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -29,8 +29,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.025"
-     inkscape:cx="386.36142"
-     inkscape:cy="214.87419"
+     inkscape:cx="388.31264"
+     inkscape:cy="212.92297"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -39,11 +39,11 @@
      inkscape:guide-bbox="true"
      guidecolor="#ff0000"
      guideopacity="1"
-     inkscape:window-width="1920"
-     inkscape:window-height="1043"
-     inkscape:window-x="1920"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-width="930"
+     inkscape:window-height="466"
+     inkscape:window-x="2095"
+     inkscape:window-y="87"
+     inkscape:window-maximized="0"
      showborder="true">
     <inkscape:grid
        type="xygrid"
@@ -67,7 +67,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

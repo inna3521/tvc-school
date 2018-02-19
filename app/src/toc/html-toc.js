@@ -1,10 +1,10 @@
 import React from 'react'
 import TOC from 'elements/TOC'
 import { withRouter } from 'react-router-dom'
-import WhatIsHTML from 'Home/webdev01/html/WhatIsHTML'
+import zzWhatIsHTML from 'Home/webdev01/html/zzWhatIsHTML'
 import EssentialHTMLElements from 'Home/webdev01/html/EssentialHTMLElements'
 import FirstHTMLPage from 'Home/webdev01/html/FirstHTMLPage'
-import HTML01 from 'Home/webdev01/html/HTML01'
+import WhatIsHTML from 'Home/webdev01/html/WhatIsHTML'
 import HTML02 from 'Home/webdev01/html/HTML02'
 import E01HTML from 'Home/webdev01/html/E01HTML'
 import MozillaThimble from 'Home/webdev01/html/MozillaThimble'
@@ -24,10 +24,10 @@ export const routes = [
     component: withRouter(({ match }) => <TOC rootPath={rootPath} pageTitle='HTML' match={match} />),
   },
   {
-    title: 'HTML01 - Introduction to HTML',
+    title: 'HTML01 - What is HTML',
     type: 'page',
     path: `/${rootPath}/html-01`,
-    component: withRouter(({ match }) => <HTML01 match={match} />),
+    component: withRouter(({ match }) => <WhatIsHTML match={match} />),
   },
   {
     title: 'merge - E01HTML - What is HTML',
@@ -39,7 +39,7 @@ export const routes = [
     title: 'merge - What is HTML?',
     type: 'page',
     path: `/${rootPath}/what-is-html`,
-    component: withRouter(({ match }) => <WhatIsHTML match={match} />),
+    component: withRouter(({ match }) => <zzWhatIsHTML match={match} />),
   },
   {
     title: 'merge - HTML02 - HTML Elements',
