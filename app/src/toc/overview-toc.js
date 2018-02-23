@@ -45,7 +45,7 @@ export const routes = [
     component: withRouter(({ match }) => <StyleCSS match={match} />),
   },
   {
-    title: 'JavaScript: Interactivity is provided by JavaScript',
+    title: 'JavaScript&colon; Interactivity is provided by JavaScript',
     type: 'page',
     path: `${rootPath}/`,
     component: withRouter(({ match }) => <InteractivityJS match={match} />),

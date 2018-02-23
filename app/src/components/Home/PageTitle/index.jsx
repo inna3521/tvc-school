@@ -6,7 +6,7 @@ import * as actionCreators from 'store/actions'
 import * as selectors from 'store/selectors'
 import NavButton from './NavButton'
 import PropTypes from 'prop-types'
-import { log } from 'lib/ke-utils'
+// import { log } from 'lib/ke-utils'
 
 const PageTitle = ({ routes, location }) => {
   // Location

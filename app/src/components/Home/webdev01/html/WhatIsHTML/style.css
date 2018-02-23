@@ -6,3 +6,10 @@
 .fontColor {
   color: red;
 }
+.elementsArecontainers {
+  display: flex;
+  align-items: center;
+}
+.containersText {
+  padding-left: 30px;
+}

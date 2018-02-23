@@ -9,27 +9,14 @@ import Pre from 'elements/Pre'
 const FirstHTMLPage = () => {
   return (
     <div id='FirstHTMLPage'>
-
+      <Section>
+        <p>In this lesson, you will be building a web page with HTML only, using all of the tags introduced in the previous section. Before you start writing HTML we need to discuss code formatting.</p>
+      </Section>
       <Section title='Code Formatting - HTML'>
         <p>All programmers carefully format their code and anyone who does not will not be taken seriously by the development community or potential employers. Development groups each have their own preferences, but the amount of variation in the industry is not vast.</p>
         <p>Code formatting involves things like how may spaces to indent, whether to use spaces or tabs for indenting or how long lines of code should be.</p>
         <p>Delelopers have very strong feelings about how code should be formatted. Arguing over 2 space vs. 4 space indent is not uncommon. If you are joining a development team, immediately adopt their formatting standards. Not doing so will make you unwelcome.</p>
-        <p>Here is some poorly formatted code. It is hard to tell which elements are inside of other elements.</p>
-        <Pre
-          language='html'
-          code={[
-            '<body>',
-            '<header>',
-            '<h1>Page Header</h1>',
-            '</header>',
-            '  <div class="wrapper">',
-            '  <p>A paragraph of text</p>',
-            '    <p>Another paragraph of text</p>',
-            '    </div>',
-            '</body>',
-          ]}
-        />
-        <p>Here is some nicely formatted code. It is easy to see which elements are inside of other elements.</p>
+        <p>Here is some nicely formatted code:</p>
         <Pre
           language='html'
           code={[

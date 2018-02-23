@@ -11,6 +11,7 @@ import MozillaThimble from 'Home/webdev01/html/MozillaThimble'
 import Tables from 'Home/webdev01/html/Tables'
 import ChallengeBirds from 'Home/webdev01/html/ChallengeBirds'
 import NewProject from 'Home/webdev01/html/NewProject'
+import FirstProject from 'Home/webdev01/html/FirstProject'
 
 const rootPath = 'html'
 
@@ -28,6 +29,12 @@ export const routes = [
     type: 'page',
     path: `/${rootPath}/html-01`,
     component: withRouter(({ match }) => <WhatIsHTML match={match} />),
+  },
+  {
+    title: 'First Project',
+    type: 'page',
+    path: `/${rootPath}/first-project`,
+    component: withRouter(({ match }) => <FirstProject match={match} />),
   },
   {
     title: 'merge - E01HTML - What is HTML',

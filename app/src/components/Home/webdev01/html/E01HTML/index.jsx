@@ -12,20 +12,20 @@ const Lesson01 = (props) => {
 
         >
           <ol>
-            <li>What is HTML</li>
-            <li>Anatomy of an HTML element</li>
+            <li><del>What is HTML</del></li>
+            <li><del>Anatomy of an HTML element</del></li>
             <ol>
-              <li>Nesting elements</li>
+              <li><del>Nesting elements</del></li>
               <li>Block verses inline elements</li>
-              <li>Empty elements</li>
+              <li><del>Empty elements</del></li>
             </ol>
             <li>Attributes</li>
             <ol>
               <li>Boolean attributes</li>
               <li>Omitting quotes around attribute values</li>
-              <li>Single or double quotes</li>
+              <li><del>Single or double quotes</del></li>
             </ol>
-            <li>Anatomy of an HTML document</li>
+            <li><del>Anatomy of an HTML document</del></li>
             <ol>
               <li>Whitespace in HTML</li>
             </ol>

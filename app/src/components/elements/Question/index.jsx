@@ -84,7 +84,8 @@ class Question extends Component {
 
   render() {
     const { tag } = this.state
-    const { choices, question } = this.props
+    const { choices, question, questionNumber } = this.props
+    // console.log('props', this.props)
     const renderChoices = choices.map((c, index) => {
       return (
         <Choice
@@ -101,7 +102,7 @@ class Question extends Component {
     })
     return (
       <div style={this.questionStateStyle()}>
-        <h4 style={titleStyle}>{question}</h4>
+        <h4 style={titleStyle}>{questionNumber}. {question}</h4>
         {renderChoices}
       </div>
     )

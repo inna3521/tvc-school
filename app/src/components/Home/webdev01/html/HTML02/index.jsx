@@ -1,18 +1,10 @@
 // MenuAppHeader
 import React from 'react'
 import Section from 'elements/Section'
-import UL from 'elements/UL'
 import P from 'elements/P'
 import LI from 'elements/LI'
-import A from 'elements/A'
-import Img from 'elements/Img'
 import LessonStatus from 'elements/LessonStatus'
-import Callout from 'elements/Callout'
 import Angle from 'elements/Angle'
-import Pre from 'elements/Pre'
-import Quiz from 'elements/Quiz'
-import Question from 'elements/Question'
-import Amp from 'elements/Amp'
 
 const HTML02 = () => {
 

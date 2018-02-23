@@ -2,6 +2,7 @@ import React from 'react'
 import Section from 'elements/Section'
 import Callout from 'elements/Callout'
 import LessonStatus from 'elements/LessonStatus'
+import VideoStep from 'elements/VideoStep'
 
 const InstallingAtom = () => {
   return (
@@ -19,9 +20,19 @@ const InstallingAtom = () => {
           <p>Installation varies depending on your computers operating system. Atom can be installed on Mac, Linux or Windows.</p>
         </Callout>
       </Section>
-      <Section title='Installing on Mac' level={2}></Section>
-      <Section title='Installing on Windows' level={2}></Section>
-      <Section title='Installing on Linux' level={2}></Section>
+      <Section title='Installing on Mac' level={2}>
+        <VideoStep src='https://s3-us-west-2.amazonaws.com/tvc-school-media/installing-atom/install-atom-mac.mp4'>
+
+        </VideoStep>
+      </Section>
+      <Section title='Installing on Windows' level={2}>
+        <VideoStep src='https://s3-us-west-2.amazonaws.com/tvc-school-media/installing-atom/install-atom-windows.mp4'>
+
+        </VideoStep>
+      </Section>
+      <Section title='Installing on Linux' level={2}>
+        
+      </Section>
     </div>
   )
 };

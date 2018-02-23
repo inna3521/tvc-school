@@ -1,8 +1,20 @@
 import React from 'react'
+import Question from 'elements/Question'
 
 const Quiz = ({children}) => {
+  const questions = children.map((c, index) => {
+    return (
+      <Question
+        key={index}
+        choices={c.props.choices}
+        question={c.props.question}
+        answer={c.props.answer}
+        questionNumber={index}
+       />
+    )
+  })
   return (
-    <div>{children}</div>
+    <div>{questions}</div>
   )
 }
 export default Quiz

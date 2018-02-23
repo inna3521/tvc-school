@@ -9,7 +9,6 @@ import iSwans from './img/swans-1436266_640.jpg'
 import UL from 'elements/UL'
 import OL from 'elements/OL'
 import Section from 'elements/Section'
-import Code from 'elements/Code'
 
 const ChallengeBirds = (props) => {
   return (
