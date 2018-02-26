@@ -1,20 +1,21 @@
 import React from 'react'
 import TOC from 'elements/TOC'
 import { withRouter } from 'react-router-dom'
-import zzWhatIsHTML from 'Home/webdev01/html/zzWhatIsHTML'
-import EssentialHTMLElements from 'Home/webdev01/html/EssentialHTMLElements'
-import FirstHTMLPage from 'Home/webdev01/html/FirstHTMLPage'
 import WhatIsHTML from 'Home/webdev01/html/WhatIsHTML'
-import HTML02 from 'Home/webdev01/html/HTML02'
-import E01HTML from 'Home/webdev01/html/E01HTML'
-import MozillaThimble from 'Home/webdev01/html/MozillaThimble'
-import Tables from 'Home/webdev01/html/Tables'
-import ChallengeBirds from 'Home/webdev01/html/ChallengeBirds'
-import NewProject from 'Home/webdev01/html/NewProject'
 import FirstProject from 'Home/webdev01/html/FirstProject'
-import TheMatrix from 'Home/webdev01/html/TheMatrix'
 import TheDivElement from 'Home/webdev01/html/TheDivElement'
 import TheDivElementEx from 'Home/webdev01/html/TheDivElementEx'
+import EssentialHTMLElements from 'Home/webdev01/html/EssentialHTMLElements'
+import TheMatrix from 'Home/webdev01/html/TheMatrix'
+
+import zzHTML02 from 'Home/webdev01/html/zzHTML02'
+import zzE01HTML from 'Home/webdev01/html/zzE01HTML'
+import xxMozillaThimble from 'Home/webdev01/html/xxMozillaThimble'
+import zzTables from 'Home/webdev01/html/zzTables'
+import zzChallengeBirds from 'Home/webdev01/html/zzChallengeBirds'
+// import xxNewProject from 'Home/webdev01/html/xxNewProject'
+import zzFirstHTMLPage from 'Home/webdev01/html/zzFirstHTMLPage'
+import zzWhatIsHTML from 'Home/webdev01/html/zzWhatIsHTML'
 
 const rootPath = 'html'
 
@@ -51,6 +52,12 @@ export const routes = [
     component: withRouter(({ match }) => <TheDivElementEx match={match} />),
   },
   {
+    title: 'Essential HTML Elements',
+    type: 'page',
+    path: `/${rootPath}/essential-html-elements`,
+    component: withRouter(({ match }) => <EssentialHTMLElements match={match} />),
+  },
+  {
     title: 'Project 2: The Matrix',
     type: 'page',
     path: `/${rootPath}/the-matrix`,
@@ -60,7 +67,7 @@ export const routes = [
     title: 'merge - E01HTML - What is HTML',
     type: 'page',
     path: `/${rootPath}/e01html`,
-    component: withRouter(({ match }) => <E01HTML match={match} />),
+    component: withRouter(({ match }) => <zzE01HTML match={match} />),
   },
   {
     title: 'merge - What is HTML?',
@@ -72,43 +79,38 @@ export const routes = [
     title: 'merge - HTML02 - HTML Elements',
     type: 'page',
     path: `/${rootPath}/html-02`,
-    component: withRouter(({ match }) => <HTML02 match={match} />),
+    component: withRouter(({ match }) => <zzHTML02 match={match} />),
   },
-  {
-    title: 'Essential HTML Elements',
-    type: 'page',
-    path: `/${rootPath}/essential-html-elements`,
-    component: withRouter(({ match }) => <EssentialHTMLElements match={match} />),
-  },
+
   {
     title: 'First HTML Page',
     type: 'page',
     path: `/${rootPath}/first-html-page`,
-    component: withRouter(({ match }) => <FirstHTMLPage match={match} />),
+    component: withRouter(({ match }) => <zzFirstHTMLPage match={match} />),
   },
   {
     title: 'zz-Mozilla Thimble',
     type: 'page',
     path: `/${rootPath}/mozilla-thimble`,
-    component: withRouter(({ match }) => <MozillaThimble match={match} />),
+    component: withRouter(({ match }) => <xxMozillaThimble match={match} />),
   },
   {
     title: 'ab-Tables',
     type: 'page',
     path: `/${rootPath}/html-tables`,
-    component: withRouter(({ match }) => <Tables match={match} />),
+    component: withRouter(({ match }) => <zzTables match={match} />),
   },
   {
     title: 'aa-ChallengeBirds',
     type: 'page',
     path: `/${rootPath}/challenge-birds`,
-    component: withRouter(({ match }) => <ChallengeBirds match={match} />),
+    component: withRouter(({ match }) => <zzChallengeBirds match={match} />),
   },
   {
     title: 'zz-NewProject',
     type: 'page',
     path: `/${rootPath}/new-project`,
-    component: withRouter(({ match }) => <NewProject match={match} />),
+    component: withRouter(({ match }) => <zzNewProject match={match} />),
   },
 ]
 
