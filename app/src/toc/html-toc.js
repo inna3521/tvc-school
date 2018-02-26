@@ -12,9 +12,11 @@ import Tables from 'Home/webdev01/html/Tables'
 import ChallengeBirds from 'Home/webdev01/html/ChallengeBirds'
 import NewProject from 'Home/webdev01/html/NewProject'
 import FirstProject from 'Home/webdev01/html/FirstProject'
+import TheMatrix from 'Home/webdev01/html/TheMatrix'
+import TheDivElement from 'Home/webdev01/html/TheDivElement'
+import TheDivElementEx from 'Home/webdev01/html/TheDivElementEx'
 
 const rootPath = 'html'
-
 
 export const routes = [
   {
@@ -25,7 +27,7 @@ export const routes = [
     component: withRouter(({ match }) => <TOC rootPath={rootPath} pageTitle='HTML' match={match} />),
   },
   {
-    title: 'HTML01 - What is HTML',
+    title: 'What is HTML?',
     type: 'page',
     path: `/${rootPath}/html-01`,
     component: withRouter(({ match }) => <WhatIsHTML match={match} />),
@@ -35,6 +37,24 @@ export const routes = [
     type: 'page',
     path: `/${rootPath}/first-project`,
     component: withRouter(({ match }) => <FirstProject match={match} />),
+  },
+  {
+    title: 'The <div> Element',
+    type: 'page',
+    path: `/${rootPath}/the-div-element`,
+    component: withRouter(({ match }) => <TheDivElement match={match} />),
+  },
+  {
+    title: 'Exercise: The <div> Element',
+    type: 'page',
+    path: `/${rootPath}/the-div-element-ex`,
+    component: withRouter(({ match }) => <TheDivElementEx match={match} />),
+  },
+  {
+    title: 'Project 2: The Matrix',
+    type: 'page',
+    path: `/${rootPath}/the-matrix`,
+    component: withRouter(({ match }) => <TheMatrix match={match} />),
   },
   {
     title: 'merge - E01HTML - What is HTML',

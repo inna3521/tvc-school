@@ -5,7 +5,6 @@ import UL from 'elements/UL'
 import P from 'elements/P'
 import LI from 'elements/LI'
 import Img from 'elements/Img'
-import LessonStatus from 'elements/LessonStatus'
 import Callout from 'elements/Callout'
 import iElements from './media/elements.png'
 import iTags from './media/tags.png'
@@ -27,13 +26,10 @@ import Code from 'elements/Code'
 const WhatIsHTML = () => {
 
   return (<div id='WhatIsHTML'>
-    <LessonStatus draft>
-      DRAFT
-    </LessonStatus>
-    <Section title='What is HTML?' level={1}>
+    <div>
       <P><em>HTML</em> stands for <b>H</b>yper<b>t</b>ext <b>M</b>arkup <b>L</b>anguage. HTML creates the structure of a web page. Using HTML you can add paragraphs, headings, links, images and much more to your web page.</P>
       <P>HTML is called a <em>markup language</em>. It is not a programming language as it is focused on the presentation of content.</P>
-    </Section>
+    </div>
     <Section title='HTML is made of Elements' level={1}>
       <P>HTML is made-up of <em>elements</em>. Each element represents something that can appear on a web page. For example, paragraphs or headings. <Code code={'<p></p>'} /> is a paragraph element and <Code code={'<title></title>'} /> is a title element.</P>
       <Img src={iElements} />
@@ -147,33 +143,6 @@ const WhatIsHTML = () => {
       <p>You have completed the lesson on HTML.</p>
       <p>In the next lesson you will begin learning specific HTML elements.</p>
     </Callout>
-    <Pre
-      linesAdded={[9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]}
-      code={[
-        '<!DOCTYPE html>',
-        '<html>',
-        '<head>',
-        '  <meta charset="utf-8">',
-        '  <link rel="stylesheet" href="bootstrap.min.css">',
-        '  <title>p-html-01</title>',
-        '</head>',
-        '<body>',
-        '  <header>',
-        '    <h1>Your Name</h1>',
-        '    <h2>Software Student</h2>',
-        '  </header>',
-        '  <section>',
-        '    <p>I am currently learning HTML. This is my first web page.</p>',
-        '    <p>Indenting keeps things organized.</p>',
-        '  </section>',
-        '  <section>',
-        '    <h2>The Matrix</h2>',
-        '    <img src="matrix.jpg" alt="">',
-        '  </section>',
-        '</body>',
-        '</html>',
-      ]}
-    />
     <Section title='Review' level={1}>
       <Quiz>
         <Question

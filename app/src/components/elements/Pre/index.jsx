@@ -33,7 +33,7 @@ const Pre = ({ linesAdded, linesRemoved, linesBold, code, caption  }) => {
         style={docco}
         wrapLines={true}
         lineStyle={lineNumber => {
-          let style = { display: 'block' };
+          let style = { display: 'block', textAlign: 'left' };
           if (added.includes(lineNumber)) {
             style.backgroundColor = '#dbffdb';
           }

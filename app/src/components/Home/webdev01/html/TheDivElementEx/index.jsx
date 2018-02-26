@@ -1,19 +1,21 @@
 import React from 'react'
-import Section from 'elements/Section'
-import P from 'elements/P'
-import VideoStep from 'elements/VideoStep'
-import Step from 'elements/Step'
 import HTMLTag from 'elements/HTMLTag'
+import P from 'elements/P'
+import Pre from 'elements/Pre'
+import Section from 'elements/Section'
+import Step from 'elements/Step'
+import VideoStep from 'elements/VideoStep'
 import Code from 'elements/Code'
+import Callout from 'elements/Callout'
+import LI from 'elements/LI'
+import OL from 'elements/OL'
 
 const mediaRoot = 'https://s3-us-west-2.amazonaws.com/tvc-school-media/Home/webdev01/html/FirstProject/'
 
-const FirstProject = () => {
+const TheDivElementEx = () => {
   return (
     <div>
-      <Section title='Introduction'>
-        <P>In this section you will create your first web site using HTML only. It won't look very pretty yet, but in a later lesson we will add CSS to it and make it look much nicer.</P>
-      </Section>
+      <P>In this exercise you will be using the <HTMLTag>div</HTMLTag> element as well as some CSS to explore how <HTMLTag>div</HTMLTag>s work. You will also be creating the project from scratch to get more practice doing that. Let's get started!</P>
       <Section title='Create the Project Folder and Files'>
         <P>Projects go in a folder that has the name of the project. It is often called the 'root folder' or 'project folder'. All other files and folders for the project go inside of this folder. Follow the steps below to create your project</P>
         <Section title='Create the Project Folder' level={2}>
@@ -48,14 +50,24 @@ const FirstProject = () => {
         <Section title='Enter a Title' level={2}>
           <VideoStep src={`${mediaRoot}add-title.mp4`}>
             <Step>On line 5, put your cursor between the opening and closing <HTMLTag>title</HTMLTag> tags.</Step>
-            <Step>Type 'First Project'.</Step>
+            <Step>Type 'The DIV Element'.</Step>
+            <Step caution>Although the video shows typing 'First Project', be sure to type 'The DIV Element'</Step>
           </VideoStep>
-        </Section>
-        <Section title='Add HTML' level={2}>
-          <VideoStep src={`${mediaRoot}add-html.mp4`}>
-            <Step>Put your cursor on line 8 between the opening and closing <HTMLTag>body</HTMLTag> tags.</Step>
-            <Step>Type <Code code="<h1>Hello from First Project</h1>" />.</Step>
-          </VideoStep>
+          <Section title='Your index.html file should now look like this:' level={3}>
+            <Pre code={[
+              "<!DOCTYPE html>",
+              "<html>",
+              "<head>",
+              '  <meta charset="utf-8">',
+              "  <title>First Project</title>",
+              "</head>",
+              "  <body>",
+              "",
+              "  </body>",
+              "</html>",
+              ]}
+            />
+          </Section>
         </Section>
         <Section title='Save the File' level={2}>
           <VideoStep src={`${mediaRoot}save-file.mp4`}>
@@ -69,19 +81,55 @@ const FirstProject = () => {
             <Step>Right-click in the body of the HTML file.</Step>
             <Step>Choose 'Open in Browser'.</Step>
             <Step>Your web page will launch!</Step>
+            <Step caution>The video is from First Project. In this exercise, your page should be blank.</Step>
           </VideoStep>
         </Section>
-        <Section title='Arrange Windows Side-by-Side' level={2}>
-          <p>If you are switching windows from Atom to the browser it can be hard to stay focused. If your screen is large enough you can arrange Atom and the browser side-by-side.</p>
-          <VideoStep src={`${mediaRoot}arrange-windows.mp4`}>
-            <Step>Size Atom to take half the screen.</Step>
-            <Step>Size the browser to take half the screen.</Step>
-            <Step>Hide the Tree View by clicking the left arrow between the Tree View and Code Pane. </Step>
-          </VideoStep>
+        <Callout warn>
+          <p>From this point forward the examples will not show the entire HTML page. Only the part(s) that need to change will be shown. Lines to add will be highlighted in green and lines to delete will be highlighted in red.</p>
+        </Callout>
+        <Section title='Add a <div> to the page' level={2}>
+          <Pre
+            linesAdded={[2, 3, 4]}
+            code={[
+              '<body>',
+              '  <div>',
+              '',
+              '  </div>',
+              '<body>'
+            ]}
+          />
+        </Section>
+        <Section level={2} title={'Switch back to your browser'}>
+          <OL>
+            <LI>Switch back to your browser and refresh the page.</LI>
+            <LI>Note that the <HTMLTag>div</HTMLTag> does not show on the page.</LI>
+          </OL>
         </Section>
       </Section>
+      <Section title='Add two <p> elements to the page' level={2}>
+        <Pre
+          linesAdded={[3, 4]}
+          code={[
+            '<body>',
+            '  <div>',
+            '    <p>Paragraph 1</p>',
+            '    <p>Paragraph 2</p>',
+            '  </div>',
+            '<body>'
+          ]}
+        />
+      </Section>
+      <Section level={2} title={'Switch back to your browser'}>
+        <OL>
+          <LI>Switch back to your browser and refresh the page.</LI>
+          <LI>Note that the two <HTMLTag>p</HTMLTag> elements show on the page.</LI>
+        </OL>
+      </Section>
+      <Callout goal>
+        <p>That's a good start. We will be adding CSS to this project after we learn more aobut it.</p>
+      </Callout>
 
     </div>
   )
 }
-export default FirstProject
+export default TheDivElementEx

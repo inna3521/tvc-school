@@ -1,0 +1,15 @@
+.inputWidth {
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 300px;
+}
+.fontColor {
+  color: red;
+}
+.elementsArecontainers {
+  display: flex;
+  align-items: center;
+}
+.containersText {
+  padding-left: 30px;
+}

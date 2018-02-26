@@ -21,17 +21,15 @@ const InstallingAtom = () => {
         </Callout>
       </Section>
       <Section title='Installing on Mac' level={2}>
-        <VideoStep src='https://s3-us-west-2.amazonaws.com/tvc-school-media/installing-atom/install-atom-mac.mp4'>
-
+        <VideoStep src='https://s3-us-west-2.amazonaws.com/tvc-school-media/Home/webdev01/configuration/InstallingAtom/install-atom-mac.mp4'>
         </VideoStep>
       </Section>
       <Section title='Installing on Windows' level={2}>
-        <VideoStep src='https://s3-us-west-2.amazonaws.com/tvc-school-media/installing-atom/install-atom-windows.mp4'>
-
+        <VideoStep src='https://s3-us-west-2.amazonaws.com/tvc-school-media/Home/webdev01/configuration/InstallingAtom/install-atom-windows.mp4'>
         </VideoStep>
       </Section>
       <Section title='Installing on Linux' level={2}>
-        
+
       </Section>
     </div>
   )
