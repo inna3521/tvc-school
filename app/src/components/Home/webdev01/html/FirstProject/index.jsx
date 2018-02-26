@@ -19,7 +19,7 @@ const FirstProject = () => {
         <Section title='Create the Project Folder' level={2}>
           <VideoStep src={`${mediaRoot}create-project-folder.mp4`}>
             <Step>Open your file manager.</Step>
-            <Step>Create a folder named 'first-promect'.</Step>
+            <Step>Create a folder named 'first-project'.</Step>
           </VideoStep>
         </Section>
         <Section title='Open the Project Folder in Atom' level={2}>

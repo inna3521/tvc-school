@@ -6,6 +6,7 @@ const Quiz = ({children}) => {
     return (
       <Question
         key={index}
+        ex={c.props.ex}
         choices={c.props.choices}
         question={c.props.question}
         answer={c.props.answer}

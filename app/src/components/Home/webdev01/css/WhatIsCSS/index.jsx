@@ -2,16 +2,22 @@ import React from 'react'
 import styles from './style.css'
 import Img from 'elements/Img'
 import Pre from 'elements/Pre'
+import Section from 'elements/Section'
+import Table from 'elements/NewTable'
+import UL from 'elements/UL'
+import LI from 'elements/LI'
+import TH from 'elements/TH'
+import TR from 'elements/TR'
+import TD from 'elements/TD'
+import Code from 'elements/Code'
+import HTMLTag from 'elements/HTMLTag'
+import Quiz from 'elements/Quiz'
+import Question from 'elements/Question'
+import QEx from 'elements/QuestionEx'
 import iCSSSyntax02 from './img/css-syntax.02.png'
 import iCSSSyntax03 from './img/css-syntax.03.png'
 import iKeyValuePair02 from './img/key-value-pair.02.png'
 import iKeyValuePair from './img/key-value-pair.png'
-import Section from 'elements/Section'
-import Table from 'elements/NewTable'
-import UL from 'elements/UL'
-import TH from 'elements/TH'
-import TR from 'elements/TR'
-import TD from 'elements/TD'
 
 const WhatIsCSS = () => {
   return (
@@ -21,15 +27,13 @@ const WhatIsCSS = () => {
       </p>
       <p>
         While HTM defines the structure and content of your webpage, CSS determines the appearance and layout.
-        <UL
-          listItems={[
-            "Appearance is called 'style' and includes things such as font color, bold or non-bold and backgroud image or color",
-            'Layout means where things appear on the page and their alignment.',
-            'With CSS you can center a heading or put an image on the right side of the page or put two images side-by-side.'
-          ]}
-        />
+        <UL>
+          <LI>Appearance is called 'style' and includes things such as font color, bold or non-bold and backgroud image or color.</LI>
+          <LI>Layout means where things appear on the page and their alignment.</LI>
+          <LI>With CSS you can center a heading or put an image on the right side of the page or put two images side-by-side.</LI>
+        </UL>
       </p>
-      <Section title='Key / Value Pairs'>
+      <Section title='Review: Key / Value Pairs'>
         <p>To effectively work with CSS you need to know what key / value pairs are.
           Key / value pairs are everwhere in programming, not just in CSS. Here are
         couple of examples:</p>
@@ -71,14 +75,12 @@ const WhatIsCSS = () => {
         <p>Up to now we have use the term 'style' and that is a commonly used term.
           However, to really understand CSS we need some additional vocabulary. We
         will learn the following terms:</p>
-        <UL
-          listItems={[
-            'selector',
-            'element selector',
-            'id selector',
-            'class selector'
-          ]}
-        />
+        <UL>
+          <LI>selector</LI>
+          <LI>element selector</LI>
+          <LI>id selector</LI>
+          <LI>class selector</LI>
+        </UL>
       </Section>
       <Section title='Selector'>
         <p>Below is a typical CSS selector. It is called a 'selector' because it will select parts of the web page. In this case, it will select all &lt;p&gt; (paragraph) elements. Read on to learn what that means.</p>
@@ -103,56 +105,53 @@ const WhatIsCSS = () => {
           language='css'
         />
         <p>This selector will ...</p>
-        <UL
-          listItems={[
-            '<em>Select</em> all &lt;p&gt; elements (paragraphs)',
-            'Make the font size of all &lt;p&gt; elements 12px',
-            'It will make a fonts in all &lt;p&gt; elements green'
-          ]}
-        />
+        <UL>
+          <LI><em>Select</em> all <HTMLTag>p</HTMLTag> elements (paragraphs)</LI>
+          <LI>Make the font size of all <HTMLTag>p</HTMLTag> elements 12px</LI>
+          <LI>Make the font color of all <HTMLTag>p</HTMLTag> elements green</LI>
+        </UL>
       </Section>
       <Section title={'ID Selector'} level={2}>
-
-        <h3>ID Selector</h3>
-        <p>Remember from the HTML lessons that an HTML element can have an attribute.
-          A &lt;div&gt; with a <em>id</em> attribute looks like this:</p>
-        <Pre
-          code={[
-            '<div id="about">',
-            '',
-            '</div>'
-          ]}
-          language='html'
-        />
-        <p>An <em>ID selector</em> will select whatever element has the specified ID. An ID selectory start with a pound sign (#). Here is a ID selector that will set the font-size to 24px for the element with the 'id' of 'about'. </p>
-        <Pre
-          code={[
-            '#about {',
-            '  font-size: 24px;',
-            '}'
-          ]}
-          language='css'
-        />
-        <h3>Class Selector</h3>
-        <p>HTML elements can also have a <em>class</em> attribute. Here are two
-        &lt;p&gt; elements with a class attribute and one without.</p>
-        <Pre
-          code={[
-            '<p class="aside-style">paragraph 1</p>',
-            '<p>paragraph 2</p>',
-            '<p class="aside-style">paragraph 3</p>',
-          ]}
-          language='html'
-        />
-        <p>A CSS class selector starts with a period (.).</p>
-        <Pre
-          code={[
-            '.aside-style {',
-            '  font-size: 14px',
-            '}',
-          ]}
-          language='css'
-        />
+          <p>Remember from the HTML lessons that an HTML element can have an attribute.
+            A &lt;div&gt; with a <em>id</em> attribute looks like this:</p>
+          <Pre
+            code={[
+              '<div id="about">',
+              '',
+              '</div>'
+            ]}
+            language='html'
+          />
+          <p>An <em>ID selector</em> will select whatever element has the specified ID. An ID selector start with a pound sign (#). Here is a ID selector that will set the font-size to 24px for the element with the 'id' of 'about'. </p>
+          <Pre
+            code={[
+              '#about {',
+              '  font-size: 24px;',
+              '}'
+            ]}
+            language='css'
+          />
+        </Section>
+        <Section title='Class Selector' level={2}>
+          <p>HTML elements can also have a <em>class</em> attribute. Here are two
+          &lt;p&gt; elements with a class attribute and one without.</p>
+          <Pre
+            code={[
+              '<p class="aside-style">paragraph 1</p>',
+              '<p>paragraph 2</p>',
+              '<p class="aside-style">paragraph 3</p>',
+            ]}
+            language='html'
+          />
+          <p>A CSS class selector starts with a period (.).</p>
+          <Pre
+            code={[
+              '.aside-style {',
+              '  font-size: 14px',
+              '}',
+            ]}
+            language='css'
+          />
       </Section>
       <Section title='Summary' level={1}>
         <Table striped>
@@ -233,6 +232,78 @@ const WhatIsCSS = () => {
             </TD>
           </TR>
         </Table>
+      </Section>
+      <Section title='Review'>
+        <Quiz>
+          <Question
+            question='CSS stands for?'
+            choices={[
+              "Cascading Style Sheets",
+              "Continuous Style System",
+              "Color Style Sheets",
+            ]}
+            answer={1}
+          />
+          <Question
+            question='Which is not a CSS selector type?'
+            choices={[
+              "Element selector",
+              "Tag selctor",
+              "ID selector",
+              "Class selector"
+            ]}
+            answer={2}
+          />
+          <Question
+            ex={<QEx>
+              <Pre code={[
+                ".footer {",
+                " color: green;",
+                "}",
+              ]} />
+            </QEx>}
+            question='The above code shows which type of a selector?'
+            choices={[
+              "Element selector",
+              "ID selector",
+              "Class selector"
+            ]}
+            answer={3}
+          />
+          <Question
+            ex={<QEx>
+              <Pre code={[
+                "div {",
+                " color: green;",
+                "}",
+              ]} />
+            </QEx>}
+            question='The above code shows which type of a selector?'
+            choices={[
+              "Element selector",
+              "ID selector",
+              "Class selector"
+            ]}
+            answer={1}
+          />
+          <Question
+            ex={<QEx>
+              <Pre code={[
+                "#footer {",
+                " color: green;",
+                "}",
+              ]} />
+            </QEx>}
+            question='The above code shows which type of a selector?'
+            choices={[
+              "Element selector",
+              "ID selector",
+              "Class selector"
+            ]}
+            answer={2}
+          />
+        </Quiz>
+
       </Section>
     </div>
       )
