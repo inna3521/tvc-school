@@ -10,54 +10,11 @@ import styles from './style.css'
 import Code from 'elements/Code'
 import A from 'elements/A'
 import HTMLTag from 'elements/HTMLTag'
-import ThreeCols from 'elements/ThreeCols'
-import Pre from 'elements/Pre'
 
-const aStyle = {
-  color: 'blue',
-}
 const EssentialHTMLElements = () => {
   return (
     <div id='EssentialHTMLElements'>
-      <ThreeCols title='<a> Anchor'>
-        <p>An <HTMLTag>a</HTMLTag> element is called an 'anchor' but you likely know it more as a 'link'.</p>
-        <Pre
-          code={[
-            '<a href="https://www.w3schools.com/">Roblox</a>',
-          ]}
-        />
-        <p>This is an <a style={aStyle} href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">Anchor Element</a>.</p>
-      </ThreeCols>
-      <ThreeCols title='<b> Bold'>
-        <p>A <HTMLTag>b</HTMLTag> is used to make text <b>bold</b>.</p>
-        <Pre
-          code={[
-            '<p>Here is some <b>bold text</b>.</p>',
-          ]}
-        />
-        <p>Here is some <b>bold text</b>.</p>
-      </ThreeCols>
-      <ThreeCols title='<br> Line Break'>
-        <p>A <HTMLTag>br</HTMLTag> is used to force text to a new line.</p>
-        <Pre
-          code={[
-            '<p>First line and <br> second line.</p>',
-          ]}
-        />
-        <p>First line and <br/> second line.</p>
-      </ThreeCols>
-      <ThreeCols title='<div> Div'>
-        <p>A <HTMLTag>br</HTMLTag> is used to force group other elements together.</p>
-        <Pre
-          code={[
-            '<div>',
-            '  <p>First paragraph</p>',
-            '  <p>Second paragraph</p>',
-            '</div>',
-          ]}
-        />
-        <p>Remember, a <HTMLTag>div</HTMLTag> without styling is not visible so it we can't show you an example.</p>
-      </ThreeCols>
+      <input type='text' placeholder='hi'/>
       <Section>
         <p>We are not going to go through this list together. Instead, we will use each of these elements in a web page.</p>
         <Table striped>

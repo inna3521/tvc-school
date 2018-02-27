@@ -1,11 +1,7 @@
 import React from 'react'
-import HTMLTag from 'elements/HTMLTag'
 import P from 'elements/P'
 import Pre from 'elements/Pre'
 import Section from 'elements/Section'
-import Step from 'elements/Step'
-import VideoStep from 'elements/VideoStep'
-import Code from 'elements/Code'
 import Callout from 'elements/Callout'
 import LI from 'elements/LI'
 import OL from 'elements/OL'
@@ -33,8 +29,8 @@ const TheDivElementEx = () => {
             code={[
               '<body>',
               '  <header>',
-              '    <h1>Your Name</h1>',
-              '    <h2>Software Student</h2>',
+              '    <h1>The Matrix</h1>',
+              '    <h2>by Type Your Name Here</h2>',
               '  </header>',
               '  <section>',
               '    <p>I am currently learning Web Development. This is my first web page.</p>',
@@ -59,11 +55,12 @@ const TheDivElementEx = () => {
       <Section title='Add Some CSS'>
         <OL>
           <LI>Open style.css.</LI>
-          <LI>Add the following code.</LI>
+          <LI>Add an element selector with the following code.</LI>
           <Pre
             linesAdded={[1, 2, 3]}
             code={[
-              "h1 {",
+              "h2 {",
+              "  color: blue",
               "  font-style: italic;",
               "}",
             ]}
@@ -81,14 +78,13 @@ const TheDivElementEx = () => {
               "<head>",
               '  <meta charset="utf-8">',
               "  <title>The Matrix</title>",
-              '  <link rel="stylesheet" href="stle.css">',
+              '  <link rel="stylesheet" href="style.css">',
               "</head>",
             ]}
           />
+          <LI>Go back to the browser and refresh again. This time the subtitle and to title above the picture should both be italic and blue.</LI>
         </OL>
       </Section>
-
-
     </div>
   )
 }
