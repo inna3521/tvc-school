@@ -12,7 +12,7 @@ import A from 'elements/A/'
 const WhatIsHTML = () => {
   return (
     <div id='WhatIsHTML'>
-      <Section title='Introduction' level={1}>
+      <Section title='Introduction' l1>
         <Callout
           type='info'
           title='HTML'

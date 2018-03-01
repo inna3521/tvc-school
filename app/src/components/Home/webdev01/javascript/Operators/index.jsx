@@ -14,7 +14,7 @@ const JSOperators = () => {
   }
   return (<div id='JSOperators'>
     <h1 style={warnStyle}>This lesson shows several cases of where the current styling is not adequate. Needs review and modification.</h1>
-    <Section title='Arithmetic Operators' level={1}>
+    <Section title='Arithmetic Operators' l1>
       <Table responsive="responsive">
         <thead>
           <tr>
@@ -83,8 +83,8 @@ const JSOperators = () => {
         </tbody>
       </Table>
     </Section>
-    <Section title='Examples' level={2}>
-      <Section title='Addition' level={4}>
+    <Section title='Examples' l2>
+      <Section title='Addition' l4>
         <Pre
           code={[
               'let x = 2',
@@ -95,7 +95,7 @@ const JSOperators = () => {
           language='js'
         />
       </Section>
-      <Section title='Remainder' level={4}>
+      <Section title='Remainder' l4>
         <p>The remainder operator returns the remainder of division.</p>
         <Pre
           code={[
@@ -108,7 +108,7 @@ const JSOperators = () => {
         />
       </Section>
     </Section>
-    <Section title='Assignment Operators' level={1}>
+    <Section title='Assignment Operators' l1>
       <p>JavaScript has 12 assignment operators such as 'multiplication assignment' and 'division assignment'. We are going to focus on just one of them which is simply called the 'assignment operator'.</p>
       <Table>
         <thead>
@@ -132,7 +132,7 @@ const JSOperators = () => {
         </tbody>
       </Table>
     </Section>
-    <Section title='Relational Operators' level={2}>
+    <Section title='Relational Operators' l2>
       <Table>
         <thead>
           <tr>
@@ -175,7 +175,7 @@ const JSOperators = () => {
         </tbody>
       </Table>
     </Section>
-    <Section title='Equality Operators' level={2}>
+    <Section title='Equality Operators' l2>
       <p>JaveScript equality operators have changed over time and some confusion has been introduced. The <Code language='js' code='==' /> and <Code language='js' code='!=' /> operators perform type conversion when comparing values. This often isn't what you want. To solve this, JavaScript introduced <Code language='js' code='===' /> and <Code language='js' code='!==' /> which do not do type conversion. Since you have not learned about type conversion yet we will postpone using the <Code language='js' code='==' /> and <Code language='js' code='!=' /> operators for another lesson.</p>
         <Table>
           <thead>

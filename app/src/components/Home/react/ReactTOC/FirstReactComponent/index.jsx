@@ -14,7 +14,7 @@ const FirstReactComponent = () => {
       <LessonStatus underConstruction>
         
       </LessonStatus>
-      <Section title='Overview' level={1}>
+      <Section title='Overview' l1>
         <P>Our first React component will be a header for our app. We will create it and then render it inside of the Page component. The Header component will be a 'functional' component. We will explore what that means in a later lesson. For now, we will explore the basics of creating a component.</P>
         first component
 
@@ -35,7 +35,7 @@ const FirstReactComponent = () => {
           <p>Our code does not use semicolons at the end of lines. There are very few cases in JavaScript where they are needed. As such, we save our fingers a bit and don't type them.</p>
         </Callout>
       </Section>
-      <Section title='Making the Header Component' level={1}>
+      <Section title='Making the Header Component' l1>
         <P>Follow these steps to create the Header component.</P>
         <OL>
           <LI>Create a new folder under /Page named /Header</LI>
@@ -62,7 +62,7 @@ const FirstReactComponent = () => {
         </OL>
         <P>Although it could use some styling, the Header component is now complete. However, it won't appear on the page until you render it somewhere. We will do so from the Page component.</P>
       </Section>
-      <Section title='Rendering the Header Component' level={1}>
+      <Section title='Rendering the Header Component' l1>
         <P>Edit /Page/index.jsx as follows to render the Header component from within Page</P>
         <OL>
           <LI>Add the below import</LI>
@@ -86,8 +86,8 @@ const FirstReactComponent = () => {
           />
         </OL>
       </Section>
-      <Section title="Common Mistakes" level={1}>
-        <Section title='Adjacent JSX elements must be wrapped in an enclosing tag ...' level={2}>
+      <Section title="Common Mistakes" l1>
+        <Section title='Adjacent JSX elements must be wrapped in an enclosing tag ...' l2>
           <P>Inside Header, remove the div that wraps the 2 elements inside the return.</P>
           <Pre
             js
@@ -102,7 +102,7 @@ const FirstReactComponent = () => {
           <P>Inside of Header we are returning 2 separate JSX elements. React requires all JSX elements be wrapped inside of one parent JSX element.</P>
           <p>Put the div back in the code.</p>
         </Section>
-        <Section title="export 'default' (imported as 'Header') was not found in './Header'" level={2}>
+        <Section title="export 'default' (imported as 'Header') was not found in './Header'" l2>
           <P>Comment out the list line in Head</P>
           <Pre
             js

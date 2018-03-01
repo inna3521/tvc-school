@@ -12,7 +12,7 @@ import styles from './style.css'
     > alt
     > inline - t/f
 */
-const Img = ({ cite, margin, maxWidth, small, medium, large, src, alt, inline, border }) => {
+const Img = ({ cite, margin, maxWidth, small, medium, large, src, alt, inline, border, title }) => {
   let renderCite = cite
     ? <cite>{`source: ${cite}`}</cite>
       : false
@@ -21,9 +21,7 @@ const Img = ({ cite, margin, maxWidth, small, medium, large, src, alt, inline, b
   let mBottom = 0
   let mLeft = 0
   if (margin) {
-
     const len = margin.length
-
     if (len > 0) {
       if (len === 2) {
         mTop = margin[0]
@@ -53,7 +51,7 @@ const Img = ({ cite, margin, maxWidth, small, medium, large, src, alt, inline, b
       [styles.imgSizeMedium]: medium,
       [styles.imgSizeLarge]: large,
       [styles.imageProperties]: true,
-      [styles.border]: true,
+      [styles.border]: border,
     }
   )
 
@@ -68,6 +66,7 @@ const Img = ({ cite, margin, maxWidth, small, medium, large, src, alt, inline, b
     // It could have a cite or not
     return (
       <div className={localStyles} style={passedStyles}>
+        {title ? <span><b>{title}</b></span> : null}
         {image}
         {renderCite}
       </div>

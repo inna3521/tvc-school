@@ -6,10 +6,10 @@ import A from 'elements/A'
 
 const Destructuring = ({ mdnDestructuring }) => (
   <div>
-    <Section title='Destructuring' level={1}>
+    <Section title='Destructuring' l1>
       <P><A href={mdnDestructuring}>Destructuring</A> offers a more efficient &amp; concise way of extracting one or more values from data stored in objects and arrays.</P>
     </Section>
-    <Section title='Object Destructuring' level={2}>
+    <Section title='Object Destructuring' l2>
 
       <P>In the below example you start with object 'obj' that contains two properties. On line 2 you extract those properties and assign them 2 new constants 'make' &amp; 'model'.</P>
       <Pre
@@ -37,7 +37,7 @@ const Destructuring = ({ mdnDestructuring }) => (
         ]}
       />
     </Section>
-    <Section title='Array Destructuring' level={2}>
+    <Section title='Array Destructuring' l2>
       <P>Array destructuring is similar to object destructuring except that elements in an array are not named and therefore must be extracted positionally.</P>
       <Pre
         code={[

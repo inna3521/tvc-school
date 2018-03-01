@@ -2,7 +2,7 @@ import React from 'react'
 import { Grid, Row, Col } from 'react-bootstrap'
 
 const colStyle = {
-  textAlign: 'center',
+  // textAlign: 'center',
 }
 
 export const TwoSides = ({ children, title }) => {

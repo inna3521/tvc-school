@@ -18,8 +18,8 @@ const UsingAtom = () => {
         <p>This video may be helpful https://www.youtube.com/watch?v=k-EID5_2D9U</p>
 
       </LessonStatus>
-      <Section title='Files & Folders' level={1}>
-        <Section title='Create a new file' level={2}>
+      <Section title='Files & Folders' l1>
+        <Section title='Create a new file' l2>
           <VideoStep src={'https://s3-us-west-2.amazonaws.com/tvc-school-media/Home/webdev01/computer-skills/UsingAtom/new-file.mp4'}>
             <Step>Right-click on the folder you want to create the file in.</Step>
             <Step>Click New File</Step>
@@ -27,7 +27,7 @@ const UsingAtom = () => {
             <Step>Press Enter</Step>
           </VideoStep>
         </Section>
-        <Section title='Create a new folder' level={2}>
+        <Section title='Create a new folder' l2>
           <VideoStep src={'https://s3-us-west-2.amazonaws.com/tvc-school-media/Home/webdev01/computer-skills/UsingAtom/new-folder.mp4'}>
             <Step>Right-click on the folder you want to create the folder in.</Step>
             <Step>Click New Folder</Step>
@@ -35,7 +35,7 @@ const UsingAtom = () => {
             <Step>Press Enter</Step>
           </VideoStep>
         </Section>
-        <Section title='Rename a new file' level={2}>
+        <Section title='Rename a new file' l2>
           <VideoStep src={'https://s3-us-west-2.amazonaws.com/tvc-school-media/Home/webdev01/computer-skills/UsingAtom/rename-file.mp4'}>
             <Step>Right-click on the file you want to rename.</Step>
             <Step>Click Rename</Step>
@@ -43,7 +43,7 @@ const UsingAtom = () => {
             <Step>Press Enter</Step>
           </VideoStep>
         </Section>
-        <Section title='Rename a new folder' level={2}>
+        <Section title='Rename a new folder' l2>
           <VideoStep src={'https://s3-us-west-2.amazonaws.com/tvc-school-media/Home/webdev01/computer-skills/UsingAtom/rename-folder.mp4'}>
             <Step>Right-click on the folder you want to rename.</Step>
             <Step>Click Rename</Step>
@@ -52,7 +52,7 @@ const UsingAtom = () => {
           </VideoStep>
         </Section>
       </Section>
-      <Section title='Installing Packages' level={1}>
+      <Section title='Installing Packages' l1>
         <VideoStep src={'https://s3-us-west-2.amazonaws.com/tvc-school-media/Home/webdev01/computer-skills/UsingAtom/install-package.mp4'}>
           <Step>Click the 'Packages' menu</Step>
           <Step>Click 'Settings View'</Step>

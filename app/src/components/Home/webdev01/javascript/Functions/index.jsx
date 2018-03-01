@@ -1,5 +1,4 @@
 import React from 'react'
-import './style.css'
 import Pre from 'elements/Pre'
 import Img from 'elements/Img/index'
 import iFunctionSyntax from './img/function-syntax.png'

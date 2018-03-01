@@ -9,7 +9,7 @@ import TD from 'elements/TD'
 import styles from './style.css'
 import Code from 'elements/Code'
 import A from 'elements/A'
-import HTMLTag from 'elements/HTMLTag'
+import Html from 'elements/Html'
 
 const EssentialHTMLElements = () => {
   return (
@@ -48,7 +48,7 @@ const EssentialHTMLElements = () => {
           </TR>
           <TR>
             <TD><Code code={'<figcaption>'} html /></TD>
-            <TD><b>figcaption:</b> use inside of a <HTMLTag>figure</HTMLTag> element to add a caption to a figure.</TD>
+            <TD><b>figcaption:</b> use inside of a <Html>figure</Html> element to add a caption to a figure.</TD>
           </TR>
           <TR>
             <TD><Code code={'<footer>'} html /></TD>

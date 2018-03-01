@@ -5,15 +5,18 @@ import Header from './Header'
 
 
 
-const Section = (props) => {
+const Section = ({ title, subTitle, l1, l2, l3, l4, children }) => {
   return (
     <div>
       <Header
-        title={props.title}
-        subTitle={props.subTitle}
-        level={props.level}
+        title={title}
+        subTitle={subTitle}
+        l1={l1}
+        l2={l2}
+        l3={l3}
+        l4={l4}
       />
-      {props.children}
+      {children}
     </div>
   )
 }

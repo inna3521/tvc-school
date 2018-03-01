@@ -14,11 +14,11 @@ import CodeHeader from 'elements/CodeHeader'
 const RA04Gallery = () => {
   return (
     <div id='RA04Gallery'>
-      <Section title='Introduction' level={1}>
+      <Section title='Introduction' l1>
         <P>In this section you will create a Gallery component as shown below.</P>
         <Img src={iGallery} medium alt='gallery step 01' />
       </Section>
-      <Section title='Requirements' level={1}>
+      <Section title='Requirements' l1>
         Gallery must meet these requirements:
         <UL>
           <LI>Will have an <InlineTag angle>h2</InlineTag> element with the text 'Our Fresh Meals'</LI>
@@ -27,7 +27,7 @@ const RA04Gallery = () => {
           <LI>Create two components Gallery &amp; GalleryItem</LI>
         </UL>
       </Section>
-      <Section title='Tips' level={1}>
+      <Section title='Tips' l1>
         <Hint>
           <p>When you import menu-data.js it will be an array.</p>
         </Hint>
@@ -39,7 +39,7 @@ const RA04Gallery = () => {
         </Hint>
       </Section>
 
-      <Section title='Structure & Styling' level={1}>
+      <Section title='Structure & Styling' l1>
         <CodeHeader />
         <Hint title='JSX for Gallery'>
           <Pre

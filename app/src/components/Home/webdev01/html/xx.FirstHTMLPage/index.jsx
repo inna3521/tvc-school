@@ -1,4 +1,3 @@
-// Lesson03
 import React from 'react'
 import styles from './style.css'
 import UL from 'elements/UL'

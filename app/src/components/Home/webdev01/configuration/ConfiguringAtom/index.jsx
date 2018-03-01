@@ -12,7 +12,7 @@ const InstallingAtom = () => {
       <LessonStatus outline>
 
       </LessonStatus>
-      <Section title='Adding Packages To Atom' level={1}>
+      <Section title='Adding Packages To Atom' l1>
         <p>You can greatly enhance the functionality in Atom by installing packages. Here is a list of recommended packages.</p>
         <UL>
           <li>atom-beautify</li>

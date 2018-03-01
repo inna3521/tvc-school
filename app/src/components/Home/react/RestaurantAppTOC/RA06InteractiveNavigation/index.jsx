@@ -15,14 +15,14 @@ import CodeHeader from 'elements/CodeHeader'
 const RA06InteractiveNavigation = () => {
   return (
     <div id='RA06InteractiveNavigation'>
-      <Section title='Introduction' level={1}>
+      <Section title='Introduction' l1>
         <P>In this section you will make the navigation interactive by adding a Sign-in button that toggles to Sign-out. Additionally, when Sign-in is active, an Edit Menu button will appear.</P>
         <P>Here is the menu with Sign-in &amp; Edit Menu active (user is not signed-in)</P>
         <Img src={iNavSignedOut} medium alt='nav with user signed-out' />
         <P>Here is the menu with Sign-out active</P>
         <Img src={iNavSignedIn} medium alt='nav with user signed-out' />
       </Section>
-      <Section title='Requirements' level={1}>
+      <Section title='Requirements' l1>
         The Menu must meet these requirements:
         <OL>
           <LI>Use <A href='https://reactjs.org/docs/conditional-rendering.html#inline-if-else-with-conditional-operator'>Conditional Rendering</A> to show &amp; hide nav items</LI>
@@ -48,7 +48,7 @@ const RA06InteractiveNavigation = () => {
       <Section title='Tips'>
         <P>Look at the mock-up of the final UI and give some thought to what component should maintain state. Think about where the items of state will be needed.</P>
       </Section>
-      <Section title='Hints' level={1}>
+      <Section title='Hints' l1>
         <Hint>
           <P>You will need to implement an event for the button click. Information for implementing events is at <A href='https://reactjs.org/docs/handling-events.html'>Handling Events</A>.</P>
         </Hint>
@@ -65,7 +65,7 @@ const RA06InteractiveNavigation = () => {
           <P>Remember, don't change state directly. Use this.setState.</P>
         </Hint>
       </Section>
-      <Section title='Structure &amp; CSS' level={1}>
+      <Section title='Structure &amp; CSS' l1>
         <CodeHeader />
         <Hint title='JSX for Nav'>
           <Pre

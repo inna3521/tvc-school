@@ -13,7 +13,7 @@ const HTML02 = () => {
       <LessonStatus outline="outline">
         Outline
       </LessonStatus>
-      <Section title='More HTML Elements' level={1}>
+      <Section title='More HTML Elements' l1>
         <P>In this lesson</P>
         <table>
           <tr>

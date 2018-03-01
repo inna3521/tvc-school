@@ -1,10 +1,9 @@
 // UL
 import React from 'react'
-// import styles from './style.css'
 
-const OL = ({style, children}) => {
+const OL = ({style, children, start}) => {
   return (
-    <ol style={style}>{children}</ol>
+    <ol start={start || 1} style={style}>{children}</ol>
   )
 }
 

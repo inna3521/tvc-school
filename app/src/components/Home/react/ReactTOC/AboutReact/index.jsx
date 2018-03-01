@@ -16,10 +16,10 @@ const AboutReact = () => {
       <LessonStatus outline>
         <LI>just a mixed bag of ideas at this point</LI>
       </LessonStatus>
-      <Section title='Introduction' level={1}>
+      <Section title='Introduction' l1>
         <P>As you progress throught the you will be learning several key React concepts. ... </P>
       </Section>
-      <Section title="React is Open" level={1}>
+      <Section title="React is Open" l1>
         <P>React's main competitor is <A href='https://angularjs.org/'>AngularJS</A> which is made by Google and is a full 'framework' which includes things like data connectivity. There are a few key differences between the two. First React is strictly for creating the 'view'. Unlike AngularJS, React contains no built-in functionality for connecting to data, it doesn't have templates nor does it prescribe a design pattern like MVC.</P>
         <P>So then what is so greate about React? Well first of all, and most importantly, it doesn't prescribe how things should be done. You use it to render your views and then assemble the rest of your applications stack based on your needs and preferences.</P>
         <P>Another great thing about React is it allows you to use JavaScript to render your UI</P>
@@ -46,7 +46,7 @@ const AboutReact = () => {
           </LI>
         </UL>
       </Section>
-      <Section title='Virtual DOM' level={1}>
+      <Section title='Virtual DOM' l1>
         <UL>
           <LI>http://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/</LI>
           <LI>https://www.accelebrate.com/blog/the-real-benefits-of-the-virtual-dom-in-react-js/</LI>

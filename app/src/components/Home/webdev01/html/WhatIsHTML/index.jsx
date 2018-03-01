@@ -30,20 +30,20 @@ const WhatIsHTML = () => {
       <P><em>HTML</em> stands for <b>H</b>yper<b>t</b>ext <b>M</b>arkup <b>L</b>anguage. HTML creates the structure of a web page. Using HTML you can add paragraphs, headings, links, images and much more to your web page.</P>
       <P>HTML is called a <em>markup language</em>. It is not a programming language as it is focused on the presentation of content.</P>
     </div>
-    <Section title='HTML is made of Elements' level={1}>
+    <Section title='HTML is made of Elements' l1>
       <P>HTML is made-up of <em>elements</em>. Each element represents something that can appear on a web page. For example, paragraphs or headings. <Code code={'<p></p>'} /> is a paragraph element and <Code code={'<title></title>'} /> is a title element.</P>
       <Img src={iElements} />
       <P>There are over 100 HTML elements. However, you can create a complete web site with 15 or 20 of the most frequently used elements.</P>
     </Section>
-    <Section title='Elements are made of Tags' level={1}>
+    <Section title='Elements are made of Tags' l1>
       <P>Most elements have an opening tag and a closing tag.</P>
       <P> The opening and closing tags differ only in that the closing tag has a '/' before the letter 'p'.</P>
       <Img src={iTags} />
     </Section>
-    <Section title='Content goes between Tags' level={1}>
+    <Section title='Content goes between Tags' l1>
       <Img src={iContent} />
     </Section>
-    <Section title='Attributes Modify Elements' level={1}>
+    <Section title='Attributes Modify Elements' l1>
       <P>Attributes are name / value pairs that go inside of the the element's opening tag, after the element name but before the closing angle bracket ('>')</P>
       <Img src={iAttributeAnatomy} />
       <P>Attributes always take the form:</P>
@@ -51,9 +51,9 @@ const WhatIsHTML = () => {
       <P>Where 'name' on the left side of the '=' is the name of the attribute and 'value' on the right side of the '=' is the value of the attribute. It is a little like algebra, for example x = 3, 'x' would be the name and '3' would be the value.</P>
       <P>Below is an attribute named 'color' with a value of 'blue':</P>
       <Img src={iNameValue02} />
-      <Section title='Attributes can Change Appearance and Behavior' level={2}>
+      <Section title='Attributes can Change Appearance and Behavior' l2>
         <P>Attributes add additional information to an element and can change its appearence <Amp/> behavior.</P>
-        <Section title='Example of Appearance Change' level={3}>
+        <Section title='Example of Appearance Change' l3>
           <Pre
             caption="The below paragraph tag has a 'class' attribute. The class attribute is used to apply a style which changes the appearance of the paragraph."
             code={[
@@ -73,7 +73,7 @@ const WhatIsHTML = () => {
     <Callout info>
       <p>Name / value pairs are very common in programming. They are often called 'properties'.</p>
     </Callout>
-    <Section title='Elements are Containers' level={1}>
+    <Section title='Elements are Containers' l1>
       <div className={styles.elementsArecontainers}>
         <div sm={6}>
           <Img src={iContainer} />
@@ -113,7 +113,7 @@ const WhatIsHTML = () => {
         <li>There is a '/' before the closing '>'</li>
       </ul>
     </Section>
-    <Section title='Element Summary' level={1}>
+    <Section title='Element Summary' l1>
       <P>Below is an example of a <Angle>p</Angle> element. The 'p' stands for 'paragraph'. When you use the <Angle>p</Angle> element a pargraph is created on the web page.</P>
       <P>The diagram below explains the parts of a HTML element using the <Angle>p</Angle> element as an example.</P>
       <UL>
@@ -143,7 +143,7 @@ const WhatIsHTML = () => {
       <p>You have completed the lesson on HTML.</p>
       <p>In the next lesson you will begin learning specific HTML elements.</p>
     </Callout>
-    <Section title='Review' level={1}>
+    <Section title='Review' l1>
       <Quiz>
         <Question
           question='HTML stands for?'

@@ -2,6 +2,16 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
+const linkStyle = {
+  color: '#31b0d5',
+  fontWeight: 'bold',
+}
+const linkActiveStyle = {
+  // color: '#5bc0de',
+  color: 'green',
+  textDecoration: 'underline',
+}
+
 const LinkItem = ({ to, match, children }) => {
   const backOne = () => {
     const arrPath = match.path.split('/')
@@ -15,15 +25,6 @@ const LinkItem = ({ to, match, children }) => {
     ? backOne()
     : `/${to}`
 
-  const linkStyle = {
-    color: '#31b0d5',
-    fontWeight: 'bold',
-  }
-  const linkActiveStyle = {
-    // color: '#5bc0de',
-    color: 'green',
-    textDecoration: 'underline',
-  }
   return (
     <NavLink to={path} style={linkStyle} activeStyle={linkActiveStyle}>{children}</NavLink>
   )

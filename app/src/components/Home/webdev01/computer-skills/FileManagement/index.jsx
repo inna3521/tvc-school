@@ -20,7 +20,7 @@ const FileManagement = () => {
         <li>Copy vs. Move</li>
 
       </LessonStatus>
-      <Section title='None' level={1}>
+      <Section title='None' l1>
         {/* <VideoStep src={newFile}>
           <Step>Right-click on the folder you want to create the file in.</Step>
           <Step>Click New File</Step>

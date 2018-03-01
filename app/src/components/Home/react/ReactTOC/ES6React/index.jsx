@@ -24,9 +24,9 @@ const ES6React = () => {
       <LessonStatus draftOne>
         
       </LessonStatus>
-      <Section title='Introduction' level={1}>
+      <Section title='Introduction' l1>
         <P>While you can create React applications without using any ES6 syntax, the React community has embraced its use. This lesson will cover the ES6 syntax that is most commonly used in the React community. In each case, you do not need to fully understand the subject. Being familiar with it as a repeatable pattern will be enough.</P>
-        <Section title='What will be covered' level={2}>
+        <Section title='What will be covered' l2>
           <UL>
             <LI><A href={mdnArrowFunctions}>Arrow functions</A></LI>
             <LI><A href={mdnDestructuring}>Destructuring</A></LI>

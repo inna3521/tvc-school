@@ -8,9 +8,7 @@ import OL from 'elements/OL'
 import Img from 'elements/Img'
 import iAddCSSFile from './media/the-matrix.add-css-file.png'
 
-const mediaRoot = 'https://s3-us-west-2.amazonaws.com/tvc-school-media/Home/webdev01/html/FirstProject/'
-
-const TheDivElementEx = () => {
+const WhatIsCSSEx = () => {
   return (
     <div>
       <P>In this exercise you will be adding to the project started in the HTML project. You will add a file to put your CSS in and link (i.e., connect) the HTML file to the CSS file.</P>
@@ -88,4 +86,4 @@ const TheDivElementEx = () => {
     </div>
   )
 }
-export default TheDivElementEx
+export default WhatIsCSSEx

@@ -14,11 +14,11 @@ import CodeHeader from 'elements/CodeHeader'
 const RA05Menu = () => {
   return (
     <div id='RA05Menu'>
-      <Section title='Introduction' level={1}>
+      <Section title='Introduction' l1>
         <P>In this section you will create the restaurant's Menu. For now it will be read only. Editing is part of a later challenge. Here is a picture of the Menu:</P>
         <Img src={iMenu} medium alt='menu read only' />
       </Section>
-      <Section title='Requirements' level={1}>
+      <Section title='Requirements' l1>
         The Menu must meet these requirements:
         <UL>
           <LI>Will have an <InlineTag angle>h2</InlineTag> element with the text 'Our Menu'</LI>
@@ -28,7 +28,7 @@ const RA05Menu = () => {
           <LI>Create two components, Menu &amp; MenuItem</LI>
         </UL>
       </Section>
-      <Section title='Tips' level={1}>
+      <Section title='Tips' l1>
         <Hint>
           <p>When you import menu-data.js it will be an array.</p>
         </Hint>
@@ -43,7 +43,7 @@ const RA05Menu = () => {
         </Hint>
       </Section>
 
-      <Section title='Structure & Styling' level={1}>
+      <Section title='Structure & Styling' l1>
         <CodeHeader />
         <Hint title='JSX for Menu'>
           <Pre

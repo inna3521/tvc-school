@@ -15,11 +15,11 @@ import HeaderStructure from './header-structure'
 const RA02Header = () => {
   return (
     <div id='RA02Header'>
-      <Section title='Introduction' level={1}>
+      <Section title='Introduction' l1>
         <P>In this section you will create a component named Header which will look as shown below.</P>
         <Img src={iHeader01} medium alt='header step 01' />
       </Section>
-      <Section title='Requirements' level={1}>
+      <Section title='Requirements' l1>
         Header must meet these requirements:
         <UL>
           <LI>An <InlineTag angle>img</InlineTag> element which displays src/images/vegies-left.jpg</LI>
@@ -27,7 +27,7 @@ const RA02Header = () => {
           <LI>Will have an <InlineTag angle>h2</InlineTag> element with the text 'Delicious meals made with locally sourced organic ingredients'</LI>
         </UL>
       </Section>
-      <Section title='Tips / Hints' level={1}>
+      <Section title='Tips / Hints' l1>
         <Hint title='Structure for a function component'>
           <Pre
             code={[
@@ -49,7 +49,7 @@ const RA02Header = () => {
           </ProjectStructure>
         </Hint>
       </Section>
-      <Section title='Structure & Styling' level={1}>
+      <Section title='Structure & Styling' l1>
         <CodeHeader />
         <Hint title='JSX for Header'>
           <Pre

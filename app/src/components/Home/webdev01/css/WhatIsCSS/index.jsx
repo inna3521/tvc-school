@@ -9,8 +9,7 @@ import LI from 'elements/LI'
 import TH from 'elements/TH'
 import TR from 'elements/TR'
 import TD from 'elements/TD'
-import Code from 'elements/Code'
-import HTMLTag from 'elements/HTMLTag'
+import Html from 'elements/Html'
 import Quiz from 'elements/Quiz'
 import Question from 'elements/Question'
 import QEx from 'elements/QuestionEx'
@@ -93,7 +92,7 @@ const WhatIsCSS = () => {
           language='css'
         />
       </Section>
-      <Section title='Element Selector' level={2}>
+      <Section title='Element Selector' l2>
         <p>An <em>element selector</em> selects all html elements of a given type. Below is a &lt;p&gt; (paragraph) selector.</p>
         <Pre
           code={[
@@ -106,12 +105,12 @@ const WhatIsCSS = () => {
         />
         <p>This selector will ...</p>
         <UL>
-          <LI><em>Select</em> all <HTMLTag>p</HTMLTag> elements (paragraphs)</LI>
-          <LI>Make the font size of all <HTMLTag>p</HTMLTag> elements 12px</LI>
-          <LI>Make the font color of all <HTMLTag>p</HTMLTag> elements green</LI>
+          <LI><em>Select</em> all <Html>p</Html> elements (paragraphs)</LI>
+          <LI>Make the font size of all <Html>p</Html> elements 12px</LI>
+          <LI>Make the font color of all <Html>p</Html> elements green</LI>
         </UL>
       </Section>
-      <Section title={'ID Selector'} level={2}>
+      <Section title={'ID Selector'} l2>
           <p>Remember from the HTML lessons that an HTML element can have an attribute.
             A &lt;div&gt; with a <em>id</em> attribute looks like this:</p>
           <Pre
@@ -132,7 +131,7 @@ const WhatIsCSS = () => {
             language='css'
           />
         </Section>
-        <Section title='Class Selector' level={2}>
+        <Section title='Class Selector' l2>
           <p>HTML elements can also have a <em>class</em> attribute. Here are two
           &lt;p&gt; elements with a class attribute and one without.</p>
           <Pre
@@ -153,7 +152,7 @@ const WhatIsCSS = () => {
             language='css'
           />
       </Section>
-      <Section title='Summary' level={1}>
+      <Section title='Summary' l1>
         <Table striped>
           <TR>
             <TH>Selector Type</TH>

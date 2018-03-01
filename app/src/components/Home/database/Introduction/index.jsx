@@ -34,8 +34,8 @@ const Introduction = () => {
 
       </LessonStatus>
 
-      <Section title='What is a Database' level={1}>
-        <Section title='Formal Definitions' level={2}>
+      <Section title='What is a Database' l2>
+        <Section title='Formal Definitions' l2>
           <dl>
             <dt style={dtStyle}>Database</dt>
             <dd style={ddStyle}>A structured set of data held in a computer, especially one that is accessible in various ways.</dd>
@@ -46,21 +46,21 @@ const Introduction = () => {
             <dd style={ddStyle}>A database-management system (DBMS) is a computer-software application that interacts with end-users, other applications, and the database itself to capture and analyze data. A general-purpose DBMS allows the definition, creation, querying, update, and administration of databases.</dd>
           </dl>
         </Section>
-        <Section title='Informal Definition' level={2}>
+        <Section title='Informal Definition' l2>
           <p>A place to keep your data so you can use it later. The data in the database can be retrieved, changed, added to and deleted.</p>
         </Section>
       </Section>
-      <Section title='DBMS Diagram' level={1}>
+      <Section title='DBMS Diagram' l2>
         <img src={iDatabaseSlide} alt='database diagram' style={imageStyle} />
       </Section>
-      <Section title='SQL - Structured Query Language' level={1}>
-        <Section title='Formal Definition' level={2}>
+      <Section title='SQL - Structured Query Language' l1>
+        <Section title='Formal Definition' l1>
           <p>SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS).</p>
         </Section>
-        <Section title='Informal Definition' level={2}>
+        <Section title='Informal Definition' l2>
           <p>You use it to work with data in the database.</p>
         </Section>
-        <Section title='SQL Syntax' level={2}>
+        <Section title='SQL Syntax' l2>
           <Table>
               <TR>
                 <TH>Clause</TH>
@@ -81,7 +81,7 @@ const Introduction = () => {
           </Table>
         </Section>
       </Section>
-      <Section title='CRUD' level={1}>
+      <Section title='CRUD' l1>
         <p><b>C</b> = Create</p>
         <p><b>R</b> = Read</p>
         <p><b>U</b> = Update</p>
@@ -123,7 +123,7 @@ const Introduction = () => {
           <LI>DELETE FROM pet WHERE sex = 'm'</LI>
         </OL>
       </Section>
-      <Section title='Demo' level={1}>
+      <Section title='Demo' l1>
         <Table>
           <TR>
             <TD>Name starts with</TD>
@@ -135,7 +135,7 @@ const Introduction = () => {
           </TR>
         </Table>
       </Section>
-      <Section title='Exercises' level={1}>
+      <Section title='Exercises' l1>
         <Table>
           <TR>
             <TD><A href='https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all'>Select All</A></TD>

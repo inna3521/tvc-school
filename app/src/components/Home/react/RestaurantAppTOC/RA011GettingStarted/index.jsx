@@ -14,7 +14,7 @@ const RA011GettingStarted = () => {
   }
   return (
     <div id='RA011GettingStarted'>
-      <Section level={2}>
+      <Section l2>
         <P>Follow these instructions to get started.</P>
         <OL>
           <LI style={liStyle}>Sign-up for our <A href='https://join.slack.com/t/trivalleycoders/shared_invite/enQtMjY5ODI5OTQzMDcyLWU5ZGI1MDMxNGMzYjk1NzBiMTZjOGQ5OWE4Zjg5MTU0NzgyNWE3N2RjMGJmODcxMzkyZGMwMTNmYjFhZDllZDY'>Slack channel</A>. We will be posting tips, helpful code and answering questions there.</LI>

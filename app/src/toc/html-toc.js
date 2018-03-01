@@ -6,6 +6,7 @@ import FirstProject from 'Home/webdev01/html/FirstProject'
 import TheDivElement from 'Home/webdev01/html/TheDivElement'
 import TheDivElementEx from 'Home/webdev01/html/TheDivElementEx'
 import EssentialHTMLElements from 'Home/webdev01/html/EssentialHTMLElements'
+import EssentialHTMLElementsEx from 'Home/webdev01/html/EssentialHTMLElementsEx'
 import TheMatrix from 'Home/webdev01/html/TheMatrix'
 
 import zzHTML02 from 'Home/webdev01/html/zzHTML02'
@@ -56,6 +57,12 @@ export const routes = [
     type: 'page',
     path: `/${rootPath}/essential-html-elements`,
     component: withRouter(({ match }) => <EssentialHTMLElements match={match} />),
+  },
+  {
+    title: 'Exercise: Essential HTML Elements',
+    type: 'page',
+    path: `/${rootPath}/essential-html-elements-ex`,
+    component: withRouter(({ match }) => <EssentialHTMLElementsEx match={match} />),
   },
   {
     title: 'Project 2: The Matrix',

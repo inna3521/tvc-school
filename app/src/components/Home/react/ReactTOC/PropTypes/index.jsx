@@ -14,11 +14,11 @@ const UsingPropTypes = () => {
       <LessonStatus draftOne>
 
       </LessonStatus>
-      <Section title='Introduction' level={1}>
+      <Section title='Introduction' l1>
         <P>In this lesson, we will discuss a helpful debugging feature in the React ecosystem, called PropTypes.</P>
         <P>PropTypes is used for typechecking a components props.  When props are not passed to the component or are passed with a different type than expected, PropTypes will issue a warning in the console, making debugging easier.</P>
       </Section>
-      <Section title='Installation & Import Instructions' level={1}>
+      <Section title='Installation & Import Instructions' l1>
         <P>PropTypes is a seperate library from React.  In order to use this library in your app, you must first install it.</P>
         <P>In your terminal, enter the below command:</P>
         <Pre
@@ -33,7 +33,7 @@ const UsingPropTypes = () => {
           ]}
         />
       </Section>
-      <Section title='Using PropTypes' level={1}>
+      <Section title='Using PropTypes' l1>
         <P>We will revisit our GalleryItem component in the restaurant app to help illustrate how to implement the PropTypes library.</P>
 
         <Pre
@@ -69,7 +69,7 @@ const UsingPropTypes = () => {
         <P>Making the above change will prompt PropTypes to issue the following warning to the console.</P>
         <Img src={iWarning} medium alt='warning message' />
       </Section>
-      <Section title='Official Documentation' level={1}>
+      <Section title='Official Documentation' l1>
         <P>For more information on PropTypes features, including a list of all supplied validators, check out the official documentation at <A href='https://reactjs.org/docs/typechecking-with-proptypes.html'>ReactJS</A>.</P>
       </Section>
     </div>

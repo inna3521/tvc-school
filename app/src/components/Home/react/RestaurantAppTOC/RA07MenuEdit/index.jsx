@@ -13,18 +13,18 @@ import CodeHeader from 'elements/CodeHeader'
 const RA07MenuEdit = () => {
   return (
     <div id='RA07MenuEdit'>
-      <Section title='Introduction' level={1}>
+      <Section title='Introduction' l1>
         <P>In this section you will create a component named MenuEdit which will allow the user to edit the menu. Changes to the menu will be stored in state. Below is the UI for this component.</P>
         <Img src={iMenuEdit} medium alt='MenuEdit component' />
       </Section>
-      <Section title='Requirements' level={1}>
+      <Section title='Requirements' l1>
         MenuEdit must meet these requirements:
         <UL>
           <LI>Enables user to edit the title, description and price</LI>
           <LI>Modifies menu data which is stored in state</LI>
         </UL>
       </Section>
-      <Section title='Tips' level={1}>
+      <Section title='Tips' l1>
         <Hint>
           <P>Give some thought to where the menu items need to live in state. Thinking of the application's components as a tree sturcture, consider each component that needs the menu items and place the menu items in state inside a component that is the parent to all of them.</P>
         </Hint>
@@ -33,7 +33,7 @@ const RA07MenuEdit = () => {
         </Hint>
       </Section>
 
-      <Section title='Structure & Styling' level={1}>
+      <Section title='Structure & Styling' l1>
         <CodeHeader />
         <Hint title='JSX for MenuEdit'>
           <Pre

@@ -1,6 +1,5 @@
 // L12ControlFlow
 import React from 'react'
-import './style.css'
 import Section from 'elements/Section'
 import P from 'elements/P'
 

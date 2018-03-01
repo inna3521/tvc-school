@@ -8,7 +8,7 @@ import A from 'elements/A'
 
 const TemplateLiterals = ({ mdnTemplateLiterals }) => (
   <div>
-    <Section title='Template Literals' level={1}>
+    <Section title='Template Literals' l1>
       <P><A href={mdnTemplateLiterals}>Template literals</A> are used to embed the values of variables within strings. They can be used instead of string concatanation with '+'.</P>
     </Section>
     <P>To create a template literal you ... </P>

@@ -1,7 +1,10 @@
 import React from 'react'
-import styles from './style.css'
+
+const videoStyle = {
+  maxWidth: '400px',
+}
 
 const Video = ({ src }) => {
-  return (<video className={styles.video} src={src} controls></video>)
+  return (<video style={videoStyle} src={src} controls></video>)
 }
 export default Video

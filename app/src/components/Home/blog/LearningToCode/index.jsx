@@ -27,7 +27,7 @@ const LearningToCode = () => {
       <LI>Do you feel you are ready?</LI>
 
     </LessonStatus>
-    <Section title='Introduction' level={1}>
+    <Section title='Introduction' l1>
       <P></P>
     </Section>
 

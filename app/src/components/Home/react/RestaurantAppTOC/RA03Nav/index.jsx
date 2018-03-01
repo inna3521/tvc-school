@@ -13,11 +13,11 @@ import CodeHeader from 'elements/CodeHeader'
 const RA03Nav = () => {
   return (
     <div id='RA03Nav'>
-      <Section title='Introduction' level={1}>
+      <Section title='Introduction' l1>
         <P>In this section you will add a component named Nav to Header. Nav will look as shown below.</P>
         <Img src={iNav} medium alt='header step 01' />
       </Section>
-      <Section title='Requirements' level={1}>
+      <Section title='Requirements' l1>
         <P>Nav must meet these requirements:</P>
         <OL>
           <LI>The component will be named Nav</LI>
@@ -31,7 +31,7 @@ const RA03Nav = () => {
           <LI>Nav will be placed in the header below the tag line</LI>
         </OL>
       </Section>
-      <Section title='Structure & Styling' level={1}>
+      <Section title='Structure & Styling' l1>
         <CodeHeader />
         <Hint title='JSX for Nav'>
           <Pre
