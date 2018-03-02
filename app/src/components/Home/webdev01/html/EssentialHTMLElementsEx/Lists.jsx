@@ -12,8 +12,7 @@ const Lists = () => {
       <Section title='Ordered List' l2>
         <OL>
           <LI>Add a section element.</LI>
-          <LI>Inside the section element add the heading 2, and anchor elements as shown.</LI>
-          <LI>Once you are done, refresh your page and click the links to make sure they are working</LI>
+          <LI>Inside the section element add a heading 2 with the text 'Lists', a heading 3 element with the text 'Ordered List' and an ordered list with two list items as shown below.</LI>
         </OL>
         <Pre
           linesAdded={[16, 17, 18, 19, 20, 21, 22, 23]}
@@ -47,10 +46,9 @@ const Lists = () => {
         />
       </Section>
       <Section title='Unordered List' l2>
+
         <OL>
-          <LI>Add a section element.</LI>
-          <LI>Inside the section element add the heading 2, and anchor elements as shown.</LI>
-          <LI>Once you are done, refresh your page and click the links to make sure they are working</LI>
+          <LI>Now add an unordered list inside the same section element</LI>
         </OL>
         <Pre
           linesAdded={[24, 25, 26, 27]}

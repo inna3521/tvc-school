@@ -9,14 +9,14 @@ import Html from 'elements/Html'
 const FigureAndImage = () => {
   return (
     <Section title='Add a Figure with Image'>
-      <P>You see figures in textbooks often. They are pictures or diagrams. Figures often have a caption. HTML has an element for figure <Html>figure</Html> &amp; caption <Html>figcaption</Html> with a caption that may describe the figure or contain a legend. The <Html>figcaption</Html> element can go above or below the image.</P>
-      <P>You add pictures to a web page using the <Html>img</Html> element.</P>
+      <P>You see figures in textbooks often. They are pictures or diagrams. Figures often have a caption. HTML has an element for figure <Html>figure</Html> &amp; the figure's caption <Html>figcaption</Html>. The <Html>figcaption</Html> element can go above or below the image.</P>
+      <P>Images are added to a web page using the <Html>img</Html> element. The <Html>img</Html> element is an empty element. You must use the 'src' attribute to spicify the picture you want to be displayed.</P>
       <P>Follow the example to add a figure with image and caption to your page.</P>
 
       <OL>
         <LI>Add a section element.</LI>
-        <LI>Inside the section element add the heading 2, and anchor elements as shown.</LI>
-        <LI>Once you are done, refresh your page and click the links to make sure they are working</LI>
+        <LI>Inside the section add a figure element</LI>
+        <LI>Inside the figure element add an image element and set it src attribute to "mdn.png" and its 'alt' attribute to 'mdn logo'</LI>
       </OL>
       <Pre
         linesAdded={[29, 30, 31, 32, 33, 34, 35]}
@@ -52,7 +52,7 @@ const FigureAndImage = () => {
         '    <section>',
         '      <h2>Figure with Image and Caption</h2>',
         '      <figure>',
-        '        <img src="mdn.png" alt="">',
+        '        <img src="mdn.png" alt="mdn logo">',
         '        <figcaption>Mozilla Developer Network</figcaption>',
         '      </figure>',
         '    </section>',

@@ -12,6 +12,10 @@ const linkActiveStyle = {
   textDecoration: 'underline',
 }
 
+/*
+    to: path from root with no leading '/'
+        E.g., 'html/first-project'
+ */
 const LinkItem = ({ to, match, children }) => {
   const backOne = () => {
     const arrPath = match.path.split('/')
@@ -21,6 +25,7 @@ const LinkItem = ({ to, match, children }) => {
     arrPath.splice(0, 1)
     return `/${arrPath.join('/')}`
   }
+  // Only goes back if match has been passed in
   const path = match
     ? backOne()
     : `/${to}`

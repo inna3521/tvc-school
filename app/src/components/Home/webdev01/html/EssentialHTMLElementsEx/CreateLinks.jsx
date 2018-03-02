@@ -8,12 +8,12 @@ import LI from 'elements/LI'
 const CreateLinks = () => {
   return (
     <Section title='Create Links'>
+      <P>A hyperlink, often just called link for short, creates a way to navigate to other places. A link can take you to another part of the current page, a different page on the same site or an entirely different website. Links can also open your email client or initiate the download of a file.</P>
       <OL>
         <LI>Add a section element.</LI>
-        <LI>Inside the section element add the heading 2, and anchor elements as shown.</LI>
+        <LI>Inside the section element add a heading 2, and an anchor elements as shown.</LI>
         <LI>Once you are done, refresh your page and click the links to make sure they are working</LI>
       </OL>
-      <P>When you first look at your index.html file in a browser the title will be the file name. It may look different depending on which browser you are using.</P>
       <Pre
         linesAdded={[11, 12, 13, 14, 15]}
         code={[

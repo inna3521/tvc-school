@@ -49,6 +49,7 @@ module.exports = {
       lib: path.resolve(process.env.APP_DIR, 'src/lib'),
       data: path.resolve(process.env.APP_DIR, 'src/data'),
       store: path.resolve(process.env.APP_DIR, 'src/store'),
+      'shared': path.resolve(process.env.APP_DIR, 'src/shared'),
     },
     plugins: [
       new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),

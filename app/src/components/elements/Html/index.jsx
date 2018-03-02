@@ -1,10 +1,10 @@
 // A
 import React from 'react'
 
-const HTMLTag = ({ children }) => {
+const Html= ({ children }) => {
   return (
     <span>&lt;{children}&gt;</span>
   )
 }
 
-export default HTMLTag
+export default Html

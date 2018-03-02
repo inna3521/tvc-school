@@ -8,11 +8,10 @@ import LI from 'elements/LI'
 const AddFooter = () => {
   return (
     <Section title='Add a Footer'>
-      <P>Many, if not most, web pages have a footer. It is a section at the bottom of the page that usually has links, contact information a nd a copyright notice.</P>
+      <P>Many, if not most, web pages have a footer. It is a section at the bottom of the page that usually has links, contact information and a copyright notice.</P>
       <OL>
-        <LI>Add a section element.</LI>
-        <LI>Inside the section element add the heading 2, and anchor elements as shown.</LI>
-        <LI>Once you are done, refresh your page and click the links to make sure they are working</LI>
+        <LI>Add a footer element.</LI>
+        <LI>Inside the footer element add a paragraph element with the text 'This is the footer'.</LI>
       </OL>
       <Pre
         linesAdded={[36, 37, 38]}
@@ -53,7 +52,7 @@ const AddFooter = () => {
         '      </figure>',
         '    </section>',
         '    <footer>',
-        '      <p>Copyright 2018 all rights reserved</p>',
+        '      <p>This is the footer</p>',
         '    </footer>',
         '  </body>',
         '</html>',

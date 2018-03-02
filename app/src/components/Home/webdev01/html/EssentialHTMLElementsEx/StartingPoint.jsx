@@ -3,22 +3,14 @@ import P from 'elements/P'
 import Img from 'elements/Img'
 import Pre from 'elements/Pre'
 import Section from 'elements/Section'
-import iNoTitleChrome from './media/no-title-chrome.png'
-import iNoTitleFirefox from './media/no-title-firefox.png'
-
-const imgDivStyle = {
-  display: 'flex',
-  justifyContent: 'space-around',
-}
+import Link from 'elements/Link'
 
 const StartingPoint = () => {
   return (
     <Section title='Starting Point'>
-      <P>When you first look at your index.html file in a browser the title will be the file name. It may look different depending on which browser you are using.</P>
-      <div style={imgDivStyle}>
-        <Img src={iNoTitleFirefox} title='Firefox' medium alt='no title in browser tab' />
-        <Img src={iNoTitleChrome} title='Chrome' medium alt='no title in browser tab' />
-      </div>
+      <P>Create a new project by following the <Link to='html/first-project'>New Project Proceedure</Link></P>
+      <P>Once you have created the project open it in a browser.</P>
+      <P>Your index.html page should look like this:</P>
       <Pre code={[
         '<!DOCTYPE html>',
         '<html>',
