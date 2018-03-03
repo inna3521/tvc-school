@@ -5,7 +5,7 @@ import Question from 'elements/Question'
 import QEx from 'elements/QuestionEx'
 import Pre from 'elements/Pre'
 
-const Quiz = () => {
+const QuizReview = () => {
   return (
     <Section title='Review'>
       <Quiz>
@@ -80,3 +80,5 @@ const Quiz = () => {
     </Section>
   )
 }
+
+export default QuizReview

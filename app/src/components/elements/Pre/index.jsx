@@ -3,10 +3,13 @@ import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/styles';
 
+/*
+    language: css, html, js, jsx
+ */
 
 // Takes an array of strings
 // Currently you can only send one of linesAdded, linesRemoved or linesBold
-const Pre = ({ linesAdded, linesRemoved, linesBold, code, caption  }) => {
+const Pre = ({ linesAdded, linesRemoved, linesBold, code, caption, language  }) => {
 
   // const preStyles = classNames(
   //   {
@@ -29,6 +32,7 @@ const Pre = ({ linesAdded, linesRemoved, linesBold, code, caption  }) => {
     <div>
       {codeCaption}
       <SyntaxHighlighter
+        language={language}
         showLineNumbers
         style={docco}
         wrapLines={true}
