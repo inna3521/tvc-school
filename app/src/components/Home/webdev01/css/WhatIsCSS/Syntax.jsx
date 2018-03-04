@@ -24,7 +24,7 @@ const Syntax = () => {
           <Img src={iDeclaration01} alt='css declaration' />
         </Section>
         <Section title='Declarations Block' l2>
-          <P>Blocks are a form of grouping. CSS uses curly braces <Curly> </Curly> to create blocks. JavaScript does the same as you will see later.</P>
+          <P>Blocks are a form of grouping. CSS uses curly braces <Curly> </Curly> to create blocks. As you will see later, JavaScript also uses curly braces to create blocks..</P>
           <Img src={iDeclarationBlock01} alt='css declaration block' />
         </Section>
         <Section title='Selectors' l2>

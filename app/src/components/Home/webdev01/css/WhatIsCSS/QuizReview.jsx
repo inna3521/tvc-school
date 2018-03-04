@@ -4,6 +4,11 @@ import Quiz from 'elements/Quiz'
 import Question from 'elements/Question'
 import QEx from 'elements/QuestionEx'
 import Pre from 'elements/Pre'
+import Img from 'elements/Img'
+import iQuizSelector from './img/quiz-selector.png'
+import iQuizBlock from './img/quiz-block.png'
+import iQuizRuleset from './img/quiz-ruleset.png'
+import iQuizDeclaration from './img/quiz-declaration.png'
 
 const QuizReview = () => {
   return (
@@ -76,7 +81,60 @@ const QuizReview = () => {
           ]}
           answer={2}
         />
+        <Question
+          question='In CSS name/value pairs are called property/value?'
+          choices={[
+            "True",
+            "False",
+          ]}
+          answer={1}
+        />
+        <Question
+          ex={<Img src={iQuizSelector} alt='quiz selector' />}
+          question='The word highlighted in green is called'
+          choices={[
+            "A declaration",
+            "A selector",
+            "A block",
+            "A ruleset",
+          ]}
+          answer={2}
+        />
+        <Question
+          ex={<Img src={iQuizBlock} alt='quiz selector' />}
+          question='The area inside the green rectangle is called:'
+          choices={[
+            "A declaration",
+            "A selector",
+            "A block",
+            "A ruleset",
+          ]}
+          answer={3}
+        />
+        <Question
+          ex={<Img src={iQuizRuleset} alt='quiz selector' />}
+          question='The area inside the green rectangle is called:'
+          choices={[
+            "A declaration",
+            "A selector",
+            "A block",
+            "A ruleset",
+          ]}
+          answer={4}
+        />
+        <Question
+          ex={<Img src={iQuizDeclaration} alt='quiz selector' />}
+          question='The text highlighted in green is called:'
+          choices={[
+            "A declaration",
+            "A selector",
+            "A block",
+            "A ruleset",
+          ]}
+          answer={1}
+        />
       </Quiz>
+
     </Section>
   )
 }
