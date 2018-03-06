@@ -16,11 +16,11 @@ const Syntax = () => {
   return (
       <Section title='CSS Syntax'>
         <P>As you saw with HTML, each computer language has a specific syntax. This section introduces you to CSS syntax.</P>
-        <P>CSS is a selector, folowed by a pair of curly braces <Curly> </Curly> with css property/value pairs inside of them. Here is an example.</P>
+        <P>CSS is a selector, folowed by a pair of curly braces <Curly> </Curly> with css property/value pairs inside of them.</P>
         <Img src={iCSSSyntax01} alt='css syntax' />
         <P>Let's go throught that piece by piece.</P>
         <Section title='Declaration' l2>
-          <P>In CSS a property/value pair is called a <em>declaration</em> and looks just like the name value pairs we have been discussing so far:</P>
+          <P>In CSS a property/value pair is called a <em>declaration</em> and looks just like the name value pairs we have been discussing so far. Note that it uses a colon (:) to separate the property and value, and that it ends with a semi-colon (;).</P>
           <Img src={iDeclaration01} alt='css declaration' />
         </Section>
         <Section title='Declarations Block' l2>

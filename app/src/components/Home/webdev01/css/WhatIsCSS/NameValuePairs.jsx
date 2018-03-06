@@ -13,8 +13,8 @@ import iKeyValue02 from './img/key-value.02.png'
 const NameValuePairs = () => {
   return (
     <Section title='Review: Key / Value Pairs'>
-      <P>To effectively work with CSS you need to have a firm grasp of key/value pairs. Key/value pairs are everwhere in programming, not just in CSS. Unfortunately, key/value pairs go by a number of names. So, let's go over it carefully.</P>
-      <P>Regardless of the terminology used, there is always a name on the left side of some punctuation, and a value on the right of the punctuation. The punctuation is most often a colon (:) or equal sign (=).</P>
+      <P>To effectively work with CSS you need to have a firm grasp of key/value pairs. Key/value pairs are everwhere in programming, not just in CSS. Like many things in life, key/value pairs go by a number of names. So, let's go over it carefully.</P>
+      <P>Regardless of the terminology used, there is always a key/name on the left side of some punctuation, and a value on the right of the punctuation. The punctuation is most often a colon (:) or equal sign (=).</P>
       <P>Here is a name / value pair using an equal sign (=).</P>
       <Img src={iKeyValue01} alt='key value pair with equal sign' />
       <P>Here is a another using an colon (:).</P>
@@ -26,9 +26,9 @@ const NameValuePairs = () => {
         <LI>key : value</LI>
         <LI>property : value</LI>
       </UL>
-      <P>CSs uses 'property: value'.</P>
+      <P>CSS uses 'property: value'.</P>
       <Section title='Examples' l2>
-        <P>The below code shows the CSS 'font-size' property being set to 12 pixels:</P>
+        <P>The below code shows the CSS 'font-size' property being set to a value of 12 pixels:</P>
         <Pre
           language='css'
           code={[

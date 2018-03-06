@@ -152,8 +152,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.05"
-     inkscape:cx="231.56025"
-     inkscape:cy="55.655749"
+     inkscape:cx="290.88243"
+     inkscape:cy="54.680139"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -294,11 +294,16 @@
          x="231.54427"
          y="976.4975"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.63132191px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient4922);fill-opacity:0.94117647"
-         id="tspan4690-2">A 'declaration block starts and</tspan><tspan
+         id="tspan4690-2">A 'declaration block starts with</tspan><tspan
          sodipodi:role="line"
          x="231.54427"
          y="996.03662"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.63132191px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient4922);fill-opacity:0.94117647"
-         id="tspan4729">ends with a set of curly braces { }</tspan></text>
+         id="tspan4197">an open curly brace { and ends</tspan><tspan
+         sodipodi:role="line"
+         x="231.54427"
+         y="1015.5758"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.63132191px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient4922);fill-opacity:0.94117647"
+         id="tspan4729">with a closing curly brace }.</tspan></text>
   </g>
 </svg>
