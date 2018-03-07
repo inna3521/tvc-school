@@ -1,0 +1,40 @@
+.bgGray {
+  background-color: gray;
+}
+.samplePage {
+  padding: 10px 15px 10px 15px
+}
+.listStyle {
+  list-style: none;
+}
+.level1 {
+  margin-left: 20px;
+}
+.level2 {
+  margin-left: 40px;
+}
+.level3 {
+  margin-left: 60px;
+}
+.level4 {
+  margin-left: 80px;
+}
+.fileStructure {
+  line-height: 24px;
+  list-style: none;
+}
+.redText {
+  color: red;
+}
+.fontSize {
+  font-size: 0.1em;
+}
+.notStarted {
+  color: red;
+}
+.needsWork {
+  color: yellow;
+}
+.done {
+  color: green;
+}
