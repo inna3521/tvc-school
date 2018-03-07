@@ -8,51 +8,17 @@ import OL from 'elements/OL'
 import Html from 'elements/Html'
 import Img from 'elements/Img'
 import iAddCSSFile from './media/the-matrix.add-css-file.png'
+import Intro from './Intro'
 import ClosingThoughts from './ClosingThoughts'
+import OpenProject from './OpenProject'
+import AddHTML from './AddHTML'
 
 const WhatIsCSSEx = () => {
   return (
-    <div>
-      <P>In this exercise you will be adding to the project started in the HTML project. You will add a file to put your CSS in and link (i.e., connect) the HTML file to the CSS file.</P>
-      <Callout info>
-        <p>HTML files end with the extension .html</p>
-        <p>CSS files end with the extension .css</p>
-      </Callout>
-      <Section title='Add Some HTML'>
-        <P>In this section we will create the basic structure and content the page. To save a little bit of time you will start with a template project.</P>
-        <OL>
-          <LI>Open Atom if it is not already open.</LI>
-          <LI>If a project is already open then close it.</LI>
-          <LI>From the samples projects, open 'the-matrix' project.</LI>
-          <LI>Add the code shown below to index.html.</LI>
-          <Pre
-            linesAdded={[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]}
-            code={[
-              '<body>',
-              '  <header>',
-              '    <h1>The Matrix</h1>',
-              '    <h2>by Type Your Name Here</h2>',
-              '  </header>',
-              '  <section>',
-              '    <p>I am currently learning Web Development. This is my first web page.</p>',
-              '    <p>Indenting keeps things organized.</p>',
-              '  </section>',
-              '  <section>',
-              '    <h2>The Matrix</h2>',
-              '    <img src="matrix.jpg" alt="">',
-              '  </section>',
-              '  <footer>',
-              '    <p>My first page.</p>',
-              '    <p>Copyright [your name] 2018</p>',
-              '    <a href="http://trivalleycoders.com">Trivalley Coders</a>',
-              '  </footer>',
-              '</body>',
-            ]}
-          />
-          <LI>Save your file.</LI>
-          <LI>Open index.html in the browser to see what it looks like.</LI>
-        </OL>
-      </Section>
+    <div id='WhatIsCSSEx'>
+      <Intro />
+      <OpenProject />
+      <AddHTML />
       <Section title='Add a CSS File'>
         <OL>
           <LI>Create a new file named style.css</LI>
@@ -80,9 +46,9 @@ const WhatIsCSSEx = () => {
       <Section title='Linking a HTML file to a CSS File'>
         <P>A browser can't apply CSS to a HTML page unless there is some way to tell the browser which CSS file to use for which HTML file. You do that by creating a link from the HTML file to the CSS file.</P>
         <OL>
-          <LI>In index.html, add the line as shown below.</LI>
+          <LI>In <Html>head</Html> of index.html, modify the line as shown below.</LI>
           <Pre
-            linesAdded={[4]}
+            linesAdded={[3]}
             language='html'
             code={[
               "<head>",
@@ -130,17 +96,20 @@ const WhatIsCSSEx = () => {
             <P>Since the selector starts with a period this is a class selector. It will not change the appearance of the title until you add the class attribute to the HTML.</P>
             <LI>Add the class to the <Html>h1</Html> element as shown below.</LI>
             <Pre
-              linesAdded={[1]}
+              linesAdded={[2]}
               language='html'
               code={[
-                '<h1 class="title">The Matrix</h1>',
+                '<header>',
+                '  <h1 class="title">The Matrix</h1>',
+                '  <h2>by Karl</h2>',
+                '</header>',
               ]}
             />
             <LI>Save the file and refresh the page to see the change.</LI>
           </OL>
         </Section>
         <Section title='Style the Sub-title' l2>
-          <P>The sub-title should be a little smaller than the title. To style it we will use another class selector and then apply the class attribute to the appropriate HTML element.</P>
+          <P>The sub-title should be a little smaller than the title. To style it we will use another ruleset with a class selector, and then apply the class attribute to the appropriate HTML element.</P>
           <OL>
             <LI>Add the below ruleset to your CSS file.</LI>
             <Pre
@@ -154,10 +123,13 @@ const WhatIsCSSEx = () => {
             />
             <LI>Add the class to the <Html>h2</Html> element as shown below.</LI>
             <Pre
-              linesAdded={[1]}
+              linesAdded={[3]}
               language='html'
               code={[
-                '<h2 class="sub-title">by [your name]</h2>',
+                '<header>',
+                '  <h1 class="title">The Matrix</h1>',
+                '  <h2 class="sub-title">by Karl</h2>',
+                '</header>',
               ]}
             />
             <LI>Save the file and refresh the page to see the change.</LI>
@@ -209,6 +181,7 @@ const WhatIsCSSEx = () => {
               ]}
             />
             <P>The background is there but some space above and below the footer text would look better. Let's add that with the CSS padding property.</P>
+            <LI>Add a second declaration to the existing ruleset.</LI>
             <Pre
               linesAdded={[3]}
               language='css'

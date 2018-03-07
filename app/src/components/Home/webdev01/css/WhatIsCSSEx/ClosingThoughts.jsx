@@ -11,8 +11,8 @@ const ClosingThoughts = () => {
       <Section title='Closing Thoughts'>
         <P>As you can see, a page with CSS added looks much better than HTML alone. Here are a few things to keep in mind:</P>
         <UL>
-          <LI>We will always put HTML in the .html file and CSS in the .css file so the instructions will no longer say to do so.</LI>
-          <LI>Remembering to save the file you made changes to before refreshing the page is common. Students often spend lots of time trying to figure out what they did wrong olny to discover they forgot to save. In this lesson you were reminded at the end of each step. For the remainder of the course you'll need to remind yourself.</LI>
+          <LI>Since we will always put HTML in the .html file and CSS in the .css file the instructions will no longer say to do so.</LI>
+          <LI>Remembering to save the file you made changes to before refreshing the page is common. Students often spend lots of time trying to figure out what they did wrong olny to discover they forgot to save. In this lesson you were reminded at the end of each step. The instructions will no longer tell you to save so be sure to remember!</LI>
         </UL>
       </Section>
       <Congratulations title='Congratulations - you have created your first project with both HTML &amp; CSS!' />
