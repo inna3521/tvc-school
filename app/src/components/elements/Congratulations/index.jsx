@@ -1,6 +1,5 @@
 // Callout
 import React from 'react'
-import classNames from 'classnames'
 import iRocket from './media/rocket.png'
 
 const baseStyle = {

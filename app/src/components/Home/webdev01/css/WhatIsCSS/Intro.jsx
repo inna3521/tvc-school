@@ -1,8 +1,5 @@
 import React from 'react'
 import Section from 'elements/Section'
-import UL from 'elements/UL'
-import LI from 'elements/LI'
-import Html from 'elements/Html'
 import P from 'elements/P'
 
 const Intro = () => {

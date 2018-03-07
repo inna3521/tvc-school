@@ -1,4 +1,5 @@
 import React from 'react'
+import { notStarted } from './toc-constants'
 import TOC from 'elements/TOC'
 import { withRouter } from 'react-router-dom'
 import ExWriteSomeHTMLCSSJS from 'Home/webdev01/overview/ExWriteSomeHTMLCSSJS'
@@ -21,39 +22,45 @@ export const routes = [
     component: withRouter(({ match }) => <TOC rootPath={rootPath} pageTitle='Overview: HTML, CSS & JavaScript' match={match} />),
   },
   {
+    status: notStarted,
     title: 'Defining Content',
     type: 'page',
-    path: `${rootPath}/`,
+    path: `/${rootPath}/defining-content`,
     component: withRouter(({ match }) => <DefiningContent match={match} />),
   },
   {
+    status: notStarted,
     title: "So What's Structure",
     type: 'page',
-    path: `${rootPath}/`,
+    path: `/${rootPath}/so-whats-structure`,
     component: withRouter(({ match }) => <WhatIsStructure match={match} />),
   },
   {
+    status: notStarted,
     title: 'HTML: Structure is Created with HTML',
     type: 'page',
-    path: `${rootPath}/`,
+    path: `/${rootPath}/html-structure-is-created-with-html`,
     component: withRouter(({ match }) => <StructureHTML match={match} />),
   },
   {
+    status: notStarted,
     title: 'CSS: Styles are Created with CSS',
     type: 'page',
-    path: `${rootPath}/`,
+    path: `/${rootPath}/css-styles-are-created-with-css`,
     component: withRouter(({ match }) => <StyleCSS match={match} />),
   },
   {
+    status: notStarted,
     title: 'JavaScript&colon; Interactivity is provided by JavaScript',
     type: 'page',
-    path: `${rootPath}/`,
+    path: `/${rootPath}/javascript-interactivity-is-provided-by-javascript`,
     component: withRouter(({ match }) => <InteractivityJS match={match} />),
   },
   {
-    title: 'Exercise: Write Som HTML & CSS',
+    status: notStarted,
+    title: 'Exercise: Write Some HTML & CSS',
     type: 'page',
-    path: `${rootPath}/`,
+    path: `/${rootPath}/ex-write-some-html-and-css`,
     component: withRouter(({ match }) => <ExWriteSomeHTMLCSSJS match={match} />),
   },
 

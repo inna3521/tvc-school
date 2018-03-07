@@ -4,7 +4,6 @@ import * as colors from 'lib/colors'
 
 
 const Step = ({ children, caution, danger, goal, normal }) => {
-  console.log('caution', caution)
   let color
   switch (true) {
     case caution:

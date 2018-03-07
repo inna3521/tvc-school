@@ -1,9 +1,18 @@
 // A
 import React from 'react'
 
-const Html= ({ children }) => {
+const htmlStyle = {
+  fontFamily:  'Ubuntu Mono, monospace',
+}
+
+const Html= ({ close, children }) => {
   return (
-    <span>&lt;{children}&gt;</span>
+    <span style={htmlStyle}>
+      &lt;
+      {close ? '/' : null}
+      {children}
+      &gt;
+    </span>
   )
 }
 

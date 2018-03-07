@@ -24,10 +24,10 @@ const homeTOC = [
 ]
 
 export const routes = [
+  ...configurationTOC,
   ...homeTOC,
   ...documentStructureTOC,
   ...overviewTOC,
-  ...configurationTOC,
   ...computerSkills,
   ...htmlTOC,
   ...cssTOC,

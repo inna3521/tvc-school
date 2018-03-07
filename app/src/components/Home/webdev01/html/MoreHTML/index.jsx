@@ -6,11 +6,7 @@ const Lesson01 = (props) => {
   return (
     <div>
       <div>
-        <Section
-          title='What is HTML'
-          subTitle='HTML Sub-Title'
-
-        >
+        <Section title='More HTML'>
           <ol>
             <li><del>What is HTML</del></li>
             <li><del>Anatomy of an HTML element</del></li>

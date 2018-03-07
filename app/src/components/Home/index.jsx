@@ -6,29 +6,42 @@ import TopBar from './TopBar'
 import PageTitle from './PageTitle'
 import CodeOfConduct from './CodeOfConduct'
 import { routes } from 'toc/toc'
+import TOCOutline from 'elements/TOCOutline'
 
+const contentStyle = {
+  display: 'flex',
+  flexFlow: 'row nowrap',
+}
+const outlineStyle = {
+  paddingRight: 30,
+}
 const Home = () => {
 
   return (
     <Router>
       <div id="Home">
         <TopBar />
+
         <Route render={
-          withRouter(({ match, location }) => <PageTitle match={match} location={location} />)
-        } />
+            withRouter(({ match, location }) => <PageTitle match={match} location={location} />)
+          } />
+        <div style={contentStyle}>
+          <div style={outlineStyle}>
+            <TOCOutline />
+          </div>
+          <Switch>
+            {routes.map((r) => (
+              <Route
+                key={r.path}
+                path={r.path}
+                exact={r.exact}
+                component={r.component}
+              />
+            ))}
+            <Route path='/code-of-conduct' component={CodeOfConduct} />
 
-        <Switch>
-          {routes.map((r) => (
-            <Route
-              key={r.path}
-              path={r.path}
-              exact={r.exact}
-              component={r.component}
-            />
-          ))}
-          <Route path='/code-of-conduct' component={CodeOfConduct} />
-
-        </Switch>
+          </Switch>
+        </div>
         <Footer />
       </div>
     </Router>

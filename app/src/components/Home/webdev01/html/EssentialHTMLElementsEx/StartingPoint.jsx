@@ -1,6 +1,5 @@
 import React from 'react'
 import P from 'elements/P'
-import Img from 'elements/Img'
 import Pre from 'elements/Pre'
 import Section from 'elements/Section'
 import Link from 'elements/Link'

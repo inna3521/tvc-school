@@ -1,6 +1,7 @@
 import React from 'react'
-import TOC from 'elements/TOC'
 import { withRouter } from 'react-router-dom'
+import TOC from 'elements/TOC'
+import { notStarted } from './toc-constants'
 import WebPageIsDocument from 'Home/webdev01/document-structure/WebPageIsDocument'
 import WhatIsAnElement from 'Home/webdev01/document-structure/WhatIsAnElement'
 import WhatAreStyles from 'Home/webdev01/document-structure/WhatAreStyles'
@@ -18,24 +19,28 @@ export const routes = [
     component: withRouter(({ match }) => <TOC rootPath={rootPath} pageTitle='Document Structure' match={match} />),
   },
   {
+    status: notStarted,
     title: 'A Web Page is a Document',
     type: 'page',
     path: `/${rootPath}/webpage-is-document`,
     component: withRouter(({ match }) => <WebPageIsDocument match={match} />),
   },
   {
+    status: notStarted,
     title: 'What is an Element',
     type: 'page',
     path: `/${rootPath}/what-is-an-element`,
     component: withRouter(({ match }) => <WhatIsAnElement match={match} />),
   },
   {
+    status: notStarted,
     title: 'What Are Styles',
     type: 'page',
     path: `/${rootPath}/what-are-styles`,
     component: withRouter(({ match }) => <WhatAreStyles match={match} />),
   },
   {
+    status: notStarted,
     title: 'The Hierarchy of Information',
     subTitle: 'An Exploration of Document Structure',
     type: 'page',
@@ -43,6 +48,7 @@ export const routes = [
     component: withRouter(({ match }) => <HierarchyOfInformation match={match} />),
   },
   {
+    status: notStarted,
     title: 'Exercise: Exploring Document Structure',
     subTitle: 'With Google Docs',
     type: 'page',

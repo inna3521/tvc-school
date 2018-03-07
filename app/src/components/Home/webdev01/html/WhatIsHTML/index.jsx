@@ -1,11 +1,17 @@
 // MenuAppHeader
 import React from 'react'
+import styles from './style.css'
 import Section from 'elements/Section'
 import UL from 'elements/UL'
 import P from 'elements/P'
 import LI from 'elements/LI'
 import Img from 'elements/Img'
 import Callout from 'elements/Callout'
+import Angle from 'elements/Angle'
+import Pre from 'elements/Pre'
+import Amp from 'elements/Amp'
+import Html from 'elements/Html'
+import ReviewQuiz from './ReviewQuiz'
 import iElements from './media/elements.png'
 import iTags from './media/tags.png'
 import iContent from './media/content.png'
@@ -14,14 +20,6 @@ import iNameValue01 from './media/name-value-01.svg'
 import iNameValue02 from './media/name-value-02.svg'
 import iElementSummary from './media/element-summary.png'
 import iContainer from './media/container.png'
-import Angle from 'elements/Angle'
-import Pre from 'elements/Pre'
-import styles from './style.css'
-import Quiz from 'elements/Quiz'
-import Question from 'elements/Question'
-import Amp from 'elements/Amp'
-import Code from 'elements/Code'
-
 
 const WhatIsHTML = () => {
 
@@ -31,7 +29,7 @@ const WhatIsHTML = () => {
       <P>HTML is called a <em>markup language</em>. It is not a programming language as it is focused on the presentation of content.</P>
     </div>
     <Section title='HTML is made of Elements' l1>
-      <P>HTML is made-up of <em>elements</em>. Each element represents something that can appear on a web page. For example, paragraphs or headings. <Code code={'<p></p>'} /> is a paragraph element and <Code code={'<title></title>'} /> is a title element.</P>
+      <P>HTML is made-up of <em>elements</em>. Each element represents something that can appear on a web page. For example, paragraphs or headings. <Html>p</Html><Html close>p</Html> is a paragraph element and <Html>title</Html><Html close>title</Html> is a title element.</P>
       <Img src={iElements} />
       <P>There are over 100 HTML elements. However, you can create a complete web site with 15 or 20 of the most frequently used elements.</P>
     </Section>
@@ -75,10 +73,10 @@ const WhatIsHTML = () => {
     </Callout>
     <Section title='Elements are Containers' l1>
       <div className={styles.elementsArecontainers}>
-        <div sm={6}>
+        <div>
           <Img src={iContainer} />
         </div>
-        <div sm={6} className={styles.containersText}><P>Elements are <i>containers</i> in that elements can be put inside of other elements. Using elements as containers provides organization and the ability to style groups of elements instead of each individual one.</P>
+        <div className={styles.containersText}><P>Elements are <i>containers</i> in that elements can be put inside of other elements. Using elements as containers provides organization and the ability to style groups of elements instead of each individual one.</P>
         </div>
       </div>
       <P>Here is an example of a <Angle>header</Angle> element which contains two elements, a <Angle>h1</Angle> and a <Angle>p</Angle> element.</P>
@@ -143,84 +141,7 @@ const WhatIsHTML = () => {
       <p>You have completed the lesson on HTML.</p>
       <p>In the next lesson you will begin learning specific HTML elements.</p>
     </Callout>
-    <Section title='Review' l1>
-      <Quiz>
-        <Question
-          question='HTML stands for?'
-          choices={[
-            'High Tolerance Modeling Language',
-            'Hypertext Markup Language',
-            'Horizontal Title Meta Language'
-          ]}
-          answer={2}
-
-        />
-        <Question
-          question='HTM creates'
-          choices={[
-            'Interactivity',
-            'Styling of the page',
-            'Page structure',
-          ]}
-          answer={3}
-        />
-        <Question
-          question='Select the HTML element that is correctly formed'
-          choices={[
-            '<p>some test</p>',
-            '(p)some text(/p)',
-            '<p>some test<p>',
-            '</p>some text<p>'
-          ]}
-          answer={1}
-        />
-        <Question
-          question='Select the answer that is most correct'
-          choices={[
-            'A HTML element has two tags and some content',
-            'A HTML element is made up of two main elements and one or more sub-elements',
-            'A HTML element is a tag',
-            'A HTML element usually has an opening tag, come content, and a closing tag, but some have one tag and no content.'
-          ]}
-          answer={4}
-        />
-        <Question
-          question='HTML Elements can contain other elements?'
-          choices={[
-            'True',
-            'False',
-          ]}
-          answer={1}
-        />
-        <Question
-          question='Where in an element does content go?'
-          choices={[
-            "Insider the opening tag before the '>'",
-            "Inside the closing tag after the '<'",
-            "Between the opening and closing tags",
-            "After the closing tag",
-          ]}
-          answer={3}
-        />
-        <Question
-          question='What is an empty element?'
-          choices={[
-            "An element with no attributes",
-            "An element with one tag and no content",
-            "An element with no ID property",
-          ]}
-          answer={2}
-        />
-        <Question
-          question='I have to lean over 100 elements before I can create a website?'
-          choices={[
-            "True",
-            "False",
-          ]}
-          answer={2}
-        />
-      </Quiz>
-    </Section>
+    <ReviewQuiz />
   </div>)
 };
 

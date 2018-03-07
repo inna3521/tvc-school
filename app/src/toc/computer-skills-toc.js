@@ -1,6 +1,7 @@
 import React from 'react'
-import TOC from 'elements/TOC'
 import { withRouter } from 'react-router-dom'
+import { notStarted, needsWork } from './toc-constants'
+import TOC from 'elements/TOC'
 import FileManagement from 'Home/webdev01/computer-skills/FileManagement'
 import UsingAtom from 'Home/webdev01/computer-skills/UsingAtom'
 import InstallingSoftware from 'Home/webdev01/computer-skills/InstallingSoftware'
@@ -17,24 +18,28 @@ export const routes = [
     component: withRouter(({ match }) => <TOC rootPath='computer-skills' pageTitle='Computer Skills' match={match} />),
   },
   {
+    status: notStarted,
     title: 'File Management',
     type: 'page',
     path: `${rootPath}/file-management`,
     component: withRouter(({ match }) => <FileManagement match={match} />),
   },
   {
+    status: notStarted,
     title: 'Installing Software',
     type: 'page',
     path: `${rootPath}/installing-software`,
     component: withRouter(({ match }) => <InstallingSoftware match={match} />),
   },
   {
+    status: needsWork,
     title: 'Using Atom',
     type: 'page',
     path: `${rootPath}/using-atom`,
     component: withRouter(({ match }) => <UsingAtom match={match} />),
   },
   {
+    status: notStarted,
     title: 'Creating A Project',
     type: 'page',
     path: `${rootPath}/create-project`,
