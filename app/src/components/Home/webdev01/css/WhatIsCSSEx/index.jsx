@@ -48,7 +48,7 @@ const WhatIsCSSEx = () => {
         <OL>
           <LI>In <Html>head</Html> of index.html, modify the line as shown below.</LI>
           <Pre
-            linesAdded={[3]}
+            linesAdded={[4]}
             language='html'
             code={[
               "<head>",
@@ -72,7 +72,7 @@ const WhatIsCSSEx = () => {
               linesAdded={[1, 2, 3]}
               language='css'
               code={[
-                "h2 {",
+                "body {",
                 "  text-align: center;",
                 "}",
               ]}
