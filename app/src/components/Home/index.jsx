@@ -7,6 +7,7 @@ import PageTitle from './PageTitle'
 import CodeOfConduct from './CodeOfConduct'
 import { routes } from 'toc/toc'
 import TOCOutline from 'elements/TOCOutline'
+import MediaQuery from 'react-responsive';
 
 const contentStyle = {
   display: 'flex',
@@ -21,14 +22,15 @@ const Home = () => {
     <Router>
       <div id="Home">
         <TopBar />
-
         <Route render={
             withRouter(({ match, location }) => <PageTitle match={match} location={location} />)
           } />
         <div style={contentStyle}>
-          <div style={outlineStyle}>
-            <TOCOutline />
-          </div>
+          <MediaQuery query="(min-width: 1224px)">
+            <div style={outlineStyle}>
+              <TOCOutline />
+            </div>
+          </MediaQuery>
           <Switch>
             {routes.map((r) => (
               <Route

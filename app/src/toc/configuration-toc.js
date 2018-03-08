@@ -1,6 +1,7 @@
 import React from 'react'
-import TOC from 'elements/TOC'
 import { withRouter } from 'react-router-dom'
+import { notStarted, needsWork, done } from './toc-constants'
+import TOC from 'elements/TOC'
 import InstallingAtom from 'Home/webdev01/configuration/InstallingAtom'
 
 const rootPath = '/configuration'
@@ -15,6 +16,7 @@ export const routes = [
     component: withRouter(({ match }) => <TOC rootPath='configuration' pageTitle='Configuration' match={match} />),
   },
   {
+    status: needsWork,
     title: 'Install Atom Code Editor',
     type: 'page',
     path: `${rootPath}/installing-atom`,
