@@ -2,8 +2,8 @@ import React from 'react'
 import TOC from 'elements/TOC'
 import { withRouter } from 'react-router-dom'
 import htmlTOC from 'toc/html-toc'
-// import reactTOC from 'toc/react-toc'
-// import restaurantTOC from 'toc/restaurant-toc'
+import reactTOC from 'toc/react-toc'
+import restaurantTOC from 'toc/restaurant-toc'
 import javascriptTOC from 'toc/javascript-toc'
 import configurationTOC from 'toc/configuration-toc'
 import computerSkills from 'toc/computer-skills-toc'
@@ -32,6 +32,8 @@ export const routes = [
   ...htmlTOC,
   ...cssTOC,
   ...javascriptTOC,
+  ...reactTOC,
+  ...restaurantTOC
 
 ]
 
